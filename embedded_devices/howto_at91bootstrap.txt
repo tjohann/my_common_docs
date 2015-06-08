@@ -1,0 +1,40 @@
+# ----------------------------------------------------------------------------------
+#
+# Title      :  simple howto for building at91 bootloader
+#
+# License:
+#
+# GPL                                                                        
+# (c) 2015, thorsten.johannvorderbrueggen@t-online.de                        
+#                                                                            
+# This manual is free software; you may redistribute it and/or modify it under
+# the terms of the GNU General Public License. Please refer to the license in
+# Appendix F, GNU General Public License.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+#
+# ----------------------------------------------------------------------------------
+#
+# see -> http://www.acmesystems.it/compile_at91bootstrap
+#
+
+
+# create default config
+KDO: make arietta-128m_defconfig  (aria-128m_defconfig for aria G25)
+or
+KDO: make arietta-256m_defconfig  (aria-256m_defconfig for aria G25)
+
+# change default config
+KDO: make menuconfig
+
+Changes:
+Change "Linux Image Type Select" to "Load Linux uImage"
+Add "console=tty0" to "Linux Image Storage Setup" kernel arguments line
+
+# build it
+KDO: make ARCH=arm CROSS_COMPILE=arm-armel-linux-gnueabi-
+
+# copy output (example: arietta with 128MByte)
+KDO: cp binaries/at91sam9x5_arietta-sdcardboot-linux-uimage-dt-3.7.bin ~/arm926_sdk/common/boot_arietta_128.bin

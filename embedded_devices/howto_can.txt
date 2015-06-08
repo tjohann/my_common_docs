@@ -1,0 +1,117 @@
+# ----------------------------------------------------------------------------------
+#
+# Title      : simple summary for can related topics
+#
+# License:
+#
+# GPL                                                                        
+# (c) 2015, thorsten.johannvorderbrueggen@t-online.de                        
+#                                                                            
+# This manual is free software; you may redistribute it and/or modify it under
+# the terms of the GNU General Public License. Please refer to the license in
+# Appendix F, GNU General Public License.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+#
+# ----------------------------------------------------------------------------------
+#
+# see also -> http://developer.ridgerun.com/wiki/index.php/How_to_configure_and_use_CAN_bus#sysfs_entries
+#
+
+
+# check mcp config
+root@arietta:/proc/net/can$ dmesg | fgrep -i mcp
+[    6.500000] mcp251x spi32766.0: CANCTRL 0x87
+[358025.640625] mcp251x spi32766.0: CNF: 0x03 0xf5 0x01
+[358055.289062] mcp251x spi32766.0 can0: bus-off
+
+
+# check can config
+root@arietta:/proc/net/can$ dmesg | fgrep -i can
+[    6.039062] CAN device driver interface
+[    6.500000] mcp251x spi32766.0: CANCTRL 0x87
+[357282.929687] can: controller area network core (rev 20120528 abi 9)
+[357307.781250] can: raw protocol (rev 20120528)
+[357317.273437] can: broadcast manager protocol (rev 20120528 t)
+[358055.289062] mcp251x spi32766.0 can0: bus-off
+
+
+# check sysfs entry
+root@arietta:/proc/net/can$ lf /sys/class/net/
+insgesamt 0
+drwxr-xr-x  2 root root 0 Jan 26 12:49 .
+drwxr-xr-x 33 root root 0 Jan 22 10:10 ..
+lrwxrwxrwx  1 root root 0 Jan 22 09:10 can0 -> ../../devices/ahb/ahb:apb/f0000000.spi/spi_master/spi32766/spi32766.0/net/can0
+lrwxrwxrwx  1 root root 0 Jan 22 10:10 eth0 -> ../../devices/ahb/ahb:apb/f802c000.ethernet/net/eth0
+lrwxrwxrwx  1 root root 0 Jan 22 10:10 lo -> ../../devices/virtual/net/lo
+lrwxrwxrwx  1 root root 0 Jan 22 10:10 sit0 -> ../../devices/virtual/net/sit0
+
+
+# setup can 
+sudo ip link set can0 type can bitrate 125000 triple-sampling on
+sudo ifconfig can0 up
+
+
+# cansend
+cansend can0 Identifyer#HEX-Daten
+cansend can0 5A1#68.61.6c.6c.6f.21
+cansend can0 5A1#11.22.33.44.55.66.77.88
+
+
+# candump
+candump can0
+
+
+# some stats ...
+cat /proc/net/can/stats
+cat /proc/net/can/version
+
+
+# debugfs
+none		/sys/kernel/debug debugfs defaults	0       0
+mount -t debugfs none /sys/kernel/debug
+
+
+# gpio config 
+root@arietta:/proc/net/can$ cat /sys/kernel/debug/gpio
+cat: /sys/kernel/debug/gpio: Keine Berechtigung
+root@arietta:/proc/net/can$ sudo cat /sys/kernel/debug/gpio
+GPIOs 0-31, platform/fffff400.gpio, fffff400.gpio:
+[spi32766.1] GPIOfffff400.gpio7: [gpio] set
+[spi32766.0] GPIOfffff400.gpio14: [gpio] set
+[w1] GPIOfffff400.gpio21: [gpio] set
+
+GPIOs 32-50, platform/fffff600.gpio, fffff600.gpio:
+[aria_led] GPIOfffff600.gpio8: [gpio] set
+
+GPIOs 64-95, platform/fffff800.gpio, fffff800.gpio:
+
+GPIOs 96-117, platform/fffffa00.gpio, fffffa00.gpio:
+
+
+# detailed infos about can device
+root@arietta:/proc/net/can$ ip -details link show can0
+4: can0: <NO-CARRIER,NOARP,UP,ECHO> mtu 16 qdisc pfifo_fast state DOWN mode DEFAULT qlen 10
+    link/can  promiscuity 0 
+    can <TRIPLE-SAMPLING> state BUS-OFF restart-ms 0 
+    bitrate 125000 sample-point 0.875 
+    tq 500 prop-seg 6 phase-seg1 7 phase-seg2 2 sjw 1
+    mcp251x: tseg1 3..16 tseg2 2..8 sjw 1..4 brp 1..64 brp-inc 1
+    clock 8000000
+
+
+# for debian (interfaces)
+auto can0
+iface can0 inet manual
+	#pre-up ip link set $IFACE type can bitrate 125000 listen-only off
+	pre-up /ip link set $IFACE type can bitrate 125000 triple-sampling on
+	up /sbin/ifconfig $IFACE up
+	down /sbin/ifconfig $IFACE down
+
+# cansend & candump
+cansend can0 5A1#11.22.33.44.55.66.77.88
+
+candump can0
+  can0  5A1  [8] 11 22 33 44 55 66 77 88

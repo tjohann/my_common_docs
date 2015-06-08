@@ -1,0 +1,76 @@
+# ----------------------------------------------------------------------------------
+#
+# Title      : simple summary for dts/dtb related topics 
+#
+# License:
+#
+# GPL                                                                        
+# (c) 2015, thorsten.johannvorderbrueggen@t-online.de                        
+#                                                                            
+# This manual is free software; you may redistribute it and/or modify it under
+# the terms of the GNU General Public License. Please refer to the license in
+# Appendix F, GNU General Public License.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+#
+# ----------------------------------------------------------------------------------
+#
+
+# Howto get the dts of an actual running dtb/kernel (-I fs -> input format is fs ... procfs):
+root@arietta:/usr/src/linux-3.18.3# scripts/dtc/dtc -I fs -O dts -o ~/running.dts /proc/device-tree 
+
+
+# Howto build dtb
+make ARCH=arm CROSS_COMPILE=arm-arietta-linux-gnueabi- acme-arietta.dtb
+
+
+# Every curly bracket is represented as a dir in /proc/device-tree (because of dt-ol)
+root@arietta:/proc/device-tree# lf
+total 0
+-r--r--r--  1 root root  4 Nov  3 16:14 #address-cells
+-r--r--r--  1 root root  4 Nov  3 16:14 #size-cells
+dr-xr-xr-x 13 root root  0 Nov  3 16:13 .
+dr-xr-xr-x 80 root root  0 Jan  1  1970 ..
+dr-xr-xr-x  6 root root  0 Nov  3 16:14 ahb
+dr-xr-xr-x  2 root root  0 Nov  3 16:14 aliases
+dr-xr-xr-x  2 root root  0 Nov  3 16:14 chosen
+dr-xr-xr-x  3 root root  0 Nov  3 16:14 clocks
+-r--r--r--  1 root root 64 Nov  3 16:14 compatible
+dr-xr-xr-x  3 root root  0 Nov  3 16:14 cpus
+dr-xr-xr-x  2 root root  0 Nov  3 16:14 i2c@0
+dr-xr-xr-x  2 root root  0 Nov  3 16:14 i2c@1
+dr-xr-xr-x  2 root root  0 Nov  3 16:14 i2c@2
+-r--r--r--  1 root root  4 Nov  3 16:14 interrupt-parent
+dr-xr-xr-x  3 root root  0 Nov  3 16:14 leds
+dr-xr-xr-x  2 root root  0 Nov  3 16:14 memory
+-r--r--r--  1 root root 22 Nov  3 16:14 model
+-r--r--r--  1 root root  1 Nov  3 16:14 name
+dr-xr-xr-x  2 root root  0 Nov  3 16:14 onewire@0
+
+
+# Howto see content 
+root@arietta:/proc/device-tree# hexdump -C "#size-cells" 
+00000000  00 00 00 01                                       |....|
+00000004
+# or
+root@arietta:/proc/device-tree# hexdump -C 'ahb/compatible' 
+00000000  73 69 6d 70 6c 65 2d 62  75 73 00                 |simple-bus.|
+0000000b
+
+
+# node/phandle
+spi0: spi@f0000000
+spi0 is like a alias for spi@f000000
+... but
+spi@f00000 defines the name in /proc ... (its a phandle -> for dt-ol "-@" needed)
+
+
+# check gpios
+/sys/kernel/debug/gpio
+
+
+# check interrupts
+/proc/interrupts
+

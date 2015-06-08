@@ -1,0 +1,97 @@
+# ----------------------------------------------------------------------------------
+#
+# Title      : simple summary for spi/eeprom related topics (incl udev stuff)
+#
+# License:
+#
+# GPL                                                                        
+# (c) 2015, thorsten.johannvorderbrueggen@t-online.de                        
+#                                                                            
+# This manual is free software; you may redistribute it and/or modify it under
+# the terms of the GNU General Public License. Please refer to the license in
+# Appendix F, GNU General Public License.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+#
+# ----------------------------------------------------------------------------------
+#
+
+# some udev kdo
+udevadm control --reload-rules
+udevadm trigger
+udevadm info -a -p /sys/devices/ahb/ahb:apb/f0000000.spi/spi_master/spi32766/spi32766.1
+
+
+# udevadm
+root@arietta:/sys/devices/ahb/ahb:apb/f0000000.spi/spi_master/spi32766/spi32766.1$ udevadm test /sys/devices/ahb/ahb:apb/f0000000.spi/spi_master/spi32766/spi32766.1
+-->
+ACTION=add
+DEVPATH=/devices/ahb/ahb:apb/f0000000.spi/spi_master/spi32766/spi32766.1
+DRIVER=at25
+MODALIAS=spi:at25
+OF_COMPATIBLE_0=atmel,at25
+OF_COMPATIBLE_1=st
+OF_COMPATIBLE_N=2
+OF_FULLNAME=/ahb/apb/spi@f0000000/eeprom@0
+OF_NAME=eeprom
+SUBSYSTEM=spi
+UDEV_LOG=6
+USEC_INITIALIZED=2636721898
+
+
+# device ...
+root@arietta:/sys/bus/spi# udevadm info -a -p /sys/devices/ahb/ahb:apb/f0000000.spi/spi_master/spi32766/spi32766.1
+
+  looking at device '/devices/ahb/ahb:apb/f0000000.spi/spi_master/spi32766/spi32766.1':
+    KERNEL=="spi32766.1"
+    SUBSYSTEM=="spi"
+    DRIVER=="at25"
+
+  looking at parent device '/devices/ahb/ahb:apb/f0000000.spi/spi_master/spi32766':
+    KERNELS=="spi32766"
+    SUBSYSTEMS=="spi_master"
+    DRIVERS==""
+
+  looking at parent device '/devices/ahb/ahb:apb/f0000000.spi':
+    KERNELS=="f0000000.spi"
+    SUBSYSTEMS=="platform"
+    DRIVERS=="atmel_spi"
+    ATTRS{driver_override}=="(null)"
+
+  looking at parent device '/devices/ahb/ahb:apb':
+    KERNELS=="ahb:apb"
+    SUBSYSTEMS=="platform"
+    DRIVERS==""
+    ATTRS{driver_override}=="(null)"
+
+  looking at parent device '/devices/ahb':
+    KERNELS=="ahb"
+    SUBSYSTEMS=="platform"
+    DRIVERS==""
+    ATTRS{driver_override}=="(null)"
+
+
+# where to find + content
+root@arietta:/sys/devices/ahb/ahb:apb/f0000000.spi/spi_master/spi32766/spi32766.1$ lf              
+total 0
+drwxr-xr-x 3 root root    0 Nov 11 14:59 .
+drwxr-xr-x 5 root root    0 Nov 11 14:59 ..
+lrwxrwxrwx 1 root root    0 Nov 11 14:59 driver -> ../../../../../../../bus/spi/drivers/at25
+-rw------- 1 root root  32K Nov 11 14:59 eeprom
+-r--r--r-- 1 root root 4.0K Nov 11 14:59 modalias
+drwxr-xr-x 2 root root    0 Nov 11 14:59 power
+lrwxrwxrwx 1 root root    0 Nov 11  2014 subsystem -> ../../../../../../../bus/spi
+-rw-r--r-- 1 root root 4.0K Nov 11 14:59 uevent
+
+
+# howto check entry of eeprom 
+more /sys/bus/spi/devices/spi32766.1/eeprom | od -x
+
+# howto write content to eeprom
+echo 0123456789DEADBEEFCAFE > /sys/bus/spi/devices/spi32766.1/eeprom
+
+
+# udev rule (not working yet -> what is the problem?)
+KERNEL=="spi32766.1", SUBSYSTEM=="spi", DRIVER=="at25", SYMLINK+="eeprom_arietta"

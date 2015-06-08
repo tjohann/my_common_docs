@@ -1,0 +1,187 @@
+# ----------------------------------------------------------------------------------
+#
+# Title      : simple howto for building a custom kernel
+#
+# License:
+#
+# GPL                                                                        
+# (c) 2015, thorsten.johannvorderbrueggen@t-online.de                        
+#                                                                            
+# This manual is free software; you may redistribute it and/or modify it under
+# the terms of the GNU General Public License. Please refer to the license in
+# Appendix F, GNU General Public License.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+#
+# ----------------------------------------------------------------------------------
+#
+# DEVICES
+# - arietta -> http://www.acmesystems.it/arietta
+#
+# KERNEL version
+# - linux-4.0.4
+# - linux-4.0.4 (latest RT-PREEMPT)
+# - linux-3.14.17 (xenomai)
+#
+# DOWNLOADS
+# - http://www.acmesystems.it/
+# - https://www.kernel.org/pub/linux/kernel/v3.x/
+# - https://www.kernel.org/pub/linux/kernel/v4.x/
+# - https://www.kernel.org/pub/linux/kernel/projects/rt/4.0/
+#
+# MOUNTPOINTS
+# arietta:
+# - kernel -> /mnt/arietta_kernel     
+# - rootfs -> /mnt/arietta_rootfs
+# - home   -> /mnt/arietta_home
+#
+# FSTAB entrys for MOUNTPOINTS
+# arietta:
+# FSTAB entrys for MOUNTPOINTS
+# LABEL=KERNEL_ARIE    /mnt/arietta_kernel  vfat  defaults,user,noauto   0 0
+# LABEL=ROOTFS_ARIE    /mnt/arietta_rootfs  ext4  defaults,user,noauto   0 0
+# LABEL=HOME_ARIE      /mnt/arietta_home    ext4  defaults,user,noauto   0 0
+# ----------------------------------------------------------------------------------
+#
+# Note: in $ARMEL_HOME/externel you can clone some useful repos,
+#       one of them is the linus kernel tree. So you can use that dir or
+#       you download the tar file to $ARMEL_HOME/kernel.
+#       Pls check the $DIR values below to be in the correct dir!
+#
+
+#
+# clone kernel
+#
+DIR: $ARMEL_HOME/kernel/
+KDO: git clone git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git
+
+# ------------------------------------ PATCH start ---------------------------------
+
+# 
+# patch kernel for rt-preempt 
+#
+DIR: $ARMEL_HOME/kernel/linux-stable
+KDO: git checkout -b stable v4.0.4
+KDO: zcat ../patch-4.0.4-rt1.patch.gz | patch -p1
+
+# ---
+
+#
+# patch ipipe 
+#
+DIR
+KDO:
+
+#
+# patch xenomai
+#
+DIR
+KDO:
+
+# ------------------------------------ PATCH end -----------------------------------
+
+
+# ------------------------------------ CONFIG start --------------------------------
+
+#
+# configure kernel 
+#
+DIR: $ARMEL_HOME/external/linux (or download to kernel/linux-...)
+KDO: git checkout -b stable v4.0.4
+KDO: cp $ARMEL_HOME/configs/kernel_config_4.0.x_arietta .config
+KDO(rt): cp $ARMEL_HOME/configs/kernel_config_4.0.x_arietta .config
+KDO: make ARCH=arm menuconfig
+
+# ------------------------------------ CONFIG end ----------------------------------
+
+
+# ------------------------------------ BUILD start ---------------------------------
+
+#
+#  build dtb 
+#
+DIR: $ARMEL_HOME/external/linux (or download to kernel/linux-...)
+KDO: cp $ARMEL_HOME/configs/acme-arietta.dts arch/arm/boot/dts/acme-arietta.dts
+KDO: make ARCH=arm CROSS_COMPILE=arm-armel-linux-gnueabi- acme-arietta.dtb
+
+#
+# build kernel/modules 
+#
+DIR: $ARMEL_HOME/external/linux (or download to kernel/linux-...)
+KDO: make -j10 ARCH=arm CROSS_COMPILE=arm-armel-linux-gnueabi- uImage modules
+
+#
+# install modules
+#
+DIR: $ARMEL_HOME/external/linux (or download to kernel/linux-...)
+KDO: make ARCH=arm INSTALL_MOD_PATH=../modules_4.0.4 modules_install
+KDO(rt): make ARCH=arm INSTALL_MOD_PATH=../modules_4.0.4_rt modules_install
+
+# ------------------------------------ BUILD end -----------------------------------
+
+
+# ------------------------------------ COPY to SD start ----------------------------
+
+#
+# copy dtb 
+#
+DIR: $ARMEL_HOME/external/linux (or download to kernel/linux-...)
+KDO: cp arch/arm/boot/dts/acme-arietta.dtb /mnt/arietta_kernel/
+KDO: cp arch/arm/boot/dts/acme-arietta.dts /mnt/arietta_kernel/
+
+#
+# copy kernel + kernel config 
+#
+DIR: $ARMEL_HOME/external/linux (or download to kernel/linux-...)
+KDO: cp arch/arm/boot/uImage /mnt/arietta_kernel/
+KDO: cp .config /mnt/arietta_kernel/
+
+#
+# copy modules 
+#
+# Note: maybe your need to remove the old one
+DIR: $ARMEL_HOME/external/linux (or download to kernel/linux-...)
+KDO: sudo rsync -avc ../modules_4.0.4/lib/modules/. /mnt/arietta_rootfs/lib/modules/.
+KDO(rt): sudo rsync -avc ../modules_4.0.4_rt/lib/modules/. /mnt/arietta_rootfs/lib/modules/.
+
+#
+# copy cleaned source to sd card 
+#
+# Note: dont forget to make ARCH=arm clean
+DIR: depends ...
+KDO: sudo rsync -av --delete linux-4.0.4 /mnt/arietta_rootfs/usr/src/.
+KDO(rt): sudo rsync -av --delete linux-4.0.4_rt /mnt/arietta_rootfs/usr/src/.
+
+
+# ------------------------------------ COPY to SD end ------------------------------
+
+
+#
+# Finish -> after login (non-rt)
+#
+DIR: /usr/src
+KDO: depmod -a
+KDO: ln -s linux-4.0.4 linux
+MAYBE: remove your old kernel tree (also installed modules -> /lib/module/your_old_kernel)
+
+#
+# Prepare linux tree to build your modules against the new kernel (non-rt)
+#
+DIR: /usr/src/linux-4.0.4 
+KDO: make clean
+KDO: make scripts
+
+#
+# Prepare modules to link (non-rt)
+#
+DIR: /lib/modules/4.0.4
+KDO: rm build
+KDO: rm source
+KDO: ln -s /usr/src/linux-4.0.4 source
+KDO: ln -s /usr/src/linux-4.0.4 build
+
+
+
+
