@@ -1,0 +1,89 @@
+
+# ----------------------------------------------------------------------------------
+#
+# simple summary for the robopeak usb display (arietta & cubietruck)
+# 
+# ----------------------------------------------------------------------------------
+#
+# see: https://github.com/robopeak/rpusbdisp
+#      http://www.robopeak.com/blog/?p=406
+#
+
+# ---- on the host ----
+
+# build kernel driver
+DIR: $ARMEL_HOME/external/rpusbdisp/drivers/linux-driver
+KDO: make ARCH=arm CROSS_COMPILE=arm-arietta-linux-gnueabi- KERNEL_SOURCE_DIR=/home/tjohann/arm926_sdk/kernel/linux-stable
+KDO: make ARCH=arm CROSS_COMPILE=arm-cubietruck-linux-gnueabi- KERNEL_SOURCE_DIR=$CUBIETRUCK_HOME/kernel/linux-stable
+
+# copy to target
+DIR: $ARMEL_HOME/external/rpusbdisp/drivers/linux-driver
+KDO: scp rp_usbdisplay.ko root@cubietruck:/tmp
+
+
+
+# ---- on the target ----
+
+# deploy kernel modul
+DIR: /tmp
+KDO: cp rp_usbdisplay.ko /lib/modules/`uname -r`/kernel
+KDO: depmod -a
+
+# add module to /etc/rc.modules or /etc/rc.d/rc.modules
+/sbin/modprobe rp_usbdisplay fps=25
+
+
+# reboot and check driver
+
+root@cubietruck:~# dmesg  | grep rp
+388:[   13.729042] rp-usbdisp 3-1:1.0: allocated ticket dcedd080 with urb dd7c1a00
+390:[   13.741925] rp-usbdisp 3-1:1.0: allocated ticket dcedd0c0 with urb dd7c1600
+391:[   13.748974] rp-usbdisp 3-1:1.0: allocated ticket dcedd180 with urb dd7c1d80
+392:[   13.756158] rp-usbdisp 3-1:1.0: allocated ticket dcedd240 with urb dd7c1900
+393:[   13.763315] rp-usbdisp 3-1:1.0: allocated ticket dcedd300 with urb dd7c1e00
+394:[   13.770459] rp-usbdisp 3-1:1.0: allocated ticket dcedd3c0 with urb dd7c1700
+395:[   13.777538] rp-usbdisp 3-1:1.0: allocated ticket dcedd480 with urb dd7c1b80
+396:[   13.784610] rp-usbdisp 3-1:1.0: allocated ticket dcedd540 with urb dd7c1380
+397:[   13.791663] rp-usbdisp 3-1:1.0: allocated ticket dcedd600 with urb dd7c1b00
+398:[   13.798679] rp-usbdisp 3-1:1.0: allocated ticket dcedd6c0 with urb dd7c1000
+399:[   13.805671] rp-usbdisp 3-1:1.0: allocated 10 urb tickets for transfering display data. 65024 size each
+400:[   13.814996] rp-usbdisp 3-1:1.0: RP USB Display found (#1), Firmware Version: 1.05, S/N: 48E468703432
+401:[   13.824480] usbcore: registered new interface driver rp-usbdisp
+
+root@cubietruck:/dev# dmesg  | grep input
+387:[   13.719361] input: RoboPeakUSBDisplayTS as /devices/virtual/input/input0
+
+root@cubietruck:~# lsmod 
+Module                  Size  Used by
+bnep                   11573  2 
+bluetooth             364663  7 bnep
+rfkill                 21891  2 bluetooth
+evdev                  11455  0 
+joydev                  9893  0 
+mousedev               11144  0 
+rp_usbdisplay          15442  0 
+syscopyarea             2901  1 rp_usbdisplay
+sysfillrect             3330  1 rp_usbdisplay
+sysimgblt               2162  1 rp_usbdisplay
+fb_sys_fops             1553  1 rp_usbdisplay
+lp                      8699  0 
+parport                25309  1 lp
+uio_pdrv_genirq         3582  0 
+uio                    10453  1 uio_pdrv_genirq
+loop                   18457  0 
+
+root@cubietruck:/dev# cat /proc/fb  
+0 rpusbdisp-fb
+
+# produce some random noise on the display
+root@cubietruck:/dev# cat /dev/urandom > /dev/fb0 
+cat: Schreibfehler: Auf dem Gerät ist kein Speicherplatz mehr verfügbar
+
+
+# ---- some additions ----
+# for cubietruck
+bootargs for boot.cmd -> to see tty logs also on the display
+setenv bootargs console=ttyS0,115200 console=tty0
+# for arietta
+You need to adapt at91boot with the following bootargs:
+console=ttyS0,115200 console=tty0 
