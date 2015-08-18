@@ -1,0 +1,7 @@
+#
+# remote branches
+#
+
+links:
+https://git-scm.com/book/it/v2/Git-Branching-Remote-Branches
+http://www.gitguys.com/topics/adding-and-removing-remote-branches/
