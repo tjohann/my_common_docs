@@ -4,7 +4,7 @@
 #
 # License:
 #
-# GPL                                                                        
+# LGPL                                                                        
 # (c) 2015, thorsten.johannvorderbrueggen@t-online.de                        
 #                                                                            
 # This manual is free software; you may redistribute it and/or modify it under
@@ -14,26 +14,6 @@
 # You should have received a copy of the GNU General Public License
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
-#
-# ----------------------------------------------------------------------------------
-#
-# MOUNTPOINTS 
-# - kernel -> /mnt/arietta_kernel
-# - rootfs -> /mnt/arietta_rootfs
-# - home   -> /mnt/arietta_home
-#
-# PARTITION scheme (min 16G):
-# Note: cylinder alignment
-#
-# - fat16        kernel  32MB                  bootloader, kernel image ... 
-# - ext4         rootfs  10G                   slackware rootfs
-# - ext4         home    >1G                   home
-# - swap         swap    512MB (2*RAM size)    swap 
-#
-# FSTAB entrys for MOUNTPOINTS
-# LABEL=KERNEL_ARIE     /mnt/arietta_kernel  vfat  defaults,user,noauto   0 0
-# LABEL=ROOTFS_ARIE     /mnt/arietta_rootfs  ext4  defaults,user,noauto   0 0
-# LABEL=HOME_ARIE       /mnt/arietta_home    auto  noauto,user,rw         0 0
 #
 # ----------------------------------------------------------------------------------
 #

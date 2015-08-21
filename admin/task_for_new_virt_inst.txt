@@ -1,0 +1,1 @@
+slackware/task_for_new_virt_inst.txt

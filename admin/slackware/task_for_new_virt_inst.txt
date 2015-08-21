@@ -1,0 +1,329 @@
+# ----------------------------------------------------------------------------------
+#
+# Title      : task_for_new_virt_inst.txt 
+#
+# License:
+#
+# LGPL                                                                        
+# (c) 2015, thorsten.johannvorderbrueggen@t-online.de                        
+#                                                                            
+# This manual is free software; you may redistribute it and/or modify it under
+# the terms of the GNU General Public License. Please refer to the license in
+# Appendix F, GNU General Public License.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+#
+# ----------------------------------------------------------------------------------
+#
+
+####### ------------ preparation (on "host") ------------
+
+## ------------ adapt makeimg virt inst size ------------
+
+# Create the QEMU disk image - the emulated hard disk.
+IMG=harddisk.img
+SIZE=32G
+
+rm -f $IMG
+qemu-img \
+   create \
+   -f qcow2 $IMG $SIZE
+# EOF
+
+
+## ------------ adapt install_launcher ------
+
+-> qemu-system-i386
+-> qemu-system-x86_64
+-> qemu-system-...
+
+##############################################################
+# Script:  install_launcher
+# Date:    01-jul-2015
+# Version: 1.1
+##############################################################
+#
+KEYBOARD="de"
+#
+qemu-system-i386 -M pc \
+-hda harddisk.img \
+-cdrom /dev/cdrom \
+-m 2028 \
+-smp 2 \
+-enable-kvm \
+-net nic,vlan=0 \
+-net user,vlan=0 \
+-rtc base=utc \
+-k $KEYBOARD \
+# EOF
+
+
+## ------------ prepare ip config ------------
+
+-> /etc/hosts
+
+#
+# virtual machines on host mrbruns
+# virtual machines on host echnaton
+192.168.0.50	        slackware_current_virt.my.domain	slack_curr_virt
+192.168.0.52		slackware_14_1_virt.my.domain           slack_14_1_virt
+192.168.0.54		slackware_i32_14_1_virt.my.domain	slack_i32_14_1_virt
+192.168.0.56            slackware_i32_current_virt.my.domain    slack_i32_curr_virt
+192.168.0.60            slackware_build_armv7hl                 build_armv7hl
+192.168.0.70		slackware_jailhouse_qemu.my.domain	jailhouse_qemu
+# virtual machines on host meremptah
+# virtual machines on host barney
+# virtual machines on host bartman
+
+
+## ------------ prepare nfs share config ------------
+
+-> /etc/exports
+
+# my normal share for virtual installations
+/mnt/shared  slack_curr_virt(rw,no_subtree_check,sync) slack_i32_curr_virt(rw,no_subtree_check,sync) slack_14_1_virt(rw,no_subtree_check,sync) slack_i32_14_1_virt(rw,no_subtree_check,sync) jailhouse_qemu(rw,no_subtree_check,sync) build_armv7hl(rw,no_subtree_check,sync)  
+
+
+## ------------ adapt disk_launcher ------------
+
+-> qemu-system-i386
+-> qemu-system-x86_64
+-> qemu-system-...
+
+-> -m 2048   (mem)
+-> -smp 2    (number of processors)
+-> -enable-kvm (if kvm is supported for the choosen arch)
+
+-> maybe add -cdrom /dev/cdrom for additional sw installations like
+   bash_completion or aspell ...
+
+-> adapt ifname=tapYOUR_CHOOSEN_IP (like ifname=tap54 for slack_i32_14_1_virt)
+-> adapt MACADDR=",macaddr=52:54:11:22:00:YOUR_CHOOSEN_IP" (like
+   MACADDR=",macaddr=52:54:11:22:00:54" for slack_i32_14_1_virt) 
+
+#!/bin/bash
+##################################################################
+# Script:  disk_launch
+#
+# Adapted for a slackware current inst
+#
+# Author:  Thorsten Johannvorderbrueggen <thorsten.johannvorderbrueggen@t-online.de>
+# Date:    22-Dez-2014
+# Version: 1.02
+##################################################################
+#
+ROOTFSTYPE=ext4
+KEYBOARD="de"
+MACADDR=",macaddr=52:54:11:22:00:54"
+NETTYPE="-net nic${MACADDR} -net tap,ifname=tap54,script=qemu-network-tun.sh"
+#
+qemu-system-i386 $NETTYPE \
+		   -M pc \
+		   -m 2048 \
+		   -enable-kvm \
+		   -hda harddisk.img \
+		   -rtc base=utc \
+		   -usb \
+		   -smp 2 \
+		   -no-reboot \
+		   -k $KEYBOARD 
+#-enable-kvm \
+#-nographic
+#
+#-cdrom /dev/cdrom \
+#
+# EOF
+
+
+
+####### ------------ installation (on "target") ------------
+
+## ------------ some hints ------------
+
+-> YOUR_CHOOSEN_IP
+-> YOUR_CHOOSEN_NAME_FOR_THE_VIRT_INST
+
+-> clock -> utc with your country (like berlin)
+
+
+
+####### ------------ after installation (on "target") ------------
+
+## ------------ addtional installations & updates & cleanups ------------
+
+-> bash_completion
+-> aspell
+-> ...
+
+-> adapt /etc/slackpkg/mirrors
+-> slackpkg update/upgrade-all/install-new/clean-system
+-> add blacklist ... see below ...
+
+-> find /etc -name "*.new"
+
+
+## ------------ adapt hosts ------------
+-> add echnaton 
+   192.168.0.42		echnaton.my.domain echnaton
+
+
+## ------------ adapt fstab ------------
+-> nfs shares
+   # my home network share for slackware-current
+   echnaton:/mnt/shared  /mnt/echnaton_nfs  nfs  defaults,noauto,user,sync,nfsvers=3  0  0
+
+-> add dir for nfs mount point
+   mkdir /mnt/echnaton_nfs
+
+-> add/uncomment cdrom
+   /dev/cdrom       /mnt/cdrom       auto        noauto,owner,ro,comment=x-gvfs-show 0   0
+
+
+## ------------ adapt sshd config ------------
+-> in qemu inst
+   /etc/ssh/sshd_config
+   
+   #AllowAgentForwarding yes
+   AllowTcpForwarding yes
+   #GatewayPorts no
+   X11Forwarding yes 
+
+   /etc/ssh/ssh_config
+   Host *
+   #   ForwardAgent no
+   ForwardX11 yes 
+   #   RhostsRSAAuthentication no
+
+
+## ------------ adapt rc.d configs  ------------
+
+-> /etc/rc.d/rc.font (dont forget to \"chmod +x rc.font\")
+   #!/bin/sh
+   #
+   # This selects your default screen font from among the ones in
+   # /usr/share/kbd/consolefonts.
+   #
+   setfont -v ter-v14n.psf.gz
+   
+-> /etc/rc.d/rc.local
+   ## MY special stuff
+   if [ -e /tmp/xconsole ] ; then echo "/tmp/xconsole existiert" ; else mknod -m 666 /tmp/xconsole p ; fi
+
+   # update time
+   /usr/sbin/ntpdate pool.ntp.org
+
+-> /etc/rc.d/rc.modules
+   CPUFREQ=on
+
+
+## ------------ adapt etc configs  -----------
+-> /etc/profile
+   - extend path/manpath
+     export MANPATH=/usr/local/man:/usr/local/share/man/:/usr/man:/home/tjohann/man
+
+   - add bash_completion
+     # bash_completion 
+     if [ -f /etc/bash_completion.d ]; then
+       . /etc/bash_completion.d
+     fi
+
+-> /etc/inittab
+   - uncomment unused stuff
+   # These are the standard console login getties in multiuser mode:
+   c1:12345:respawn:/sbin/agetty --noclear 38400 tty1 linux
+   #c2:12345:respawn:/sbin/agetty 38400 tty2 linux
+   #c3:12345:respawn:/sbin/agetty 38400 tty3 linux
+   #c4:12345:respawn:/sbin/agetty 38400 tty4 linux
+   #c5:12345:respawn:/sbin/agetty 38400 tty5 linux
+   #c6:12345:respawn:/sbin/agetty 38400 tty6 linux
+
+   - add serial console (if needed)
+   # Local serial lines:
+   s0:12345:respawn:/sbin/agetty 115200 ttyS0 vt100
+   #s1:12345:respawn:/sbin/agetty -L ttyS0 9600 vt100
+   #s2:12345:respawn:/sbin/agetty -L ttyS1 9600 vt100
+
+-> /etc/securetty
+   - uncomment ttyS0 to use serial console as root
+   # These are some remote ttys, and uncommenting them might be less than fully secure:
+   ttyS0
+   #ttyS1
+   #ttyS2
+
+-> /etc/syslog.conf
+   # for syslog notification
+   *.*                                                  |/tmp/xconsole
+
+   # my logging domain
+   local7.*						-/var/log/mylogs
+   
+-> /etc/slackpkg/blacklist
+   add some package postnames
+   # This one will blacklist all SBo packages:
+   [0-9]+_SBo
+   [0-9]+_cng
+
+
+## ------------ adapt profile.d configs  -----------
+-> bsd-games-login-fortune.sh (bsd-games-login-fortune.csh if needed)
+   #!/bin/sh
+   # Print a fortune cookie for interactive shells:
+
+   case $- in
+   *i* )  # We're interactive
+     echo
+     #fortune fortunes fortunes2 linuxcookie
+     /usr/games/fortune | /usr/games/cowsay
+     echo
+     ;;
+   esac
+
+-> lang.sh (lang.csh if needed)
+   # my default language 
+   export LANG=de_DE.UTF-8
+
+
+## ------------ add user  ------------
+-> tjohann
+
+-> add user to groups
+   - wheel
+   - users
+
+-> /etc/sudoers
+   ## Same thing without a password
+   %wheel ALL=(ALL) NOPASSWD: ALL
+
+
+## ------------ adapt dot and co for root/user ------------
+-> .emacs
+-> .bash*
+-> .profile
+-> .gitconfig
+-> use user_root.tgz 
+
+
+## ------------ add important dirs to root/user ------------
+-> mkdir {man,lib,include,bin,etc,include,src,share}
+-> use user_root.tgz 
+
+
+## ------------ install sbopkg ------------
+-> mkdir /usr/local/src/packages
+
+-> build packages and copy them to /usr/local/src/packages
+   - libconfig
+   - libconfuse
+   - cowsay
+
+## ------------ clone repos   ------------
+-> the config repo (to src of root/user)
+   - git://echnaton/mnt/shared/repos/configs.git
+
+-> my project repos
+   - https://github.com/tjohann/arm926_sdk.git
+   - https://github.com/tjohann/cubietruck_sdk.git
+
+

@@ -1,0 +1,41 @@
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects 
+*.so
+*.so.*
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+
+# my additions
+toolchain
+host
+*.tgz
+*.gz
+*.bz2
+*.xz
+*.img
+linux-*
+modules_*

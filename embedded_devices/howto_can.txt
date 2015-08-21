@@ -1,6 +1,6 @@
 # ----------------------------------------------------------------------------------
 #
-# Title      : simple summary for can related topics
+# Title: simple summary for can related topics
 #
 # License:
 #

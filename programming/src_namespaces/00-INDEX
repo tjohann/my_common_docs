@@ -1,0 +1,30 @@
+#
+# 00-INDEX
+#
+
+This is a brief list of all the files in ./my_common_docs/programming/src_namespaces ... 
+
+
+00-INDEX
+        - this file
+
+demo_uts_namespaces.c
+	- micheal kerrisk uts namespace demo (and my changes)
+
+helper.c
+	- my simple helper functions
+	
+helper.h
+	- the interface header for my simple helper functions
+
+makefile
+	- a makefile
+
+namespaces_pid.c
+	- my demo about pid namespaces
+
+ns_exec.c
+	- micheal kerrisk excecute a command in a namespace (and my changes)
+
+unshare.c
+	- micheal kerrisk unshare demo (and my changes)

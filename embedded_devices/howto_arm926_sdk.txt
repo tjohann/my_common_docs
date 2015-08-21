@@ -1,10 +1,10 @@
 # ----------------------------------------------------------------------------------
 #
-# Title      : short description of how i use this sdk
+# Title: short description of how i use this sdk
 #
 # License:
 #
-# GPL                                                                        
+# LGPL                                                                        
 # (c) 2015, thorsten.johannvorderbrueggen@t-online.de                        
 #                                                                            
 # This manual is free software; you may redistribute it and/or modify it under

@@ -1,10 +1,10 @@
 # ----------------------------------------------------------------------------------
 #
-# Title      : simple summary for dts/dtb related topics 
+# Title: simple summary for dts/dtb related topics 
 #
 # License:
 #
-# GPL                                                                        
+# LGPL                                                                        
 # (c) 2015, thorsten.johannvorderbrueggen@t-online.de                        
 #                                                                            
 # This manual is free software; you may redistribute it and/or modify it under

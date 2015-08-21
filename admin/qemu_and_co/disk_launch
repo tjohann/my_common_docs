@@ -1,0 +1,32 @@
+#!/bin/bash
+##################################################################
+# Script:  disk_launch
+#
+# Adapted for a slackware current inst
+#
+# Author:  Thorsten Johannvorderbrueggen <thorsten.johannvorderbrueggen@t-online.de>
+# Date:    22-Dez-2014
+# Version: 1.02
+##################################################################
+#
+ROOTFSTYPE=ext4
+KEYBOARD="de"
+MACADDR=",macaddr=52:54:11:22:00:54"
+NETTYPE="-net nic${MACADDR} -net tap,ifname=tap54,script=qemu-network-tun.sh"
+#
+qemu-system-i386 $NETTYPE \
+		   -M pc \
+		   -m 2048 \
+		   -enable-kvm \
+		   -hda harddisk.img \
+		   -rtc base=utc \
+		   -usb \
+		   -smp 2 \
+		   -no-reboot \
+		   -k $KEYBOARD 
+#-enable-kvm \
+#-nographic
+#
+#-cdrom /dev/cdrom \
+#
+# EOF

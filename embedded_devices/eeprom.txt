@@ -1,10 +1,10 @@
 # ----------------------------------------------------------------------------------
 #
-# Title      : simple summary for spi/eeprom related topics (incl udev stuff)
+# Title: simple summary for spi/eeprom related topics
 #
 # License:
 #
-# GPL                                                                        
+# LGPL                                                                        
 # (c) 2015, thorsten.johannvorderbrueggen@t-online.de                        
 #                                                                            
 # This manual is free software; you may redistribute it and/or modify it under
@@ -92,6 +92,10 @@ more /sys/bus/spi/devices/spi32766.1/eeprom | od -x
 # howto write content to eeprom
 echo 0123456789DEADBEEFCAFE > /sys/bus/spi/devices/spi32766.1/eeprom
 
-
-# udev rule (not working yet -> what is the problem?)
+# udev rule (check it)
 KERNEL=="spi32766.1", SUBSYSTEM=="spi", DRIVER=="at25", SYMLINK+="eeprom_arietta"
+
+
+#
+# TODO: check new EEPROM infrastructer of 4.x kernel
+#

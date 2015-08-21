@@ -1,0 +1,48 @@
+#
+# some info about unix domain sockets
+#
+
+
+#
+## why + usecase ###############################################################
+#
+Unix Domain Sockets is an advanced IPC form. One usecase is to pass file descriptors around. Therefore names are associated with the open (UDS) file descriptors. With that it's possible to pass the fd aroung even with unrelated processes.
+
+Unix Domain Sockets are similiar to Internet Domain Sockets, but lighter:
+- no need for segmenatation handling
+- no header calculation
+- no checksum calculation
+- no network stack processing
+- no ack send needed
+- ...
+So it only copies data between the sockets.
+
+
+#
+## kernel #######################################################################
+#
+With linux kernel 4.2-rc2 (https://lwn.net/Articles/649652/) Unix Domain Sockets now support the splice() syscall:
+
+MAN-PAGE (man splice)
+SNIP
+"splice() moves data between two file descriptors without copying between kernel address space and user address space. It transfers up to len bytes of data from the file descriptor fd_in to the file descriptor fd_out, where one of the descriptors must refer to a pipe."
+SNIP
+
+
+
+
+
+
+
+
+
+
+#
+## -----------------------------------------------------------------------------
+#
+
+JOBS:
+- ...
+
+QUESTIONS:
+- ...

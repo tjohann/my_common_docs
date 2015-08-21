@@ -1,0 +1,146 @@
+#
+# some info about namespaces
+#
+
+
+#
+## why + usecase ###############################################################
+#
+Through namespaces it's possible do isolate one daemon/service from another one. Lets asume you got an breakin via an daemon/service. With that isolation it's not possible to infect other daemon/service -> a root user inside the namespace does not have root privileges outside it!
+
+A process within a namespace is running on the machine ... instead a process running in kvm/qemu is running in an virtual machine ...
+
+Usecases:
+- build a common software system based on different sources (and different trustlevel) 
+- continues integration -> every build runs in his own environment
+- run multiple versions of the same program/daemon/service
+- build packages within a container -> see void linux xbps
+
+
+#
+## namespaces -> kernel
+#
+[General setup]
+-> [Namespaces support]
+   -> [UTS namespace]
+   -> [IPC namespace]
+   -> [User namespace]
+   -> [PID namespace]
+   -> [Network namespace]
+
+
+[UTS namespace]
+nodename + domainname -> uname(), gethostname() and getdomainname()
+sethostname() + setdomainname()
+
+[IPC namespace]
+SysV IPC and message queues ("ipc mechanism wich have no filesystem entry")
+
+[User namespace]
+This allows processes to behave as if they were running as different users inside and outside the namespace -> a user id within the namespace is root, but outside is user tjohann
+
+[PID namespace]
+Isolate a process so that it cant kill or trace an process outside the namespaces
+
+[Network namespace]
+Isolate network devices
+
+Mount namespace
+Like chroot but more secure.
+
+
+#
+## (pid) namespace basic topics ################################################
+#
+With namespaces you can have multiple nested process trees (instead of one like in the "old" days) ... Every tree is isolated from the others ... so it's not possible to kill an process of the other namespace ... even if the process id's is the same within the different namespaces ...
+A process can have the same or a different pid within the namespaces -> namespaces are hierarchical ... once a new namespace is created, all the tasks in the parent namespace will see the process in this new namespace, but processes from the new namespace will not see the ones from the parent
+
+
+PID 1
+    |\
+    2 3
+    |  \   / \
+    6  4    |   parent namespace
+       |   ----------------------
+      5,1   |   child namespace
+       |   \ /
+      6,2
+       |
+      7,3  -> the same process has different pids -> 7 in the parent and
+              3 in the child namespace
+
+So every process needs more than one pid -> one for each namespace ... The child process will have pid 1 and all orphaned process will re-parent to it ... when this process dies, the namespace will be terminated! ... so the child must be something like the "master" ... for example, a concurrent network server which spawns processes for the work should be the "master" ...
+
+After creating a new namespace you should change the root dir and mount a new /proc instance. Otherwise procs like ps wont work ... for example a user process creates a proc_myns dir, spawn a new namespace and mount /proc to that dir ...
+
+Syscalls
+
+clone()
+unshare()
+
+setns()
+
+One important difference between clone and unshare is that:
+- if a private mount namespace is created via clone(...,CLONE_NEWNS,...) it's a copy of the parent mount ...
+- if a private mount namespace is created vie unshare(...,CLONE_NEWNS,...) it's a PRIVATE copy so that changes in the child are not visible in the parent namespace! 
+
+#
+## kernel stuff (see http://lwn.net/Articles/259217/) ##########################
+#
+
+The struct pid now includes infos about the "other" pids (struct upid )
+
+
+#
+# -> the old stuct (before namespaces)
+#
+struct pid {
+       atomic_t count;				/* reference counter */
+       int nr;					/* the pid value */
+       struct hlist_node pid_chain;		/* hash chain */
+       struct hlist_head tasks[PIDTYPE_MAX];	/* lists of tasks */
+       struct rcu_head rcu;			/* RCU helper */
+};
+
+
+#
+# -> after namespaces
+#
+struct pid {
+       atomic_t count;
+       struct hlist_head tasks[PIDTYPE_MAX];
+       struct rcu_head rcu;
+       int level;				/* the number of upids */
+       struct upid numbers[0];
+};
+
+struct upid {
+       int nr;					/* moved from struct pid */
+       struct pid_namespace *ns;		/* the namespace this value
+						 * is visible in
+						 */
+       struct hlist_node pid_chain;		/* moved from struct pid */
+};
+
+The pid has been moved from pid to upid, while pid.level holds the "number of namespaces".
+
+
+
+#
+## -----------------------------------------------------------------------------
+#
+
+JOBS:
+- create a new namespaces ... start bash an check ps (without /proc) ... also check filesystem (is /usr available? ... which content?)
+
+- check that with more than one namespace ... 
+
+- howto waitpid on more than one cloned child?
+
+
+QUESTIONS:
+- can i add an process to an already existing namespace?
+  Yes via setns()
+  
+- real meaning of int nr in upid
+  thats the pid within the namespace 

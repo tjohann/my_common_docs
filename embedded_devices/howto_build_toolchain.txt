@@ -1,10 +1,10 @@
 # ----------------------------------------------------------------------------------
 #
-# Title      : simple howto for building a custom toolchain (target: arietta or imx233) 
+# Title: simple howto for building a custom toolchain (target: arietta or imx233) 
 # 
 # License:
 #
-# GPL                                                                        
+# LGPL                                                                        
 # (c) 2015, thorsten.johannvorderbrueggen@t-online.de                        
 #                                                                            
 # This manual is free software; you may redistribute it and/or modify it under

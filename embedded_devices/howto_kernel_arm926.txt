@@ -21,11 +21,11 @@
 # - arietta -> http://www.acmesystems.it/arietta
 #
 # KERNEL version
-# - linux-4.0.4
-# - linux-4.0.4 (latest RT-PREEMPT)
+# - linux-4.0.5
+# - linux-4.0.5 (latest RT-PREEMPT)
 # - linux-3.14.17 (xenomai)
 #
-# DOWNLOADS
+# DOWNLOADS (use make get_latest_kernel)
 # - http://www.acmesystems.it/
 # - https://www.kernel.org/pub/linux/kernel/v3.x/
 # - https://www.kernel.org/pub/linux/kernel/v4.x/
@@ -63,8 +63,8 @@ KDO: git clone git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable
 # patch kernel for rt-preempt 
 #
 DIR: $ARMEL_HOME/kernel/linux-stable
-KDO: git checkout -b stable v4.0.4
-KDO: zcat ../patch-4.0.4-rt1.patch.gz | patch -p1
+KDO: git checkout -b stable v4.0.5
+KDO: zcat ../patch-4.0.5-rt3.patch.gz | patch -p1
 
 # ---
 
@@ -89,9 +89,9 @@ KDO:
 # configure kernel 
 #
 DIR: $ARMEL_HOME/external/linux (or download to kernel/linux-...)
-KDO: git checkout -b stable v4.0.4
+KDO: git checkout -b stable v4.0.5
 KDO: cp $ARMEL_HOME/configs/kernel_config_4.0.x_arietta .config
-KDO(rt): cp $ARMEL_HOME/configs/kernel_config_4.0.x_arietta .config
+KDO(rt): cp $ARMEL_HOME/configs/kernel_config_4.0.x_rt_arietta .config
 KDO: make ARCH=arm menuconfig
 
 # ------------------------------------ CONFIG end ----------------------------------
@@ -104,20 +104,20 @@ KDO: make ARCH=arm menuconfig
 #
 DIR: $ARMEL_HOME/external/linux (or download to kernel/linux-...)
 KDO: cp $ARMEL_HOME/configs/acme-arietta.dts arch/arm/boot/dts/acme-arietta.dts
-KDO: make ARCH=arm CROSS_COMPILE=arm-armel-linux-gnueabi- acme-arietta.dtb
+KDO: make ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabi- acme-arietta.dtb
 
 #
 # build kernel/modules 
 #
 DIR: $ARMEL_HOME/external/linux (or download to kernel/linux-...)
-KDO: make -j10 ARCH=arm CROSS_COMPILE=arm-armel-linux-gnueabi- uImage modules
+KDO: make -j10 ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabi- uImage modules
 
 #
 # install modules
 #
 DIR: $ARMEL_HOME/external/linux (or download to kernel/linux-...)
-KDO: make ARCH=arm INSTALL_MOD_PATH=../modules_4.0.4 modules_install
-KDO(rt): make ARCH=arm INSTALL_MOD_PATH=../modules_4.0.4_rt modules_install
+KDO: make ARCH=arm INSTALL_MOD_PATH=../modules_4.0.5 modules_install
+KDO(rt): make ARCH=arm INSTALL_MOD_PATH=../modules_4.0.5_rt modules_install
 
 # ------------------------------------ BUILD end -----------------------------------
 
@@ -143,16 +143,16 @@ KDO: cp .config /mnt/arietta_kernel/
 #
 # Note: maybe your need to remove the old one
 DIR: $ARMEL_HOME/external/linux (or download to kernel/linux-...)
-KDO: sudo rsync -avc ../modules_4.0.4/lib/modules/. /mnt/arietta_rootfs/lib/modules/.
-KDO(rt): sudo rsync -avc ../modules_4.0.4_rt/lib/modules/. /mnt/arietta_rootfs/lib/modules/.
+KDO: sudo rsync -avc ../modules_4.0.5/lib/modules/. /mnt/arietta_rootfs/lib/modules/.
+KDO(rt): sudo rsync -avc ../modules_4.0.5_rt/lib/modules/. /mnt/arietta_rootfs/lib/modules/.
 
 #
 # copy cleaned source to sd card 
 #
 # Note: dont forget to make ARCH=arm clean
 DIR: depends ...
-KDO: sudo rsync -av --delete linux-4.0.4 /mnt/arietta_rootfs/usr/src/.
-KDO(rt): sudo rsync -av --delete linux-4.0.4_rt /mnt/arietta_rootfs/usr/src/.
+KDO: sudo rsync -av --delete linux-4.0.5 /mnt/arietta_rootfs/usr/src/.
+KDO(rt): sudo rsync -av --delete linux-4.0.5_rt /mnt/arietta_rootfs/usr/src/.
 
 
 # ------------------------------------ COPY to SD end ------------------------------
@@ -163,24 +163,24 @@ KDO(rt): sudo rsync -av --delete linux-4.0.4_rt /mnt/arietta_rootfs/usr/src/.
 #
 DIR: /usr/src
 KDO: depmod -a
-KDO: ln -s linux-4.0.4 linux
+KDO: ln -s linux-4.0.5 linux
 MAYBE: remove your old kernel tree (also installed modules -> /lib/module/your_old_kernel)
 
 #
 # Prepare linux tree to build your modules against the new kernel (non-rt)
 #
-DIR: /usr/src/linux-4.0.4 
+DIR: /usr/src/linux-4.0.5 
 KDO: make clean
 KDO: make scripts
 
 #
 # Prepare modules to link (non-rt)
 #
-DIR: /lib/modules/4.0.4
+DIR: /lib/modules/4.0.5
 KDO: rm build
 KDO: rm source
-KDO: ln -s /usr/src/linux-4.0.4 source
-KDO: ln -s /usr/src/linux-4.0.4 build
+KDO: ln -s /usr/src/linux-4.0.5 source
+KDO: ln -s /usr/src/linux-4.0.5 build
 
 
 

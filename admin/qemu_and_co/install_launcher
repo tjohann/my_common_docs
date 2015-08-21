@@ -1,0 +1,20 @@
+##############################################################
+# Script:  install_launcher
+# Date:    01-jul-2015
+# Version: 1.1
+##############################################################
+#
+KEYBOARD="de"
+#
+qemu-system-i386 -M pc \
+-hda harddisk.img \
+-cdrom /dev/cdrom \
+-m 2028 \
+-smp 2 \
+-enable-kvm \
+-net nic,vlan=0 \
+-net user,vlan=0 \
+-rtc base=utc \
+-k $KEYBOARD \
+
+# EOF

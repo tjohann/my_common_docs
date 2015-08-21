@@ -1,0 +1,155 @@
+#
+# some info about "runit"
+#
+Links:
+http://smarden.org/runit/
+https://wiki.archlinux.org/index.php/Runit
+http://www.mikeperham.com/2014/07/07/use-runit/
+https://rubyists.github.io/2011/05/02/runit-for-ruby-and-everything-else.html
+
+Other sources:
+http://www.freedesktop.org/software/systemd/man/daemon.html
+
+#
+## why + usecase ###############################################################
+#
+
+Summary: - /etc/sv contains definitions while /etc/service contains currently managed services
+	 - chpst (change process state) helper
+	 
+/etc/sv -> directory contains a subdirectory for each process that runit (runsvdir) can manage
+       /my_daemon
+                 /run
+		 -> this is the script!
+		 #!/bin/sh
+		 exec /usr/local/bin/my_daemon 2>&1
+
+ 		 /log/run
+		 -> runit read stdout ... redirect to /var/log/daemon
+		 (runsv will create a pipe and redirect standard out of the service (and its optional finish script) to log/run.)
+		 #!/bin/sh
+		 exec svlogd -tt /var/log/my_daemon 
+
+		 /run (with a different process state -> here different user)
+		 #!/bin/sh
+		 exec chpst -u nobody /usr/local/bin/my_daemon 2>&1
+
+		 /config
+		 -> taken from /var/log/sshd/config
+		 s100000
+		 n10
+		 N5
+		 t86400
+		 u192.168.6.20
+		 pSSHD_LOG
+		 -bougyman
+		 !logwatcher
+
+		 /finish
+		 -> will be executed if my_daemon stops (taken from /service/sshd/finish)
+		 #!/bin/sh
+		 code=$1
+		 status=$2
+		 hostname=$(hostname)
+		 if [ $status -ne 0 ];then
+		   echo "SSHD FAILED on $hostname: $code, $status"|mail admins@domain.com
+		 else
+		     echo "SSHD Stopped on $hostname: $code, $status"|mail auditing@domain.com
+		 fi
+
+
+/etc/service -> directory contains a series of soft links representing the processes currently managed by runit
+            ln -s /etc/sv/my_daemon /etc/service/my_daemon
+
+The per process supervisor -> runsv
+
+Send signals to my_daemon:
+
+- send SIGTERM and NO restart
+sv down my_dameon
+- send SIGTERM and restart
+sv term my_dameon
+- same as down, but waits some second before send SIGTERM 
+sv stop my_dameon
+- send SIGHUP
+sv hup my_dameon
+- send SIGUSR1, SIGUSR2
+sv 1 my_dameon
+sv 2 my_dameon
+
+Show state of mannaged services:
+sv state /etc/service/*
+
+Show more info while using sv
+sv -v ...
+
+Example config for svlogd 
+/var/log/sshd/config
+	 s100000         -> max size of a log file to 100000 bytes	
+	 n10             -> keep 10 files maximum
+	 N5              -> 5 files minimum
+	 t86400          -> rotate every 86400 seconds
+	 u192.168.0.42   -> network log to 192.168.0.42
+	 pSSHD_LOG       -> log message with SSHD_LOG
+	 -gedoens        -> not log messages matching the pattern 'gedoens'
+	 !logwatcher     -> run each logfile through sh -c 'logwatcher'
+
+
+
+
+####
+
+
+Taken from https://wiki.archlinux.org/index.php/Runit 
+sv - used for controlling services, getting status of services, and dependency checking.
+
+chpst - control of a process environment, including memory caps, limits on cores, data segments, environments, user/group privileges, and more.
+
+runsv - supervises a process, and optionally a log service for that process.
+
+svlogd - a simple but powerful logger, includes auto-rotation based on different methods (time, size, etc), post-processing, pattern matching, and socket (remote logging) options. Say goodbye to logrotate and the need to stop your services to rotate logs.
+
+runsvchdir - changes service levels (runlevels, see below).
+
+runsvdir - starts a supervision tree
+
+runit-init - PID 1, tiny, does almost nothing, dietlibc staticly compiled. Just what you want your PID 1 to be.
+
+
+/etc/runit/1 - bootstraps the system using arch rc scripts
+/etc/runit/2 - starts single or multi-user runlevels using arch's rc.single or rc.multi
+/etc/runit/3 - brings the system down using arch's rc scripts
+/etc/runit/runsvdir/* - various runlevels
+/usr/bin/rsvlog - a wrapper to svlogd meant to be symlinked as 'run' in a log service
+/etc/sv/* - the service directories available (more available here when you install runit-services-git)
+
+
+
+#
+## technical background ########################################################
+#
+
+
+#
+## kernel ######################################################################
+#
+
+
+#
+## libc (glibc/musl) ###########################################################
+#
+
+
+#
+## compiler (gcc/clang) ########################################################
+#
+
+#
+## -----------------------------------------------------------------------------
+#
+
+JOBS:
+- ...
+
+QUESTIONS:
+- ...

@@ -1,0 +1,22 @@
+#
+# ignore build items
+#
+*~
+*.*~
+*.so.*
+*.a
+*.i
+*.o
+*.s
+*.tgz
+*.txz
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+#
+# ignore build bin ...
+#
+demo_uts_namespaces
+namespaces_pid
+ns_exec
+unshare
