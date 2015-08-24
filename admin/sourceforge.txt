@@ -1,0 +1,50 @@
+#
+# some sourceforge usage hints
+#
+# good howto -> http://software.ac.uk/resources/guides/creating-and-managing-sourceforge-projects
+#
+
+#
+# basics/daily-use
+#
+
+# login via sftp username,project_name <- password@username
+sftp thjvdb,baalue-sdk@frs.sourceforge.net
+Password: 
+Connected to frs.sourceforge.net.
+
+sftp> ls
+cgi-bin  htdocs   
+sftp> pwd
+Remote working directory: /home/project-web/baalue-sdk
+
+# go to the correct workspace
+sftp> cd /home/pfs/project/b/ba/baalue-sdk
+sftp> pwd
+Remote working directory: /home/pfs/project/b/ba/baalue-sdk
+sftp> ls
+checksum.md5                       home_baalue_bananapi.tgz           host_x86_64.tgz                    
+kernel_baalue_bananapi.tgz         toolchain_x86_64.tgz               
+
+# upload one file
+sftp> put /home/tjohann/baalue_sdk/images/rootfs_baalue_bananapi.tgz
+Uploading /home/tjohann/baalue_sdk/images/rootfs_baalue_bananapi.tgz to /home/pfs/project/b/ba/baalue-sdk/rootfs_baalue_bananapi.tgz
+
+
+#
+# additions 
+#
+
+# create release dir
+sftp> mkdir release
+sftp> cd release
+
+# upload all files in one step
+sftp> put *.tgz
+sftp> ls
+home_baalue_bananapi.tgz kernel_baalue_bananapi.tgz  rootfs_baalue_bananapi.tgz
+
+# check content of host dir -> where i logged in to sftp server <- $BAALUE_HOME/images
+sftp> lls
+home_baalue_bananapi.tgz    makefile                    void-linux_home    void-linux_rootfs
+kernel_baalue_bananapi.tgz  rootfs_baalue_bananapi.tgz  void-linux_kernel
