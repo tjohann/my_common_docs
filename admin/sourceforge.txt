@@ -2,6 +2,7 @@
 # some sourceforge usage hints
 #
 # good howto -> http://software.ac.uk/resources/guides/creating-and-managing-sourceforge-projects
+#            -> http://sourceforge.net/p/forge/documentation/SFTP/
 #
 
 #
