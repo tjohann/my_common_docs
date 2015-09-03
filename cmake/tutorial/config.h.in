@@ -1,0 +1,13 @@
+/*
+ * project configuration
+ */
+#ifndef _CONFIG_H
+#define _CONFIG_H
+
+#define tutorial_VERSION_MAJOR @tutorial_VERSION_MAJOR@
+#define tutorial_VERSION_MINOR @tutorial_VERSION_MINOR@
+#define tutorial_VERSION_BUGFIX @tutorial_VERSION_BUGFIX@
+
+#cmakedefine USE_MYMATH
+
+#endif

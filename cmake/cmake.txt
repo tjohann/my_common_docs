@@ -1,0 +1,12 @@
+#
+# some info about "cmake"
+#
+Links:
+
+
+Headings:
+
+
+Ingnore it :-)
+github ... libftdi CMakeLists.txt -> example libconfuse
+github ... lopter/lightsd -> example for FindLibBSD.cmake 
