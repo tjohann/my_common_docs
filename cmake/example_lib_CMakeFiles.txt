@@ -1,0 +1,86 @@
+cmake_minimum_required(VERSION 2.8)
+
+#
+# project name
+#
+# NOTE:
+# for using a specific config use this lines (save configure time)
+#project(tutorial CXX)
+#project(tutorial C)
+#project(tutorial) -> use both
+project(libbaalue C)
+
+#
+# set all source files ...
+#
+# Note: headers will be done automatically ...
+set(SOURCE_FILES
+	libbaalue.c
+	daemon.c
+	config.c
+	network.c
+) 
+
+#
+# set C_FLAGS ...
+#
+set(CMAKE_C_FLAGS "-g -Wall -Wextra -std=c11")
+
+#
+# set version number
+#
+# Note: see example for using
+set(libbaalue_VERSION_MAJOR 0)
+set(libbaalue_VERSION_MINOR 0)
+set(libbaalue_VERSION_BUGFIX 1)
+# special config handling -> see example
+configure_file (
+"${PROJECT_SOURCE_DIR}/config.h.in"
+"${PROJECT_BINARY_DIR}/config.h"
+)
+
+#
+# add bin to include path
+#
+# Note: not really shure why, but its needed
+include_directories(
+	"${PROJECT_BINARY_DIR}"
+	)
+
+#
+# check needed includes
+#
+# Note: not really shure how to use it -> TODO
+include(CheckIncludeFile)
+check_include_file(confuse.h HAVE_LIBCONFUSE)
+check_include_file(bsd/stdlib.h HAVE_LIBBSD)
+
+#
+# create libraries
+#
+# Note: thats the build targets
+add_library(baalue_static STATIC ${SOURCE_FILES})
+add_library(baalue SHARED ${SOURCE_FILES})
+
+#
+# link all together 
+#
+# Note: libconfuse and libbsd are external libs
+#       see libbaalue for FindXXX.cmake
+target_link_libraries(baalue
+	confuse
+       	bsd
+)
+# link all together (libbaalue.a)
+target_link_libraries(baalue_static
+	confuse
+       bsd
+)
+
+#
+# install all
+#
+# Note: i dont know how to create the links ... -> TODO
+install(TARGETS baalue_static DESTINATION lib)
+install(TARGETS baalue DESTINATION lib)
+install(FILES libbaalue.h DESTINATION include)

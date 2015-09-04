@@ -1,12 +1,35 @@
 #
 # some info about "cmake"
 #
-Links:
+
+#
+# Links
+#
 
 
-Headings:
+#
+# Headings
+#
+
+#
+# useful kdos around cmake 
+#
+
+# see gcc kdo and more build output
+cmake .. -DCMAKE_INSTALL_PREFIX=....
+make VERBOSE=1
+
+# check all installed modules
+cmake --help-module-list
 
 
-Ingnore it :-)
+#
+# write own find module
+#
+
+
+#
+# Ingnore it :-)
+#
 github ... libftdi CMakeLists.txt -> example libconfuse
 github ... lopter/lightsd -> example for FindLibBSD.cmake 
