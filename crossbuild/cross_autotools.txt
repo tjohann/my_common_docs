@@ -1,0 +1,8 @@
+#
+# some infos about crossbuilding autotools based code
+#
+
+--build -> the system which builds the packages
+--host -> the system on which the packages runs
+
+./configure --build=x86_64-unknown-linux-gnu --host=arm-none-linux-gnueabi --prefix=/mnt/bananapi_rootfs
