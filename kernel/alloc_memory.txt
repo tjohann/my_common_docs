@@ -1,0 +1,19 @@
+#
+# memory allocation realted topics (kernel space)
+#
+links:
+https://lwn.net/Articles/147014/
+
+
+
+#
+# useful code snippets
+#
+
+# check overrun of "n"
+# -> https://lwn.net/Articles/147014/
+
+if (n && ((n*sizeof(t))/n == n))
+    p = malloc(n * sizeof(t));
+else
+    p = NULL;
