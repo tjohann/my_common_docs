@@ -1,0 +1,25 @@
+#
+# some common definitions/ideas about concurrency and parallelism
+#
+
+
+#
+# some general definition ("taken" from language go)
+#
+A concurrent language is a languade that make concurrency useful (go as an example).
+     |
+    \ /
+  composition of independently execution processing -> dealing with different
+     |   					       things
+     |						              |
+     |							     \ /
+     |							about structure
+    \ /
+  parrallelism -> simultaniously execution of ...   -> doing different things
+  	       	  		 	       	       at once
+							      |
+							     \ / 
+							about doing
+
+Summary:
+"Concurrency structures the things to be maybe executed in parallel"
