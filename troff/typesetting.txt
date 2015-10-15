@@ -1,0 +1,72 @@
+#
+# some general info about typesetting with troff/groff
+#
+
+
+- troff is a typesetting system
+         |
+	 |
+	\ /
+     postscript
+         |
+	 |  <- ghostscript (interpret postscript and run some filter on it)
+	\ /
+      X11, PDF, printer
+
+
+- troff macros
+    |
+    +--> - eine Art "Filter" der auf einen Text angewendet wird
+         - Steuerbefehle
+	        |
+		+--> eine Zusammenfassung von Befehlen -> Macros
+
+
+          |
+	  +--> man for man-pages
+	  +--> ms for books, technical docs and reports
+	  +--> me for sientific papers
+	  |
+	  +--> mom (for groff)
+
+   Durch Macros kann man so etwas wie Stilvorlage ala CSS umsetzen
+
+
+- Präprozessor
+    |
+    +--> wandelt (i.d.R.) eigene Befehle in troff Code um
+    +--> pic, eqn, tbl, graph, refer, bib ...
+    	                  |      |     |
+			  |      +-----+--> "Bipliographische Verweis und
+			 \ /                 Zitatverwaltung"
+			Graphen
+			  |
+			  |
+			 \ /
+		       pic code
+			  | <-- pic
+			 \ /
+   		      troff code
+
+- nroff, troff, groff
+
+  -> nroff is troff for terminal output (creates formated text)
+  -> troff is for all
+  -> groff is the gnu implementation (which include troff/nroff) and
+     the only living project (http://www.troff.org/source.html)
+
+  -> see man 7 groff_diff for differences between the original troff and groff
+
+
+Hints:
+------
+      -> https://de.wikipedia.org/wiki/Troff
+      -> http://www.oreilly.com/openbook/utp/
+      -> http://home.windstream.net/kollar/utp/
+      -> http://www.kohala.com/start/troff/troff.html
+      -> http://www.troff.org/
+      -> http://www.troff.org/papers.html
+      -> http://www.gnu.org/software/groff/
+      -> http://www.gnu.org/software/groff/manual/groff.pdf
+      -> http://www.schaffter.ca/mom/mom-01.html
+      -> http://www.schaffter.ca/mom/momdoc/toc.html

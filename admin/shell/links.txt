@@ -1,0 +1,5 @@
+#
+# some useful shell related links
+#
+
+Rich's sh tips -> http://www.etalabs.net/sh_tricks.html

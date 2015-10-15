@@ -1,0 +1,1 @@
+ wget -m -e robots=off --no-parent http://slackbuilds.org/slackbuilds/14.1/
