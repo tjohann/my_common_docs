@@ -1,0 +1,8 @@
+#
+# some infos about void-package
+#
+
+# howto crossbuild
+
+./xbps-src binary-bootstrap
+./xbps-src -a armv5te pkg base-chroot
