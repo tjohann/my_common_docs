@@ -3,6 +3,11 @@
 #
 
 # howto crossbuild
-
 ./xbps-src binary-bootstrap
 ./xbps-src -a armv5te pkg base-chroot
+
+
+
+# crossbuild env to build packages and rootfs for armv5te (arietta)
+./xbps-src binary-bootstrap
+./xbps-src -m masterdir-arietta -H hostdir-arietta bootstrap armv5te
