@@ -67,10 +67,11 @@ export PATH=$HOME/bin:/sbin:/usr/sbin:/usr/local/sbin:$PATH
 
 # ----------------------------------------------------------------
 #
-# clone void-packages
+# clone void-packages and void-mklive
 #
 
 git clone git://github.com/voidlinux/void-packages.git
+git clone git://github.com/voidlinux/void-mklive.git
 
 
 # ----------------------------------------------------------
@@ -91,13 +92,23 @@ XBPS_MAKEJOBS=4
 
 # crossbuild env to build packages and rootfs for armv5te (arietta)
 
--> first install the basic binarys to be able to crossbuild
+-> first install the basic binarys to be able to crossbuild ...
+   after that you're able to build packages for your host (x86_64 in my case),
+   what is needed for the next step (bootstrap armv5te)
 ./xbps-src binary-bootstrap
 
--> build the basics for the rootfs
-./xbps-src -m masterdir-arietta -H hostdir-arietta bootstrap armv5te
 
--> 
+-> build the basics for the rootfs ...
+   after that you're able to build the base-system
+./xbps-src -m masterdir-arietta -H hostdir-arietta bootstrap armv5te
+   
+
+-> build base-system ...
+   after that your're able to build an image (?)
+./xbps-src -m masterdir-arietta -H hostdir-arietta -a armv5te -N pkg base-system
+
+
+->
 
 
 
