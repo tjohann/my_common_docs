@@ -2,12 +2,112 @@
 # some infos about void-package
 #
 
+
+
+
+
+###################################################################
+#                                                                 #
+#         CROSSBUILD for armv5te (arietta/imx233)                 #
+#                                                                 #
+###################################################################
+To make it independed from your normal account i add a new
+user: build_user
+Below are the changes for .bashrc (to have some alias and emacs) 
+
+
+# ----------------------------------------------------------------
+#
+# add user "build_user" to build all
+#
+
+useradd build_user
+passwd build_user
+
+
+# ----------------------------------------------------------------
+#
+# .bashrc for build_user
+#
+
+# .bashrc
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+# Some alias
+alias df="df -h"
+alias du="du -h"
+alias ls="ls --color=auto"
+alias lf="ls -lah --color=auto"
+alias more=less
+alias cd..="cd .."
+alias ping="ping -c3"
+alias jobs="jobs -pl"
+alias dmesg="dmesg --human"
+alias vi="vim"
+
+alias lf="ls -lahF --color=auto "
+alias ls='ls --color=auto'
+
+# emacs exports
+#export EDITOR=~/bin/ee
+export ALTERNATE_EDITOR=""
+export EDITOR="emacsclient -t"                  # $EDITOR should open in terminal
+export VISUAL="emacsclient -c -a emacs"         # $VISUAL opens in GUI with non-daemon as alternate
+
+# colored GCC warnings and errors
+export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+
+PS1='[\u@\h \W]\$ '
+
+# Extend $PATH
+export PATH=$HOME/bin:/sbin:/usr/sbin:/usr/local/sbin:$PATH
+
+
+# ----------------------------------------------------------------
+#
+# clone void-packages
+#
+
+git clone git://github.com/voidlinux/void-packages.git
+
+
+# ----------------------------------------------------------
+#
+# etc/conf
+#
+
+# my addtions
+
+XBPS_CCACHE=yes
+XBPS_MAKEJOBS=4
+
+
+# ----------------------------------------------------------
+#
+# build it
+#
+
+# crossbuild env to build packages and rootfs for armv5te (arietta)
+
+-> first install the basic binarys to be able to crossbuild
+./xbps-src binary-bootstrap
+
+-> build the basics for the rootfs
+./xbps-src -m masterdir-arietta -H hostdir-arietta bootstrap armv5te
+
+-> 
+
+
+
+##################################################################
+
+# ----------------------------------------------------------------
+#
+# old stuff ... ignore
+#
+
 # howto crossbuild
 ./xbps-src binary-bootstrap
 ./xbps-src -a armv5te pkg base-chroot
-
-
-
-# crossbuild env to build packages and rootfs for armv5te (arietta)
-./xbps-src binary-bootstrap
-./xbps-src -m masterdir-arietta -H hostdir-arietta bootstrap armv5te
