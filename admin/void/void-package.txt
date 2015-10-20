@@ -11,10 +11,10 @@
 #         CROSSBUILD for armv5te (arietta/imx233)                 #
 #                                                                 #
 ###################################################################
-To make it independed from your normal account i add a new
-user: build_user
-Below are the changes for .bashrc (to have some alias and emacs) 
+To make it independed from your normal account i add a new user: build_user 
 
+- below are the changes for .bashrc (to have some alias and emacs) 
+- below are additions to conf (CCACHE, NUMJOBS ...)
 
 # ----------------------------------------------------------------
 #
@@ -23,7 +23,7 @@ Below are the changes for .bashrc (to have some alias and emacs)
 
 useradd build_user
 passwd build_user
-
+usermod -a -G kvm,wheel build_user
 
 # ----------------------------------------------------------------
 #
@@ -90,7 +90,17 @@ XBPS_MAKEJOBS=8
 # build it
 #
 
-# crossbuild env to build packages and rootfs for armv5te (arietta)
+There're at least 3 different steps:
+- first setup environment
+- build base-system, arietta-base and ntp
+- create rootfs based on the step above
+
+
+#
+# crossbuild env to build packages 
+#
+- working dir:
+[build_user@barney void-packages]
 
 -> first install the basic binarys to be able to crossbuild ...
    after that you're able to build packages for your host (x86_64 in my case),
@@ -103,24 +113,35 @@ XBPS_MAKEJOBS=8
 ./xbps-src -m masterdir-arietta -H hostdir-arietta bootstrap armv5te
    
 
+#
+# crossbuild env to build packages for rootfs 
+#
+- working dir:
+[build_user@barney void-packages]
+
 -> build base-system ...
    after that your're able to build the arietta specific base-system
 ./xbps-src -m masterdir-arietta -H hostdir-arietta -a armv5te -N pkg base-system
 
 
--> build arietta specific base system
+-> build arietta specific base system and dependencies
    after that you're able to build the rootfs 
 ./xbps-src -m masterdir-arietta -H hostdir-arietta -a armv5te -N pkg arietta-base
+./xbps-src -m masterdir-arietta -H hostdir-arietta -a armv5te -N pkg ntp
 
+
+#
+# create rootfs for arietta
+#
+- working dir:
+[build_user@barney void-mklive]
 
 -> create the rootfs (void-mklive dir)
    after that you're able to build an image for usage with dd
-[build_user@barney void-mklive]$ sudo ./mkrootfs.sh -r ../void-packages/hostdir-arietta/binpkgs/ arietta
-
+sudo ./mkrootfs.sh -r ../void-packages/hostdir-arietta/binpkgs/ arietta
 
 -> create an image of the rootfs
-[build_user@barney void-mklive]$
-
+tbd.
 
 ##################################################################
 
