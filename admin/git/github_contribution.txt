@@ -1,0 +1,25 @@
+#
+# some infos about github projects and how to contribute
+#
+
+
+# example -> void-packages (see http://void-linux.eu)
+
+# clone void-packages 
+git clone git@github.com:<tjohann>/void-packages.git
+
+# keep repo uptodate
+git remote add upstream git://github.com/voidlinux/void-packages.git
+git pull upstream master
+
+# "normal" usage
+git add ... commit ... push ...
+
+# github pull request
+https://help.github.com/articles/fork-a-repo
+
+# void-packages submit rules
+new package -> `"New package: <pkgver>"`.
+updated a package  -> "<pkgname>: updated to <version>"
+removed a package  -> "<pkgname>: removed ..."
+modified a package -> "<pkgname>: ..."
