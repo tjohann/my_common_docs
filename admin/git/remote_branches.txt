@@ -5,3 +5,95 @@
 links:
 https://git-scm.com/book/it/v2/Git-Branching-Remote-Branches
 http://www.gitguys.com/topics/adding-and-removing-remote-branches/
+http://stackoverflow.com/questions/16408300/what-is-the-differences-between-local-branch-local-tracking-branch-remote-bran
+
+
+#
+# some "defines"
+#
+
+- local branch
+git branch my_branch  <- local branch ... only seen by me
+
+- local tracking branch
+git pull origin/master <- local "copy" (master) of a remote branch (origin/master)
+                          here: pull from remote branch origin/master into
+			        my local branch master
+of simply
+git pull  <- When local branches are trackin branches git knows where to pull/push,
+    	     otherwise you get an error and habe to say which remote/branch
+
+
+
+- remote (use git collaboratively -> github for example)
+  * every machine or location is called remote
+
+  see remote branches:
+  git remote
+
+  locations of remote branches:
+  git remote -v
+  
+  every remote has a dir under git/ref/remotes:
+
+  tjohann@barney:~/my_common_docs$ lf .git/refs/remotes/
+  insgesamt 0
+  drwxr-xr-x 3 tjohann tjohann 20  6. Aug 19:55 ./
+  drwxr-xr-x 5 tjohann tjohann 46  6. Aug 19:55 ../
+  drwxr-xr-x 2 tjohann tjohann 32 22. Okt 21:02 origin/
+
+- type of branches on local machine
+  local non-tracking branches
+  local tracking branches
+  remote tracking branches
+
+- type of branches on remote
+  ?
+
+- local branches (tracking and non-tracking)
+
+  tjohann@barney:~/my_common_docs$ lf .git/refs/heads/
+  insgesamt 4,0K
+  drwxr-xr-x 2 tjohann tjohann 20 22. Okt 21:01 ./
+  drwxr-xr-x 5 tjohann tjohann 46  6. Aug 19:55 ../
+  -rw-r--r-- 1 tjohann tjohann 41 22. Okt 21:01 master
+
+- non-tracking branches
+  git branch my_branch
+
+- tracking branches
+  Tracking local branches are "connected" with other branches (with local or remote)
+  git branch --track my_branch [origin/master]
+      	     	     	 |            |
+		my branch name    the start point of remote branch	 
+
+  view tracking branches 
+  git branch -vv
+
+  or in .git/config
+  [core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+  [remote "origin"]
+	url = https://github.com/tjohann/my_common_docs
+	fetch = +refs/heads/*:refs/remotes/origin/*
+  [branch "master"]
+	remote = origin
+	merge = refs/heads/master
+
+- remote branches (on local machine)
+
+
+
+#
+# branches of a forked github repo
+#
+
+# create my_branch
+git checkout -b my_branch
+
+# push it on github
+git push origin my_branch
+

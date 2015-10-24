@@ -2,21 +2,62 @@
 # some infos about github projects and how to contribute
 #
 
+#
+# hints to setup and use github
+#
+https://help.github.com/articles/adding-an-email-address-to-your-github-account/
+https://help.github.com/articles/set-up-git/#next-steps-authenticating-with-github-from-git
+https://help.github.com/articles/generating-ssh-keys/
+https://help.github.com/articles/caching-your-github-password-in-git/
+https://help.github.com/articles/using-pull-requests/
 
+
+#
+# cache password -> https clone
+#
+
+# cache it for 15 minutes
+git config --global credential.helper cache
+# cache it "longer" -> 1 hour
+git config --global credential.helper 'cache --timeout=3600'
+
+# ------------------------------------------------------------------------------
+
+#
 # example -> void-packages (see http://void-linux.eu)
+#
 
-# clone void-packages 
-git clone git@github.com:<tjohann>/void-packages.git
+# fork the repo on github (https://github.com/voidlinux/void-packages)
+# via fork button on the top right ... this will take some time
+...
+https://help.github.com/articles/fork-a-repo/
+
+# clone your forked void-packages
+git clone https://github.com/tjohann/void-packages.git
 
 # keep repo uptodate
 git remote add upstream git://github.com/voidlinux/void-packages.git
 git pull upstream master
 
+# hint -> it should look like this
+[build_user@barney void-packages]$ git remote -v
+origin	https://github.com/tjohann/void-packages.git (fetch)
+origin	https://github.com/tjohann/void-packages.git (push)
+upstream	git://github.com/voidlinux/void-packages.git (fetch)
+upstream	git://github.com/voidlinux/void-packages.git (push)
+
+# create my_branch
+git checkout -b my_branch
+
 # "normal" usage
-git add ... commit ... push ...
+git add ... commit ... 
+
+# push it on github
+git push origin my_branch
+.
 
 # github pull request
-https://help.github.com/articles/fork-a-repo
+https://help.github.com/articles/using-pull-requests/
 
 # void-packages submit rules
 new package -> `"New package: <pkgver>"`.
