@@ -1,0 +1,13 @@
+#
+# some notes about the intel processors
+#
+
+# Intel microarchitektures
+-> Intel Pentium-Pro ... thats the actual micro-arch
+-> Atom ... for small devices
+-> Pentium 4 ... dead
+-> Itanium ... dead
+
+# Pentium-Pro
+-> something between CISC and RISC
+
