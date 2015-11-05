@@ -102,19 +102,13 @@ There're at least 3 different steps:
 - working dir:
 [build_user@barney void-packages]
 
--> first install the basic binarys to be able to crossbuild ...
-   after that you're able to build packages for your host (x86_64 in my case),
-   what is needed for the next step (bootstrap armv5te)
-./xbps-src binary-bootstrap
-
-
--> build the basics for the rootfs ...
+-> first build the basics for armv5te ...
    after that you're able to build the base-system
 ./xbps-src -m masterdir-arietta -H hostdir-arietta bootstrap armv5te
    
 
 #
-# crossbuild env to build packages for rootfs 
+# crossbuild packages for rootfs 
 #
 - working dir:
 [build_user@barney void-packages]
@@ -128,6 +122,10 @@ There're at least 3 different steps:
    after that you're able to build the rootfs 
 ./xbps-src -m masterdir-arietta -H hostdir-arietta -a armv5te -N pkg arietta-base
 ./xbps-src -m masterdir-arietta -H hostdir-arietta -a armv5te -N pkg ntp
+
+
+# or all in one step
+./xbps-src -m masterdir-arietta -H hostdir-arietta -a armv5te -N pkg base-system arietta-base ntp
 
 
 #
