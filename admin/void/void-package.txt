@@ -124,10 +124,6 @@ There're at least 3 different steps:
 ./xbps-src -m masterdir-arietta -H hostdir-arietta -a armv5te -N pkg ntp
 
 
-# or all in one step
-./xbps-src -m masterdir-arietta -H hostdir-arietta -a armv5te -N pkg base-system arietta-base ntp
-
-
 #
 # create rootfs for arietta
 #
@@ -136,10 +132,24 @@ There're at least 3 different steps:
 
 -> create the rootfs (void-mklive dir)
    after that you're able to build an image for usage with dd
-sudo ./mkrootfs.sh -r ../void-packages/hostdir-arietta/binpkgs/ arietta
+sudo ./mkrootfs.sh -r ../void-packages/hostdir-arietta/binpkgs arietta
+
+# i use a branch arietta ...
+sudo ./mkrootfs.sh -r ../void-packages/hostdir-arietta/binpkgs/arietta arietta
 
 -> create an image of the rootfs
 tbd.
+
+
+#
+# kdo summary for copy & paste
+#
+./xbps-src -m masterdir-arietta -H hostdir-arietta bootstrap armv5te
+./xbps-src -m masterdir-arietta -H hostdir-arietta -a armv5te -N pkg base-system
+./xbps-src -m masterdir-arietta -H hostdir-arietta -a armv5te -N pkg arietta-base
+./xbps-src -m masterdir-arietta -H hostdir-arietta -a armv5te -N pkg ntp
+sudo ./mkrootfs.sh -r ../void-packages/hostdir-arietta/binpkgs/arietta arietta
+
 
 ##################################################################
 
