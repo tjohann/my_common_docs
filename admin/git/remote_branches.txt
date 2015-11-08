@@ -97,3 +97,20 @@ git checkout -b my_branch
 # push it on github
 git push origin my_branch
 
+
+#
+# branch from a github branch to contiue work on another computer
+#
+# remote branch is arietta and your local branch is also named arietta 
+git checkout -b arietta remotes/origin/arietta
+
+# set correct upstream 
+git remote add upstream git://github.com/voidlinux/void-packages.git
+# pull from upstream
+git pull upstream master
+
+# pull from remote branch
+git pull origin arietta
+
+# push to remote branch
+git push origin arietta
