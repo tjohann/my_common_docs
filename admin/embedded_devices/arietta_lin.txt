@@ -1,0 +1,23 @@
+#
+# possible lin config for arietta 
+#
+
+ldattach 25 /dev/ttyS1 # bind socket lin to uart
+ip link set sllin0 up
+
+echo 29 > /sys/class/gpio/export # chip select wake of lin tranceiver
+echo out > /sys/class/gpio/pioA29/direction
+echo 1 > /sys/class/gpio/pioA29/value
+
+echo 67 > /sys/class/gpio/export
+echo out > /sys/class/gpio/pioC3/direction
+echo 1 > /sys/class/gpio/pioC3/value
+
+echo 92 > /sys/class/gpio/export
+echo out > /sys/class/gpio/pioC28/direction
+echo 0 > /sys/class/gpio/pioC28/value
+
+echo 67 > /sys/class/gpio/export
+echo out > /sys/class/gpio/pioC3/direction
+echo 1 > /sys/class/gpio/pioC3/value
+exit 0
