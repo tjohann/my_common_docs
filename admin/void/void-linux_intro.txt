@@ -1,0 +1,57 @@
+#
+# a small void-linux intro
+#
+
+Void linux is a Linux-Distribution with special and unique features:
+
+-> not a fork (complete new!)
+-> rolling release (so always actual)
+   + no big update cycles or new installations needed
+   + always uptodate
+   + no dependency hell due to old packages
+   - could sometimes lead to temporary "brocken" system
+     - if not all updates are in the repo!
+     - only temporary -> one hour later or so erverthing is fine again!
+-> use libressl instead of openssl
+   + openssl is developed by one (!) person
+   + lot of old code in openssl due to ancient platforms
+   + libressl is maintained by the openbsd community
+   + libressl starts with a cleanup!
+-> xbps (X Binary Package System)
+   + not a fork
+   + extremly fast
+   + unix like
+     - xbps-install
+     - xbps-remove
+     - ...
+   + scriptable
+   + only runtime + lib + debug packages
+-> xbps-src (package builder)
+   + use namespaces
+     - reproduceable build
+     - clean environment with no dependencys to the host
+   + easy template mechanism
+   + a lot of pre-defined build schemes
+     - one line to tell xbps-src to use "autotools" or ...
+   + a lot of pre-defined download locations
+   + a lot of pre-defined env-vars
+     - makes it easy to read other templates
+   + ready to use musl!
+   + EASY crossbuild of a whole system or single packages
+     - it holds was debian promise!
+-> support for musl as libc replacement
+-> ruint as really powerful init system
+   + systemd free
+   + fast
+   + unix like
+   + small
+   + easy to understand!
+   + easy to admin!
+
+
+#
+# useful links
+#
+   
+
+
