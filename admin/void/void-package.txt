@@ -151,6 +151,74 @@ tbd.
 sudo ./mkrootfs.sh -r ../void-packages/hostdir-arietta/binpkgs/arietta arietta
 
 
+# ----------------------------------------------------------
+#
+# addtional packages
+#
+
+#
+# after arietta-base
+#
+
+perl 
+autoconf
+
+binutils-devel
+gcc
+gcc-c++
+gcc-fortran
+libgfortran-devel
+make
+automake
+libtool
+inetutils-ifconfig
+socklog-void
+gdb
+ltrace
+(strace) <- wont build 
+llvm
+llvm-docs
+clang
+clang-analyzer
+dbus-devel
+rsyslogd
+
+libbsd-devel
+confuse-devel
+libconfig-devel
+
+libcgroup
+libcgroup-devel
+libcgroup-utils
+
+libsensors-devel
+libsensors
+lm_sensors
+
+libltdl-devel
+libltdl
+
+mg
+qemacs
+vim
+
+cmake
+extra-cmake-modules
+xterm
+xorg-minimal
+xorg-apps
+xorg-fonts
+valgrind-devel <- wont build
+
+tree
+htop
+git 
+cgdb
+ntp
+
+
+
+
 ##################################################################
 
 # ----------------------------------------------------------------
