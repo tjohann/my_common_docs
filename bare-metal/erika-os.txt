@@ -1,0 +1,17 @@
+#
+# some info about erika os
+#
+
+Links:
+
+
+Erika implements the ISO 17356 API (some parts of OSEK are standardized)
+Erika implements a real-time kernel (BCC1/2, ECC1/2, multicore, memory protection, fixed priority)
+Erika implements OSEK/VDX (OSEK -> German/ VDX -> French) open architecture
+      - embedded os
+      - communication stack
+      - network managment protocol for automitive
+Erika supports single and multicore
+
+OSEKtime -> time-triggert real-time-os
+Autosar-OS is a superset of OSEK-OS + OSEKtime
