@@ -1,0 +1,6 @@
+#
+# some note/hint about emacs
+#
+
+# --- elpa/melpa link
+http://ergoemacs.org/emacs/emacs_package_system.html
