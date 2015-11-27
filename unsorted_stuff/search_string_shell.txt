@@ -1,0 +1,52 @@
+
+
+
+http://stackoverflow.com/questions/4467735/bash-how-to-find-substring-inside-a-string-or-how-to-grep-a-variable
+
+
+
+
+
+LIST="some string with a substring you want to match"
+SOURCE="substring"
+if echo "$LIST" | grep -q "$SOURCE"; then
+  echo "matched";
+else
+  echo "no match";
+fi
+
+
+
+
+	
+
+You can also compare with wildcards:
+
+if [[ $LIST == *$SOURCE* ]]
+
+
+
+
+
+
+
+
+You can use "index" if you only want to find a single character, e.g.:
+
+LIST="server1 server2 server3 server4 server5"
+SOURCE="3"
+if expr index "$LIST" "$SOURCE"; then
+    echo "match"
+    exit -1
+else
+    echo "no match"
+fi
+
+Output is:
+
+23
+match
+
+
+
+

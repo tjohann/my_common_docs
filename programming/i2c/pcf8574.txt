@@ -1,0 +1,111 @@
+#
+# useful stuff about IC PCF8574 (I2C port expander)
+#
+
+# --- PCF8574 summary
+- the PCF8574 is a general purpose I2C 8-bit input/output port expander ... with this chip you can drive leds or read buttons ...
+- the chip has an interrupt line (low after any change on input pins) ... after reading out the state of the pins, the interrupt line goes to high
+- INT line is an open-drain output -> need 10k pullup ...
+- I2C need 10k or 4k7 (if its the only device) pullup ...
+- P0...P7 are open collector ports
+  - 25mA to ground
+  
+----+-------> 3V3
+    |
+   +-+
+   | | 1k
+   | | 
+   +-+
+    |
+    |	          LED 
+    |            __|\|__
+    +------------+ |/| +----> P0...P7
+
+          ---
+           |
+          \|
+    +----- \----------------> P0...P7
+    |
+    |
+   --- (gnd)
+
+  - 100µA to power
+
+----+-------> 3V3
+    |
+   +-+
+   | | 10k
+   | | 
+   +-+
+    |
+    +-----------------------> P0...P7
+    |	         
+    |     ---
+    |      |
+    |     \|
+    +----- \-----+
+                 |
+		 |
+	        --- (gnd)
+
+  - Sum(P0...P7) < 200mA
+  - to drive addtional logic use a 74HC04N or similiar 
+  
+
+
+# --- I2C address (PCF8574)
+ A2  A1  A0   address
+---------------------
+ L   L	 L    0x20
+ L   L	 H    0x21
+ L   H	 L    0x22
+ L   H	 H    0x23
+ H   L	 L    0x24
+ H   L	 H    0x25
+ H   H	 L    0x26
+ H   H	 H    0x27		
+
+
+Example: 0x21/0x39
+
+----+-------> 3V3
+    |
+   +-+
+   | | 10k
+   | | 
+   +-+
+    |
+    |
+    +-------> A2  (high)
+
+    +-------> A1  (low)
+    |
+    +-------> A0  (low)
+    |
+    |
+   --- (gnd)
+
+
+# --- description(s)
+http://www.mikrocontroller.net/articles/Port-Expander_PCF8574
+http://www.mikrocontroller.net/search?query=PCF8574
+
+# --- PCF8574A
+The PCF8574A is the same like without the "A" but with different base address ...
+
+# --- PCF8575
+The PCF8575 is the 16-bit version of the PCF8574 ... (400kHz) ...
+
+# --- datasheet
+http://www.nxp.com/documents/data_sheet/PCF8574.pdf
+http://www.ti.com/lit/ds/symlink/pcf8574.pdf
+
+#
+# examples
+#
+
+# --- keyboard and led matrix 
+http://www.mikrocontroller.net/attachment/42269/board.png
+
+# --- LCD
+http://bralug.de/wiki/BLIT2008-Board-LCD

@@ -1,0 +1,22 @@
+
+----------
+http://stackoverflow.com/questions/15045946/bash-shell-script-write-to-custom-log-file
+
+logger logs to syslog facilities. If you want the message to go to a particular file you have to modify the syslog configuration accordingly. You could add a line like this:
+
+local7.*   -/var/log/mycustomlog
+
+and restart syslog. Then you can log like this:
+
+logger -p local7.info "information message"
+logger -p local7.err "error message"
+
+and the messages will appear in the desired logfile with the correct log level.
+
+Without making changes to the syslog configuration you could use logger like this:
+
+logger -s "foo bar" 2>> /var/log/mycustomlog
+
+That would instruct logger to print the message to STDERR as well (in addition to logging it to syslog), so you could redirect STDERR to a file. However, it would be utterly pointless, because the message is already logged via syslog anyway (with the default priority user.notice).
+
+-----------
