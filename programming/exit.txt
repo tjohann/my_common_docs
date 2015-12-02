@@ -1,0 +1,34 @@
+#
+# short note about the difference of exit and return
+#
+
+# --- difference
+
+- return is an language statement
+- exit() is a syscall (not 100% correct -> exit() is libc function ... but result is the same)
+
+If return is in the main function, then return and exit are nearly the same:
+
+ * result with return (only relevant parts):
+
+main:
+.LFB10:
+	.cfi_startproc
+	movl	$0, %eax
+	ret
+	.cfi_endproc
+
+ *
+ * result with exit() (only relevant parts):
+
+main:
+.LFB10:
+	.cfi_startproc
+	subq	$8, %rsp
+	.cfi_def_cfa_offset 16
+	movl	$0, %edi
+	call	exit
+	.cfi_endproc
+
+# --- usage
+

@@ -1,0 +1,31 @@
+#
+# some info about usage of message queue's
+#
+
+# --- types
+Sys-V message queue -> key-value based
+      	      	    -> has a type field (useful to distinguish between messages)
+POSIX message queue -> "named" queue
+      	      	    -> referenced count (not possible to remove them until last
+		       user closed connetion)
+		    -> asyn notification via signal possible
+
+#
+# --- Kernel stuff
+# 
+Check CONFIG_POSIX_MQUEUE if POSIX message queue's are enabled
+
+# --- message queue filesystem
+mkdir /dev/mqueue
+mount -t mqueue none /dev/mqueue
+
+cat /proc/mounts
+....
+none /dev/mqueue mqueue rw,relatime 0 0
+
+TODO:
+cat /dev/mqueue/mq_with_signal_notification
+...
+cat /dev/mqueue/mq_without_signal_notification
+
+
