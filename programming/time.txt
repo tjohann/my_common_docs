@@ -1,0 +1,59 @@
+#
+# some info about usage of timer
+#
+
+# --- supported clocks
+
+- clock()
+- gettimeofday()
+- clock_gettime()
+
+
+# --- clock_gettime
+
+- nanosecond accuracy
+- four clock types
+  -> CLOCK_REALTIME
+     System-wide realtime clock (need root)
+  -> CLOCK_MONOTONIC
+     monotonic time since starting point.
+  -> CLOCK_PROCESS_CPUTIME_ID
+     High-resolution per-process CPU-timer
+  -> CLOCK_THREAD_CPUTIME_ID
+     High-resolution per-thread CPU-time
+
+# --- usage (clock_gettime) for measurment
+
+#include <time.h>
+struct timespec start, stop;
+double micros_used;
+
+clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &start);
+/*
+ * my code 
+ */
+clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &stop);
+
+// result in usec
+micros_used = (y.tv_sec - x.tv_sec) * 1e6 + (y.tv_nsec - x.tv_nsec) / 1e3;   
+
+
+# --- usage () for measurment
+
+#include <sys/time.h>
+struct timeval start, end;
+long secs_used, micros_used;
+
+gettimeofday(&start, NULL);
+/*
+ * my code 
+ */
+gettimeofday(&end, NULL);
+
+// result in usec
+secs_used=(end.tv_sec - start.tv_sec);
+micros_used= ((secs_used*1000000) + end.tv_usec) - (start.tv_usec);
+
+printf("start: %d secs, %d usecs\n", (int) start.tv_sec, (int) start.tv_usec);
+printf("end: %d secs, %d usecs\n", (int) end.tv_sec, (int) end.tv_usec);
+printf("Result in micro seconds: %d\n", (int) micros_used);
