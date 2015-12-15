@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.69])
-AC_INIT([hello], [0.0.1], [thorsten.johannvorderbrueggen@t-online.de])
+AC_INIT([hello], [trunk], [thorsten.johannvorderbrueggen@t-online.de])
 
 # prepare for automake
 AM_INIT_AUTOMAKE
