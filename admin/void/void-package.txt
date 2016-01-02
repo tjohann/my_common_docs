@@ -5,7 +5,6 @@
 
 
 
-
 ###################################################################
 #                                                                 #
 #         CROSSBUILD for armv5te (arietta/imx233)                 #
@@ -83,6 +82,7 @@ git clone git://github.com/voidlinux/void-mklive.git
 
 XBPS_CCACHE=yes
 XBPS_MAKEJOBS=8
+XBPS_SRCDISTDIR=/mnt/shared/distfiles
 
 
 # ----------------------------------------------------------
