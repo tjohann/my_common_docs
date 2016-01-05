@@ -183,6 +183,10 @@ clang-analyzer
 dbus-devel
 rsyslogd
 
+libressl
+libressl-devel
+python
+
 libbsd-devel
 confuse-devel
 libconfig-devel
@@ -216,6 +220,17 @@ git
 cgdb
 ntp
 
+usbutils
+iotop
+kernel-libc-headers
+libkmod-devel
+sv-helper
+xtools
+man-pages-posix
+groff
+gtkmm-devel
+gtkmm2-devel
+newlisp
 
 
 
