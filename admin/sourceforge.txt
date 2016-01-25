@@ -62,7 +62,7 @@ put *.tgz
 #
 # a20_sdk
 #
-sftp thjvdb,a20-sdk@frs.sourceforge.net
+sftp thjvdb,a20devices@frs.sourceforge.net
 cd /home/pfs/project/a/a2/a20devices/bananapi
 put *_bananapi.tgz
 
