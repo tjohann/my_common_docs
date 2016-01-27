@@ -1,0 +1,23 @@
+#
+# some info about usage of cflags
+#
+
+
+link: https://www.gnu.org/software/automake/manual/html_node/Flag-Variables-Ordering.html
+
+
+CFLAGS, AM_CFLAGS, and myprog_CFLAGS
+====================================
+
+CFLAGS is the user variable
+AM_CFLAGS is the automake variable
+myprog_CFLAGS is the variable specific to the myprog target
+
+-> Automake always uses two of these variables when compiling C sources files.
+   - myprog_CPPFLAGS if it is defined, or AM_CFLAGS otherwise  
+   - the second variable is always CFLAGS. 
+
+-> $(myprog_CFLAGS) $(CFLAGS)
+-> $(AM_CFLAGS) $(CFLAGS)
+
+-> why is $(CFLAGS) always at the end? Because so user can clear all others!
