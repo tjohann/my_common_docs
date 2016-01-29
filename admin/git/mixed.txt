@@ -1,0 +1,16 @@
+#
+# some unclassified git info ..
+#
+
+
+#
+# fetch/pull
+#
+
+# fetch
+- fetching is not pulling
+- fetch does not change working directory in any way
+- fetch downloads missing commits from the remote repository
+
+# pull
+- pull == fetch + merge 
