@@ -54,8 +54,9 @@ kernel_baalue_bananapi.tgz  rootfs_baalue_bananapi.tgz  void-linux_kernel
 #
 # arm926_sdk
 #
-sftp thjvdb,arm926-sdk@frs.sourceforge.net
+sftp thjvdb,arm926sdk@frs.sourceforge.net
 cd /home/pfs/project/a/ar/arm926sdk
+put checksum.sha256
 put *.tgz
 
 
@@ -63,11 +64,15 @@ put *.tgz
 # a20_sdk
 #
 sftp thjvdb,a20devices@frs.sourceforge.net
+cd /home/pfs/project/a/a2/a20devices/
+put checksum.sha256
+put *.tgz
+
 cd /home/pfs/project/a/a2/a20devices/bananapi
-put *_bananapi.tgz
+put images/*_bananapi.tgz
 
 cd /home/pfs/project/a/a2/a20devices/cubietruck
-put *_bananapi.tgz
+put images/*_bananapi.tgz
 
 cd /home/pfs/project/a/a2/a20devices/olimex
-put *_olimex.tgz
+put images/*_olimex.tgz
