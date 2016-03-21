@@ -20,7 +20,7 @@ int main(void)
 			config_error_file(&cfg),
 			config_error_line(&cfg),
 			config_error_text(&cfg));
-		
+
 		config_destroy(&cfg);
 		exit(EXIT_FAILURE);
 	}
@@ -42,8 +42,8 @@ int main(void)
 	else
 		fprintf(stderr, "No 'tempd.i2c_adapter' setting in config file!\n");
 
-	
+
 	config_destroy(&cfg);
-	
+
 	exit(EXIT_SUCCESS);
 }

@@ -11,11 +11,11 @@
 
 # login via sftp username,project_name <- password@username
 sftp thjvdb,baalue-sdk@frs.sourceforge.net
-Password: 
+Password:
 Connected to frs.sourceforge.net.
 
 sftp> ls
-cgi-bin  htdocs   
+cgi-bin  htdocs
 sftp> pwd
 Remote working directory: /home/project-web/baalue-sdk
 
@@ -24,8 +24,8 @@ sftp> cd /home/pfs/project/b/ba/baalue-sdk
 sftp> pwd
 Remote working directory: /home/pfs/project/b/ba/baalue-sdk
 sftp> ls
-checksum.md5                       home_baalue_bananapi.tgz           host_x86_64.tgz                    
-kernel_baalue_bananapi.tgz         toolchain_x86_64.tgz               
+checksum.md5                       home_baalue_bananapi.tgz           host_x86_64.tgz
+kernel_baalue_bananapi.tgz         toolchain_x86_64.tgz
 
 # upload one file
 sftp> put /home/tjohann/baalue_sdk/images/rootfs_baalue_bananapi.tgz
@@ -33,7 +33,7 @@ Uploading /home/tjohann/baalue_sdk/images/rootfs_baalue_bananapi.tgz to /home/pf
 
 
 #
-# additions 
+# additions
 #
 
 # create release dir

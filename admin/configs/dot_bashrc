@@ -66,7 +66,7 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 
 # setup the baalue environment
 #if [ -f ~/baalue_sdk/baalue_env ]; then
-#    . ~/baalue_sdk/baalue_env 
+#    . ~/baalue_sdk/baalue_env
 #fi
 
 # setup the avr environment

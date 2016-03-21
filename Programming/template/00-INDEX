@@ -2,7 +2,7 @@
 # 00-INDEX
 #
 
-This is a brief list of all the files in ./my_common_docs/programming/template ... 
+This is a brief list of all the files in ./my_common_docs/programming/template ...
 
 
 00-INDEX
@@ -10,7 +10,7 @@ This is a brief list of all the files in ./my_common_docs/programming/template .
 
 helper.c
 	- my simple helper functions
-	
+
 helper.h
 	- the interface header for my simple helper functions
 

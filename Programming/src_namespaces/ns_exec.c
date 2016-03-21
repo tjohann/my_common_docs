@@ -1,13 +1,13 @@
 /*-*- Mode: C; c-basic-offset: 8; indent-tabs-mode: nil -*-*/
 
-/* ns_exec.c 
+/* ns_exec.c
 
    Copyright 2013, Michael Kerrisk
    Licensed under GNU General Public License v2 or later
 
    Join a namespace and execute a command in the namespace
 
-   Changes: 
+   Changes:
    thorsten.johannvorderbrueggen@t-online.de
 
 */
@@ -35,14 +35,14 @@ main(int argc, char *argv[])
 			argv[0]);
 		exit(EXIT_FAILURE);
 	}
-	
+
 	fd = open(argv[1], O_RDONLY);   /* Get descriptor for namespace */
 	if (fd == -1)
 		errExit("open");
-	
+
 	if (setns(fd, 0) == -1)         /* Join that namespace */
 		errExit("setns");
-	
+
 	execvp(argv[2], &argv[2]);      /* Execute a command in namespace */
 
 	errExit("execvp");

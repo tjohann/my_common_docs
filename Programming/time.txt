@@ -30,12 +30,12 @@ double micros_used;
 
 clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &start);
 /*
- * my code 
+ * my code
  */
 clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &stop);
 
 // result in usec
-micros_used = (y.tv_sec - x.tv_sec) * 1e6 + (y.tv_nsec - x.tv_nsec) / 1e3;   
+micros_used = (y.tv_sec - x.tv_sec) * 1e6 + (y.tv_nsec - x.tv_nsec) / 1e3;
 
 
 # --- usage () for measurment
@@ -46,7 +46,7 @@ long secs_used, micros_used;
 
 gettimeofday(&start, NULL);
 /*
- * my code 
+ * my code
  */
 gettimeofday(&end, NULL);
 

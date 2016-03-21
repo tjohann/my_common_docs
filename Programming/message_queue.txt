@@ -12,7 +12,7 @@ POSIX message queue -> "named" queue
 
 #
 # --- Kernel stuff
-# 
+#
 Check CONFIG_POSIX_MQUEUE if POSIX message queue's are enabled
 
 # --- message queue filesystem

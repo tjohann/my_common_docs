@@ -12,12 +12,12 @@
 #error "PRINT_FILE_ERROR not defined"
 #endif
 
-double mysqrt(double input_val) 
+double mysqrt(double input_val)
 {
       fprintf(stdout, "In mysqrt\n");
 
       PRINT_INFOS_COMPILATION
-	      
+
       PRINT_FILE_NAME
 
       PRINT_FILE_ERROR

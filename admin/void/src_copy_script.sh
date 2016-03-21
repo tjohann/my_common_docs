@@ -7,5 +7,5 @@ for f in *; do
     if [[ -d "$f" && ! -L "$f" ]]; then
 	echo "in $f -> it's a real directory, not a link";
 	cp -f ${f}/* ${DISTFILE}
-    fi; 
+    fi;
 done

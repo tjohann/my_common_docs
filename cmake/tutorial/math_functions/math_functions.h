@@ -40,6 +40,6 @@
 		fflush(stdout);						\
 	}
 
-double mysqrt(double input_val); 
+double mysqrt(double input_val);
 
 #endif

@@ -13,4 +13,4 @@
 - fetch downloads missing commits from the remote repository
 
 # pull
-- pull == fetch + merge 
+- pull == fetch + merge

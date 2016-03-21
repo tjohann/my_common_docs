@@ -1,6 +1,6 @@
 #
-# GPL                                                                        
-# (c) 2015, thorsten.johannvorderbrueggen@t-online.de                        
+# GPL
+# (c) 2015, thorsten.johannvorderbrueggen@t-online.de
 #
 
 MODULES = $(shell ls -d */ | cut -f1 -d'/')
@@ -9,13 +9,13 @@ MODULES = $(shell ls -d */ | cut -f1 -d'/')
 
 all:
 	for dir in $(MODULES); do (cd $$dir && $(MAKE) $@); done
-	@echo 
+	@echo
 	@echo "+-----------------------------------------------------+"
 	@echo "|                                                     |"
 	@echo "|                   Cheers $(USER)                    |"
 	@echo "|                                                     |"
 	@echo "+-----------------------------------------------------+"
-	@echo 
+	@echo
 
 clean:
 	rm -f *~

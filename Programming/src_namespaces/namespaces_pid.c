@@ -3,15 +3,15 @@
 /*
  * demonstrate creation of a pid namespace
  *
- * 
- * compile: gcc -Wall -std=gnu1x -o namespaces_pid helper.c namespaces_pid.c 
- * run: ./namespaces_pid 
+ *
+ * compile: gcc -Wall -std=gnu1x -o namespaces_pid helper.c namespaces_pid.c
+ * run: ./namespaces_pid
  *
  * output (user):
- * tjohann@SI-Z09IX [~/my_docs/src]$ ./namespaces_pid 
+ * tjohann@SI-Z09IX [~/my_docs/src]$ ./namespaces_pid
  * pid after clone = ffffffff
  * output (with sudo):
- * tjohann@SI-Z09IX [~/my_docs/src]$ sudo ./namespaces_pid 
+ * tjohann@SI-Z09IX [~/my_docs/src]$ sudo ./namespaces_pid
  * pid after clone = 14ed
  * "my"-pid: 1
  */
@@ -43,7 +43,7 @@ main(void) {
 				child_stack + STACK_SIZE,
 				CLONE_NEWPID | SIGCHLD,
 				NULL);
-	
+
 	fprintf(stdout, "Parent: the child pid is %x\n", cpid);
 
 	/*
@@ -52,7 +52,7 @@ main(void) {
 	waitpid(cpid, NULL, 0);
 
 	wait_for_char();
-	
+
 	fprintf(stdout, "Leave parent \n");
 	exit(EXIT_SUCCESS);
 }

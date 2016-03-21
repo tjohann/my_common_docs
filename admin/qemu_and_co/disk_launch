@@ -23,7 +23,7 @@ qemu-system-i386 $NETTYPE \
 		   -usb \
 		   -smp 2 \
 		   -no-reboot \
-		   -k $KEYBOARD 
+		   -k $KEYBOARD
 #-enable-kvm \
 #-nographic
 #

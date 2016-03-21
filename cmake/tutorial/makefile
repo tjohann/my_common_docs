@@ -1,6 +1,6 @@
 #
-# GPL                                                                        
-# (c) 2015, thorsten.johannvorderbrueggen@t-online.de                        
+# GPL
+# (c) 2015, thorsten.johannvorderbrueggen@t-online.de
 #
 
 .PHONY: all clean

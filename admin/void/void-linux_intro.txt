@@ -52,6 +52,6 @@ Void linux is a Linux-Distribution with special and unique features:
 #
 # useful links
 #
-   
+
 
 

@@ -4,9 +4,9 @@
 #
 # License:
 #
-# GPL                                                                        
-# (c) 2015, thorsten.johannvorderbrueggen@t-online.de                        
-#                                                                            
+# GPL
+# (c) 2015, thorsten.johannvorderbrueggen@t-online.de
+#
 # This manual is free software; you may redistribute it and/or modify it under
 # the terms of the GNU General Public License. Please refer to the license in
 # Appendix F, GNU General Public License.
@@ -33,7 +33,7 @@
 #
 # MOUNTPOINTS
 # arietta:
-# - kernel -> /mnt/arietta_kernel     
+# - kernel -> /mnt/arietta_kernel
 # - rootfs -> /mnt/arietta_rootfs
 # - home   -> /mnt/arietta_home
 #
@@ -59,8 +59,8 @@ KDO: git clone git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable
 
 # ------------------------------------ PATCH start ---------------------------------
 
-# 
-# patch kernel for rt-preempt 
+#
+# patch kernel for rt-preempt
 #
 DIR: $ARMEL_HOME/kernel/linux-stable
 KDO: git checkout -b stable v4.0.5
@@ -69,7 +69,7 @@ KDO: zcat ../patch-4.0.5-rt3.patch.gz | patch -p1
 # ---
 
 #
-# patch ipipe 
+# patch ipipe
 #
 DIR
 KDO:
@@ -86,7 +86,7 @@ KDO:
 # ------------------------------------ CONFIG start --------------------------------
 
 #
-# configure kernel 
+# configure kernel
 #
 DIR: $ARMEL_HOME/external/linux (or download to kernel/linux-...)
 KDO: git checkout -b stable v4.0.5
@@ -100,14 +100,14 @@ KDO: make ARCH=arm menuconfig
 # ------------------------------------ BUILD start ---------------------------------
 
 #
-#  build dtb 
+#  build dtb
 #
 DIR: $ARMEL_HOME/external/linux (or download to kernel/linux-...)
 KDO: cp $ARMEL_HOME/configs/acme-arietta.dts arch/arm/boot/dts/acme-arietta.dts
 KDO: make ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabi- acme-arietta.dtb
 
 #
-# build kernel/modules 
+# build kernel/modules
 #
 DIR: $ARMEL_HOME/external/linux (or download to kernel/linux-...)
 KDO: make -j10 ARCH=arm CROSS_COMPILE=arm-none-linux-gnueabi- uImage modules
@@ -125,21 +125,21 @@ KDO(rt): make ARCH=arm INSTALL_MOD_PATH=../modules_4.0.5_rt modules_install
 # ------------------------------------ COPY to SD start ----------------------------
 
 #
-# copy dtb 
+# copy dtb
 #
 DIR: $ARMEL_HOME/external/linux (or download to kernel/linux-...)
 KDO: cp arch/arm/boot/dts/acme-arietta.dtb /mnt/arietta_kernel/
 KDO: cp arch/arm/boot/dts/acme-arietta.dts /mnt/arietta_kernel/
 
 #
-# copy kernel + kernel config 
+# copy kernel + kernel config
 #
 DIR: $ARMEL_HOME/external/linux (or download to kernel/linux-...)
 KDO: cp arch/arm/boot/uImage /mnt/arietta_kernel/
 KDO: cp .config /mnt/arietta_kernel/
 
 #
-# copy modules 
+# copy modules
 #
 # Note: maybe your need to remove the old one
 DIR: $ARMEL_HOME/external/linux (or download to kernel/linux-...)
@@ -147,7 +147,7 @@ KDO: sudo rsync -avc ../modules_4.0.5/lib/modules/. /mnt/arietta_rootfs/lib/modu
 KDO(rt): sudo rsync -avc ../modules_4.0.5_rt/lib/modules/. /mnt/arietta_rootfs/lib/modules/.
 
 #
-# copy cleaned source to sd card 
+# copy cleaned source to sd card
 #
 # Note: dont forget to make ARCH=arm clean
 DIR: depends ...
@@ -169,7 +169,7 @@ MAYBE: remove your old kernel tree (also installed modules -> /lib/module/your_o
 #
 # Prepare linux tree to build your modules against the new kernel (non-rt)
 #
-DIR: /usr/src/linux-4.0.5 
+DIR: /usr/src/linux-4.0.5
 KDO: make clean
 KDO: make scripts
 

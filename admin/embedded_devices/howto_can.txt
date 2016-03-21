@@ -4,9 +4,9 @@
 #
 # License:
 #
-# GPL                                                                        
-# (c) 2015, thorsten.johannvorderbrueggen@t-online.de                        
-#                                                                            
+# GPL
+# (c) 2015, thorsten.johannvorderbrueggen@t-online.de
+#
 # This manual is free software; you may redistribute it and/or modify it under
 # the terms of the GNU General Public License. Please refer to the license in
 # Appendix F, GNU General Public License.
@@ -49,7 +49,7 @@ lrwxrwxrwx  1 root root 0 Jan 22 10:10 lo -> ../../devices/virtual/net/lo
 lrwxrwxrwx  1 root root 0 Jan 22 10:10 sit0 -> ../../devices/virtual/net/sit0
 
 
-# setup can 
+# setup can
 sudo ip link set can0 type can bitrate 125000 triple-sampling on
 sudo ifconfig can0 up
 
@@ -74,7 +74,7 @@ none		/sys/kernel/debug debugfs defaults	0       0
 mount -t debugfs none /sys/kernel/debug
 
 
-# gpio config 
+# gpio config
 root@arietta:/proc/net/can$ cat /sys/kernel/debug/gpio
 cat: /sys/kernel/debug/gpio: Keine Berechtigung
 root@arietta:/proc/net/can$ sudo cat /sys/kernel/debug/gpio
@@ -94,9 +94,9 @@ GPIOs 96-117, platform/fffffa00.gpio, fffffa00.gpio:
 # detailed infos about can device
 root@arietta:/proc/net/can$ ip -details link show can0
 4: can0: <NO-CARRIER,NOARP,UP,ECHO> mtu 16 qdisc pfifo_fast state DOWN mode DEFAULT qlen 10
-    link/can  promiscuity 0 
-    can <TRIPLE-SAMPLING> state BUS-OFF restart-ms 0 
-    bitrate 125000 sample-point 0.875 
+    link/can  promiscuity 0
+    can <TRIPLE-SAMPLING> state BUS-OFF restart-ms 0
+    bitrate 125000 sample-point 0.875
     tq 500 prop-seg 6 phase-seg1 7 phase-seg2 2 sjw 1
     mcp251x: tseg1 3..16 tseg2 2..8 sjw 1..4 brp 1..64 brp-inc 1
     clock 8000000

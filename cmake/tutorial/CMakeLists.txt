@@ -6,8 +6,8 @@ project(tutorial)
 #project(tutorial C)
 #project(tutorial) -> use both
 
-# here are my source files 
-set(SOURCE_FILES tutorial.cc) 
+# here are my source files
+set(SOURCE_FILES tutorial.cc)
 
 set(CMAKE_CXX_FLAGS "-g -Wall -std=c++11")
 set(CMAKE_C_FLAGS "-g -Wall -std=c11")
@@ -39,14 +39,14 @@ if (USE_MYMATH)
 # add my math_function lib
   include_directories("${PROJECT_SOURCE_DIR}/math_functions")
   add_subdirectory(math_functions)
-# NOTE: 
+# NOTE:
 # if you want to use static or shared libs ... set the correct
 # dont forget to take a look at the math_functions/CMakeList.txt
 # set(EXTRA_LIBS ${EXTRA_LIBS} math_functions-static)
 # set(EXTRA_LIBS ${EXTRA_LIBS} math_functions)
 # NOTE:
-# ${EXTRA_LIBS} is empty because this is the first content 
-# so i dont read it because it generates warnings with cmake-gui ... 
+# ${EXTRA_LIBS} is empty because this is the first content
+# so i dont read it because it generates warnings with cmake-gui ...
 # next libs add must use the lines above
   set(EXTRA_LIBS math_functions)
 endif(USE_MYMATH)

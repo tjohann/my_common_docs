@@ -10,9 +10,9 @@
 #         CROSSBUILD for armv5te (arietta/imx233)                 #
 #                                                                 #
 ###################################################################
-To make it independed from your normal account i add a new user: build_user 
+To make it independed from your normal account i add a new user: build_user
 
-- below are the changes for .bashrc (to have some alias and emacs) 
+- below are the changes for .bashrc (to have some alias and emacs)
 - below are additions to conf (CCACHE, NUMJOBS ...)
 
 # ----------------------------------------------------------------
@@ -97,7 +97,7 @@ There're at least 3 different steps:
 
 
 #
-# crossbuild env to build packages 
+# crossbuild env to build packages
 #
 - working dir:
 [build_user@barney void-packages]
@@ -105,10 +105,10 @@ There're at least 3 different steps:
 -> first build the basics for armv5te ...
    after that you're able to build the base-system
 ./xbps-src -m masterdir-arietta -H hostdir-arietta bootstrap armv5te
-   
+
 
 #
-# crossbuild packages for rootfs 
+# crossbuild packages for rootfs
 #
 - working dir:
 [build_user@barney void-packages]
@@ -119,7 +119,7 @@ There're at least 3 different steps:
 
 
 -> build arietta specific base system and dependencies
-   after that you're able to build the rootfs 
+   after that you're able to build the rootfs
 ./xbps-src -m masterdir-arietta -H hostdir-arietta -a armv5te -N pkg arietta-base
 ./xbps-src -m masterdir-arietta -H hostdir-arietta -a armv5te -N pkg ntp
 
@@ -160,7 +160,7 @@ sudo ./mkrootfs.sh -r ../void-packages/hostdir-arietta/binpkgs/arietta arietta
 # after arietta-base
 #
 
-perl 
+perl
 autoconf
 
 binutils-devel
@@ -175,7 +175,7 @@ inetutils-ifconfig
 socklog-void
 gdb
 ltrace
-(strace) <- wont build 
+(strace) <- wont build
 llvm
 llvm-docs
 clang
@@ -216,7 +216,7 @@ valgrind-devel <- wont build
 
 tree
 htop
-git 
+git
 cgdb
 ntp
 

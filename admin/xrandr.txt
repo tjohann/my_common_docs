@@ -1,4 +1,4 @@
 xrandr --output VGA1 --auto --left-of LVDS1
 xrandr --output VGA1 --off
-xrandr --output LVDS1 --mode=1024x768 
-1440x900 
+xrandr --output LVDS1 --mode=1024x768
+1440x900

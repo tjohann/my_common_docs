@@ -4,9 +4,9 @@
 #
 # License:
 #
-# LGPL                                                                        
-# (c) 2015, thorsten.johannvorderbrueggen@t-online.de                        
-#                                                                            
+# LGPL
+# (c) 2015, thorsten.johannvorderbrueggen@t-online.de
+#
 # This manual is free software; you may redistribute it and/or modify it under
 # the terms of the GNU General Public License. Please refer to the license in
 # Appendix F, GNU General Public License.
@@ -74,7 +74,7 @@ root@arietta:/sys/bus/spi# udevadm info -a -p /sys/devices/ahb/ahb:apb/f0000000.
 
 
 # where to find + content
-root@arietta:/sys/devices/ahb/ahb:apb/f0000000.spi/spi_master/spi32766/spi32766.1$ lf              
+root@arietta:/sys/devices/ahb/ahb:apb/f0000000.spi/spi_master/spi32766/spi32766.1$ lf
 total 0
 drwxr-xr-x 3 root root    0 Nov 11 14:59 .
 drwxr-xr-x 5 root root    0 Nov 11 14:59 ..
@@ -86,7 +86,7 @@ lrwxrwxrwx 1 root root    0 Nov 11  2014 subsystem -> ../../../../../../../bus/s
 -rw-r--r-- 1 root root 4.0K Nov 11 14:59 uevent
 
 
-# howto check entry of eeprom 
+# howto check entry of eeprom
 more /sys/bus/spi/devices/spi32766.1/eeprom | od -x
 
 # howto write content to eeprom

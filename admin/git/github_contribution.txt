@@ -50,7 +50,7 @@ upstream	git://github.com/voidlinux/void-packages.git (push)
 git checkout -b my_branch
 
 # "normal" usage
-git add ... commit ... 
+git add ... commit ...
 
 # push it on github
 git push origin my_branch

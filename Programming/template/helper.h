@@ -23,7 +23,7 @@
  * emulate a getch function
  */
 void
-wait_for_char(void); 
+wait_for_char(void);
 
 
 #endif

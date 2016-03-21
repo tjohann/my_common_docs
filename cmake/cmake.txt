@@ -12,7 +12,7 @@ http://www.cmake.org/Wiki/CMake_FAQ
 #
 
 #
-# useful kdos around cmake 
+# useful kdos around cmake
 #
 
 # see gcc kdo and more build output
@@ -32,4 +32,4 @@ cmake --help-module-list
 # Ingnore it :-)
 #
 github ... libftdi CMakeLists.txt -> example libconfuse
-github ... lopter/lightsd -> example for FindLibBSD.cmake 
+github ... lopter/lightsd -> example for FindLibBSD.cmake

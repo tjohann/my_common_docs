@@ -42,11 +42,11 @@
 ;;(setq c-default-style "k&r")
 (setq c-default-style "linux")
 ;;(setq c-default-style "k&r" c-basic-offset 4)
-;;(add-hook 'c-mode-hook 
+;;(add-hook 'c-mode-hook
 ;;	  (lambda ()
 ;;          (c-set-style "linux")))
 
-(add-hook 'c-mode-hook 
+(add-hook 'c-mode-hook
 	  (lambda ()
           (c-set-style "linux")))
 
@@ -134,7 +134,7 @@
 (if window-system
       (set-frame-size (selected-frame) 105 52))
 
-;; disable tool bar (for menu-bar use ALT-M menu-bar-mode) 
+;; disable tool bar (for menu-bar use ALT-M menu-bar-mode)
 (tool-bar-mode -1)
 
 ;; set colors for my emacs server instances

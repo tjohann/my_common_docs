@@ -1,12 +1,12 @@
 # ----------------------------------------------------------------------------------
 #
-# Title: simple summary for dts/dtb related topics 
+# Title: simple summary for dts/dtb related topics
 #
 # License:
 #
-# LGPL                                                                        
-# (c) 2015, thorsten.johannvorderbrueggen@t-online.de                        
-#                                                                            
+# LGPL
+# (c) 2015, thorsten.johannvorderbrueggen@t-online.de
+#
 # This manual is free software; you may redistribute it and/or modify it under
 # the terms of the GNU General Public License. Please refer to the license in
 # Appendix F, GNU General Public License.
@@ -19,7 +19,7 @@
 #
 
 # Howto get the dts of an actual running dtb/kernel (-I fs -> input format is fs ... procfs):
-root@arietta:/usr/src/linux-3.18.3# scripts/dtc/dtc -I fs -O dts -o ~/running.dts /proc/device-tree 
+root@arietta:/usr/src/linux-3.18.3# scripts/dtc/dtc -I fs -O dts -o ~/running.dts /proc/device-tree
 
 
 # Howto build dtb
@@ -50,12 +50,12 @@ dr-xr-xr-x  2 root root  0 Nov  3 16:14 memory
 dr-xr-xr-x  2 root root  0 Nov  3 16:14 onewire@0
 
 
-# Howto see content 
-root@arietta:/proc/device-tree# hexdump -C "#size-cells" 
+# Howto see content
+root@arietta:/proc/device-tree# hexdump -C "#size-cells"
 00000000  00 00 00 01                                       |....|
 00000004
 # or
-root@arietta:/proc/device-tree# hexdump -C 'ahb/compatible' 
+root@arietta:/proc/device-tree# hexdump -C 'ahb/compatible'
 00000000  73 69 6d 70 6c 65 2d 62  75 73 00                 |simple-bus.|
 0000000b
 

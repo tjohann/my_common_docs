@@ -11,7 +11,7 @@ Through namespaces it's possible do isolate one daemon/service from another one.
 A process within a namespace is running on the machine ... instead a process running in kvm/qemu is running in an virtual machine ...
 
 Usecases:
-- build a common software system based on different sources (and different trustlevel) 
+- build a common software system based on different sources (and different trustlevel)
 - continues integration -> every build runs in his own environment
 - run multiple versions of the same program/daemon/service
 - build packages within a container -> see void linux xbps
@@ -82,7 +82,7 @@ setns()
 
 One important difference between clone and unshare is that:
 - if a private mount namespace is created via clone(...,CLONE_NEWNS,...) it's a copy of the parent mount ...
-- if a private mount namespace is created vie unshare(...,CLONE_NEWNS,...) it's a PRIVATE copy so that changes in the child are not visible in the parent namespace! 
+- if a private mount namespace is created vie unshare(...,CLONE_NEWNS,...) it's a PRIVATE copy so that changes in the child are not visible in the parent namespace!
 
 #
 ## kernel stuff (see http://lwn.net/Articles/259217/) ##########################
@@ -133,7 +133,7 @@ The pid has been moved from pid to upid, while pid.level holds the "number of na
 JOBS:
 - create a new namespaces ... start bash an check ps (without /proc) ... also check filesystem (is /usr available? ... which content?)
 
-- check that with more than one namespace ... 
+- check that with more than one namespace ...
 
 - howto waitpid on more than one cloned child?
 
@@ -141,6 +141,6 @@ JOBS:
 QUESTIONS:
 - can i add an process to an already existing namespace?
   Yes via setns()
-  
+
 - real meaning of int nr in upid
-  thats the pid within the namespace 
+  thats the pid within the namespace

@@ -1,6 +1,6 @@
 #
-# LGPL                                                                        
-# (c) 2015, thorsten.johannvorderbrueggen@t-online.de                        
+# LGPL
+# (c) 2015, thorsten.johannvorderbrueggen@t-online.de
 #
 
 MODULES = $(shell ls -d */ | cut -f1 -d'/')

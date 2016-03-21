@@ -9,15 +9,15 @@
 - I2C need 10k or 4k7 (if its the only device) pullup ...
 - P0...P7 are open collector ports
   - 25mA to ground
-  
+
 ----+-------> 3V3
     |
    +-+
    | | 1k
-   | | 
+   | |
    +-+
     |
-    |	          LED 
+    |	          LED
     |            __|\|__
     +------------+ |/| +----> P0...P7
 
@@ -35,11 +35,11 @@
     |
    +-+
    | | 10k
-   | | 
+   | |
    +-+
     |
     +-----------------------> P0...P7
-    |	         
+    |
     |     ---
     |      |
     |     \|
@@ -49,8 +49,8 @@
 	        --- (gnd)
 
   - Sum(P0...P7) < 200mA
-  - to drive addtional logic use a 74HC04N or similiar 
-  
+  - to drive addtional logic use a 74HC04N or similiar
+
 
 
 # --- I2C address (PCF8574)
@@ -63,7 +63,7 @@
  H   L	 L    0x24
  H   L	 H    0x25
  H   H	 L    0x26
- H   H	 H    0x27		
+ H   H	 H    0x27
 
 
 Example: 0x21/0x39
@@ -72,7 +72,7 @@ Example: 0x21/0x39
     |
    +-+
    | | 10k
-   | | 
+   | |
    +-+
     |
     |
@@ -104,7 +104,7 @@ http://www.ti.com/lit/ds/symlink/pcf8574.pdf
 # examples
 #
 
-# --- keyboard and led matrix 
+# --- keyboard and led matrix
 http://www.mikrocontroller.net/attachment/42269/board.png
 
 # --- LCD

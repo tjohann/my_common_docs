@@ -16,7 +16,7 @@ http://www.freedesktop.org/software/systemd/man/daemon.html
 
 Summary: - /etc/sv contains definitions while /etc/service contains currently managed services
 	 - chpst (change process state) helper
-	 
+
 /etc/sv -> directory contains a subdirectory for each process that runit (runsvdir) can manage
        /my_daemon
                  /run
@@ -28,7 +28,7 @@ Summary: - /etc/sv contains definitions while /etc/service contains currently ma
 		 -> runit read stdout ... redirect to /var/log/daemon
 		 (runsv will create a pipe and redirect standard out of the service (and its optional finish script) to log/run.)
 		 #!/bin/sh
-		 exec svlogd -tt /var/log/my_daemon 
+		 exec svlogd -tt /var/log/my_daemon
 
 		 /run (with a different process state -> here different user)
 		 #!/bin/sh
@@ -69,7 +69,7 @@ Send signals to my_daemon:
 sv down my_dameon
 - send SIGTERM and restart
 sv term my_dameon
-- same as down, but waits some second before send SIGTERM 
+- same as down, but waits some second before send SIGTERM
 sv stop my_dameon
 - send SIGHUP
 sv hup my_dameon
@@ -83,9 +83,9 @@ sv state /etc/service/*
 Show more info while using sv
 sv -v ...
 
-Example config for svlogd 
+Example config for svlogd
 /var/log/sshd/config
-	 s100000         -> max size of a log file to 100000 bytes	
+	 s100000         -> max size of a log file to 100000 bytes
 	 n10             -> keep 10 files maximum
 	 N5              -> 5 files minimum
 	 t86400          -> rotate every 86400 seconds
@@ -100,7 +100,7 @@ Example config for svlogd
 ####
 
 
-Taken from https://wiki.archlinux.org/index.php/Runit 
+Taken from https://wiki.archlinux.org/index.php/Runit
 sv - used for controlling services, getting status of services, and dependency checking.
 
 chpst - control of a process environment, including memory caps, limits on cores, data segments, environments, user/group privileges, and more.

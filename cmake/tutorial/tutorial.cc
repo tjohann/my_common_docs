@@ -17,7 +17,7 @@ int main(int argc, char **argv)
 	double input_val;
 	double output_val;
 
-	fprintf(stdout, "%s@version.%d.%d.%d\n", 
+	fprintf(stdout, "%s@version.%d.%d.%d\n",
 	       argv[0],
 	       tutorial_VERSION_MAJOR,
 	       tutorial_VERSION_MINOR,
@@ -27,7 +27,7 @@ int main(int argc, char **argv)
 		fprintf(stdout, "usage: %s number\n", argv[0]);
 		exit(1);
 	}
-		
+
 	input_val = atof(argv[1]);
 
 #ifdef USE_MYMATH
@@ -39,6 +39,6 @@ int main(int argc, char **argv)
 #endif
 
 	fprintf(stdout, "sqrt(%g) = %g\n", input_val, output_val);
-	
+
 	return EXIT_SUCCESS;
 }

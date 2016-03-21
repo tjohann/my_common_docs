@@ -1,12 +1,12 @@
 # ----------------------------------------------------------------------------------
 #
-# Title      : task_for_new_virt_inst.txt 
+# Title      : task_for_new_virt_inst.txt
 #
 # License:
 #
-# LGPL                                                                        
-# (c) 2015, thorsten.johannvorderbrueggen@t-online.de                        
-#                                                                            
+# LGPL
+# (c) 2015, thorsten.johannvorderbrueggen@t-online.de
+#
 # This manual is free software; you may redistribute it and/or modify it under
 # the terms of the GNU General Public License. Please refer to the license in
 # Appendix F, GNU General Public License.
@@ -83,7 +83,7 @@ qemu-system-i386 -M pc \
 -> /etc/exports
 
 # my normal share for virtual installations
-/mnt/shared  slack_curr_virt(rw,no_subtree_check,sync) slack_i32_curr_virt(rw,no_subtree_check,sync) slack_14_1_virt(rw,no_subtree_check,sync) slack_i32_14_1_virt(rw,no_subtree_check,sync) jailhouse_qemu(rw,no_subtree_check,sync) build_armv7hl(rw,no_subtree_check,sync)  
+/mnt/shared  slack_curr_virt(rw,no_subtree_check,sync) slack_i32_curr_virt(rw,no_subtree_check,sync) slack_14_1_virt(rw,no_subtree_check,sync) slack_i32_14_1_virt(rw,no_subtree_check,sync) jailhouse_qemu(rw,no_subtree_check,sync) build_armv7hl(rw,no_subtree_check,sync)
 
 
 ## ------------ adapt disk_launcher ------------
@@ -101,7 +101,7 @@ qemu-system-i386 -M pc \
 
 -> adapt ifname=tapYOUR_CHOOSEN_IP (like ifname=tap54 for slack_i32_14_1_virt)
 -> adapt MACADDR=",macaddr=52:54:11:22:00:YOUR_CHOOSEN_IP" (like
-   MACADDR=",macaddr=52:54:11:22:00:54" for slack_i32_14_1_virt) 
+   MACADDR=",macaddr=52:54:11:22:00:54" for slack_i32_14_1_virt)
 
 #!/bin/bash
 ##################################################################
@@ -128,7 +128,7 @@ qemu-system-i386 $NETTYPE \
 		   -usb \
 		   -smp 2 \
 		   -no-reboot \
-		   -k $KEYBOARD 
+		   -k $KEYBOARD
 #-enable-kvm \
 #-nographic
 #
@@ -165,7 +165,7 @@ qemu-system-i386 $NETTYPE \
 
 
 ## ------------ adapt hosts ------------
--> add echnaton 
+-> add echnaton
    192.168.0.42		echnaton.my.domain echnaton
 
 
@@ -184,16 +184,16 @@ qemu-system-i386 $NETTYPE \
 ## ------------ adapt sshd config ------------
 -> in qemu inst
    /etc/ssh/sshd_config
-   
+
    #AllowAgentForwarding yes
    AllowTcpForwarding yes
    #GatewayPorts no
-   X11Forwarding yes 
+   X11Forwarding yes
 
    /etc/ssh/ssh_config
    Host *
    #   ForwardAgent no
-   ForwardX11 yes 
+   ForwardX11 yes
    #   RhostsRSAAuthentication no
 
 
@@ -206,7 +206,7 @@ qemu-system-i386 $NETTYPE \
    # /usr/share/kbd/consolefonts.
    #
    setfont -v ter-v14n.psf.gz
-   
+
 -> /etc/rc.d/rc.local
    ## MY special stuff
    if [ -e /tmp/xconsole ] ; then echo "/tmp/xconsole existiert" ; else mknod -m 666 /tmp/xconsole p ; fi
@@ -224,7 +224,7 @@ qemu-system-i386 $NETTYPE \
      export MANPATH=/usr/local/man:/usr/local/share/man/:/usr/man:/home/tjohann/man
 
    - add bash_completion
-     # bash_completion 
+     # bash_completion
      if [ -f /etc/bash_completion.d ]; then
        . /etc/bash_completion.d
      fi
@@ -258,7 +258,7 @@ qemu-system-i386 $NETTYPE \
 
    # my logging domain
    local7.*						-/var/log/mylogs
-   
+
 -> /etc/slackpkg/blacklist
    add some package postnames
    # This one will blacklist all SBo packages:
@@ -281,7 +281,7 @@ qemu-system-i386 $NETTYPE \
    esac
 
 -> lang.sh (lang.csh if needed)
-   # my default language 
+   # my default language
    export LANG=de_DE.UTF-8
 
 
@@ -302,12 +302,12 @@ qemu-system-i386 $NETTYPE \
 -> .bash*
 -> .profile
 -> .gitconfig
--> use user_root.tgz 
+-> use user_root.tgz
 
 
 ## ------------ add important dirs to root/user ------------
 -> mkdir {man,lib,include,bin,etc,include,src,share}
--> use user_root.tgz 
+-> use user_root.tgz
 
 
 ## ------------ install sbopkg ------------

@@ -1,5 +1,5 @@
 #
-# possible lin config for arietta 
+# possible lin config for arietta
 #
 
 ldattach 25 /dev/ttyS1 # bind socket lin to uart

@@ -1,0 +1,30 @@
+#
+# adapt locale again
+#
+
+#
+# failure during autoconf/configure ...
+#
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+        LANGUAGE = (unset),
+        LC_ALL = (unset),
+        LC_COLLATE = "C",
+        LANG = "de_DE.UTF-8"
+    are supported and installed on your system.
+
+
+
+#
+# fix:
+# see also http://www.voidlinux.eu/news/2013/05/libc-locales-disabled.html and
+# https://www.thomas-krenn.com/de/wiki/Perl_warning_Setting_locale_failed_unter_Debian
+#
+
+# enable /etc/defaults/glibc-locales
+en_US.UTF-8 UTF-8
+de_DE.UTF-8 UTF-8
+
+# rebuild locale
+xbps-reconfigure -f glibc-locales

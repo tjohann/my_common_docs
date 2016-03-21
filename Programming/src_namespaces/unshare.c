@@ -1,6 +1,6 @@
 /*-*- Mode: C; c-basic-offset: 8; indent-tabs-mode: nil -*-*/
 
-/* unshare.c 
+/* unshare.c
 
    Copyright 2013, Michael Kerrisk
    Licensed under GNU General Public License v2 or later
@@ -8,7 +8,7 @@
    A simple implementation of the unshare(1) command: unshare
    namespaces and execute a command.
 
-   Changes: 
+   Changes:
    thorsten.johannvorderbrueggen@t-online.de
 */
 
@@ -45,7 +45,7 @@ main(int argc, char *argv[])
 	int flags, opt;
 
 	flags = 0;
-	
+
 	while ((opt = getopt(argc, argv, "imnpuU")) != -1) {
 		switch (opt) {
 		case 'i': flags |= CLONE_NEWIPC;        break;
@@ -57,14 +57,14 @@ main(int argc, char *argv[])
 		default:  usage(argv[0]);
 		}
 	}
-	
+
 	if (optind >= argc)
 		usage(argv[0]);
-	
+
 	if (unshare(flags) == -1)
 		errExit("unshare");
-	
+
 	execvp(argv[optind], &argv[optind]);
-	
+
 	errExit("execvp");
 }

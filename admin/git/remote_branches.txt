@@ -33,7 +33,7 @@ git pull  <- When local branches are trackin branches git knows where to pull/pu
 
   locations of remote branches:
   git remote -v
-  
+
   every remote has a dir under git/ref/remotes:
 
   tjohann@barney:~/my_common_docs$ lf .git/refs/remotes/
@@ -65,9 +65,9 @@ git pull  <- When local branches are trackin branches git knows where to pull/pu
   Tracking local branches are "connected" with other branches (with local or remote)
   git branch --track my_branch [origin/master]
       	     	     	 |            |
-		my branch name    the start point of remote branch	 
+		my branch name    the start point of remote branch
 
-  view tracking branches 
+  view tracking branches
   git branch -vv
 
   or in .git/config
@@ -101,10 +101,10 @@ git push origin my_branch
 #
 # branch from a github branch to contiue work on another computer
 #
-# remote branch is arietta and your local branch is also named arietta 
+# remote branch is arietta and your local branch is also named arietta
 git checkout -b arietta remotes/origin/arietta
 
-# set correct upstream 
+# set correct upstream
 git remote add upstream git://github.com/voidlinux/void-packages.git
 # pull from upstream
 git pull upstream master

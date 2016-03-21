@@ -14,8 +14,8 @@ AM_CFLAGS is the automake variable
 myprog_CFLAGS is the variable specific to the myprog target
 
 -> Automake always uses two of these variables when compiling C sources files.
-   - myprog_CPPFLAGS if it is defined, or AM_CFLAGS otherwise  
-   - the second variable is always CFLAGS. 
+   - myprog_CPPFLAGS if it is defined, or AM_CFLAGS otherwise
+   - the second variable is always CFLAGS.
 
 -> $(myprog_CFLAGS) $(CFLAGS)
 -> $(AM_CFLAGS) $(CFLAGS)

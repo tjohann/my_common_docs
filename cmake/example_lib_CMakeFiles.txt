@@ -19,7 +19,7 @@ set(SOURCE_FILES
 	daemon.c
 	config.c
 	network.c
-) 
+)
 
 #
 # set C_FLAGS ...
@@ -64,7 +64,7 @@ add_library(baalue_static STATIC ${SOURCE_FILES})
 add_library(baalue SHARED ${SOURCE_FILES})
 
 #
-# link all together 
+# link all together
 #
 # Note: libconfuse and libbsd are external libs
 #       see libbaalue for FindXXX.cmake

@@ -2,7 +2,7 @@
 # 00-INDEX
 #
 
-This is a brief list of all the files in ./my_common_docs/programming/src_namespaces ... 
+This is a brief list of all the files in ./my_common_docs/programming/src_namespaces ...
 
 
 00-INDEX
@@ -13,7 +13,7 @@ demo_uts_namespaces.c
 
 helper.c
 	- my simple helper functions
-	
+
 helper.h
 	- the interface header for my simple helper functions
 

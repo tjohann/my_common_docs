@@ -16,7 +16,7 @@ get_ip_address()
     # Note: ifconfig behave different on debian and slackware
     SLACKWARE="Slackware"
     UBUNTU="Ubuntu"
-    
+
     OSRELEASE=$(grep PRETTY_NAME /etc/os-release)
 
     if [[ $OSRELEASE == *$SLACKWARE* ]]; then
@@ -25,7 +25,7 @@ get_ip_address()
 
     if [[ $OSRELEASE == *$UBUNTU* ]]; then
 	IPADDR=$(ifconfig | grep 'inet Adresse:' | grep -v '127.0.0.1' | cut -d: -f3 | awk '{ print $1}')
-    fi   
+    fi
 }
 
 

@@ -3,7 +3,7 @@
  *
  * usage:
  * gcc -S -O1 return_or_exit.c
- * cat return_or_exit.s 
+ * cat return_or_exit.s
 
  *
  * result with return (only relevant parts):

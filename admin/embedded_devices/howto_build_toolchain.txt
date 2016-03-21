@@ -1,12 +1,12 @@
 # ----------------------------------------------------------------------------------
 #
-# Title: simple howto for building a custom toolchain (target: arietta or imx233) 
-# 
+# Title: simple howto for building a custom toolchain (target: arietta or imx233)
+#
 # License:
 #
-# LGPL                                                                        
-# (c) 2015, thorsten.johannvorderbrueggen@t-online.de                        
-#                                                                            
+# LGPL
+# (c) 2015, thorsten.johannvorderbrueggen@t-online.de
+#
 # This manual is free software; you may redistribute it and/or modify it under
 # the terms of the GNU General Public License. Please refer to the license in
 # Appendix F, GNU General Public License.
@@ -178,4 +178,4 @@ tjohann@echnaton [~/src/toolchain_arm926_v3/crosstool-ng]$ ct-ng build
 [INFO ]  Build completed at 20150523.192250
 [INFO ]  (elapsed: 24:23.52)
 [INFO ]  Finishing installation (may take a few seconds)...
-[24:24] / tjohann@echnaton [~/src/toolchain_arm926_v3/crosstool-ng]$ 
+[24:24] / tjohann@echnaton [~/src/toolchain_arm926_v3/crosstool-ng]$
