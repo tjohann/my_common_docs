@@ -69,10 +69,10 @@ put checksum.sha256
 put *.tgz
 
 cd /home/pfs/project/a/a2/a20devices/bananapi
-put images/*_bananapi.tgz
+put images/bananapi_*.tgz
 
 cd /home/pfs/project/a/a2/a20devices/cubietruck
-put images/*_bananapi.tgz
+put images/cubietruck_*.tgz
 
 cd /home/pfs/project/a/a2/a20devices/olimex
-put images/*_olimex.tgz
+put images/olimex_*.tgz
