@@ -39,3 +39,4 @@ host
 *.img
 linux-*
 modules_*
+*~

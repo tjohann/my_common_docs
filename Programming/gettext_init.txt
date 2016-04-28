@@ -1,0 +1,29 @@
+#
+# howto init gettext 
+#
+
+Note: normal includes in configure.ac -> see libbaalue.git or others
+
+# kdo
+tjohann@echnaton:~/Programming/libbaalue$ gettextize -f --copy --no-changelog
+tjohann@echnaton:~/Programming/libbaalue$ cp /usr/share/gettext/gettext.h src/
+tjohann@echnaton:~/Programming/libbaalue/po$ cp Makevars.template Makevars
+
+# changes in Makevars
+COPYRIGHT_HOLDER = Thorsten Johannvorderbrueggen
+PACKAGE_GNU = no
+MSGID_BUGS_ADDRESS = thorsten.johannvorderbrueggen@t-online.de
+
+# changes in POTFILES.in
+src/libbaalue.h
+src/error.c
+
+# adds to src/Makefile.am
+see libbaalue or others
+
+... bootstrap.sh
+
+# add de 
+tjohann@echnaton:~/Programming/libbaalue/po$ msginit -l de
+tjohann@echnaton:~/Programming/libbaalue/po$ echo de >> LINGUAS
+
