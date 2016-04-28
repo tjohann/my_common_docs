@@ -1,0 +1,54 @@
+#
+# some useful kdo
+#
+
+id
+last
+who
+
+lshw 
+lshal
+dmidecode
+
+mpstat 1
+vmstat 2 
+iostat 2
+
+hdparm -i /dev/sda
+lsof -u tjohann
+free ¡Vm
+watch df ¡Vh 
+
+kill pid
+killall program-name
+pkill processname
+
+ifconfig ¡Va
+ip addr show
+ethtool eth0
+mii-tool eth0
+
+# read speedtest
+hdparm -tT /dev/sda
+
+# test for badblocks 
+badblocks -s /dev/sda
+
+# capture all packets
+tcpdump -i eth0
+# capture all packahes on port 80
+tcpdump -i eth0 'port 80'
+
+# set mtu to 9000
+ifconfig eth1 mtu 9000 up - set mtu to 9000
+
+# change mac address
+ifconfig eth0 down
+ifconfig eth0 hw ether 00:11:22:33:44:55
+ifconfig eth0 up
+
+# set ip address 
+ip address add 192.168.0.1 dev eth0
+
+# list all active ports
+netstat -tupl

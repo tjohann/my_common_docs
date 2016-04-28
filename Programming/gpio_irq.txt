@@ -1,0 +1,20 @@
+#
+# some useful info about gpio based irq handling
+#
+
+https://www.olimex.com/forum/index.php?topic=1514.15
+http://www.py6zgp.com/download/A20-GPIO.pdf
+https://www.olimex.com/wiki/A20-OLinuXino-MICRO#GPIO_under_Linux
+http://www.mjmwired.net/kernel/Documentation/gpio.txt#634
+
+https://www.olimex.com/wiki/A20-SOM
+http://linux-sunxi.org/GPIO
+https://olimex.wordpress.com/2012/10/23/a13-olinuxino-playing-with-gpios/
+https://github.com/torvalds/linux/blob/master/drivers/pinctrl/sunxi/pinctrl-sunxi.h
+http://falsinsoft.blogspot.de/2012/11/access-gpio-from-linux-user-space.html
+
+
+<linux-kernel-sourcetree>/Documentation/devicetree/bindings/gpio/gpio-poweroff.txt
+
+
+http://linux-sunxi.org/A20/PIO

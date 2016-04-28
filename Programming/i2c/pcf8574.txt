@@ -1,14 +1,18 @@
 #
-# useful stuff about IC PCF8574 (I2C port expander)
+# useful stuff about IC PCF8574(A) (I2C port expander)
 #
 
 # --- PCF8574 summary
-- the PCF8574 is a general purpose I2C 8-bit input/output port expander ... with this chip you can drive leds or read buttons ...
-- the chip has an interrupt line (low after any change on input pins) ... after reading out the state of the pins, the interrupt line goes to high
+
+- the PCF8574 is a general purpose I2C 8-bit input/output port expander ... with
+  that chip you can drive leds or read buttons ...
+- the chip has an interrupt line (low after any change on input pins) ...  after
+  reading out the state of the pins, the interrupt line goes to high
 - INT line is an open-drain output -> need 10k pullup ...
 - I2C need 10k or 4k7 (if its the only device) pullup ...
 - P0...P7 are open collector ports
   - 25mA to ground
+
 
 ----+-------> 3V3
     |
@@ -29,7 +33,7 @@
     |
    --- (gnd)
 
-  - 100ÂµA to power
+  - 100µA to power
 
 ----+-------> 3V3
     |
@@ -52,18 +56,40 @@
   - to drive addtional logic use a 74HC04N or similiar
 
 
+# --- pinning
+
+Symbol	PIN	description
+------------------------------------------
+ A0      1 	address input 0
+ A1      2 	address input 1
+ A2      3 	address input 2
+ P0      4 	I/O 0
+ P1      5 	I/O 1
+ P2      6 	I/O 2
+ P3      7 	I/O 3
+ VSS     8     	ground
+ P4      9     	I/O 4
+ P5     10     	I/O 5
+ P6     11     	I/O 6
+ P7     12     	I/O 7
+ INT    13     	irq output (active LOW)
+ SCL 	14     	...
+ SDA 	15     	...
+ VDD 	16     	supply voltage (2,5 - 6V)
+
 
 # --- I2C address (PCF8574)
- A2  A1  A0   address
----------------------
- L   L	 L    0x20
- L   L	 H    0x21
- L   H	 L    0x22
- L   H	 H    0x23
- H   L	 L    0x24
- H   L	 H    0x25
- H   H	 L    0x26
- H   H	 H    0x27
+
+ A2  A1  A0   address (PCF8574)	address (PCF8574A)
+--------------------------------------------------
+ L   L	 L	   0x20              0x38
+ L   L	 H    	   0x21		     0x39
+ L   H	 L    	   0x22		     0x3A
+ L   H	 H    	   0x23		     ....
+ H   L	 L    	   0x24
+ H   L	 H    	   0x25
+ H   H	 L    	   0x26
+ H   H	 H    	   0x27
 
 
 Example: 0x21/0x39
@@ -100,12 +126,22 @@ The PCF8575 is the 16-bit version of the PCF8574 ... (400kHz) ...
 http://www.nxp.com/documents/data_sheet/PCF8574.pdf
 http://www.ti.com/lit/ds/symlink/pcf8574.pdf
 
+
 #
 # examples
 #
 
+# --- gpio kernel driver
+<linux-source-tree>/drivers/gpio/gpio-pcf857x.c
+<linux-source-tree>/Documentation/devicetree/bindings/gpio/gpio-pcf857x.txt
+
+# --- my pcf874 kernel driver
+https://github.com/tjohann/pcf8574_gpio.git
+
 # --- keyboard and led matrix
 http://www.mikrocontroller.net/attachment/42269/board.png
+<linux-source-tree>/drivers/input/misc/pcf8574_keypad.c
 
 # --- LCD
 http://bralug.de/wiki/BLIT2008-Board-LCD
+
