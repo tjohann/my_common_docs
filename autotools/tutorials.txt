@@ -1,0 +1,6 @@
+#
+# some links to tutorials
+#
+
+
+http://www.homac.de/cgi-bin/index.pl?page=autotools_tut
