@@ -1,0 +1,5 @@
+#
+# howto set max cpu freq to 4.5G
+#
+
+sudo cpufreq-set -c 7 --max 4500000
