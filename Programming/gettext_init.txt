@@ -1,5 +1,5 @@
 #
-# howto init gettext 
+# howto init gettext
 #
 
 Note: normal includes in configure.ac -> see libbaalue.git or others
@@ -23,7 +23,7 @@ see libbaalue or others
 
 ... bootstrap.sh
 
-# add de 
+# add de
 tjohann@echnaton:~/Programming/libbaalue/po$ msginit -l de
 tjohann@echnaton:~/Programming/libbaalue/po$ echo de >> LINGUAS
 

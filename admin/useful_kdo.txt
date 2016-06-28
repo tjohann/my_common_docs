@@ -6,18 +6,18 @@ id
 last
 who
 
-lshw 
+lshw
 lshal
 dmidecode
 
 mpstat 1
-vmstat 2 
+vmstat 2
 iostat 2
 
 hdparm -i /dev/sda
 lsof -u tjohann
 free ¡Vm
-watch df ¡Vh 
+watch df ¡Vh
 
 kill pid
 killall program-name
@@ -31,7 +31,7 @@ mii-tool eth0
 # read speedtest
 hdparm -tT /dev/sda
 
-# test for badblocks 
+# test for badblocks
 badblocks -s /dev/sda
 
 # capture all packets
@@ -47,7 +47,7 @@ ifconfig eth0 down
 ifconfig eth0 hw ether 00:11:22:33:44:55
 ifconfig eth0 up
 
-# set ip address 
+# set ip address
 ip address add 192.168.0.1 dev eth0
 
 # list all active ports
