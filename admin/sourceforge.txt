@@ -68,6 +68,9 @@ cd /home/pfs/project/a/a2/a20devices/
 put checksum.sha256
 put *.tgz
 
+cd /home/pfs/project/a/a2/a20devices/common
+put a20_sdk_*.tgz
+
 cd /home/pfs/project/a/a2/a20devices/bananapi
 put bananapi_*.tgz
 
