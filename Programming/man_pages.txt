@@ -1,0 +1,16 @@
+#
+# some stuff around manpages
+#
+
+links:
+http://stackoverflow.com/questions/8335941/how-to-read-a-man-file-not-on-manpath
+http://www.linuxhowtos.org/System/creatingman.htm?userrate=2
+http://www.cyberciti.biz/faq/linux-unix-creating-a-manpage/
+
+http://unix.stackexchange.com/questions/34516/can-i-create-a-man-page-for-a-script
+https://www.gnu.org/software/help2man/
+
+
+# read man page
+nroff -man my_man_page.1 | more
+
