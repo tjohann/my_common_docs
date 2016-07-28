@@ -8,10 +8,10 @@
  * run: ./namespaces_pid
  *
  * output (user):
- * tjohann@SI-Z09IX [~/my_docs/src]$ ./namespaces_pid
+ * tjohann@echnaton [~/my_docs/src]$ ./namespaces_pid
  * pid after clone = ffffffff
  * output (with sudo):
- * tjohann@SI-Z09IX [~/my_docs/src]$ sudo ./namespaces_pid
+ * tjohann@echnaton [~/my_docs/src]$ sudo ./namespaces_pid
  * pid after clone = 14ed
  * "my"-pid: 1
  */

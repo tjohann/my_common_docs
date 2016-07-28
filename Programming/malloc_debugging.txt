@@ -1,0 +1,13 @@
+#
+# some useful infos and links around malloc and debugging technics
+#
+
+
+# links
+https://l3net.wordpress.com/2013/06/19/malloc_check_-and-malloc_perturb_/
+http://stackoverflow.com/questions/30687997/is-setting-environment-variable-through-a-makefile-possible
+http://udrepper.livejournal.com/11429.html
+
+# monte carlo analysis for detecting mem leaks
+https://github.com/tialaramex/leakdice
+https://de.wikipedia.org/wiki/Monte-Carlo-Simulation
