@@ -7,7 +7,7 @@ http://cs.ecs.baylor.edu/~donahoo/tools/valgrind/messages.html
 http://cs.ecs.baylor.edu/~donahoo/tools/valgrind/
 http://www.cprogramming.com/debugging/valgrind.html
 
-# kdo 
+# kdo
 valgrind --tool=memcheck --leak-check=yes --show-reachable=yes --num-callers=20 --track-fds=yes ./my_program
 
 

@@ -7,8 +7,8 @@ MODULES = $(shell ls -d */ | cut -f1 -d'/')
 
 .PHONY: all clean
 
-all:	mem_leak
-	gcc -std=gnu11 -g -Wall -Wextra -o mem_leak mem_leak.c
+all:
+	for dir in $(MODULES); do (cd $$dir && $(MAKE) $@); done
 
 clean:
 	rm -f *~
