@@ -1,0 +1,56 @@
+#
+# some intresting topics around c
+#
+
+# -----------------------------------------------------------------------------
+
+#
+# comma/semicolon operator (summary from different wikipedia sides)
+#
+
+- expression is a combination of one or more explicit values, constants, variables, operators, and functions -> will be interpreted  and computes to produce another value
+- statement is the smallest standalone element of an programming language that expresses some action to be carried out -> for loop, goto, assignements (a = 5) ...
+
+- statements contrast with expressions in that statements do not return results and are executed solely for their side effects, while expressions always return a result and often do not have side effects at all
+
+- the comma operator separates expressions (which have value)
+- the semicolon operator terminate statements
+- sequences of expressions are enclosed in parentheses -> (a, b, c) -> evaluates to the last expression c
+- sequences of statements are enclosed in braces -> {a; b; c;} -> does not evaluate to any value
+
+
+# -----------------------------------------------------------------------------
+
+#
+# calling order of function parameters and calling conventions
+#
+
+# links:
+# - http://www.geeksforgeeks.org/c-programming-language-standard/
+# - http://stackoverflow.com/questions/376278/parameter-evaluation-order-before-a-function-calling-in-c
+
+#include<stdio.h>
+int main()
+{
+    int i = 1;
+    printf("%d %d %d\n", i++, i++, i);
+    return 0;
+}
+
+# leads to (build with gcc):
+tjohann@echnaton:~/tmp$ ./i++_order 
+2 1 3
+
+# the c standard says:
+C99 §6.5.2.2p10:
+The order of evaluation of the function designator, the actual arguments, and subexpressions within the actual arguments is unspecified, but there is a sequence point before the actual call.
+
+# for other compiler see:
+# http://rextester.com/RWD26261
+
+# ...
+The compiler evaluates an expression after first reading to the first sequence point ... if a function is called twice (or more) within an expression, then the behaviour is undefined -> it is not specified when between sequence points modifications to the values of objects take effect ... Thats the reason why different compiler have different results to the small code above!
+
+# compiler adds which should warn about problematic constructs
+
+-Wall -Wextra -Wconversion
