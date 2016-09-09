@@ -1,5 +1,5 @@
 #
-# some useful links around gpsd 
+# some useful links around gpsd
 #
 
 http://manurevah.com/blah/en/p/gps-on-linux

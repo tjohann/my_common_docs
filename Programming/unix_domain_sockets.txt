@@ -4,6 +4,14 @@
 
 
 #
+# useful links
+#
+http://www.thomasstover.com/uds.html
+http://man7.org/tlpi/code/online/book/sockets/scm_cred_recv.c.html
+http://man7.org/tlpi/code/online/book/sockets/scm_cred_send.c.html
+
+
+#
 ## why + usecase ###############################################################
 #
 Unix Domain Sockets is an advanced IPC form. One usecase is to pass file descriptors around. Therefore names are associated with the open (UDS) file descriptors. With that it's possible to pass the fd aroung even with unrelated processes.
