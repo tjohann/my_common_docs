@@ -1,0 +1,79 @@
+#
+# some useful links
+#
+
+# ---------------------
+# Motor & wheel
+https://www.amazon.de/DAOKAI%C2%AE-Kunststoff-Reifen-Getriebemotor-Arduino/dp/B013EERJUC/ref=pd_sim_21_37?ie=UTF8&psc=1&refRID=D8H3NP31D7GX27A0BNDA
+
+Versorgungsspannung 5V, Leerlaufstrom ca 150 mA, Strom unter Volllast ca. 850 mA
+
+
+# ---------------------
+# Ultraschallsensoren
+https://www.amazon.de/Ultraschall-HC-SR04-Abstand-Messung-Wandler/dp/B00BIZQWYE/ref=pd_sim_21_4?ie=UTF8&psc=1&refRID=D8H3NP31D7GX27A0BNDA
+
+http://www.netzmafia.de/skripten/hardware/RasPi/Projekt-Ultraschall/HC-SR04_2.pdf
+http://www.mikrocontroller-elektronik.de/ultraschallsensor-hc-sr04/
+
+http://www.netzmafia.de/skripten/hardware/RasPi/Projekt-Ultraschall/   <-- Beispiel Linux
+http://www.acmesystems.it/HC-SR04   <-- Beispiel mit Arietta
+
+Betriebsspannung: 5V(DC)
+Statischer Strom: weniger als 2mA
+Ausgangssignal: Elektrische Frequenzsignal, hohe 5V, niedrige 0V
+Sensor Winkel: nicht mehr als 15°
+Reichweite: 2cm-450cm
+High precision: bis zu 0.3cm
+Verbindungsmodus:VCC, trig(T), echo(R), GND
+
+Anleitung:
+IO Port um Bereich zu auszulösen. Eine Signal von min. 10uS ist benötigt.
+Das Mosul sendet automatisch 8 pro 40 kz Rechtecksignal und testet, ob es irgendein Signal zurückgegeben ist.
+Die Dauer des High-Level-Signal ist die Zeit vom Sender zum Empfänger mit dem Ultraschall.
+If there is signal returned, output one high level signal via IO port ECHO.
+
+
+# ---------------------
+# Powermodul
+https://www.amazon.de/DAOKAI%C2%AE-verdoppeln-Schrittmotorantriebe-Controller-Arduino/dp/B00X6LB2VQ/ref=pd_bxgy_107_2?ie=UTF8&psc=1&refRID=DX154TFEPKP82FJPTHMZ
+
+
+# ---------------------
+# Chassis
+https://www.amazon.de/gp/product/B00NDXEUM0/ref=oh_aui_detailpage_o06_s00?ie=UTF8&psc=1
+
+
+# ---------------------
+# Stepper for roundview sensor
+https://www.amazon.de/gp/product/B00ATA5MFE/ref=oh_aui_detailpage_o09_s00?ie=UTF8&psc=1
+http://www.elektronx.de/tutorials/schrittmotorsteuerung-mit-dem-raspberry-pi/
+
+
+# ---------------------
+# GPS modul
+https://www.amazon.de/gp/product/B01FFXJQV0/ref=oh_aui_detailpage_o02_s00?ie=UTF8&psc=1
+
+The module uses the NEOMV2 chip through the UART port. Note that the data pins are 3.3v so if you use a microcontroller at 5v, you need to do the conversion. In the pictures you can see a possible solution with a voltage divider on the Tx pin of the module. You can also use a level converter.
+
+The module has also a buld-in EEprom.
+
+Specifications:
+
+    Input voltage: 3-5v
+    Data pins voltage: 3.3v
+    Default baud rate: 9600
+    Ceramic antenna
+    Data backup battery
+    Built-in EEprom
+
+
+# ---------------------
+# Gabellichtschranke
+https://www.amazon.de/gp/product/B01EZZP5PA/ref=oh_aui_detailpage_o03_s00?ie=UTF8&psc=1
+https://www.amazon.de/gp/product/B008DG93II/ref=oh_aui_detailpage_o04_s00?ie=UTF8&psc=1
+
+- Produktname: Gabellichtschranke; Modell: HY860N; Ausgangstyp: Foto Transistor; Peakemissionswellenlänge: 940 nm; IR Diode Vorwärtsstrom: 50mA
+- IR Diode Sperrspannung: 5V; Transistor Leistungsverlust: 75mW; Transistor Kollektorgleichstrom: 20mA; Foto Transistor-Kollektor-Emitter-Spannung: 30 V
+- Foto Transistor Emitter Kollektor Spannung: 5V; Diode Leistungsverlust: 100mW; Betriebstemperaturbereich: -55 ~ 100 Grad Celsius; Slot Breite: 3,2 mm / 1/8 ''
+- Slot Tiefe: 9 mm / 0.35 ''; Pin Länge: 11mm / 0.43 ''; Pitch: 7,2 mm / 0,28
