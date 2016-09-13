@@ -1,0 +1,50 @@
+#
+# some hints about extended gcc -Wxxxxx 
+#
+
+
+#
+# always use the following CFLAGS:
+#
+
+my_CFLAGS="\
+-Wall \
+-Wchar-subscripts \
+-Wformat-security \
+-Wmissing-declarations \
+-Wmissing-prototypes \
+-Wnested-externs \
+-Wpointer-arith \
+-Wshadow \
+-Wsign-compare \
+-Wstrict-prototypes \
+-Wtype-limits \
+"
+AC_SUBST([my_CFLAGS])
+
+
+this results for example to:
+
+libtool: compile:  gcc -std=gnu99 -DHAVE_CONFIG_H -I. -I.. -Wall -Wchar-subscripts -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wpointer-arith -Wshadow -Wsign-compare -Wstrict-prototypes -Wtype-limits -fvisibility=hidden -ffunction-sections -fdata-sections -O2 -g -MT libbaalue_la-error.lo -MD -MP -MF .deps/libbaalue_la-error.Tpo -c error.c  -fPIC -DPIC -o .libs/libbaalue_la-error.o
+error.c: In function 'error_common':
+error.c:48:3: warning: format not a string literal and no format arguments [-Wformat-security]
+   syslog(log_level, buf);
+
+
+The fix is
+
+   syslog(log_level, "%s", buf);
+
+
+See -> https://fedoraproject.org/wiki/Format-Security-FAQ
+
+
+#
+# more addtions
+#
+
+AM_LDFLAGS = -Wl,--gc-sections -Wl,--as-needed
+AM_CFLAGS = ${my_CFLAGS} \
+        -fvisibility=hidden \
+        -ffunction-sections \
+        -fdata-sections
