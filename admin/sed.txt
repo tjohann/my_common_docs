@@ -2,6 +2,9 @@
 # some sed stuff
 #
 
+# useful link
+http://www.cyberciti.biz/faq/unix-linux-replace-string-words-in-many-files/
+
 
 #
 # --- replace string ---
