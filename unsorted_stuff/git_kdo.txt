@@ -1,4 +1,0 @@
-
-
-
-git push --set-upstream origin on_board

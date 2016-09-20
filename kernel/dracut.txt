@@ -1,0 +1,5 @@
+#
+# some info about dracut
+#
+
+dracut initramfs-4.6.7-rt12.img --host-only --no-kernel

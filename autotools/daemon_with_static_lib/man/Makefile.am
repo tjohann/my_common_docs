@@ -1,3 +1,3 @@
 # Makefile.am
 
-baalued_MANS = baalued.1
+man_MANS = baalued.1

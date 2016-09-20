@@ -26,7 +26,7 @@
 #endif
 #define _GNU_SOURCE
 
-// more or less common inc
+/* more or less common inc */
 #include <stdio.h>
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -58,10 +58,10 @@
 #include <semaphore.h>
 #include <sys/syscall.h>
 
-// inotify inc
+/* inotify inc */
 #include <sys/inotify.h>
 
-// more or less network related inc
+/* more or less network related inc */
 #include <netinet/in.h>
 #include <netdb.h>
 #include <sys/socket.h>
@@ -70,21 +70,23 @@
 #include <net/if.h>
 #include <netpacket/packet.h>
 
-// libconfig
+/* libconfig */
 #include <libconfig.h>
 
-// autotools generated config
+/* autotools generated config */
 #include <config.h>
 
-// getopt and locale realted inc
+/* getopt and locale realted inc */
 #include <getopt.h>
 #include <libintl.h>
 #include <locale.h>
 #include "gettext.h"
 
-// libcap-ng
+/* libcap-ng */
 #include <cap-ng.h>
 
+/* https://github.com/tjohann/libbaalue.git */
+#include <libbaalue.h>
 
 /*
  * common defines
@@ -97,7 +99,10 @@
 #define VAR_RUN_DIR "/tmp"
 #endif
 
-// running modes -> normale application in foreground or as daemon in background
+/*
+ * running modes -> normale application in foreground or as daemon in
+ * background
+ */
 #define RUN_AS_APPLICATION 0
 #define RUN_AS_DAEMON      1
 

@@ -12,6 +12,6 @@ all:	mem_leak
 
 clean:
 	rm -f *~
-	for dir in $(MODULES); do (cd $$dir && $(MAKE) $@); done
+	rm -f mem_leak
 
 distclean: clean

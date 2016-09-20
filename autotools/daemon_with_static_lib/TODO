@@ -1,32 +1,9 @@
 #
-# our TODO with date and progress
-#
-
-
-
-
-#
-# -------------- TEMPLATE -----------------------------------------------------------------
+# TODO with date and progress
 #
 
 
 #
-# -------------- 2015-xx-xx ---------------------------------------------------------------
+# -------------- 2016-09-14 ----------------------------------------------------
 #
-
-## script stuff
-
-## docu stuff
-
-## target related stuff
-
-## jailhouse related stuff
-
-## erika related
-
-## network stuff
-
-## the "rest"
-
-
-#EOF
+- sync to latest libbaalue                                  [2016-09-14 -> done]

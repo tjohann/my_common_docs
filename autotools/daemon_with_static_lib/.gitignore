@@ -48,6 +48,8 @@ configure
 /po/Makefile
 /po/POTFILES
 /src/Makefile
+/man/Makefile
+/scripts/Makefile
 
 # my build-aux stuff
 /build-aux/autoconf/
