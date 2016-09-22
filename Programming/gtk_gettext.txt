@@ -1,0 +1,5 @@
+#
+# some stuff around gtk and gettext
+#
+
+https://blogs.gnome.org/mclasen/2016/07/21/using-modern-gettext/

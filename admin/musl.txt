@@ -1,7 +1,0 @@
-#
-# some info about musl
-#
-
-Links:
-- www.etalabs.net/compare_libcs.html
-- http://www.musl-libc.org/
