@@ -1,5 +1,5 @@
 #
-# some hints about extended gcc -Wxxxxx 
+# some hints about extended gcc -Wxxxxx
 #
 
 
