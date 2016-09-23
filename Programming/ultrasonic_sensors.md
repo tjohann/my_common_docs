@@ -1,4 +1,4 @@
-some info about using ultrasonic sensors
+some info about using ultrasonic sensors 
 ========================================
 
 https://github.com/tanzilli/hc-sr04
