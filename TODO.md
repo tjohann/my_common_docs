@@ -17,4 +17,4 @@ my general TODO (over all my projects)
 
 
 x. create base arietta_sdk.git image/content
-x. create sdk for our simple driver robot 
+x. create sdk for our simple driver robot

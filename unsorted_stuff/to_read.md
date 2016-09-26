@@ -59,7 +59,7 @@ http://www.drdobbs.com/the-new-c-x-macros/184401387
 http://www.heise.de/developer/artikel/Accelerator-Offloading-mit-GCC-3317330.html
 
 
-c 
+c
 ----
 
 # introduction
