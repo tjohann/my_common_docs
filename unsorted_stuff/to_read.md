@@ -1,6 +1,7 @@
 interesting articles to read
 ============================
 
+
 embedded linux
 --------------
 
@@ -21,6 +22,9 @@ kryptography
 http://www.heise.de/security/artikel/Kryptographie-in-der-IT-Empfehlungen-zu-Verschluesselung-und-Verfahren-3221002.html
 # gnupg
 https://www.linux.com/learn/how-send-and-receive-encrypted-data-gnupg%20
+
+# really good
+https://cr.yp.to/crypto.html
 
 
 kernel stuff
@@ -124,3 +128,16 @@ https://www.linux.com/learn/full-metal-backup-using-dd-command
 
 # useful scripts
 http://www.chruetertee.ch/blog/?start=10
+
+
+Systemd & security
+------------------
+
+https://www.agwa.name/blog/post/how_to_crash_systemd_in_one_tweet
+http://ewontfix.com/14/
+
+
+SSH related topics
+------------------
+
+https://www.thomas-krenn.com/de/wiki/SSH_Root_Login_unter_Debian_verbieten

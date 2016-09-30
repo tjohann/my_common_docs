@@ -1,21 +1,5 @@
-# ----------------------------------------------------------------------------------
 #
-# Title: simple summary for clock related topics
-#
-# License:
-#
-# LGPL
-# (c) 2015, thorsten.johannvorderbrueggen@t-online.de
-#
-# This manual is free software; you may redistribute it and/or modify it under
-# the terms of the GNU General Public License. Please refer to the license in
-# Appendix F, GNU General Public License.
-#
-# You should have received a copy of the GNU General Public License
-# along with this program; if not, write to the Free Software
-# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
-#
-# ----------------------------------------------------------------------------------
+# some info about clock handling
 #
 
 # set linux clock (UTC)
@@ -23,3 +7,12 @@ date -u -s "jun 1, 2015 10:00:00"
 
 # set hw clock (UTC)
 hwclock -wu
+
+
+
+# --------
+
+hwclock --localtime --systohc --debug -> to make sure the BIOS hardware clock is properly set to the values you just changed.
+hwclock --localtime --hctosys --debug -> to tell to the system that from now it should get time from hardware clock and that it is localtime.
+
+
