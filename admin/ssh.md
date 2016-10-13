@@ -1,5 +1,13 @@
 SSH related links
 =================
 
+start programm on device
+-------------------------
 
-http://wiki.friendlyarm.com/wiki/index.php/Matrix_-_I2C_LCD1602
+ssh baalue@bananapi "date && hostname"
+
+	tjohann@echnaton:~$ ssh baalue@bananapi "date && hostname"
+	baalue@bananapi's password:
+	Thu Oct 13 19:24:40 CEST 2016
+	bananapi.my.domain
+
