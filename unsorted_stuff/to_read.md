@@ -2,6 +2,14 @@ interesting articles to read
 ============================
 
 
+NEWS
+----
+
+http://hackerboards.com/
+http://www.cnx-software.com
+https://www.linux.com/
+
+
 embedded linux
 --------------
 
@@ -39,6 +47,9 @@ http://lwn.net/Articles/689856/
 http://lwn.net/Articles/688809/
 https://lwn.net/Articles/531114/
 http://www.toptal.com/linux/separation-anxiety-isolating-your-system-with-linux-namespaces
+
+# securing
+https://www.linux.com/news/understanding-and-securing-linux-namespaces
 
 # explicit fencing
 http://padovan.org/blog/2016/09/mainline-explicit-fencing-part-1/
