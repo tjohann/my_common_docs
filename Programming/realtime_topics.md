@@ -17,6 +17,6 @@ Testing and tooling infos
 https://www.osadl.org/Realtime-Preempt-Kernel.kernel-rt.0.html
 
 
-hardware latency tracer (which seeks to flush out latencies caused by the hardware itself) 
+hardware latency tracer (which seeks to flush out latencies caused by the hardware itself)
 --------------------------------------
 http://lwn.net/Articles/703129/

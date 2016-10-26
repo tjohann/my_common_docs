@@ -26,3 +26,11 @@ Howto setup ethX the "hard" way
 	ip link set dev eth0 up
 	ip addr add 192.168.0.103/255.255.255.0 broadcast 192.168.0.255 dev eth0
 	ip route add default via 192.168.0.1
+
+
+Change mode of stick (router to modem)
+--------------------------------------
+
+http://www.lteforum.at/mobilfunk/huawei-e3372-flashen-so-gehts-non-hilink.1683/
+
+http://blog.asiantuntijakaveri.fi/2015/07/convert-huawei-e3372h-153-from.html
