@@ -1,7 +1,7 @@
 Simple howto on using sqlite
 ============================
 
-Based on http://zetcode.com/db/sqlitec/ 
+Based on http://zetcode.com/db/sqlitec/
 
 
 Init a database
@@ -11,7 +11,7 @@ Init a database
 KDO:
 
 	sqlite3 test.db
-	
+
 
 Output:
 
@@ -21,8 +21,8 @@ Output:
 	sqlite> .help
 	sqlite> .exit
 	.exit
-	
-	
 
-	
-	
+
+
+
+

@@ -4,7 +4,7 @@ MY_HOST_ARCH:=$(shell uname -m)
 
 CC = gcc
 CFLAGS = -Wall -Wextra -std=gnu11
-LDFLAGS = -lsqlite3 
+LDFLAGS = -lsqlite3
 
 all: sqlite_libversion sqlite_libversion_query
 

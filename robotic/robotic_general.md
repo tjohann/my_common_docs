@@ -17,3 +17,9 @@ some frameworks
 ---------------
 http://playerstage.sourceforge.net/
 http://www.ros.org/
+
+
+mecanum wheels
+--------------
+https://www.youtube.com/watch?v=Ne09Y72zW_Y
+http://www.mtahlers.de/index.php/robotik/mecanum-wheels
