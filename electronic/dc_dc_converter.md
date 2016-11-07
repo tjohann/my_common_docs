@@ -14,7 +14,7 @@ https://www.sunfounder.com/wiki/index.php?title=Step-down_DC-DC_Converter_Module
 
 - maximum current 2A (for stable use)
 - 150kHz (30mV max output ripple)
-- Vin should be ~1V higher than Vout 
+- Vin should be ~1V higher than Vout
 
 
 schematic:
