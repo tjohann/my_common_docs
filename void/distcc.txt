@@ -1,0 +1,21 @@
+Howto use distcc (see https://github.com/voidlinux/void-packages)
+-----------------------------------------------------------------
+
+
+client side:
+------------
+
+xbps-install -Sy distcc
+echo "192.168..0/24" >> /etc/distcc/clients.allow
+ln -s /etc/sv/distccd /var/service
+
+
+server side (void-package repo):
+--------------------------------
+
+- etc/conf:
+
+XBPS_DISTCC=yes
+XBPS_DISTCC_HOSTS="--localslots_cpp=24 192.168.0.80/2 192.168.2.81/2 192.168.0.82/2 192.168.2.83/2 192.168.0.84/2 192.168.2.85/2 192.168.0.86/2 192.168.2.87/2"
+XBPS_MAKEJOBS=16
+
