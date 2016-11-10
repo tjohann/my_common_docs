@@ -7,18 +7,18 @@ checkit:
 -------
 
 	#include <stdio.h>
- 
+
 	int main() {
 		printf("Hello distcc!\n");
 		return 0;
 	}
-	
-	
+
+
 	export DISTCC_VERBOSE=1
 	distcc gcc -c hello_distcc.c -o hello_distcc.o
-	gcc main.o -o main 
-	
+	gcc main.o -o main
+
 	./hello_distcc
 	Hello distcc!
-	
-For pump mode: pump distcc <...>	
+
+For pump mode: pump distcc <...>
