@@ -1,9 +1,15 @@
+/*
+ * see also ->
+ */
+
 #include <gtk/gtk.h>
 
 #include <string.h>
 #include <stdlib.h>
 #include <unistd.h>
 #include <limits.h>
+
+void toggle_title(GtkWidget *widget, gpointer data);
 
 typedef struct {
 	char hostname[HOST_NAME_MAX + 1];
@@ -16,6 +22,7 @@ typedef struct {
 	unsigned short num_nodes; /* should be large enough */
 } baalue_nodes_t;
 
+
 baalue_nodes_t *
 get_active_baalue_nodes()
 {
@@ -23,7 +30,7 @@ get_active_baalue_nodes()
 	baalue_nodes_t *baalue_nodes = NULL;
 
 	int n = -1;
-	int num_nodes_max = 4;  /* range_max - range_min */
+	int num_nodes_max = 8;  /* range_max - range_min */
 	int count_nodes = 0;
 	do {
 		array_of_nodes = realloc(array_of_nodes, (count_nodes + 1) * sizeof(baalue_node_t));
@@ -45,7 +52,8 @@ get_active_baalue_nodes()
 
 	return baalue_nodes;
 error:
-	printf("something went wrong\n");
+	printf("something went wrong:\n");
+	perror("failure -> ");
 
 	if (array_of_nodes != NULL)
 		free(array_of_nodes);
@@ -76,9 +84,37 @@ print_baalue_nodes_instance(baalue_nodes_t *baalue_nodes)
 
 	int i = 0;
 	for(i = 0; i < baalue_nodes->num_nodes; i++)
-		printf("array_of_nodes[%d].hostname: %s\n", i, baalue_nodes->array_of_nodes[i].hostname);
+		printf("array_of_nodes[%d].hostname: %s\n", i,
+		       baalue_nodes->array_of_nodes[i].hostname);
 
 	return 0;
+}
+
+
+GtkWidget *
+build_active_nodes_window(baalue_nodes_t *baalue_nodes, GtkWidget *window)
+{
+	GtkWidget *array_of_cb[baalue_nodes->num_nodes];
+
+	GtkWidget *vbox = gtk_vbox_new(FALSE, 0);
+	gtk_container_add(GTK_CONTAINER(window), vbox);
+
+	int i = 0;
+	for (i = 0; i < baalue_nodes->num_nodes; i++) {
+		array_of_cb[i] = gtk_check_button_new_with_label(baalue_nodes->array_of_nodes[i].hostname);
+
+		gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(array_of_cb[i]), FALSE);
+
+		GTK_WIDGET_UNSET_FLAGS(array_of_cb[i], GTK_CAN_FOCUS);
+		//gtk_container_add(GTK_CONTAINER(vbox), array_of_cb[i]);
+		gtk_box_pack_start(GTK_BOX(vbox), array_of_cb[i], TRUE, TRUE, 1);
+
+		g_signal_connect(array_of_cb[i], "clicked",
+				 G_CALLBACK(toggle_title),
+				 (gpointer) &baalue_nodes->array_of_nodes[i]);
+	}
+
+	return *array_of_cb;
 }
 
 void toggle_title(GtkWidget *widget, gpointer data)
@@ -91,7 +127,6 @@ void toggle_title(GtkWidget *widget, gpointer data)
 int main(int argc, char** argv) {
 
 	GtkWidget *window;
-	GtkWidget *vbox;
 
 	gtk_init(&argc, &argv);
 
@@ -101,9 +136,8 @@ int main(int argc, char** argv) {
 	gtk_window_set_default_size(GTK_WINDOW(window), 230, 150);
 	gtk_window_set_title(GTK_WINDOW(window), "GtkCheckButton");
 
-	vbox = gtk_vbox_new(FALSE, 0);
-	gtk_container_add(GTK_CONTAINER(window), vbox);
-
+	gtk_window_set_resizable(GTK_WINDOW(window), FALSE);
+	//GTK_WINDOW(window)->allow_shrink = TRUE;
 
         /*
 	 * --- get nodes ----
@@ -132,22 +166,10 @@ int main(int argc, char** argv) {
 	/*
 	 * create array of check_buttons
 	 */
-	GtkWidget *array_of_cb[baalue_nodes->num_nodes];
+	GtkWidget *array_of_cb;
+	array_of_cb = build_active_nodes_window(baalue_nodes, window);
 
-	// ---- start check buttons ----
-	int i = 0;
-	for (i = 0; i < baalue_nodes->num_nodes; i++) {
 
-		printf("value of i: %d\n", i);
-		array_of_cb[i] = gtk_check_button_new_with_label("Show title");
-		gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(array_of_cb[i]), FALSE);
-
-		GTK_WIDGET_UNSET_FLAGS(array_of_cb[i], GTK_CAN_FOCUS);
-		gtk_container_add(GTK_CONTAINER(vbox), array_of_cb[i]);
-
-		g_signal_connect(array_of_cb[i], "clicked",
-				 G_CALLBACK(toggle_title), (gpointer) &baalue_nodes->array_of_nodes[i]);
-	}
 
 	g_signal_connect(window, "destroy",
 			 G_CALLBACK(gtk_main_quit), NULL);

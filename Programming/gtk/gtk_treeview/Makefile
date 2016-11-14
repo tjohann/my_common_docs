@@ -11,7 +11,7 @@ LDADD=`pkg-config --libs gtk+-2.0`
 .PHONY: clean
 
 all: main.c
-	${CC} ${CFLAGS} -o main main.c ${LDADD}
+	${CC} ${CFLAGS} -o main main.c ${LDADD} 
 
 clean:
 	rm -f *~ .*~
