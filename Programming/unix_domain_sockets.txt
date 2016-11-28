@@ -38,7 +38,11 @@ SNIP
 
 
 
-
+#
+## howto use netcat
+#
+nc -U /tmp/socket  # connect to uds(stream)
+nc -uU /tmp/socket # connect to uds(datagram)
 
 
 
