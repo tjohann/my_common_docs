@@ -11,3 +11,8 @@ http://lhb.baireuther.de/category/tastaturkommandos/
 The "kernel" programming challenge website
 ------------------------------------------
 http://eudyptula-challenge.org/
+
+
+Kernel Hackers Bookshelf
+------------------------
+https://lwn.net/Kernel/Index/#Kernel_Hackers_Bookshelf
