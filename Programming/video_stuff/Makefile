@@ -3,7 +3,7 @@
 MY_HOST_ARCH:=$(shell uname -m)
 
 CC = gcc
-CFLAGS = -Wall -Wextra -std=gnu11
+CFLAGS = -g -Wall -Wextra -std=gnu11
 LDFLAGS =
 
 all: video
