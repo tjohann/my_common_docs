@@ -10,7 +10,7 @@ update_interval 3.0
 #total_run_times 0
 own_window yes
 own_window_type normal
-#own_window_argb_visual true   # for kde drawing the background :-) 
+#own_window_argb_visual true   # for kde drawing the background :-)
 own_window_transparent yes
 own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
 double_buffer yes
@@ -31,15 +31,15 @@ minimum_size 400 5
 maximum_width 400
 
 TEXT
-${alignc}$nodename - $sysname $kernel on $machine  ${offset 1} 
+${alignc}$nodename - $sysname $kernel on $machine  ${offset 1}
 $stippled_hr
 # CPU load
-${color slate grey}CPU 1:$color ${cpu cpu1}% ${color #aaaaaa}${cpubar cpu1}                  
-${color slate grey}CPU 2:$color ${cpu cpu2}% ${color #aaaaaa}${cpubar cpu2}                   
-${color slate grey}CPU 3:$color ${cpu cpu3}% ${color #aaaaaa}${cpubar cpu3}                   
-${color slate grey}CPU 4:$color ${cpu cpu4}% ${color #aaaaaa}${cpubar cpu4}               
+${color slate grey}CPU 1:$color ${cpu cpu1}% ${color #aaaaaa}${cpubar cpu1}
+${color slate grey}CPU 2:$color ${cpu cpu2}% ${color #aaaaaa}${cpubar cpu2}
+${color slate grey}CPU 3:$color ${cpu cpu3}% ${color #aaaaaa}${cpubar cpu3}
+${color slate grey}CPU 4:$color ${cpu cpu4}% ${color #aaaaaa}${cpubar cpu4}
 ${color slate grey}CPU 5:$color ${cpu cpu5}% ${color #aaaaaa}${cpubar cpu5}
-${color slate grey}CPU 6:$color ${cpu cpu6}% ${color #aaaaaa}${cpubar cpu6}                     
+${color slate grey}CPU 6:$color ${cpu cpu6}% ${color #aaaaaa}${cpubar cpu6}
 ${color slate grey}CPU 7:$color ${cpu cpu7}% ${color #aaaaaa}${cpubar cpu7}
 ${color slate grey}CPU 8:$color ${cpu cpu8}% ${color #aaaaaa}${cpubar cpu8}
 # CPU-GRAPH
@@ -50,14 +50,14 @@ ${color slate grey}Swap: $color$swap/$swapmax - $swapperc% ${color #aaaaaa}${swa
 ${color slate grey}Prozesse (activ): $color $processes ($running_processes) ${offset 700}
 $color$stippled_hr
 # NETWORK eth0
-${color slate grey}IP(br0):$color (mynetwork) ${addr br0} ${offset 10}                            
-${color slate grey}Down:$color ${downspeed eth0} k/s ${alignr}${color slate grey}Up:$color ${upspeed eth0} k/s ${offset 1} 
+${color slate grey}IP(br0):$color (mynetwork) ${addr br0} ${offset 10}
+${color slate grey}Down:$color ${downspeed eth0} k/s ${alignr}${color slate grey}Up:$color ${upspeed eth0} k/s ${offset 1}
 ${color #FFFFFF}${downspeedgraph eth0 32,150 8b4b0b aaaaaa} ${alignr}${color #FFFFFF}${upspeedgraph eth0 32,150 ffc11f 8b4b0b}
 # NETWORK eth1
-${color slate grey}IP(eth1):$color (to second network) ${addr eth1} ${offset 10}                                    
-${color slate grey}Down:$color ${downspeed eth1} k/s ${alignr}${color slate grey}Up:$color ${upspeed eth1} k/s ${offset 1} 
+${color slate grey}IP(eth1):$color (to second network) ${addr eth1} ${offset 10}
+${color slate grey}Down:$color ${downspeed eth1} k/s ${alignr}${color slate grey}Up:$color ${upspeed eth1} k/s ${offset 1}
 ${color #FFFFFF}${downspeedgraph eth1 32,150 8b4b0b aaaaaa} ${alignr}${color #FFFFFF}${upspeedgraph eth1 32,150 ffc11f 8b4b0b}
-${color slate grey}Inbound: $color${tcp_portmon 1 32767 count} ${color slate grey}Outbound: $color${tcp_portmon 32768 61000 count} ${alignr}${color slate grey}Total: $color${tcp_portmon 1 65535 count}${offset 1} 
+${color slate grey}Inbound: $color${tcp_portmon 1 32767 count} ${color slate grey}Outbound: $color${tcp_portmon 32768 61000 count} ${alignr}${color slate grey}Total: $color${tcp_portmon 1 65535 count}${offset 1}
 $color$stippled_hr
 # FILESYSTEM
 ${color slate grey}root(${fs_type /}): ${offset 1} ${color #FFFFFF}${fs_free /}/${fs_size /} ${offset 1} ${color #aaaaaa}${fs_bar /}
@@ -67,14 +67,14 @@ ${color slate grey}shared(${fs_type /mnt/shared}): ${color #FFFFFF}${fs_free /mn
 $color$stippled_hr
 # TEMPERATURES
 ${color slate grey}Radeon:$color ${hwmon 3 temp 1}°C ${offset 70} ${color slate grey}Board:$color ${hwmon 0 temp 1}°C ${offset 700}
-${color slate grey}Core0:$color ${execi 30 sensors | grep 'Core 0' | awk '{print $3}' | cut -d "+" -f2} ${offset 110} ${color slate grey}Core1:$color ${execi 30 sensors | grep 'Core 1' | awk '{print $3}' | cut -d "+" -f2} ${offset 700} 
+${color slate grey}Core0:$color ${execi 30 sensors | grep 'Core 0' | awk '{print $3}' | cut -d "+" -f2} ${offset 110} ${color slate grey}Core1:$color ${execi 30 sensors | grep 'Core 1' | awk '{print $3}' | cut -d "+" -f2} ${offset 700}
 ${color slate grey}Core2:$color ${execi 30 sensors | grep 'Core 2' | awk '{print $3}' | cut -d "+" -f2} ${offset 110} ${color slate grey}Core3:$color ${execi 30 sensors | grep 'Core 3' | awk '{print $3}' | cut -d "+" -f2} ${offset 700}
-${color slate grey}Core5:$color ${execi 30 sensors | grep 'Core 5' | awk '{print $3}' | cut -d "+" -f2} ${offset 110} ${color slate grey}Core6:$color ${execi 30 sensors | grep 'Core 6' | awk '{print $3}' | cut -d "+" -f2} ${offset 700} 
-${color slate grey}Core7:$color ${execi 30 sensors | grep 'Core 7' | awk '{print $3}' | cut -d "+" -f2} ${offset 110} ${color slate grey}Core8:$color ${execi 30 sensors | grep 'Core 8' | awk '{print $3}' | cut -d "+" -f2} ${offset 700} 
+${color slate grey}Core5:$color ${execi 30 sensors | grep 'Core 5' | awk '{print $3}' | cut -d "+" -f2} ${offset 110} ${color slate grey}Core6:$color ${execi 30 sensors | grep 'Core 6' | awk '{print $3}' | cut -d "+" -f2} ${offset 700}
+${color slate grey}Core7:$color ${execi 30 sensors | grep 'Core 7' | awk '{print $3}' | cut -d "+" -f2} ${offset 110} ${color slate grey}Core8:$color ${execi 30 sensors | grep 'Core 8' | awk '{print $3}' | cut -d "+" -f2} ${offset 700}
 $color$stippled_hr
 # PROZESSLIST
 ${color slate grey}NAME ${offset 145}PID ${offset 44}CPU% ${offset 30}MEM% ${offset 700}
-${color}${top name 1} ${offset 40} ${top pid 1} ${offset 5} ${top cpu 1} ${offset 5} ${top mem 1} ${offset 700}               
+${color}${top name 1} ${offset 40} ${top pid 1} ${offset 5} ${top cpu 1} ${offset 5} ${top mem 1} ${offset 700}
 ${color}${top name 2} ${offset 40} ${top pid 2} ${offset 5} ${top cpu 2} ${offset 5} ${top mem 2} ${offset 700}
 ${color}${top name 3} ${offset 40} ${top pid 3} ${offset 5} ${top cpu 3} ${offset 5} ${top mem 3} ${offset 700}
 ${color}${top name 4} ${offset 40} ${top pid 4} ${offset 5} ${top cpu 4} ${offset 5} ${top mem 4} ${offset 700}
@@ -84,5 +84,5 @@ ${color}${top name 7} ${offset 40} ${top pid 7} ${offset 5} ${top cpu 7} ${offse
 ${color}${top name 8} ${offset 40} ${top pid 8} ${offset 5} ${top cpu 8} ${offset 5} ${top mem 8} ${offset 700}
 $color$stippled_hr
 # LOGGING
-#${color slate grey}Logging (/var/log/messages) ${offset 700} 
+#${color slate grey}Logging (/var/log/messages) ${offset 700}
 #${color}${execi 30 tail -n 3 /var/log/messages | fold -w43} ${offset 700}
