@@ -13,10 +13,10 @@ Notes
 	(watch) cat /proc/loadavg
 
 	0.28 1.17 1.11 1/441 10548
-	
-	systemload last 
+
+	systemload last
 	min  5min 15min number_of_active_process/overall_number_of_processes last_PID
-	
+
 Note: on a single core 1.00 means more or less 100% (in linux the number of processes in the waitqueue are included ... that means a number >1.00 is okay)
 
 
@@ -25,7 +25,7 @@ Code example
 ------------
 
 	see ./loadavrg/system_load
-	
+
 Others:
 
 	double la[3];
