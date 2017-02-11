@@ -80,3 +80,6 @@ put cubietruck_*.tgz
 
 cd /home/pfs/project/a/a2/a20devices/olimex
 put olimex_*.tgz
+
+cd /home/pfs/project/a/a2/a20devices/nanopi
+put nanopi_*.tgz
