@@ -52,6 +52,14 @@ kernel_baalue_bananapi.tgz  rootfs_baalue_bananapi.tgz  void-linux_kernel
 
 
 #
+# arietta_sdk
+#
+sftp thjvdb,arietta-sdk@frs.sourceforge.net
+cd /home/pfs/project/a/ar/arietta-sdk
+put *.tgz
+
+
+#
 # arm926_sdk
 #
 sftp thjvdb,arm926sdk@frs.sourceforge.net
