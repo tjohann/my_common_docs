@@ -155,3 +155,9 @@ Paper:
 
 - http://www.ni.com/white-paper/3938/de/
 - http://www.ni.com/white-paper/14238/en/
+
+
+TU-Dresden:
+-----------
+
+http://www.inf.tu-dresden.de/index.php?node_id=1316&ln=de
