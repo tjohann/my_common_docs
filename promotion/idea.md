@@ -25,7 +25,7 @@ Teil 1
 Erarbeitung der theoretischen Grundlagen für Echtzeitsysteme, speziell Echtzeit-Betriebssysteme und definieren von entsprechenden Bewertungskriterien und deren Messungmethoden.
 
 Themen:
-- Grundlagen Echtzeit-Systeme
+- Grundlagen Echtzeit-Systeme                         (Beginn Teil 2)
   - Begrifflichkeiten
   - ...
 - Anforderungen an Echtzeit-Betriebssysteme
@@ -35,17 +35,32 @@ Themen:
   - Klassische RTOS (Event + Time-triggert)
   - Time-triggert Systeme
   - Examples: FreeRTOS, RTMES, Zyphr
-- Full-Flavored OS
+                                                      (End Teil 2)
+- Full-Flavored OS                                    (Beginn Teil 3)
   - Linux
   - RT-PREEMPT
-- Hypervisor
+  - Time triggert (Implementierung Infrastruktur im User-Space)
+	(https://github.com/tjohann/time_triggert_env)
+  - Event triggert (Beispiel Implementierungen mittels Kernelspace driver)
+	(https://github.com/tjohann/my_driver)
+                                                      (End Teil 4)
+- Hypervisor                                          (Beginn Teil 4)
   - Typen/Grundlagen
   - Einfluß auf Echtzeitverhalten?
   - Example: jailhouse (https://github.com/siemens/jailhouse)
+  - Clustern mittels Cluster (https://github.com/tjohann/a20_sdk)
+                                                      (End Teil 4)
+- FPGA basierte Ansätze                               (Beginn Teil 5)
+  - Softcore Modelle
+  - Optimierungen für RT-Anwendungen
+  - Anbindung an Haupt-Prozessor
+                                                      (End Teil 5)
 - Bewertungskriterien
 - Definition der Messmethoden und Messparameter
 - Definition eines Usecases als praxis-orientierte Messung
 - Safety (SILx)
+
+Dauer: ~1/2 Jahr
 
 
 Teil 2
@@ -63,6 +78,12 @@ Themen:
 - SIL Betrachtungen ... (?)
 - ...
 
+Dauer: 1/2 Jahr - 3/4 Jahr
+
+[Einstieg/Übersicht](realtime-os.md)
+[Time-Triggert System](time_triggert-os.md)
+[Event-Triggert System](event_triggert-os.md)
+
 
 Teil 3
 ------
@@ -74,10 +95,15 @@ Themen:
 - Degration/Operation-Modes
 - Event triggert (Kernel-Space)
 - Time triggert (Implementierung Infrastruktur im User-Space)
+  (https://github.com/tjohann/time_triggert_env)
+- Event triggert (Beispiel Implementierungen mittels Kernelspace driver)
+  (https://github.com/tjohann/my_driver)
 - Multicore (?)
 - Messung der wichtigesten Parameter
 - SIL Betrachtungen ... (?)
 - ...
+
+Dauer: ~1/2 Jahr
 
 
 Teil 4
@@ -87,12 +113,16 @@ Analyse und Bewertung der Kombination (Linux + Jailhouse) + Linux-PR-PREEMPT + M
 Device: Cortex-A7/15 (Quad-Core)
 
 Themen:
+- MIBLOS (https://github.com/tjohann/miblos) als Bare-Metal
 - Degration/Operation-Modes
 - Kommunikations-Methoden zwischen den einzelnen Cellen
 - Beinflußung/Seperation der Cellen
+- Clustern mittels Cluster (https://github.com/tjohann/a20_sdk)
 - Messung der wichtigesten Parameter
 - SIL ... (?)
 - ...
+
+Dauer: 1/2 Jahr - 3/4 Jahr
 
 
 Teil 5
@@ -103,7 +133,11 @@ Device: Cyclone XX
 
 Themen:
 - RT optimierter Softcore
+- Optimierungen für RT-Anwendungen
+- Anbindung an Haupt-Prozessor
 - ...
+
+Dauer: 1/2 Jahr
 
 
 Teil 6
@@ -117,6 +151,7 @@ Themen:
 - Erstellen einer Handlunganweisung
 - ...
 
+Dauer: ~1/2 Jahr
 
 
 Themenspeicher:
@@ -126,6 +161,8 @@ Themenspeicher:
 - Zyphr
 - RTMES
 - µKernel/nanoKernel
+
+[Others/Snippets](temp.md)
 
 
 Literatur:
