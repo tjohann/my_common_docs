@@ -9,10 +9,10 @@ Ein weiteres Beispiel ist die Sensorik in einem Reaktordruckbehälter eines Kern
 Wichtig bei der Thematik ist zu erkennen, dass nicht das Ergebnis eine Funktion der Zeit ist, sondern die Gültikeit. Die physikalischen Größen oder Statuswerte können korrekt sein, wenn sie jedoch zum falschen Zeitpunkt zur Verfügung stehen, sind sie "wertlos".
 
 
-Hart/Soft Echtzeit Systems
+Hard/Soft Echtzeit Systems
 --------------------------
 
-Das Beispiel des Ottomotors bzw. der Reaktordruckbehälter-Sensorik zeigen, dass die Folgen eines Verfehlens der Deadline (*Letzter Zeitpunkt an dem die Werte vorhanden sein müssen, bzw. eine Reaktion zu erfolgen hat) schwerwiegende Folgen haben. In diesem Fall wird von harter Echzeit gesprochen. Im Gegensatz dazu gibt es weiche Echtzeit. Die Klassifizierung nach harter und weicher Echzeit erfolgt anhand der Folgen des Verletzens der Deadline. Als Beispiel für weiche Echtzeit kann eine Telefon-Verbindung gesehen werden. Wenn es bei der Kommnunikation zu Ausfällen bzw. Verlängerungen kommt sind die Folgen gering. Bei größeren "Lücken" wird der Satz vom Sprecher einfach wiederholt. Das wäre bei der Reaktordruckbehälter-Sensorik nicht mehr möglich.
+Das Beispiel des Ottomotors bzw. der Reaktordruckbehälter-Sensorik zeigen, dass die Folgen eines Verfehlens der Deadline (*Letzter Zeitpunkt an dem die Werte vorhanden sein müssen, bzw. eine Reaktion zu erfolgen hat) schwerwiegende Folgen haben. In diesem Fall wird von harter Echzeit gesprochen. Im Gegensatz dazu gibt es weiche Echtzeit. Die Klassifizierung nach harter und weicher Echzeit erfolgt anhand der Folgen des Verletzens der Deadline. Als Beispiel für weiche Echtzeit kann eine Telefon-Verbindung gesehen werden. Wenn es bei der Kommnunikation zu Ausfällen bzw. Verlängerungen kommt sind die Folgen gering. Bei größeren "Lücken" wird der Satz vom Sprecher einfach wiederholt. Das wäre bei der Reaktordruckbehälter-Sensorik nicht mehr möglich. In vielen Anwendungen ist es nicht möglich bzw. nicht notwendig so klar zwischen hard und soft zu unterscheiden (* hard, firm und soft).
 
 
 Reliable Systems
