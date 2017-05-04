@@ -41,4 +41,9 @@ Echtzeit-OSe
 
 Ein Echtzeit-OS stellt zusätzliche, bzw. optimierte Dienste zur Verfügung. Wie bereits im Vorfeld beschrieben, bedarf es abhängig von Fehlern oder Unplausibilitäten entsprechende Arbeitsmodies. Ein weitere wichtiger Punkt ist die Zeitbasis und deren Genauigkeit und die Unterbrechbarkeit von von Code.
 
-Im weiteren werden die wichtigen Punkte in einer Beispiel-Implementierung hergeleitet und beschrieben (https://github.com/tjohann/miblos).
+Im weiteren werden wichtigen Punkte in einer Beispiel-Implementierung hergeleitet und beschrieben (https://github.com/tjohann/miblos).
+
+
+
+
+

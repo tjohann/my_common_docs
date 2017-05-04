@@ -1,5 +1,5 @@
-Idee für Promotions-Thema
-=========================
+Idee für Paper-Thema
+====================
 
 
 Grundidee/Motivation
@@ -9,12 +9,12 @@ Echtzeit Systeme sind eine komplexe und nicht unbedingt einfach zu verstehende T
 
 Die embedded Welt ist aktuell in einer tiefgreifenden Umbruchphase, die embedded typisch, eher gemächlich von statten geht. In der Vergangenheit gab es in erster Linie Bare-Metal Devices mit properitäre Betriebssystem-ähnlichen Umgebungen. Aktuell drängen aufgrund steigender Anforderungen bezüglich usablilty Full-OS'e wie Linux in den Markt. Auch in der Vergangenheit gab und gibt es Systeme mit "erweiterten" Funktionsumfang wie QNX, VxWorks oder Integraty. Diese Systeme sind jedoch alle properitär und kosten intensiv. Durch den RT-PREEMPT Patch erhält Linux echtzeitfähigkeit und kombiniert somit Full-OS typische Abstraktionen wie Filesysteme mit echtzeit typischen Funktionen wie High-Resolution-Timer um eine stabile Timeline zu haben. Auf einem Komplexitäts-Strahl befindet sich Bare-Metal und RT-PREEMPT-Linux auf den beiden entgegen gesetzten Seiten. Irgendwo zwischen diesen beiden Enden befinden sich Betriebssysteme wie FreeRTOS (http://www.freertos.org/), RTMES (http://rtems.com/) oder Zyphr (https://www.zephyrproject.org/).
 
-Als eine Art von Hybrid kann man Hypervisor basierte Systeme ansehen. Diese bieten von beiden Welten Teilmengen für eine Applikation. Durch einen Hypervisor besteht die Möglichkeit unterschiedliche Cluster auf einer Hardware laufen zu lassen. In der aktuellen Praxis sind Bare-Metal-OSe spezielle und sehr anwendungsspezifische Implementierungen und keine Standard-OSe. Dabei handelt es sich sowohl um Time-triggert, Event-triggert als auch Kombinationen von beiden. Aus diesem Grund wird im Rahmen der Promotion ein einfaches RTOS implementiert welches dann die Basis für folgende Betrachtungen ist.
+Als eine Art von Hybrid kann man Hypervisor basierte Systeme ansehen. Diese bieten von beiden Welten Teilmengen für eine Applikation. Durch einen Hypervisor besteht die Möglichkeit unterschiedliche Cluster auf einer Hardware laufen zu lassen. In der aktuellen Praxis sind Bare-Metal-OSe spezielle und sehr anwendungsspezifische Implementierungen und keine Standard-OSe. Dabei handelt es sich sowohl um Time-triggert, Event-triggert als auch Kombinationen von beiden. Aus diesem Grund wird im Rahmen dieser Arbeit ein einfaches RTOS implementiert welches dann die Basis für folgende Betrachtungen ist.
 
 Eine weitere Auffächerung der Ausprägungen stellen Prozessoren dar, die sowohl Application Kerne als auch Special/Embedded Kerne auf dem selben Die implementieren. Auch hier gibt es wieder unterschiedliche Peripherie Kerne. In der ARM Welt findet man recht häufig Kerne vom Type A7/15 und M3/4 in dem selben Prozessor, aber auch spezielle Real-Time-Kerne wie der PSP im AM335 (Beaglebone-Black) sind möglich. Alsweitere AMP Variante kommen die Big-Little Prozesoren mit einer Kombination von A15 und A7 zu nennen. Diese Kerne sind speziell für Hypervisor basierte System interresant, da sie eine bessere Korrelation zwischen Cellen Nutzlast und vorhandenem Kernen ermöglichen (Fußnote: reicht der langsamere A7 Kern für die Bare-Metal Last oder ist ein A15 notwendig?).
 Speziell für Rapid-Prototyping bieten sich FPGA basierte Softcore Lösungen an, die speziell an die Anforderung angepasste Lösungen ermöglichen.
 
-Die Idee für die Promotion kommt aus dem Wunsch, die einzelnen unterschiedlichen Themen, bzw System in einem kompletten Kontext zu betrachten und zu untersuchen. Ausgehend von einer Time-Triggert Bare-Metal Implementierung über RT-PREEMPT-Linux und Hypervisor-Linux-TTBare. Ziel ist es die einzelnen Vorteile, Nachteile und allgemeinen Probleme darzustellen, zu bewerten und gegebenenfalls Handlungsanweisungen zur Migration von Bare-Metal nach Hypervisor-Celle zu geben. Ein wichtiger Aspekt dieser Arbeit ist die Verwendung von Opensource im Allgemeinen und Linux im Speziellen. Sämtlicher Code und Dokumentation (incl. dieser Arbeit) sollen unter die GPLv2 bzw CC-BY-SA 2.0 gestellt werden um allen Interrsierten den Einstieg in die Thematik zu ermöglichen.
+Die Idee für diese Arbeit kommt aus dem Wunsch, die einzelnen unterschiedlichen Themen, bzw System in einem kompletten Kontext zu betrachten und zu untersuchen. Ausgehend von einer Time-Triggert Bare-Metal Implementierung über RT-PREEMPT-Linux und Hypervisor-Linux-TTBare. Ziel ist es die einzelnen Vorteile, Nachteile und allgemeinen Probleme darzustellen, zu bewerten und gegebenenfalls Handlungsanweisungen zur Migration von Bare-Metal nach Hypervisor-Celle zu geben. Ein wichtiger Aspekt dieser Arbeit ist die Verwendung von Opensource im Allgemeinen und Linux im Speziellen. Sämtlicher Code und Dokumentation (incl. dieser Arbeit) sollen unter die GPLv2 bzw CC-BY-SA 2.0 gestellt werden um allen Interrsierten den Einstieg in die Thematik zu ermöglichen.
 
 Die Arbeit gliedert sich in folgende Teile:
 
@@ -187,11 +187,12 @@ Vorbereitung:
 - https://www.amazon.de/Real-Time-Systems-Principles-Distributed-Applications/dp/1441982361/ref=asap_bc?ie=UTF8
 
 
-Paper:
-------
+Paper/Vorlesungen:
+------------------
 
 - http://www.ni.com/white-paper/3938/de/
 - http://www.ni.com/white-paper/14238/en/
+- http://w3service.net/vorlesungen/embedded_systems/0020-embedded-realtime-systems/Echtzeitprogrammierung-132.pdf
 
 
 TU-Dresden:
