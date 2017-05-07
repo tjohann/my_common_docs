@@ -67,18 +67,17 @@ Teil 2
 ------
 
 Implementierung eines einfachen Single-Core-Bare-Metal RTOS (Event + Time-triggert) -> MIBLOS (https://github.com/tjohann/miblos).
-Device: Cortex-M3/4
+Device: Cortex-M3/4 oder Softcore via FPGA
 
 Themen:
-- CMSIS basierter RT-Kern (?)
 - Degration/Operation-Modes
 - Event triggert
 - Time triggert
 - Messung der wichtigesten Parameter
-- SIL Betrachtungen ... (?)
+- Safety Betrachtungen ... (?)
 - ...
 
-Dauer: 1/2 Jahr - 3/4 Jahr
+Dauer: ~1/2 Jahr
 
 [Einstieg/Übersicht](realtime-os.md)
 [Time-Triggert System](time_triggert-os.md)
@@ -100,10 +99,10 @@ Themen:
   (https://github.com/tjohann/my_driver)
 - Multicore (?)
 - Messung der wichtigesten Parameter
-- SIL Betrachtungen ... (?)
+- Safety Betrachtungen ...
 - ...
 
-Dauer: ~1/2 Jahr
+Dauer: 1/2 Jahr
 
 
 Teil 4
@@ -119,10 +118,12 @@ Themen:
 - Beinflußung/Seperation der Cellen
 - Clustern mittels Cluster (https://github.com/tjohann/a20_sdk)
 - Messung der wichtigesten Parameter
-- SIL ... (?)
+- Safety ...
 - ...
 
 Dauer: 1/2 Jahr - 3/4 Jahr
+
+[Kombination von Linux und Bare-Metal](kombination_bare_linux.md)
 
 
 Teil 5
@@ -151,7 +152,7 @@ Themen:
 - Erstellen einer Handlunganweisung
 - ...
 
-Dauer: ~1/2 Jahr
+Dauer: 1/2 Jahr
 
 
 Themenspeicher:

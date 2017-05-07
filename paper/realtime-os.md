@@ -43,7 +43,3 @@ Ein Echtzeit-OS stellt zusätzliche, bzw. optimierte Dienste zur Verfügung. Wie
 
 Im weiteren werden wichtigen Punkte in einer Beispiel-Implementierung hergeleitet und beschrieben (https://github.com/tjohann/miblos).
 
-
-
-
-
