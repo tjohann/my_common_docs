@@ -12,3 +12,9 @@ slime
 -----
 
 http://www.cliki.net/SLIME%20Features
+
+
+lisp book
+---------
+
+http://nicklevine.org/lisp-book/

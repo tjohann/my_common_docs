@@ -21,3 +21,12 @@ http://www.waveshare.com/wiki/Open3S500E
 https://forums.xilinx.com/t5/Design-Tools-Others/Can-t-program-WaveShare-Core3S500e-FPGA/td-p/565234
 
 
+Other topics
+------------
+
+http://hackaday.com/2017/04/13/lattice-ice40-fpga-configured-by-linux-kernel/
+
+https://twitter.com/fpga_languages
+http://fpgalanguages.com/fpga-1
+
+http://www.fpgasid.de/
