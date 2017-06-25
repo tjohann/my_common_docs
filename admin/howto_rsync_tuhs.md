@@ -11,3 +11,10 @@ rsync -avz minnie.tuhs.org::UA_PDP11 PDP-11
 rsync -avz minnie.tuhs.org::UA_PDP11_Trees PDP-11
 rsync -avz minnie.tuhs.org::UA_VAX VAX
 rsync -avz minnie.tuhs.org::UA_Other Other
+
+
+Git-Repo
+--------
+
+https://lwn.net/Articles/725297/ 
+https://github.com/dspinellis/unix-history-repo

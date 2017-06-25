@@ -39,12 +39,50 @@ HPD -> Horizontal Dilution of Precision
 altitude -> Altitude from sea level
 M -> Meter
 height ... like Altitude
-	
 
-NMEA
-----
+
+GPRMC data
+----------
+
+Example (taken from https://circuitdigest.com/microcontroller-projects/reading-gps-data-using-computer-and-arduino)
+
+
+$GPRMC,123519.000,A, 7791.0381,N, 06727.4434,E,022.4,084.4,230394,003.1,W*6A
+$GPRMC,HHMMSS.SSS,A,latitude,N,longitude,E,speed,angle,date,MV,W,CMD
+
+
+Description:
+$GPRMC -> Recommended Minimum sentence C
+HHMMSS.SSS -> Time in hour minute seconds and milliseconds format.
+A -> Status // A=active and V= void
+Latitude -> Latitude 49 deg. 16.45 min. North
+N -> Direction N=North, S=South
+Longitude -> Longitude(Coordinate)
+E -> Direction E= East, W=West
+Speed -> speed in knots
+Angle -> Tracking angle in degrees
+Date -> Time stamp (Date in UTC)
+MV -> Magnetic Variation
+W -> Direction of variation E/W
+CMD (*6A) -> Checksum Data
+
+
+NMEA and more
+-------------
 
 http://aprs.gids.nl/nmea/
+
+ntrip:
+https://igs.bkg.bund.de/ntrip/about
+
+dgps-ip:
+http://www.freebsdsoftware.org/astro/dgpsip.html
+
+
+links
+-----
+
+http://www.trimble.com/gps_tutorial/
 
 
 projects

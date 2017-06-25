@@ -1,7 +1,7 @@
 some links around open souce based solutions
 ============================================
 
-http://icoboard.org/ 
+http://icoboard.org/
 https://shop.trenz-electronic.de/de/Produkte/OnSite-Broadcast/
 https://shop.trenz-electronic.de/de/TE0887-03M-icoBoard-Version-1.1-mit-1-MBit-SRAM?c=427
 http://icoboard.org/get-started-with-your-icoboard-and-a-raspi.html
