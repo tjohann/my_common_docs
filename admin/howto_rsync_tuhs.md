@@ -16,5 +16,5 @@ rsync -avz minnie.tuhs.org::UA_Other Other
 Git-Repo
 --------
 
-https://lwn.net/Articles/725297/ 
+https://lwn.net/Articles/725297/
 https://github.com/dspinellis/unix-history-repo
