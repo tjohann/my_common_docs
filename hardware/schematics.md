@@ -2,7 +2,7 @@ some links around schematics and tools
 ======================================
 
 
-arduino lib 
+arduino lib
 -----------
 
 https://www.mikrocontroller.net/topic/423299
