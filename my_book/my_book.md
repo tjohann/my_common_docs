@@ -9,7 +9,7 @@ With my first blog entry (https://tjohann.wordpress.com/2016/05/01/thoughts-abou
 
 There’re different architecture aproaches for deeply embedded devices. One is the Time-Triggert-Architecture (https://en.wikipedia.org/wiki/Time-triggered_architecture) which is a subset of the more general Event-Triggered-Architecture.
 
-The smallest entity within a embbedded system is somthing like a block. Such a block represents some functionality (regulator, ADC, sensor calulation …) and is builded by a c-function. If you split you whole system in such blocks/functions you know the information flow and you can calculate to duration time. Now you have something like a block diagram. With the relation between blocks and functions you can do the same for the software and buildup a fist architecture.
+The smallest entity within a embbedded system is somthing like a block. Such a block represents some functionality (regulator, ADC, sensor calulation …) and is builded by a c-function. If you devite your whole system in such blocks/functions, you know the information flow and you can calculate to duration time. Now you have something like a block diagram. With the relation between blocks and functions you can do the same for the software and buildup a fist architecture.
 
 The next step would be to decide which architecture we want to use. With an event-triggert-architecture you define some irq handler for the different functions. This could be really complicated if you have a bigger system. So you also use a timer interrupt and group some functions in it.
 
@@ -17,7 +17,7 @@ An another approach would be to use a time-triggert-architecture. With that you 
 
 …- IRQ – Function A – Function B – Function C – sleep – IRQ – Function A – Function B – Function C – sleep – IRQ – ….
 
-The list Function A – Function B – Function C will be called tick-list.  Such a tick list could also represend something like a mode. If you have a household-good like a washing machine, the you have different washing modes. So every mode would be represented by a different tick-list.
+The list Function A – Function B – Function C will be called tick-list.  Such a tick list could also represend something like a mode. If you have a household-good like a washing machine, then you have different washing modes. So every mode would be represented by a different tick-list.
 
 The final step is to decide if the functions are preemptive or not. So TTC is a time-triggert-cooperative system and TTP is a timer-triggert-preemptive system. A problem with TTP is priority inversion (https://en.wikipedia.org/wiki/Priority_inversion).
 

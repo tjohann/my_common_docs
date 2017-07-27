@@ -1,6 +1,12 @@
 some info about robotic in general and linux in special
 =======================================================
 
+
+course
+------
+https://www.udacity.com/course/artificial-intelligence-for-robotics--cs373
+
+
 video about basic
 -----------------
 https://www.youtube.com/watch?v=ukYsWCjy5TA
