@@ -1,13 +1,14 @@
 some stuff for my blog around distcc
 ====================================
 
-I dont want to repeat what others already said, so here is a link to the distcc repo as a starting point -> https://github.com/distcc/distcc . For more detailed infos check https://wiki.gentoo.org/wiki/Distcc and
+I dont want to repeat what others already said, so here is a link to the distcc repo as a starting point -> https://github.com/distcc/distcc .
+Note: for more detailed infos check https://wiki.gentoo.org/wiki/Distcc
 
-So why do i want to use distcc? Actually for my A20_SDK (https://github.com/tjohann/a20_sdk.git) i do a cross compilation for the kernel and u-boot parts. Even thought the Allwinner A20 based devices like bananapi (https://en.wikipedia.org/wiki/Banana_Pi) are usable as a small desktop, it lacks computing performance to build such huge code bases.
+So why do i want to use distcc? Actually for my A20_SDK (https://github.com/tjohann/a20_sdk.git) i do a cross compilation for the kernel and u-boot parts. Even thought the Allwinner A20 based devices like bananapi (https://en.wikipedia.org/wiki/Banana_Pi) are usable as a small desktop, it lacks computing performance to build huge code bases.
 
-My A20 based cluster (baalue -> https://github.com/tjohann/a20_sdk/blob/master/pics/baalue_cluster_01.jpg) would be a good platform to play around with distcc. In the end i want to build void-packages (https://github.com/voidlinux/void-packages) native on the cluster, so no cross compilation anymore.
+My A20 based cluster (baalue -> https://github.com/tjohann/a20_sdk/blob/master/pics/baalue_cluster_01.jpg) would be a good platform to play around with distcc. In the end i want to build void-packages (https://github.com/voidlinux/void-packages) native on the cluster, so no cross compilation anymore. Also all builds like u-boot or kernel should run on the cluster.
 
-The build starting point is to build the latest emacs version (http://ftp.gnu.org/gnu/emacs/emacs-25.2.tar.xz).
+Another build starting point is to build the latest emacs version (http://ftp.gnu.org/gnu/emacs/emacs-25.2.tar.xz), because it's not available via void-packages.
 
 
 setup distcc
@@ -23,7 +24,7 @@ The file hosts is a list of clients which distcc useses:
 	127.0.0.1/2 192.168.0.1/4 192.168.0.80/2 192.168.0.81/2 192.168.0.82/2
 	localhost my_power_machine baalue-01 baalue-02 baalue-03
 
-Start with the most powerful node (192.168.0.1) and end with the least powerful node (192.168.0.82). Add the number of threads to use on the node (4 like 192.168.0.1/*4*). You can also add the lists of clients to ~/.distcc/hosts. Note that /configure will run on the first machine listed, so it should be localhost. <- TODO: check if it performce better without localhost include (so localhost does only the preprocessing). Also check the impact of the number of threads (2-4 threads per node).
+Start with the most powerful node (192.168.0.1) and end with the least powerful node (192.168.0.82). Add the number of threads to use on the node (4 like 192.168.0.1/*4*). You can also add the lists of clients to ~/.distcc/hosts. Note that ./configure will run on the first machine listed, so it should be localhost. <- TODO: check if it performce better without localhost include (so localhost does only the preprocessing). Also check the impact of the number of threads (2-4 threads per node).
 
 The clients.allow (https://github.com/tjohann/a20_sdk/blob/master/bananapi/configs/clients.allow_distcc) is a list of networks or nodes which are allowed to use this node.
 
@@ -99,7 +100,7 @@ To save/show the temps set
 
 	export DISTCC_SAVE_TEMPS=1
 
-Do not use -march=native or -mtune=native in the CFLAGS or CXXFLAGS, because this coudl cause different optimisation on the different nodes (here on my build cluster it's not a problem). <- TODO: check that
+Do not use -march=native or -mtune=native in the CFLAGS or CXXFLAGS, because this could cause different optimisation on the different nodes (here on my build cluster it's not a problem).
 
 
 monitor the build process
@@ -111,13 +112,95 @@ To monitor the build process use distccmon-gnome or distccmon-text (distccmon-te
 use distcc to build libbaalue/baalued and baalue
 ------------------------------------------------
 
-t.b.d.
+Here're some build times of libbalue with and without using distcc. To note is that localhost is NOT included in distcc/hosts and on every node only 2 threads are configured!
+
+without distcc:
+
+	./configure CFLAGS='-g -O2' --prefix=/usr --sysconfdir=/etc --libdir=/usr/lib
+
+	real 0m50,911s
+	user 0m13,830s
+	sys  0m24,740s
+
+with distcc (localhost not included in distcc/hosts):
+
+	./configure CFLAGS='-g -O2' --prefix=/usr --sysconfdir=/etc --libdir=/usr/lib CC=DISTCC
+
+	real 0m55,736s
+	user 0m14,450s
+	sys  0m27,520s
+
+Result: use configure with distcc brings no perfomance gain
+
+
+without distcc:
+
+	make -j4
+
+	real 0m33,942s
+	user 0m33,760s
+	sys  0m17,880s
+
+with distcc (localhost not included in distcc/hosts):
+
+	make -j20 CC=distcc
+
+	real 0m21,149s
+	user 0m11,100s
+	sys  0m14,750s
+
+Result: using distcc to build brings a performance gain
+
+
+Check with different configurations:
+
+- add localhost to hosts -> check for configure and make
+- add more threads to every node -> 4 instead of 2
+- check everthing with pump
+
+
+TODO: add baalued and baalue build times after optimization of distcc config
+
+
+use distcc to build linux kernel
+--------------------------------
+
+Example on how to build a linux kernel for a bananapi (https://github.com/tjohann/a20_sdk/blob/master/bananapi/Documentation/howto_kernel.txt)
+
+without distcc:
+
+	make CC=distcc -j20 LOADADDR=0x40008000 uImage modules dtbs
+
+	real 0mxx,xxxs
+	user 0mxx,xxxs
+	sys  0mxx,xxxs
+
+with distcc (localhost not included in distcc/hosts):
+
+	make -j4 LOADADDR=0x40008000 uImage modules dtbs
+
+	real 0mxx,xxxs
+	user 0mxx,xxxs
+	sys  0mxx,xxxs
+
+Result: XXXXXXXX
+
+
+Check with different configurations:
+
+- add localhost to hosts -> check for configure and make
+- add more threads to every node -> 4 instead of 2
+- check everthing with pump
+
+Hint: CONFIG_GCOV_KERNEL must be turned off otherwise the build nodes wont be used. Also remember that the preprocessing and final linking steps are done on the local node (this can take 20-30% of the total time ... if not using pump) (see https://lwn.net/Articles/702375/)
 
 
 use distcc to build emacs
 -------------------------
 
-t.b.d.
+Howto build emacs (http://ftp.gnu.org/gnu/emacs/):
+
+	./configure --with-x-toolkit=gtk2 --prefix=/usr/local
 
 
 use distcc with void-packages
@@ -127,11 +210,37 @@ https://github.com/tjohann/a20_sdk/blob/master/bananapi/configs/conf_void_packag
 
 
 
-use distcc to build arm926 toolchain/rootfs via crosstool for arietta
+use distcc to build arm926 toolchain/rootfs via buildroot for arietta
 ---------------------------------------------------------------------
 
 Some background infos: https://wiki.gentoo.org/wiki/Distcc/Cross-Compiling
 
 For my arietta devices/project i created a sdk repository (https://github.com/tjohann/arietta_sdk) similiar to the a20_sdk. It is the basic for a buildroot based root filesstem and cross-toolchain.
+
+
+some more thoughts
+------------------
+
+There's a really interesting article form Willy Tarreau(http://1wt.eu/) about build farm/cluster and linux -> https://lwn.net/Articles/702375 (see the video https://www.youtube.com/watch?v=vwQ-KcjskRw&index=1&list=PLfnwKJbklIxwp09N5bM-Oj9bJzTAC3JsV).
+
+Some summaries of that article:
+
+	1). the project's build system must support parallel builds
+
+This is one more reason to use autotools and co (see libbaalue/baalued/baalue)
+
+	2). the project should be large, with many more source files than machines to build them on
+
+So baalue(d) is not the right projects because there're only a few files to build, but libbaalue is better. Here i try to use abstraction based on the idea of functional modules for every bigger topic (like can or network). The measurment results above show prove summary 2.
+
+	3). the compile time for each file should be approximately equal
+
+Thats not easy to achieve, but i try to make every functional compounent/module not larger than 1000 lines of code. If its bigger, then i try to split the file in different modules.
+
+	4). each machine needs to be running the exact same compiler
+
+My build cluster constists out of 8 Bananapi and 1 Cubietruck with all the same rootfs (void-linux), so this is not a problem.
+
+
 
 
