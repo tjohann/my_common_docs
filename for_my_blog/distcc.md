@@ -106,7 +106,7 @@ Do not use -march=native or -mtune=native in the CFLAGS or CXXFLAGS, because thi
 monitor the build process
 -------------------------
 
-To monitor the build process use distccmon-gnome or distccmon-text (distccmon-text 1 will update every second). <- TODO: check if distccmon-text is available
+To monitor the build process use distccmon-gnome or distccmon-text (distccmon-text 1 will update every second).
 
 
 use distcc to build libbaalue/baalued and baalue
@@ -218,10 +218,23 @@ Some background infos: https://wiki.gentoo.org/wiki/Distcc/Cross-Compiling
 For my arietta devices/project i created a sdk repository (https://github.com/tjohann/arietta_sdk) similiar to the a20_sdk. It is the basic for a buildroot based root filesstem and cross-toolchain.
 
 
+masquerade mode
+---------------
+
+To generally use distcc instead of gcc or cc do the following (see also man distcc):
+
+	mkdir /usr/lib/distcc/bin
+    cd /usr/lib/distcc/bin
+    ln -s ../../../bin/distcc gcc
+    ln -s ../../../bin/distcc cc
+
+Now add /usr/lib/distcc/bin to your $PATH *before* the "normal" gcc -> add it to the front. In void-linux the links are created by the distcc package.
+
+
 some more thoughts
 ------------------
 
-There's a really interesting article form Willy Tarreau(http://1wt.eu/) about build farm/cluster and linux -> https://lwn.net/Articles/702375 (see the video https://www.youtube.com/watch?v=vwQ-KcjskRw&index=1&list=PLfnwKJbklIxwp09N5bM-Oj9bJzTAC3JsV).
+There's a really interesting article form Willy Tarreau(http://1wt.eu/) about build farm/cluster and linux -> https://lwn.net/Articles/702375 (see the video https://www.youtube.com/watch?v=vwQ-KcjskRw&index=1&list=PLfnwKJbklIxwp09N5bM-Oj9bJzTAC3JsV and http://wiki.ant-computing.com/Choosing_a_processor_for_a_build_farm for his wiki)
 
 Some summaries of that article:
 
@@ -240,7 +253,3 @@ Thats not easy to achieve, but i try to make every functional compounent/module 
 	4). each machine needs to be running the exact same compiler
 
 My build cluster constists out of 8 Bananapi and 1 Cubietruck with all the same rootfs (void-linux), so this is not a problem.
-
-
-
-
