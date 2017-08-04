@@ -87,8 +87,8 @@ general usage
 
 Within a make based project you can use:
 
-	make -j20 CC=distcc
-	pump make -j20 CC=distcc
+	make -j32 CC=distcc
+	pump make -j32 CC=distcc
 
 Show more infos:
 
@@ -122,13 +122,21 @@ without distcc:
 	user 0m13,830s
 	sys  0m24,740s
 
-with distcc (localhost not included in distcc/hosts):
+with distcc (localhost not included and only one thread per node in distcc/hosts):
 
 	./configure CFLAGS='-g -O2' --prefix=/usr --sysconfdir=/etc --libdir=/usr/lib CC=DISTCC
 
 	real 0m55,736s
 	user 0m14,450s
 	sys  0m27,520s
+
+with distcc (localhost not included and 4 threads per node in distcc/hosts):
+
+	./configure CFLAGS='-g -O2' --prefix=/usr --sysconfdir=/etc --libdir=/usr/lib CC=DISTCC
+
+	real 0mXX,xxxs
+	user 0mXX,xxxs
+	sys  0mXX,xxxs
 
 Result: use configure with distcc brings no perfomance gain
 
@@ -141,7 +149,7 @@ without distcc:
 	user 0m33,760s
 	sys  0m17,880s
 
-with distcc (localhost not included in distcc/hosts):
+with distcc (localhost not included and only one thread per node in distcc/hosts):
 
 	make -j20 CC=distcc
 
@@ -149,13 +157,21 @@ with distcc (localhost not included in distcc/hosts):
 	user 0m11,100s
 	sys  0m14,750s
 
+with distcc (localhost not included and 4 threads per node in distcc/hosts):
+
+	make -j32 CC=distcc
+
+	real 0mXX,xxxs
+	user 0mXX,xxxs
+	sys  0mXX,xxxs
+
 Result: using distcc to build brings a performance gain
 
 
 Check with different configurations:
 
 - add localhost to hosts -> check for configure and make
-- add more threads to every node -> 4 instead of 2
+- add more threads to every node -> 4 instead of 1
 - check everthing with pump
 
 
@@ -169,7 +185,7 @@ Example on how to build a linux kernel for a bananapi (https://github.com/tjohan
 
 without distcc:
 
-	make CC=distcc -j20 LOADADDR=0x40008000 uImage modules dtbs
+	make CC=distcc -j32 LOADADDR=0x40008000 uImage modules dtbs
 
 	real 0mxx,xxxs
 	user 0mxx,xxxs
@@ -189,7 +205,7 @@ Result: XXXXXXXX
 Check with different configurations:
 
 - add localhost to hosts -> check for configure and make
-- add more threads to every node -> 4 instead of 2
+- add more threads to every node -> 4 instead of 1
 - check everthing with pump
 
 Hint: CONFIG_GCOV_KERNEL must be turned off otherwise the build nodes wont be used. Also remember that the preprocessing and final linking steps are done on the local node (this can take 20-30% of the total time ... if not using pump) (see https://lwn.net/Articles/702375/)
