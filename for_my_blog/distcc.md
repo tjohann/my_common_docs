@@ -195,9 +195,9 @@ with distcc (localhost not included in distcc/hosts):
 
 	make -j4 LOADADDR=0x40008000 uImage modules dtbs
 
-	real 0mxx,xxxs
-	user 0mxx,xxxs
-	sys  0mxx,xxxs
+	real    439m48,806s
+	user    701m3,820s
+	sys     158m7,850s
 
 Result: XXXXXXXX
 

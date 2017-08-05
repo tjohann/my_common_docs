@@ -1,0 +1,12 @@
+  IHEX2FW firmware/whiteheat.fw
+  IHEX2FW firmware/keyspan_pda/keyspan_pda.fw
+  IHEX2FW firmware/keyspan_pda/xircom_pgs.fw
+  IHEX    firmware/cpia2/stv0672_vp4.bin
+
+real    439m48,806s
+user    701m3,820s
+sys     158m7,850s
+baalue@baalue_master:~/src/a20_sdk/kernel/linux-4.11.9$
+baalue@baalue_master:~/src/a20_sdk/kernel/linux-4.11.9$
+baalue@baalue_master:~/src/a20_sdk/kernel/linux-4.11.9$ time make -j4 LOADADDR=0x40008000 uImage modules dtbs
+
