@@ -183,7 +183,7 @@ use distcc to build linux kernel
 
 Example on how to build a linux kernel for a bananapi (https://github.com/tjohann/a20_sdk/blob/master/bananapi/Documentation/howto_kernel.txt)
 
-without distcc:
+with distcc (localhost not included in distcc/hosts and for threads per node):
 
 	make CC=distcc -j32 LOADADDR=0x40008000 uImage modules dtbs
 
@@ -191,7 +191,7 @@ without distcc:
 	user 0mxx,xxxs
 	sys  0mxx,xxxs
 
-with distcc (localhost not included in distcc/hosts):
+without distcc:
 
 	make -j4 LOADADDR=0x40008000 uImage modules dtbs
 
@@ -205,7 +205,6 @@ Result: XXXXXXXX
 Check with different configurations:
 
 - add localhost to hosts -> check for configure and make
-- add more threads to every node -> 4 instead of 1
 - check everthing with pump
 
 Hint: CONFIG_GCOV_KERNEL must be turned off otherwise the build nodes wont be used. Also remember that the preprocessing and final linking steps are done on the local node (this can take 20-30% of the total time ... if not using pump) (see https://lwn.net/Articles/702375/)
