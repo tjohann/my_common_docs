@@ -94,7 +94,7 @@ Show more infos:
 
 	export DISTCC_VERBOSE=1
 
-to build your project.
+to build your project. Note: this will create a lot of output and costs a lot of extra time!
 
 To save/show the temps set
 
@@ -109,10 +109,10 @@ monitor the build process
 To monitor the build process use distccmon-gnome or distccmon-text (distccmon-text 1 will update every second).
 
 
-use distcc to build libbaalue/baalued and baalue
-------------------------------------------------
+use distcc to build libbaalue
+-----------------------------
 
-Here're some build times of libbalue with and without using distcc. To note is that localhost is NOT included in distcc/hosts and on every node only 2 threads are configured!
+Here're some build times of libbalue with and without using distcc.
 
 without distcc:
 
@@ -122,6 +122,10 @@ without distcc:
 	user 0m13,830s
 	sys  0m24,740s
 
+	real 0m53,792s
+	user 0m14,150s
+	sys  0m24,590s
+
 with distcc (localhost not included and only one thread per node in distcc/hosts):
 
 	./configure CFLAGS='-g -O2' --prefix=/usr --sysconfdir=/etc --libdir=/usr/lib CC=DISTCC
@@ -130,15 +134,7 @@ with distcc (localhost not included and only one thread per node in distcc/hosts
 	user 0m14,450s
 	sys  0m27,520s
 
-with distcc (localhost not included and 4 threads per node in distcc/hosts):
-
-	./configure CFLAGS='-g -O2' --prefix=/usr --sysconfdir=/etc --libdir=/usr/lib CC=DISTCC
-
-	real 0mXX,xxxs
-	user 0mXX,xxxs
-	sys  0mXX,xxxs
-
-Result: use configure with distcc brings no perfomance gain
+Conclusion: use configure with distcc brings no perfomance gain
 
 
 without distcc:
@@ -153,43 +149,68 @@ with distcc (localhost not included and only one thread per node in distcc/hosts
 
 	make -j20 CC=distcc
 
-	real 0m21,149s
-	user 0m11,100s
-	sys  0m14,750s
+	real 0m19,788s
+	user 0m12,750s
+	sys  0m16,950s
 
 with distcc (localhost not included and 4 threads per node in distcc/hosts):
 
 	make -j32 CC=distcc
 
-	real 0mXX,xxxs
-	user 0mXX,xxxs
-	sys  0mXX,xxxs
+	real 0m19,768s
+	user 0m12,450s
+	sys  0m17,260s
 
-Result: using distcc to build brings a performance gain
+with distcc (localhost included and 4 threads per node in distcc/hosts):
+
+     	make -j32 CC=distcc
+
+	real 0m11,783s
+	user 0m7,730s
+	sys  0m7,710s
 
 
-Check with different configurations:
+Measurement result:
 
-- add localhost to hosts -> check for configure and make
-- add more threads to every node -> 4 instead of 1
-- check everthing with pump
+- using distcc to build brings a performance gain
+- to add the number of threads on the nodes makes no difference
+- to add localhost brings another significant performance gain
+
+Conclusion: "localhost baalue-01/4 baalue-02/4 baalue-03/4 baalue-04/4 baalue-05/4 baalue-06/4 baalue-07/4 baalue-08/4" and "make -j32 CC=distcc" brings the best perfomance.
+
+TODO: check with pump and localhost removed from distcc/hosts
 
 
-TODO: add baalued and baalue build times after optimization of distcc config
+use distcc to build libbaalue
+-----------------------------
+
+Here're some build times of libbalue with and without using distcc.
+
+without distcc:
+
+        make -j4
+
+	real 0m4,577s
+	user 0m2,200s
+	sys  0m2,200s
+
+with distcc (localhost included and 4 threads per node in distcc/hosts):
+
+        make -j32 CC=distcc
+
+	real 0m4,728s
+	user 0m2,180s
+	sys  0m2,310s
+
+Measurement result:
+
+- using distcc brings no performance gain
 
 
 use distcc to build linux kernel
 --------------------------------
 
 Example on how to build a linux kernel for a bananapi (https://github.com/tjohann/a20_sdk/blob/master/bananapi/Documentation/howto_kernel.txt)
-
-with distcc (localhost not included in distcc/hosts and for threads per node):
-
-	make CC=distcc -j32 LOADADDR=0x40008000 uImage modules dtbs
-
-	real 0mxx,xxxs
-	user 0mxx,xxxs
-	sys  0mxx,xxxs
 
 without distcc:
 
@@ -199,13 +220,17 @@ without distcc:
 	user    701m3,820s
 	sys     158m7,850s
 
-Result: XXXXXXXX
+with distcc (localhost not included in distcc/hosts and for threads per node):
 
+        make CC=distcc -j32 LOADADDR=0x40008000 uImage modules dtbs
 
-Check with different configurations:
+        real 0mxx,xxxs
+	user 0mxx,xxxs
+	sys  0mxx,xxxs
 
-- add localhost to hosts -> check for configure and make
-- check everthing with pump
+Conclusion: XXXXXXXX
+
+TODO: check with pump and localhost removed from distcc/hosts
 
 Hint: CONFIG_GCOV_KERNEL must be turned off otherwise the build nodes wont be used. Also remember that the preprocessing and final linking steps are done on the local node (this can take 20-30% of the total time ... if not using pump) (see https://lwn.net/Articles/702375/)
 
