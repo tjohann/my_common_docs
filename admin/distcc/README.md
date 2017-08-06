@@ -273,11 +273,72 @@ Howto build emacs (http://ftp.gnu.org/gnu/emacs/):
 	./configure --with-x-toolkit=gtk2 --prefix=/usr/local
 
 
+without distcc:
+
+	make -j4
+
+	real 20m51,025s
+	user 31m12,050s
+	sys  3m50,630s
+
+with distcc (localhost included in distcc/hosts and 4 threads per node):
+
+	make -j32 CC=distcc
+
+	real 8m51,168s
+	user 4m57,280s
+	sys  2m23,390s
+
+Measurement result:
+
+- using distcc to build brings a performance gain
+
+
 Use distcc with void-packages
 -----------------------------
 
-https://github.com/tjohann/a20_sdk/blob/master/bananapi/configs/conf_void_package_distcc
+Build some packages for void-packages with distcc.
 
+void-packages/etc/conf (https://github.com/tjohann/a20_sdk/blob/master/bananapi/configs/conf_void_package_distcc):
+
+	XBPS_DISTCC=yes
+	XBPS_DISTCC_HOSTS="localhost/1 --localslots_cpp=24 192.168.0.81/4 192.168.0.82/4 192.168.0.83/4 192.168.0.84/4 192.168.0.85/4 192.168.0.86/4 192.168.0.87/4 192.168.0.88/4"
+	XBPS_MAKEJOBS=32
+
+Bootstrap:
+
+	./xbps-src binary-bootstrap
+
+Example -> build distcc via xbps-src
+
+without distcc:
+
+	./xbps-src pkg distcc
+
+	real 10m58,012s
+	user 5m56,060s
+	sys  4m29,260s
+
+
+	./xbps-src pkg distcc-pump
+
+	real 9m22,631s
+	user 5m35,500s
+	sys  4m4,480s
+
+
+	./xbps-src pkg distcc-gtk
+
+	real 9m9,318s
+	user 5m33,530s
+	sys  4m3,330s
+
+
+with distcc:
+
+	xxx
+	xxx
+	xxx
 
 
 Use distcc to build arm926 toolchain/rootfs via buildroot for arietta
