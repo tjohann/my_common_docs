@@ -236,10 +236,13 @@ with distcc (localhost included in distcc/hosts and 4 threads per node):
 
 	make CC=distcc -j32 LOADADDR=0x40008000 uImage modules dtbs
 
-	real    179m18,146s
-	user    215m1,460s
-	sys     126m22,640s
+	real 179m18,146s
+	user 215m1,460s
+	sys  126m22,640s
 
+	real 173m47,858s
+	user 204m5,050s
+	sys  125m34,440s
 
 Example load off the build nodes 1:
 ![Alt text](pics/distcc_build_kernel_node_01.png?raw=true "load of node 01")
