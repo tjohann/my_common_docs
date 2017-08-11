@@ -305,14 +305,14 @@ Build some packages for void-packages with distcc.
 void-packages/etc/conf (https://github.com/tjohann/a20_sdk/blob/master/bananapi/configs/conf_void_package_distcc):
 
 	XBPS_DISTCC=yes
-	XBPS_DISTCC_HOSTS="localhost/1 --localslots_cpp=24 192.168.0.81/4 192.168.0.82/4 192.168.0.83/4 192.168.0.84/4 192.168.0.85/4 192.168.0.86/4 192.168.0.87/4 192.168.0.88/4"
+	XBPS_DISTCC_HOSTS="localhost/1 --localslots_cpp=24 baalue-01/4 baalue-02/4 baalue-03/4 baalue-04/4 baalue-05/4 baalue-06/4 baalue-07/4 baalue-08/4"
 	XBPS_MAKEJOBS=32
 
 Bootstrap:
 
 	./xbps-src binary-bootstrap
 
-Example -> build distcc via xbps-src
+Example -> build distcc (and related) via xbps-src
 
 without distcc:
 
@@ -342,6 +342,12 @@ with distcc:
 	xxx
 	xxx
 	xxx
+
+
+TO-CHECK:
+- is there a hostdir/distcc-* folder?
+- is /usr/lib/distcc/bin with the links to the compiler avaiblable?
+
 
 
 Use distcc to build arm926 toolchain/rootfs via buildroot for arietta
