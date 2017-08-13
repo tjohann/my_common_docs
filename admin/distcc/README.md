@@ -228,9 +228,9 @@ with distcc (localhost NOT included in distcc/hosts and 4 threads per node):
 
 	make CC=distcc -j32 LOADADDR=0x40008000 uImage modules dtbs
 
-	real 176m21,388s
-	user 210m21,680s
-	sys  125m40,720s
+	real 169m34,508s
+	user 205m0,601s
+	sys  124m55,088s
 
 with distcc (localhost included in distcc/hosts and 4 threads per node):
 
