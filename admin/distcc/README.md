@@ -232,6 +232,10 @@ with distcc (localhost NOT included in distcc/hosts and 4 threads per node):
 	user 205m0,601s
 	sys  124m55,088s
 
+	real 169m50,103s
+	user 204m41,224s
+	sys  124m10,086s
+
 with distcc (localhost included in distcc/hosts and 4 threads per node):
 
 	make CC=distcc -j32 LOADADDR=0x40008000 uImage modules dtbs
