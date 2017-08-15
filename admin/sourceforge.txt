@@ -84,7 +84,7 @@ put bananapi*.tgz
 put baalue*.tgz
 
 cd /home/pfs/project/a/a2/a20devices/cubietruck
-put cubietruck_*.tgz
+put cubietruck*.tgz
 
 cd /home/pfs/project/a/a2/a20devices/olimex
 put olimex_*.tgz
