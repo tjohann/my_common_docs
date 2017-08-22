@@ -173,7 +173,6 @@ with distcc (localhost included and 4 threads per node in distcc/hosts):
 	user 0m7,730s
 	sys  0m7,710s
 
-
 Measurement result:
 
 - using distcc to build brings a performance gain
@@ -182,7 +181,25 @@ Measurement result:
 
 Conclusion: "localhost baalue-01/4 baalue-02/4 baalue-03/4 baalue-04/4 baalue-05/4 baalue-06/4 baalue-07/4 baalue-08/4" and "make -j32 CC=distcc" brings the best perfomance.
 
-TODO: check with pump and localhost removed from distcc/hosts
+
+Use pump to build libbaalue
+---------------------------
+
+Here're some build times of libbalue with and without using distcc.
+
+with pump (localhost not included and 4 threads per node in distcc/hosts):
+
+	pump make -j32 CC=distcc
+
+	real 0m17,403s
+	user 0m5,462s
+	sys  0m7,334s
+
+Measurement result:
+
+- using pump to build brings a significant performance gain although by this small code base adding localhost performed better.
+
+Conclusion: "baalue-01,cpp,lzo/4 baalue-02,cpp,lzo/4 baalue-03,cpp,lzo/4 baalue-04,cpp,lzo/4 baalue-05,cpp,lzo/4 baalue-06,cpp,lzo/4 baalue-07,cpp,lzo/4 baalue-08,cpp,lzo/4" brings the really good performace.
 
 
 Use distcc to build baalued
@@ -267,9 +284,27 @@ Measurement result:
 
 Conclusion: "localhost baalue-01/4 baalue-02/4 baalue-03/4 baalue-04/4 baalue-05/4 baalue-06/4 baalue-07/4 baalue-08/4" and "make -j32 CC=distcc" brings the best perfomance.
 
-TODO: check with pump
-
 Hint: CONFIG_GCOV_KERNEL must be turned off otherwise the build nodes wont be used. Also remember that the preprocessing and final linking steps are done on the local node (this can take 20-30% of the total time ... if not using pump) (see https://lwn.net/Articles/702375/)
+
+
+Use pump to build linux kernel
+------------------------------
+
+Example on how to build a linux kernel for a bananapi (https://github.com/tjohann/a20_sdk/blob/master/bananapi/Documentation/howto_kernel.txt)
+
+with distcc (localhost included in distcc/hosts and 4 threads per node):
+
+	pump make CC=distcc -j32 LOADADDR=0x40008000 uImage modules dtbs
+
+	real xxxx
+	user xxxx
+	sys  xxxx
+
+Measurement result:
+
+- ...
+
+Conclusion: "baalue-01,cpp,lzo/4 baalue-02,cpp,lzo/4 baalue-03,cpp,lzo/4 baalue-04,cpp,lzo/4 baalue-05,cpp,lzo/4 baalue-06,cpp,lzo/4 baalue-07,cpp,lzo/4 baalue-08,cpp,lzo/4" .....
 
 
 Use distcc to build emacs
