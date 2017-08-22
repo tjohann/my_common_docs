@@ -292,13 +292,13 @@ Use pump to build linux kernel
 
 Example on how to build a linux kernel for a bananapi (https://github.com/tjohann/a20_sdk/blob/master/bananapi/Documentation/howto_kernel.txt)
 
-with distcc (localhost included in distcc/hosts and 4 threads per node):
+with distcc (localhost NOT included in distcc/hosts and 4 threads per node):
 
 	pump make CC=distcc -j32 LOADADDR=0x40008000 uImage modules dtbs
 
-	real xxxx
-	user xxxx
-	sys  xxxx
+	real 172m10,831s
+	user 191m53,905s
+	sys  125m50,543s
 
 Measurement result:
 
