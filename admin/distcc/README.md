@@ -10,6 +10,7 @@ My A20 based cluster (baalue -> https://github.com/tjohann/a20_sdk/blob/master/p
 
 Another build starting point is to build the latest emacs version (http://ftp.gnu.org/gnu/emacs/emacs-25.2.tar.xz), because it's not available via void-packages.
 
+Note: i added some specials using two x86_64 as build machines ([i7 usage](distcc_x86_64.md))
 
 Setup distcc
 ------------
