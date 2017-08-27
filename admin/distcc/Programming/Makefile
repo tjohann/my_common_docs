@@ -12,6 +12,7 @@ all:
 
 clean:
 	rm -rf hello_distcc.o
+	rm -rf hello_distcc
 	rm -f *~
 	for dir in $(MODULES); do (cd $$dir && $(MAKE) $@); done
 
