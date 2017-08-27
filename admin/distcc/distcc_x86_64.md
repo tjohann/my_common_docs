@@ -53,6 +53,26 @@ General usage
 
 [see distcc.md](README.md)
 
+My used distcc/hosts entry:
+
+	127.0.0.1/12 build-server/12
+
+and with pump
+
+	127.0.0.1,cpp,lzo/12 build-server,cpp,lzo/12
+
+Summary of kdo's:
+
+	/opt/a20_sdk/kernel/linux-4.12.9$ cp $ARMHF_HOME/bananapi/configs/kernel_config_4.12.x .config
+	/opt/a20_sdk/kernel/linux-4.12.9$ make CROSS_COMPILE=arm-none-linux-gnueabihf- ARCH=arm menuconfig
+	/opt/a20_sdk/kernel/linux-4.12.9$ make -j24 ARCH=arm CC="distcc /opt/a20_sdk/toolchain/bin/arm-none-linux-gnueabihf-gcc" CROSS_COMPILE="/opt/a20_sdk/toolchain/bin/arm-none-linux-gnueabihf-" LOADADDR=0x40008000 uImage modules
+	/opt/a20_sdk/kernel/linux-4.12.9$ pump make -j24 ARCH=arm CC="distcc /opt/a20_sdk/toolchain/bin/arm-none-linux-gnueabihf-gcc" CROSS_COMPILE="/opt/a20_sdk/toolchain/bin/arm-none-linux-gnueabihf-" LOADADDR=0x40008000 uImage modules
+
+
+Useful link:
+
+	http://blog.samarthparikh.com/2012/10/install-distcc-and-make-linux-kernel.html
+
 
 Monitor the build process
 -------------------------
@@ -63,7 +83,7 @@ Monitor the build process
 Use distcc to build linux kernel
 --------------------------------
 
-Example on how to build a linux kernel for a bananapi (https://github.com/tjohann/a20_sdk/blob/master/bananapi/Documentation/howto_kernel.txt)
+Example on how to build a linux kernel for a bananapi (https://github.com/tjohann/a20_sdk/blob/master/bananapi/Documentation/howto_kernel.txt).
 
 without distcc (i7-920):
 
@@ -84,11 +104,23 @@ without distcc (i7-7700K):
 
 with distcc (localhost included in distcc/hosts and 12 threads per node):
 
-	xxxxx
+	make -j24 ARCH=arm CC="distcc /opt/a20_sdk/toolchain/bin/arm-none-linux-gnueabihf-gcc" CROSS_COMPILE="/opt/a20_sdk/toolchain/bin/arm-none-linux-gnueabihf-" LOADADDR=0x40008000 uImage modules
 
-	real xxx
-	user xxx
-	sys  xxx
+	real 4m56,033s
+	user 16m36,729s
+	sys	 1m54,906s
+
+![Alt text](pics/distcc_crossbuild_kernel.png?raw=true "distcc in action (normal mode)")
+
+with pump (localhost included in distcc/hosts and 12 threads per node):
+
+	pump make -j24 ARCH=arm CC="distcc /opt/a20_sdk/toolchain/bin/arm-none-linux-gnueabihf-gcc" CROSS_COMPILE="/opt/a20_sdk/toolchain/bin/arm-none-linux-gnueabihf-" LOADADDR=0x40008000 uImage modules
+
+	real 6m11,211s
+	user 13m16,762s
+	sys	 1m39,230s
+
+![Alt text](pics/distcc_pump_crossbuild_kernel.png?raw=true "distcc in action (pump mode)")
 
 
 Use distcc with void-packages
