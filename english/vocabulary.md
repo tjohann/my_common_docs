@@ -10,7 +10,7 @@ yield (... will yield the special value ...):
 obligation (this put a higher level of obligation on programmers to understand ...):
 
 	Verpflichtung, Schuld, Auflage ...
-	
-treatment (our treatment of this matrial)	
+
+treatment (our treatment of this matrial)
 
 	Verfahren, Aufbereitung, Behandlung
