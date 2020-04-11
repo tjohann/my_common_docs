@@ -1,0 +1,43 @@
+# notes on german localisation
+
+
+----
+
+/usr/local/etc/X11/xorg.conf.d/input.conf
+
+Section "InputClass"
+    Identifier      "Keyboard defaults"
+    Driver          "keyboard"
+    MatchIsKeyboard "on"
+    Option          "XkbLayout" "de"
+    Option          "XkbVariant" "nodeadkeys"
+EndSection
+
+----
+
+/etc/profile
+
+export LANG=de_DE.UTF-8
+
+als alternative dieses mal ausprobieren
+LANG=de_DE.ISO8859-1; export LANG
+MM_CHARSET=ISO-8859-1; export MM_CHARSET
+
+----
+
+~/.xinitrc
+LANG=de_DE.ISO8859-1; export LANG
+
+----
+
+~.login_conf
+
+# $FreeBSD: releng/12.0/share/skel/dot.login_conf 77995 2001-06-10 17:08:53Z ache $
+#
+# see login.conf(5)
+#
+me:\
+        :charset=UTF-8:\
+        :lang=de_DE.UTF-8:
+
+----
