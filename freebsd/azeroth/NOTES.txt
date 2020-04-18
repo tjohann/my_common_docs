@@ -12,3 +12,5 @@ pw usermod okeeblow -G operator
 
 # some more hints regarding loader and sysctl
 https://cooltrainer.org/a-freebsd-desktop-howto/
+https://www.c0ffee.net/blog/freebsd-on-a-laptop/
+https://vermaden.wordpress.com/freebsd-desktop/

@@ -1,0 +1,5 @@
+LANG=de_DE.UTF-8; export LANG
+CHARSET=UTF-8; export CHARSET
+LC_ALL=de_DE.UTF-8; export LC_ALL
+
+exec startxfce4
