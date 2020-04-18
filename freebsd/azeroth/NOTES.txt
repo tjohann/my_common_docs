@@ -1,5 +1,5 @@
 # search for the right locale
-locale -a ... de_DE.UTF-8 ist das was gesucht wird 
+locale -a ... de_DE.UTF-8 ist das was gesucht wird
 
 # after change of login.com
 cap_mkdb /etc/login.conf
