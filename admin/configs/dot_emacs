@@ -12,11 +12,7 @@
  ;; If there is more than one, they won't work right.
  '(column-number-mode t)
  '(cua-mode t nil (cua-base))
- '(display-time-mode t)
- '(package-archives
-   (quote
-    (("gnu" . "http://elpa.gnu.org/packages/")
-     ("melpa" . "http://melpa.org/packages/"))))
+ '(markdown-command "/sbin/pandoc")
  '(scroll-bar-mode nil)
  '(show-paren-mode t)
  '(size-indication-mode t)
@@ -30,28 +26,99 @@
  '(default ((t (:family "Terminus" :foundry "xos4" :slant normal :weight normal :height 108 :width normal)))))
 
 ;; melpa stuff -> http://ergoemacs.org/emacs/emacs_package_system.html
-(when (>= emacs-major-version 24)
-  (require 'package)
-  (add-to-list
-   'package-archives
-   '("melpa" . "http://melpa.org/packages/")
-   t)
-  (package-initialize))
+;;(when (>= emacs-major-version 24)
+;;  (require 'package)
+;;  (add-to-list
+;;   'package-archives
+;;   '("melpa" . "http://melpa.org/packages/")
+;;   t)
+;;  (package-initialize))
 
-;;(setq c-default-style "stroustrup")
-;;(setq c-default-style "k&r")
-(setq c-default-style "linux")
-;;(setq c-default-style "k&r" c-basic-offset 4)
-;;(add-hook 'c-mode-hook
-;;	  (lambda ()
-;;          (c-set-style "linux")))
+(require 'package)
+(add-to-list 'package-archives
+             '("melpa" . "https://melpa.org/packages/"))
+(when (< emacs-major-version 24)
+  ;; For important compatibility libraries like cl-lib
+  (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
+(package-initialize)
+
+
+;; Display trailing whitespace at en of lines
+(defun toggle-trailing-whitespace-display ()
+  "Toggle the display of trailing whitespace, by changing the
+buffer-local variable `show-trailing-whitespace'."
+  (interactive)
+  (save-excursion
+    (if show-trailing-whitespace
+        (setq show-trailing-whitespace nil)
+      (setq show-trailing-whitespace t))
+    (force-window-update (current-buffer)))
+  (message (concat "Display of EOL spaces "
+                   (if show-trailing-whitespace
+                       "enabled" "disabled"))))
+(setq-default show-trailing-whitespace t)
+(global-set-key "\C-ce" 'toggle-trailing-whitespace-display)
+
+;; Torvalds Linux-style from Documentation/CodingStyle
+(defun c-lineup-arglist-tabs-only (ignored)
+  "Line up argument lists by tabs, not spaces"
+  (let* ((anchor (c-langelem-pos c-syntactic-element))
+	 (column (c-langelem-2nd-pos c-syntactic-element))
+	 (offset (- (1+ column) anchor))
+	 (steps (floor offset c-basic-offset)))
+    (* (max steps 1)
+       c-basic-offset)))
+
+(add-hook 'c-mode-common-hook
+          (lambda ()
+            ;; Add kernel style
+            (c-add-style
+             "linux-tabs-only"
+             '("linux" (c-offsets-alist
+                        (arglist-cont-nonempty
+                         c-lineup-gcc-asm-reg
+                         c-lineup-arglist-tabs-only))))))
 
 (add-hook 'c-mode-hook
-	  (lambda ()
-          (c-set-style "linux")))
+          (lambda ()
+            (let ((filename (buffer-file-name)))
+              ;; Enable kernel mode for the appropriate files
+              (when (and filename
+                         (string-match (expand-file-name "~/")
+                                       filename))
+                (setq indent-tabs-mode t)
+                (c-set-style "linux-tabs-only")))))
 
-;; Um den startup buffer zu vermeiden :-)
+(add-hook 'c-mode-hook
+          (lambda ()
+            (let ((filename (buffer-file-name)))
+              ;; Enable kernel mode for the appropriate files
+              (when (and filename
+                         (string-match (expand-file-name "/opt/")
+                                       filename))
+                (setq indent-tabs-mode t)
+                (c-set-style "linux-tabs-only")))))
+
+; style I want to use in c++ mode
+(c-add-style "my-style"
+	     '("linux"
+	       (setq indent-tabs-mode t)))
+
+(defun my-c++-mode-hook ()
+  (c-set-style "my-style")        ; use my-style defined above
+  "linux-tabs-only"
+             '("linux" (c-offsets-alist
+                        (arglist-cont-nonempty
+                         c-lineup-gcc-asm-reg
+                         c-lineup-arglist-tabs-only))))
+
+(add-hook 'c++-mode-hook 'my-c++-mode-hook)
+
+;; disable startup buffer
 (setq inhibit-startup-message t)
+;; disable tool bar (for menu-bar use ALT-M menu-bar-mode)
+(tool-bar-mode -1)
+(menu-bar-mode -1)
 
 ;; Meta
 (global-set-key "\M-r" 'replace-string)
@@ -68,25 +135,18 @@
 (global-set-key (kbd "<M-right>") 'enlarge-window-horizontally)
 
 ;; Function keys
-(global-set-key [f1] 'manual-entry)
-(global-set-key [f2] 'info)
-(global-set-key [f3] 'repeat-complex-command)
-(global-set-key [f4] 'advertised-undo)
-(global-set-key [f5] 'eval-current-buffer)
-(global-set-key [f6] 'buffer-menu)
-(global-set-key [f7] 'other-window)
-(global-set-key [f8] 'find-file)
-(global-set-key [f9] 'save-buffer)
-(global-set-key [f10] 'next-error)
-(global-set-key [f11] 'compile)
-(global-set-key [f12] 'grep)
-;;(global-set-key [C-f1] 'compile)
-;;(global-set-key [C-f2] 'grep)
-;;(global-set-key [C-f3] 'next-error)
-;;(global-set-key [C-f4] 'previous-error)
-;;(global-set-key [C-f5] 'display-faces)
-;;(global-set-key [C-f8] 'dired)
-;;(global-set-key [C-f10] 'kill-compilation)
+;;(global-set-key [f1] 'manual-entry)
+;;(global-set-key [f2] 'info)
+;;(global-set-key [f3] 'repeat-complex-command)
+;;(global-set-key [f4] 'advertised-undo)
+;;(global-set-key [f5] 'eval-current-buffer)
+;;(global-set-key [f6] 'buffer-menu)
+;;(global-set-key [f7] 'other-window)
+;;(global-set-key [f8] 'find-file)
+;;(global-set-key [f9] 'save-buffer)
+;;(global-set-key [f10] 'next-error)
+;;(global-set-key [f11] 'compile)
+;;(global-set-key [f12] 'grep)
 
 ;; add slime stuff
 ;;(add-to-list 'load-path "/home/tjohann/src/slime/")  ; your SLIME directory
@@ -112,45 +172,11 @@
   )
   (let ((last-nonmenu-event nil)(window-system "x"))(save-buffers-kill-emacs)))
 
-;; need git
-;;(add-to-list 'load-path "~/share/emacs/site-lisp")
-;;(require 'git)
-;;(require 'git-blame)
-
-;; Org-mode settings
-;;(add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
-;;(global-set-key "\C-cl" 'org-store-link)
-;;(global-set-key "\C-ca" 'org-agenda)
-;;(global-font-lock-mode 1)
-(require 'org)
-(define-key global-map "\C-cl" 'org-store-link)
-(define-key global-map "\C-ca" 'org-agenda)
-(setq org-log-done t)
-
-;; got stuff -> https://github.com/dominikh/go-mode.el
+;; go stuff -> https://github.com/dominikh/go-mode.el
 (require 'go-mode-autoloads)
 
 ;; set size
 (if window-system
       (set-frame-size (selected-frame) 105 52))
 
-;; disable tool bar (for menu-bar use ALT-M menu-bar-mode)
-(tool-bar-mode -1)
 
-;; set colors for my emacs server instances
-;;(defvar esrvname (getenv "ESRVNAME")) ;; is there a var that provides the server-name?
-;;(ignore-errors ;; this prevents error when environment variable is not set
-;;  (when (string-match "todo" esrvname)
-;;    (setq default-frame-alist
-;;          (append default-frame-alist
-;;                  '((background-color . "#93DB80")
-;;                    (cursor-color . "yellow")
-;;                    )))
-;;  )
-;;  (when (string-match "edit" esrvname)
-;;    (setq default-frame-alist
-;;          (append default-frame-alist
-;;                    '((cursor-color . "blue")
-;;                    ))
-;;  )
-;;)

@@ -1,0 +1,156 @@
+;; -*-Emacs-Lisp-*-
+
+;; This file is designed to be re-evaled; use the variable first-time
+;; to avoid any problems with this.
+(defvar first-time t
+  "Flag signifying this is the first time that .emacs has been evaled")
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(column-number-mode t)
+ '(cua-mode t nil (cua-base))
+ '(display-time-mode t)
+ '(package-archives
+   (quote
+    (("gnu" . "http://elpa.gnu.org/packages/")
+     ("melpa" . "http://melpa.org/packages/"))))
+ '(scroll-bar-mode nil)
+ '(show-paren-mode t)
+ '(size-indication-mode t)
+ '(tool-bar-mode nil))
+
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:family "Terminus" :foundry "xos4" :slant normal :weight normal :height 108 :width normal)))))
+
+;; melpa stuff -> http://ergoemacs.org/emacs/emacs_package_system.html
+(when (>= emacs-major-version 24)
+  (require 'package)
+  (add-to-list
+   'package-archives
+   '("melpa" . "http://melpa.org/packages/")
+   t)
+  (package-initialize))
+
+;;(setq c-default-style "stroustrup")
+;;(setq c-default-style "k&r")
+(setq c-default-style "linux")
+;;(setq c-default-style "k&r" c-basic-offset 4)
+;;(add-hook 'c-mode-hook
+;;	  (lambda ()
+;;          (c-set-style "linux")))
+
+(add-hook 'c-mode-hook
+	  (lambda ()
+          (c-set-style "linux")))
+
+;; Um den startup buffer zu vermeiden :-)
+(setq inhibit-startup-message t)
+
+;; Meta
+(global-set-key "\M-r" 'replace-string)
+(global-set-key "\M-g" 'goto-line)
+;; next-multiframe-window -> next frame C-x o
+;; other-frame -> next frame C-x 5 o
+(global-set-key "\M-n" 'next-multiframe-window)
+;; resize frame
+;; <C-up> -> ctrl-up
+;; <M-up> -> ctrl-up
+(global-set-key (kbd "<M-up>") 'shrink-window)
+(global-set-key (kbd "<M-down>") 'enlarge-window)
+(global-set-key (kbd "<M-left>") 'shrink-window-horizontally)
+(global-set-key (kbd "<M-right>") 'enlarge-window-horizontally)
+
+;; Function keys
+(global-set-key [f1] 'manual-entry)
+(global-set-key [f2] 'info)
+(global-set-key [f3] 'repeat-complex-command)
+(global-set-key [f4] 'advertised-undo)
+(global-set-key [f5] 'eval-current-buffer)
+(global-set-key [f6] 'buffer-menu)
+(global-set-key [f7] 'other-window)
+(global-set-key [f8] 'find-file)
+(global-set-key [f9] 'save-buffer)
+(global-set-key [f10] 'next-error)
+(global-set-key [f11] 'compile)
+(global-set-key [f12] 'grep)
+;;(global-set-key [C-f1] 'compile)
+;;(global-set-key [C-f2] 'grep)
+;;(global-set-key [C-f3] 'next-error)
+;;(global-set-key [C-f4] 'previous-error)
+;;(global-set-key [C-f5] 'display-faces)
+;;(global-set-key [C-f8] 'dired)
+;;(global-set-key [C-f10] 'kill-compilation)
+
+;; add slime stuff
+;;(add-to-list 'load-path "/home/tjohann/src/slime/")  ; your SLIME directory
+;;(setq inferior-lisp-program "/usr/bin/sbcl") ; your Lisp system
+;;(require 'slime)
+;;(slime-setup)
+
+;; define function to shutdown emacs server instance
+(defun server-shutdown ()
+  "Save buffers, Quit, and Shutdown (kill) server"
+  (interactive)
+  (save-some-buffers)
+  (kill-emacs)
+  )
+
+;; define function to shutdown emacs server instance -> another one
+(defun shutdown-emacs-server () (interactive)
+  (when (not (eq window-system 'x))
+    (message "Initializing x windows system.")
+    (x-initialize-window-system)
+    (when (not x-display-name) (setq x-display-name (getenv "DISPLAY")))
+    (select-frame (make-frame-on-display x-display-name '((window-system . x))))
+  )
+  (let ((last-nonmenu-event nil)(window-system "x"))(save-buffers-kill-emacs)))
+
+;; need git
+;;(add-to-list 'load-path "~/share/emacs/site-lisp")
+;;(require 'git)
+;;(require 'git-blame)
+
+;; Org-mode settings
+;;(add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
+;;(global-set-key "\C-cl" 'org-store-link)
+;;(global-set-key "\C-ca" 'org-agenda)
+;;(global-font-lock-mode 1)
+(require 'org)
+(define-key global-map "\C-cl" 'org-store-link)
+(define-key global-map "\C-ca" 'org-agenda)
+(setq org-log-done t)
+
+;; got stuff -> https://github.com/dominikh/go-mode.el
+(require 'go-mode-autoloads)
+
+;; set size
+(if window-system
+      (set-frame-size (selected-frame) 105 52))
+
+;; disable tool bar (for menu-bar use ALT-M menu-bar-mode)
+(tool-bar-mode -1)
+
+;; set colors for my emacs server instances
+;;(defvar esrvname (getenv "ESRVNAME")) ;; is there a var that provides the server-name?
+;;(ignore-errors ;; this prevents error when environment variable is not set
+;;  (when (string-match "todo" esrvname)
+;;    (setq default-frame-alist
+;;          (append default-frame-alist
+;;                  '((background-color . "#93DB80")
+;;                    (cursor-color . "yellow")
+;;                    )))
+;;  )
+;;  (when (string-match "edit" esrvname)
+;;    (setq default-frame-alist
+;;          (append default-frame-alist
+;;                    '((cursor-color . "blue")
+;;                    ))
+;;  )
+;;)
