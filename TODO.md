@@ -1,6 +1,35 @@
 my general TODO (over all my projects)
 ======================================
 
+
+FreeBSD related -------
+-------------------------------------------------------------
+- check gtk builds below Programming
+- check namespace builds below Programming
+
+
+
+
+Embedded related ------
+-------------------------------------------------------------
+
+
+
+
+Linux related ---------
+-------------------------------------------------------------
+
+
+
+
+Cluster related -------
+-------------------------------------------------------------
+
+
+
+
+-------------------- invalid / old stuff --------------------
+
 1. update a20_sdk.git
    - rt-preempt kernel
    - test kernel build/deploy scripts
