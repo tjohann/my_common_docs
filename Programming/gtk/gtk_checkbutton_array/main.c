@@ -9,6 +9,8 @@
 #include <unistd.h>
 #include <limits.h>
 
+#define HOST_NAME_MAX 256
+
 void toggle_title(GtkWidget *widget, gpointer data);
 
 typedef struct {
