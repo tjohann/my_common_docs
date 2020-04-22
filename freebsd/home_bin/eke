@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+exec /usr/local/bin/emacsclient -s edit -e '(server-shutdown)'
+#exec /usr/bin/emacsclient -s todo -e '(server-shutdown)'
