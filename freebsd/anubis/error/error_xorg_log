@@ -74,7 +74,7 @@ re0: Ethernet address: 50:b7:c3:78:97:4d
 re0: netmap queues/slots: TX 1/256, RX 1/256
 xhci0: <XHCI (generic) USB 3.0 controller> mem 0xfeb48000-0xfeb49fff at device 16.0 on pci0
 xhci0: 32 bytes context size, 64-bit DMA
-xhci0: Unable to map MSI-X table 
+xhci0: Unable to map MSI-X table
 usbus0 on xhci0
 usbus0: 5.0Gbps Super Speed USB v3.0
 ahci0: <AMD Hudson-2 AHCI SATA controller> port 0xf140-0xf147,0xf130-0xf133,0xf120-0xf127,0xf110-0xf113,0xf100-0xf10f mem 0xfeb4e000-0xfeb4e7ff at device 17.0 on pci0
@@ -184,7 +184,7 @@ vgapci0: child drmn0 requested pci_enable_io
 ATOM BIOS: BR042452.007
 drmn0: VRAM: 512M 0x0000000000000000 - 0x000000001FFFFFFF (512M used)
 drmn0: GTT: 1024M 0x0000000020000000 - 0x000000005FFFFFFF
-Successfully added WC MTRR for [0xc0000000-0xcfffffff]: 0; 
+Successfully added WC MTRR for [0xc0000000-0xcfffffff]: 0;
 [drm] Detected VRAM RAM=512M, BAR=256M
 [drm] RAM width 64bits DDR
 [TTM] Zone  kernel: Available graphics memory: 3888642 kiB

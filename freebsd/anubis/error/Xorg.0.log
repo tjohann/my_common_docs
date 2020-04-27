@@ -1,10 +1,10 @@
-[    39.119] 
+[    39.119]
 X.Org X Server 1.20.8
 X Protocol Version 11, Revision 0
-[    39.119] Build Operating System: FreeBSD 12.1-RELEASE-p3 amd64 
+[    39.119] Build Operating System: FreeBSD 12.1-RELEASE-p3 amd64
 [    39.119] Current Operating System: FreeBSD anubis 12.1-RELEASE-p3 FreeBSD 12.1-RELEASE-p3 GENERIC amd64
 [    39.119] Build Date: 02 April 2020  10:19:53AM
-[    39.119]  
+[    39.119]
 [    39.119] Current version of pixman: 0.38.4
 [    39.119] 	Before reporting problems, check http://wiki.x.org
 	to make sure that you have the latest version.
@@ -257,7 +257,7 @@ X Protocol Version 11, Revision 0
 [    40.060] (II) RADEON(0): Max Image Size [cm]: horiz.: 31  vert.: 17
 [    40.060] (II) RADEON(0): Gamma: 2.20
 [    40.060] (II) RADEON(0): No DPMS capabilities specified
-[    40.061] (II) RADEON(0): Supported color encodings: RGB 4:4:4 YCrCb 4:4:4 
+[    40.061] (II) RADEON(0): Supported color encodings: RGB 4:4:4 YCrCb 4:4:4
 [    40.061] (II) RADEON(0): First detailed timing is preferred mode
 [    40.061] (II) RADEON(0): redX: 0.565 redY: 0.350   greenX: 0.340 greenY: 0.565
 [    40.061] (II) RADEON(0): blueX: 0.155 blueY: 0.120   whiteX: 0.313 whiteY: 0.329
