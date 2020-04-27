@@ -1,0 +1,355 @@
+[    39.119] 
+X.Org X Server 1.20.8
+X Protocol Version 11, Revision 0
+[    39.119] Build Operating System: FreeBSD 12.1-RELEASE-p3 amd64 
+[    39.119] Current Operating System: FreeBSD anubis 12.1-RELEASE-p3 FreeBSD 12.1-RELEASE-p3 GENERIC amd64
+[    39.119] Build Date: 02 April 2020  10:19:53AM
+[    39.119]  
+[    39.119] Current version of pixman: 0.38.4
+[    39.119] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[    39.119] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[    39.120] (==) Log file: "/var/log/Xorg.0.log", Time: Mon Apr 27 16:50:06 2020
+[    39.123] (==) Using system config directory "/usr/local/share/X11/xorg.conf.d"
+[    39.126] (==) No Layout section.  Using the first Screen section.
+[    39.126] (==) No screen section available. Using defaults.
+[    39.126] (**) |-->Screen "Default Screen Section" (0)
+[    39.126] (**) |   |-->Monitor "<default monitor>"
+[    39.127] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[    39.127] (==) Automatically adding devices
+[    39.127] (==) Automatically enabling devices
+[    39.127] (==) Not automatically adding GPU devices
+[    39.127] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[    39.136] (==) FontPath set to:
+	/usr/local/share/fonts/misc/,
+	/usr/local/share/fonts/TTF/,
+	/usr/local/share/fonts/OTF/,
+	/usr/local/share/fonts/Type1/,
+	/usr/local/share/fonts/100dpi/,
+	/usr/local/share/fonts/75dpi/,
+	catalogue:/usr/local/etc/X11/fontpath.d
+[    39.136] (==) ModulePath set to "/usr/local/lib/xorg/modules"
+[    39.136] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[    39.136] (II) Loader magic: 0x42e020
+[    39.136] (II) Module ABI versions:
+[    39.136] 	X.Org ANSI C Emulation: 0.4
+[    39.136] 	X.Org Video Driver: 24.1
+[    39.140] 	X.Org XInput driver : 24.1
+[    39.140] 	X.Org Server Extension : 10.0
+[    39.140] (--) PCI:*(0@0:1:0) 1002:990a:144d:c660 rev 0, Mem @ 0xc0000000/268435456, 0xfeb00000/262144, I/O @ 0x0000f000/256, BIOS @ 0x????????/65536
+[    39.141] (II) LoadModule: "glx"
+[    39.144] (II) Loading /usr/local/lib/xorg/modules/extensions/libglx.so
+[    39.163] (II) Module glx: vendor="X.Org Foundation"
+[    39.163] 	compiled for 1.20.8, module version = 1.0.0
+[    39.164] 	ABI class: X.Org Server Extension, version 10.0
+[    39.164] (==) Matched ati as autoconfigured driver 0
+[    39.164] (==) Matched modesetting as autoconfigured driver 1
+[    39.164] (==) Matched scfb as autoconfigured driver 2
+[    39.164] (==) Matched vesa as autoconfigured driver 3
+[    39.164] (==) Assigned the driver to the xf86ConfigLayout
+[    39.164] (II) LoadModule: "ati"
+[    39.164] (II) Loading /usr/local/lib/xorg/modules/drivers/ati_drv.so
+[    39.165] (II) Module ati: vendor="X.Org Foundation"
+[    39.165] 	compiled for 1.20.8, module version = 19.1.0
+[    39.165] 	Module class: X.Org Video Driver
+[    39.165] 	ABI class: X.Org Video Driver, version 24.1
+[    39.202] (II) LoadModule: "radeon"
+[    39.202] (II) Loading /usr/local/lib/xorg/modules/drivers/radeon_drv.so
+[    39.212] (II) Module radeon: vendor="X.Org Foundation"
+[    39.212] 	compiled for 1.20.8, module version = 19.1.0
+[    39.212] 	Module class: X.Org Video Driver
+[    39.213] 	ABI class: X.Org Video Driver, version 24.1
+[    39.213] (II) LoadModule: "modesetting"
+[    39.213] (II) Loading /usr/local/lib/xorg/modules/drivers/modesetting_drv.so
+[    39.214] (II) Module modesetting: vendor="X.Org Foundation"
+[    39.214] 	compiled for 1.20.8, module version = 1.20.8
+[    39.214] 	Module class: X.Org Video Driver
+[    39.215] 	ABI class: X.Org Video Driver, version 24.1
+[    39.215] (II) LoadModule: "scfb"
+[    39.215] (II) Loading /usr/local/lib/xorg/modules/drivers/scfb_drv.so
+[    39.217] (II) Module scfb: vendor="X.Org Foundation"
+[    39.218] 	compiled for 1.20.8, module version = 0.0.5
+[    39.218] 	ABI class: X.Org Video Driver, version 24.1
+[    39.218] (II) LoadModule: "vesa"
+[    39.218] (II) Loading /usr/local/lib/xorg/modules/drivers/vesa_drv.so
+[    39.219] (II) Module vesa: vendor="X.Org Foundation"
+[    39.219] 	compiled for 1.20.8, module version = 2.4.0
+[    39.219] 	Module class: X.Org Video Driver
+[    39.219] 	ABI class: X.Org Video Driver, version 24.1
+[    39.219] (II) RADEON: Driver for ATI/AMD Radeon chipsets:
+	ATI Radeon Mobility X600 (M24), ATI FireMV 2400,
+	ATI Radeon Mobility X300 (M24), ATI FireGL M24 GL,
+	ATI Radeon X600 (RV380), ATI FireGL V3200 (RV380),
+	ATI Radeon IGP320 (A3), ATI Radeon IGP330/340/350 (A4),
+	ATI Radeon 9500, ATI Radeon 9600TX, ATI FireGL Z1, ATI Radeon 9800SE,
+	ATI Radeon 9800, ATI FireGL X2, ATI Radeon 9600, ATI Radeon 9600SE,
+	ATI Radeon 9600XT, ATI FireGL T2, ATI Radeon 9650, ATI FireGL RV360,
+	ATI Radeon 7000 IGP (A4+), ATI Radeon 8500 AIW,
+	ATI Radeon IGP320M (U1), ATI Radeon IGP330M/340M/350M (U2),
+	ATI Radeon Mobility 7000 IGP, ATI Radeon 9000/PRO, ATI Radeon 9000,
+	ATI Radeon X800 (R420), ATI Radeon X800PRO (R420),
+	ATI Radeon X800SE (R420), ATI FireGL X3 (R420),
+	ATI Radeon Mobility 9800 (M18), ATI Radeon X800 SE (R420),
+	ATI Radeon X800XT (R420), ATI Radeon X800 VE (R420),
+	ATI Radeon X850 (R480), ATI Radeon X850 XT (R480),
+	ATI Radeon X850 SE (R480), ATI Radeon X850 PRO (R480),
+	ATI Radeon X850 XT PE (R480), ATI Radeon Mobility M7,
+	ATI Mobility FireGL 7800 M7, ATI Radeon Mobility M6,
+	ATI FireGL Mobility 9000 (M9), ATI Radeon Mobility 9000 (M9),
+	ATI Radeon 9700 Pro, ATI Radeon 9700/9500Pro, ATI FireGL X1,
+	ATI Radeon 9800PRO, ATI Radeon 9800XT,
+	ATI Radeon Mobility 9600/9700 (M10/M11),
+	ATI Radeon Mobility 9600 (M10), ATI Radeon Mobility 9600 (M11),
+	ATI FireGL Mobility T2 (M10), ATI FireGL Mobility T2e (M11),
+	ATI Radeon, ATI FireGL 8700/8800, ATI Radeon 8500, ATI Radeon 9100,
+	ATI Radeon 7500, ATI Radeon VE/7000, ATI ES1000,
+	ATI Radeon Mobility X300 (M22), ATI Radeon Mobility X600 SE (M24C),
+	ATI FireGL M22 GL, ATI Radeon X800 (R423), ATI Radeon X800PRO (R423),
+	ATI Radeon X800LE (R423), ATI Radeon X800SE (R423),
+	ATI Radeon X800 XTP (R430), ATI Radeon X800 XL (R430),
+	ATI Radeon X800 SE (R430), ATI Radeon X800 (R430),
+	ATI FireGL V7100 (R423), ATI FireGL V5100 (R423),
+	ATI FireGL unknown (R423), ATI Mobility FireGL V5000 (M26),
+	ATI Mobility Radeon X700 XL (M26), ATI Mobility Radeon X700 (M26),
+	ATI Radeon X550XTX, ATI Radeon 9100 IGP (A5),
+	ATI Radeon Mobility 9100 IGP (U3), ATI Radeon XPRESS 200,
+	ATI Radeon XPRESS 200M, ATI Radeon 9250, ATI Radeon 9200,
+	ATI Radeon 9200SE, ATI FireMV 2200, ATI Radeon X300 (RV370),
+	ATI Radeon X600 (RV370), ATI Radeon X550 (RV370),
+	ATI FireGL V3100 (RV370), ATI FireMV 2200 PCIE (RV370),
+	ATI Radeon Mobility 9200 (M9+), ATI Mobility Radeon X800 XT (M28),
+	ATI Mobility FireGL V5100 (M28), ATI Mobility Radeon X800 (M28),
+	ATI Radeon X850, ATI unknown Radeon / FireGL (R480),
+	ATI Radeon X800XT (R423), ATI FireGL V5000 (RV410),
+	ATI Radeon X700 XT (RV410), ATI Radeon X700 PRO (RV410),
+	ATI Radeon X700 SE (RV410), ATI Radeon X700 (RV410),
+	ATI Radeon X1800, ATI Mobility Radeon X1800 XT,
+	ATI Mobility Radeon X1800, ATI Mobility FireGL V7200,
+	ATI FireGL V7200, ATI FireGL V5300, ATI Mobility FireGL V7100,
+	ATI FireGL V7300, ATI FireGL V7350, ATI Radeon X1600, ATI RV505,
+	ATI Radeon X1300/X1550, ATI Radeon X1550, ATI M54-GL,
+	ATI Mobility Radeon X1400, ATI Radeon X1550 64-bit,
+	ATI Mobility Radeon X1300, ATI Radeon X1300, ATI FireGL V3300,
+	ATI FireGL V3350, ATI Mobility Radeon X1450,
+	ATI Mobility Radeon X2300, ATI Mobility Radeon X1350,
+	ATI FireMV 2250, ATI Radeon X1650, ATI Mobility FireGL V5200,
+	ATI Mobility Radeon X1600, ATI Radeon X1300 XT/X1600 Pro,
+	ATI FireGL V3400, ATI Mobility FireGL V5250,
+	ATI Mobility Radeon X1700, ATI Mobility Radeon X1700 XT,
+	ATI FireGL V5200, ATI Radeon X2300HD, ATI Mobility Radeon HD 2300,
+	ATI Radeon X1950, ATI Radeon X1900, ATI AMD Stream Processor,
+	ATI RV560, ATI Mobility Radeon X1900, ATI Radeon X1950 GT, ATI RV570,
+	ATI FireGL V7400, ATI Radeon 9100 PRO IGP,
+	ATI Radeon Mobility 9200 IGP, ATI Radeon X1200, ATI RS740,
+	ATI RS740M, ATI Radeon HD 2900 XT, ATI Radeon HD 2900 Pro,
+	ATI Radeon HD 2900 GT, ATI FireGL V8650, ATI FireGL V8600,
+	ATI FireGL V7600, ATI Radeon 4800 Series, ATI Radeon HD 4870 x2,
+	ATI Radeon HD 4850 x2, ATI FirePro V8750 (FireGL),
+	ATI FirePro V7760 (FireGL), ATI Mobility RADEON HD 4850,
+	ATI Mobility RADEON HD 4850 X2, ATI FirePro RV770,
+	AMD FireStream 9270, AMD FireStream 9250, ATI FirePro V8700 (FireGL),
+	ATI Mobility RADEON HD 4870, ATI Mobility RADEON M98,
+	ATI FirePro M7750, ATI M98, ATI Mobility Radeon HD 4650,
+	ATI Radeon RV730 (AGP), ATI Mobility Radeon HD 4670,
+	ATI FirePro M5750, ATI RV730XT [Radeon HD 4670], ATI RADEON E4600,
+	ATI Radeon HD 4600 Series, ATI RV730 PRO [Radeon HD 4650],
+	ATI FirePro V7750 (FireGL), ATI FirePro V5700 (FireGL),
+	ATI FirePro V3750 (FireGL), ATI Mobility Radeon HD 4830,
+	ATI Mobility Radeon HD 4850, ATI FirePro M7740, ATI RV740,
+	ATI Radeon HD 4770, ATI Radeon HD 4700 Series, ATI RV610,
+	ATI Radeon HD 2400 XT, ATI Radeon HD 2400 Pro,
+	ATI Radeon HD 2400 PRO AGP, ATI FireGL V4000, ATI Radeon HD 2350,
+	ATI Mobility Radeon HD 2400 XT, ATI Mobility Radeon HD 2400,
+	ATI RADEON E2400, ATI FireMV 2260, ATI RV670, ATI Radeon HD3870,
+	ATI Mobility Radeon HD 3850, ATI Radeon HD3850,
+	ATI Mobility Radeon HD 3850 X2, ATI Mobility Radeon HD 3870,
+	ATI Mobility Radeon HD 3870 X2, ATI Radeon HD3870 X2,
+	ATI FireGL V7700, ATI Radeon HD3690, AMD Firestream 9170,
+	ATI Radeon HD 4550, ATI Radeon RV710, ATI Radeon HD 4350,
+	ATI Mobility Radeon 4300 Series, ATI Mobility Radeon 4500 Series,
+	ATI FirePro RG220, ATI Mobility Radeon 4330, ATI RV630,
+	ATI Mobility Radeon HD 2600, ATI Mobility Radeon HD 2600 XT,
+	ATI Radeon HD 2600 XT AGP, ATI Radeon HD 2600 Pro AGP,
+	ATI Radeon HD 2600 XT, ATI Radeon HD 2600 Pro, ATI Gemini RV630,
+	ATI Gemini Mobility Radeon HD 2600 XT, ATI FireGL V5600,
+	ATI FireGL V3600, ATI Radeon HD 2600 LE,
+	ATI Mobility FireGL Graphics Processor, ATI Radeon HD 3470,
+	ATI Mobility Radeon HD 3430, ATI Mobility Radeon HD 3400 Series,
+	ATI Radeon HD 3450, ATI Radeon HD 3430, ATI FirePro V3700,
+	ATI FireMV 2450, ATI Radeon HD 3600 Series, ATI Radeon HD 3650 AGP,
+	ATI Radeon HD 3600 PRO, ATI Radeon HD 3600 XT,
+	ATI Mobility Radeon HD 3650, ATI Mobility Radeon HD 3670,
+	ATI Mobility FireGL V5700, ATI Mobility FireGL V5725,
+	ATI Radeon HD 3200 Graphics, ATI Radeon 3100 Graphics,
+	ATI Radeon HD 3300 Graphics, ATI Radeon 3000 Graphics, SUMO, SUMO2,
+	ATI Radeon HD 4200, ATI Radeon 4100, ATI Mobility Radeon HD 4200,
+	ATI Mobility Radeon 4100, ATI Radeon HD 4290, ATI Radeon HD 4250,
+	AMD Radeon HD 6310 Graphics, AMD Radeon HD 6250 Graphics,
+	AMD Radeon HD 6300 Series Graphics,
+	AMD Radeon HD 6200 Series Graphics, PALM, CYPRESS,
+	ATI FirePro (FireGL) Graphics Adapter, AMD Firestream 9370,
+	AMD Firestream 9350, ATI Radeon HD 5800 Series,
+	ATI Radeon HD 5900 Series, ATI Mobility Radeon HD 5800 Series,
+	ATI Radeon HD 5700 Series, ATI Radeon HD 6700 Series,
+	ATI Mobility Radeon HD 5000 Series, ATI Mobility Radeon HD 5570,
+	ATI Radeon HD 5670, ATI Radeon HD 5570, ATI Radeon HD 5500 Series,
+	REDWOOD, ATI Mobility Radeon Graphics, CEDAR, ATI FirePro 2270,
+	ATI Radeon HD 5450, CAYMAN, AMD Radeon HD 6900 Series,
+	AMD Radeon HD 6900M Series, Mobility Radeon HD 6000 Series, BARTS,
+	AMD Radeon HD 6800 Series, AMD Radeon HD 6700 Series, TURKS, CAICOS,
+	ARUBA, TAHITI, PITCAIRN, VERDE, OLAND, HAINAN, BONAIRE, KABINI,
+	MULLINS, KAVERI, HAWAII
+[    39.240] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[    39.240] (II) scfb: driver for wsdisplay framebuffer: scfb
+[    39.240] (II) VESA: driver for VESA chipsets: vesa
+[    39.241] (--) Using syscons driver with X support (version 2.0)
+[    39.241] (++) using VT number 9
+
+[    39.277] (II) [KMS] Kernel modesetting enabled.
+[    39.277] (WW) Falling back to old probe method for modesetting
+[    39.310] (WW) Falling back to old probe method for scfb
+[    39.310] scfb trace: probe start
+[    39.310] scfb trace: probe done
+[    39.311] (WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
+[    39.311] (II) RADEON(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[    39.311] (==) RADEON(0): Depth 24, (--) framebuffer bpp 32
+[    39.311] (II) RADEON(0): Pixel depth = 24 bits stored in 4 bytes (32 bpp pixmaps)
+[    39.311] (==) RADEON(0): Default visual is TrueColor
+[    39.311] (==) RADEON(0): RGB weight 888
+[    39.311] (II) RADEON(0): Using 8 bits per RGB (8 bit DAC)
+[    39.311] (--) RADEON(0): Chipset: "ARUBA" (ChipID = 0x990a)
+[    39.311] (II) Loading sub module "fb"
+[    39.311] (II) LoadModule: "fb"
+[    39.311] (II) Loading /usr/local/lib/xorg/modules/libfb.so
+[    39.313] (II) Module fb: vendor="X.Org Foundation"
+[    39.313] 	compiled for 1.20.8, module version = 1.0.0
+[    39.313] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    39.313] (II) Loading sub module "dri2"
+[    39.313] (II) LoadModule: "dri2"
+[    39.313] (II) Module "dri2" already built-in
+[    39.929] (II) Loading sub module "glamoregl"
+[    39.929] (II) LoadModule: "glamoregl"
+[    39.929] (II) Loading /usr/local/lib/xorg/modules/libglamoregl.so
+[    39.973] (II) Module glamoregl: vendor="X.Org Foundation"
+[    39.973] 	compiled for 1.20.8, module version = 1.0.1
+[    39.973] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    40.005] (II) RADEON(0): glamor X acceleration enabled on AMD ARUBA (DRM 2.50.0 / 12.1-RELEASE-p3, LLVM 8.0.1)
+[    40.005] (II) RADEON(0): glamor detected, initialising EGL layer.
+[    40.005] (II) RADEON(0): KMS Color Tiling: enabled
+[    40.005] (II) RADEON(0): KMS Color Tiling 2D: enabled
+[    40.005] (==) RADEON(0): TearFree property default: auto
+[    40.005] (II) RADEON(0): KMS Pageflipping: enabled
+[    40.006] (II) RADEON(0): Output HDMI-0 has no monitor section
+[    40.027] (II) RADEON(0): Output VGA-0 has no monitor section
+[    40.032] (II) RADEON(0): Output LVDS has no monitor section
+[    40.033] (II) RADEON(0): EDID for output HDMI-0
+[    40.055] (II) RADEON(0): EDID for output VGA-0
+[    40.060] (II) RADEON(0): EDID for output LVDS
+[    40.060] (II) RADEON(0): Manufacturer: SEC  Model: 3649  Serial#: 0
+[    40.060] (II) RADEON(0): Year: 2011  Week: 0
+[    40.060] (II) RADEON(0): EDID Version: 1.3
+[    40.060] (II) RADEON(0): Digital Display Input
+[    40.060] (II) RADEON(0): Max Image Size [cm]: horiz.: 31  vert.: 17
+[    40.060] (II) RADEON(0): Gamma: 2.20
+[    40.060] (II) RADEON(0): No DPMS capabilities specified
+[    40.061] (II) RADEON(0): Supported color encodings: RGB 4:4:4 YCrCb 4:4:4 
+[    40.061] (II) RADEON(0): First detailed timing is preferred mode
+[    40.061] (II) RADEON(0): redX: 0.565 redY: 0.350   greenX: 0.340 greenY: 0.565
+[    40.061] (II) RADEON(0): blueX: 0.155 blueY: 0.120   whiteX: 0.313 whiteY: 0.329
+[    40.061] (II) RADEON(0): Manufacturer's mask: 0
+[    40.061] (II) RADEON(0): Supported detailed timing:
+[    40.061] (II) RADEON(0): clock: 70.7 MHz   Image Size:  309 x 174 mm
+[    40.061] (II) RADEON(0): h_active: 1366  h_sync: 1414  h_sync_end 1446 h_blank_end 1486 h_border: 0
+[    40.061] (II) RADEON(0): v_active: 768  v_sync: 770  v_sync_end 775 v_blanking: 792 v_border: 0
+[    40.061] (II) RADEON(0): Unknown vendor-specific block f
+[    40.061] (II) RADEON(0):  SAMSUNG
+[    40.061] (II) RADEON(0):  LTN140AT210
+[    40.061] (II) RADEON(0): EDID (in hex):
+[    40.061] (II) RADEON(0): 	00ffffffffffff004ca3493600000000
+[    40.061] (II) RADEON(0): 	00150103801f11780ae3f59059579027
+[    40.061] (II) RADEON(0): 	1e505400000001010101010101010101
+[    40.061] (II) RADEON(0): 	0101010101019e1b5678500018303020
+[    40.062] (II) RADEON(0): 	250035ae100000190000000f00000000
+[    40.062] (II) RADEON(0): 	00000000001eb4027400000000fe0053
+[    40.062] (II) RADEON(0): 	414d53554e470a2020202020000000fe
+[    40.062] (II) RADEON(0): 	004c544e31343041543231300a20001c
+[    40.062] (II) RADEON(0): Printing probed modes for output LVDS
+[    40.062] (II) RADEON(0): Modeline "1366x768"x60.1   70.70  1366 1414 1446 1486  768 770 775 792 -hsync -vsync (47.6 kHz eP)
+[    40.062] (II) RADEON(0): Modeline "1280x720"x60.0   74.65  1280 1344 1472 1664  720 723 728 748 -hsync +vsync (44.9 kHz)
+[    40.062] (II) RADEON(0): Modeline "1152x768"x59.9   71.95  1152 1216 1328 1504  768 771 781 798 -hsync +vsync (47.8 kHz)
+[    40.062] (II) RADEON(0): Modeline "1024x768"x59.9   63.53  1024 1072 1176 1328  768 771 775 798 -hsync +vsync (47.8 kHz)
+[    40.062] (II) RADEON(0): Modeline "800x600"x60.0   38.31  800 832 912 1024  600 603 607 624 -hsync +vsync (37.4 kHz)
+[    40.062] (II) RADEON(0): Modeline "848x480"x59.9   31.65  848 872 952 1056  480 483 493 500 -hsync +vsync (30.0 kHz)
+[    40.062] (II) RADEON(0): Modeline "720x480"x59.9   26.85  720 744 808 896  480 483 493 500 -hsync +vsync (30.0 kHz)
+[    40.062] (II) RADEON(0): Modeline "640x480"x59.9   23.98  640 664 720 800  480 483 487 500 -hsync +vsync (30.0 kHz)
+[    40.062] (II) RADEON(0): Output HDMI-0 disconnected
+[    40.062] (II) RADEON(0): Output VGA-0 disconnected
+[    40.062] (II) RADEON(0): Output LVDS connected
+[    40.062] (II) RADEON(0): Using exact sizes for initial modes
+[    40.062] (II) RADEON(0): Output LVDS using initial mode 1366x768 +0+0
+[    40.062] (II) RADEON(0): mem size init: gart size :3fdcc000 vram size: s:20000000 visible:f806000
+[    40.062] (==) RADEON(0): DPI set to (96, 96)
+[    40.063] (==) RADEON(0): Using gamma correction (1.0, 1.0, 1.0)
+[    40.063] (II) Loading sub module "ramdac"
+[    40.063] (II) LoadModule: "ramdac"
+[    40.063] (II) Module "ramdac" already built-in
+[    40.063] (II) UnloadModule: "modesetting"
+[    40.063] (II) Unloading modesetting
+[    40.063] (II) UnloadModule: "scfb"
+[    40.063] (II) Unloading scfb
+[    40.063] (II) UnloadModule: "vesa"
+[    40.063] (II) Unloading vesa
+[    40.065] (II) RADEON(0): [DRI2] Setup complete
+[    40.065] (II) RADEON(0): [DRI2]   DRI driver: r600
+[    40.065] (II) RADEON(0): [DRI2]   VDPAU driver: r600
+[    40.065] (II) RADEON(0): Front buffer size: 4128K
+[    40.065] (II) RADEON(0): VRAM usage limit set to 224805K
+[    40.068] (II) RADEON(0): SYNC extension fences enabled
+[    40.069] (II) RADEON(0): Present extension enabled
+[    40.069] (==) RADEON(0): DRI3 enabled
+[    40.069] (==) RADEON(0): Backing store enabled
+[    40.069] (II) RADEON(0): Direct rendering enabled
+[    40.080] (II) RADEON(0): Use GLAMOR acceleration.
+[    40.080] (II) RADEON(0): Acceleration enabled
+[    40.080] (==) RADEON(0): DPMS enabled
+[    40.081] (==) RADEON(0): Silken mouse enabled
+[    40.081] (II) RADEON(0): Set up textured video (glamor)
+[    40.081] (II) RADEON(0): [XvMC] Associated with GLAMOR Textured Video.
+[    40.081] (II) RADEON(0): [XvMC] Extension initialized.
+[    40.082] (II) Initializing extension Generic Event Extension
+[    40.082] (II) Initializing extension SHAPE
+[    40.083] (II) Initializing extension MIT-SHM
+[    40.083] (II) Initializing extension XInputExtension
+[    40.085] (II) Initializing extension XTEST
+[    40.086] (II) Initializing extension BIG-REQUESTS
+[    40.086] (II) Initializing extension SYNC
+[    40.087] (II) Initializing extension XKEYBOARD
+[    40.088] (II) Initializing extension XC-MISC
+[    40.088] (II) Initializing extension SECURITY
+[    40.089] (II) Initializing extension XFIXES
+[    40.089] (II) Initializing extension RENDER
+[    40.090] (II) Initializing extension RANDR
+[    40.091] (II) Initializing extension COMPOSITE
+[    40.091] (II) Initializing extension DAMAGE
+[    40.092] (II) Initializing extension MIT-SCREEN-SAVER
+[    40.093] (II) Initializing extension DOUBLE-BUFFER
+[    40.093] (II) Initializing extension RECORD
+[    40.094] (II) Initializing extension DPMS
+[    40.094] (II) Initializing extension Present
+[    40.095] (II) Initializing extension DRI3
+[    40.095] (II) Initializing extension X-Resource
+[    40.096] (II) Initializing extension XVideo
+[    40.097] (II) Initializing extension XVideo-MotionCompensation
+[    40.097] (II) Initializing extension GLX
+[    40.107] (II) AIGLX: Loaded and initialized r600
+[    40.107] (II) GLX: Initialized DRI2 GL provider for screen 0
+[    40.107] (II) Initializing extension XFree86-VidModeExtension
+[    40.108] (II) Initializing extension XFree86-DGA
+[    40.109] (II) Initializing extension XFree86-DRI
+[    40.109] (II) Initializing extension DRI2
+[    40.114] (II) RADEON(0): Setting screen physical size to 361 x 203

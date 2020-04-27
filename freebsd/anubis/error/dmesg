@@ -1,0 +1,1505 @@
+drmn0:   SRBM_STATUS2              = 0x00000000
+drmn0:   R_008674_CP_STALLED_STAT1 = 0x00000000
+drmn0:   R_008678_CP_STALLED_STAT2 = 0x00000000
+drmn0:   R_00867C_CP_BUSY_STAT     = 0x00000000
+drmn0:   R_008680_CP_STAT          = 0x00000000
+drmn0:   R_00D034_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   R_00D834_DMA_STATUS_REG   = 0x44C83D57
+drmn0: GPU reset succeeded, trying to resume
+drmn0: Wait for MC idle timedout !
+drmn0: Wait for MC idle timedout !
+[drm] PCIE GART of 1024M enabled (table at 0x00000000001D6000).
+drmn0: WB enabled
+drmn0: fence driver on ring 0 use gpu addr 0x0000000020000c00 and cpu addr 0x0xfffff800396d6c00
+drmn0: fence driver on ring 5 use gpu addr 0x0000000000075a18 and cpu addr 0x0xfffff800c0075a18
+drmn0: failed VCE resume (-22).
+drmn0: fence driver on ring 1 use gpu addr 0x0000000020000c04 and cpu addr 0x0xfffff800396d6c04
+drmn0: fence driver on ring 2 use gpu addr 0x0000000020000c08 and cpu addr 0x0xfffff800396d6c08
+drmn0: fence driver on ring 3 use gpu addr 0x0000000020000c0c and cpu addr 0x0xfffff800396d6c0c
+drmn0: fence driver on ring 4 use gpu addr 0x0000000020000c10 and cpu addr 0x0xfffff800396d6c10
+[drm:r600_ring_test] radeon: ring 0 test failed (scratch(0x8504)=0xCAFEDEAD)
+[drm:cayman_resume] cayman startup failed on resume
+[drm:radeon_dp_link_train_cr] displayport link status failed
+[drm:radeon_dp_link_train_cr] clock recovery failed
+drmn0: ring 0 stalled for more than 10495msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 11026msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 11557msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 12088msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 12591msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 13122msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 13625msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 14128msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 14645msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 15176msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 15705msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 16236msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 16755msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 17286msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 17817msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 18348msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 18852msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 19383msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 19914msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 20414msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 20945msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 21466msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 21997msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 22528msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 23059msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 23590msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 24121msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 24652msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 25183msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 25708msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 26239msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 26770msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 27289msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 27820msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 28351msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 28882msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 29413msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 29944msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: Saved 262127 dwords of commands on ring 0.
+drmn0: GPU softreset: 0x00000108
+drmn0:   GRBM_STATUS               = 0xA0003828
+drmn0:   GRBM_STATUS_SE0           = 0x00000007
+drmn0:   GRBM_STATUS_SE1           = 0x00000007
+drmn0:   SRBM_STATUS               = 0x20020640
+drmn0:   SRBM_STATUS2              = 0x00000000
+drmn0:   R_008674_CP_STALLED_STAT1 = 0x00000000
+drmn0:   R_008678_CP_STALLED_STAT2 = 0x00000000
+drmn0:   R_00867C_CP_BUSY_STAT     = 0x00000802
+drmn0:   R_008680_CP_STAT          = 0x800001E3
+drmn0:   R_00D034_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   R_00D834_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   VM_CONTEXT0_PROTECTION_FAULT_ADDR   0x00000000
+drmn0:   VM_CONTEXT0_PROTECTION_FAULT_STATUS 0x00000000
+drmn0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x00000000
+drmn0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x00000000
+drmn0: Wait for MC idle timedout !
+drmn0: GRBM_SOFT_RESET=0x00004001
+drmn0: SRBM_SOFT_RESET=0x00010500
+drmn0:   GRBM_STATUS               = 0x00003828
+drmn0:   GRBM_STATUS_SE0           = 0x00000007
+drmn0:   GRBM_STATUS_SE1           = 0x00000007
+drmn0:   SRBM_STATUS               = 0x20000640
+drmn0:   SRBM_STATUS2              = 0x00000000
+drmn0:   R_008674_CP_STALLED_STAT1 = 0x00000000
+drmn0:   R_008678_CP_STALLED_STAT2 = 0x00000000
+drmn0:   R_00867C_CP_BUSY_STAT     = 0x00000000
+drmn0:   R_008680_CP_STAT          = 0x00000000
+drmn0:   R_00D034_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   R_00D834_DMA_STATUS_REG   = 0x44C83D57
+drmn0: GPU reset succeeded, trying to resume
+drmn0: Wait for MC idle timedout !
+drmn0: Wait for MC idle timedout !
+[drm] PCIE GART of 1024M enabled (table at 0x00000000001D6000).
+drmn0: WB enabled
+drmn0: fence driver on ring 0 use gpu addr 0x0000000020000c00 and cpu addr 0x0xfffff800396d6c00
+drmn0: fence driver on ring 5 use gpu addr 0x0000000000075a18 and cpu addr 0x0xfffff800c0075a18
+drmn0: failed VCE resume (-22).
+drmn0: fence driver on ring 1 use gpu addr 0x0000000020000c04 and cpu addr 0x0xfffff800396d6c04
+drmn0: fence driver on ring 2 use gpu addr 0x0000000020000c08 and cpu addr 0x0xfffff800396d6c08
+drmn0: fence driver on ring 3 use gpu addr 0x0000000020000c0c and cpu addr 0x0xfffff800396d6c0c
+drmn0: fence driver on ring 4 use gpu addr 0x0000000020000c10 and cpu addr 0x0xfffff800396d6c10
+[drm:r600_ring_test] radeon: ring 0 test failed (scratch(0x8504)=0xCAFEDEAD)
+[drm:cayman_resume] cayman startup failed on resume
+[drm:radeon_dp_link_train_cr] displayport link status failed
+[drm:radeon_dp_link_train_cr] clock recovery failed
+drmn0: ring 0 stalled for more than 10415msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 10946msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 11477msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 12008msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 12539msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 13070msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 13601msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 14132msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 14663msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 15194msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 15725msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 16231msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 16762msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 17293msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 17824msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 18355msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 18886msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 19417msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 19948msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 20477msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 21004msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 21535msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 22064msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 22594msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 23120msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 23650msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 24153msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 24684msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 25215msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 25746msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 26249msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 26765msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 27296msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 27827msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 28358msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 28889msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 29420msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 29951msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: Saved 262127 dwords of commands on ring 0.
+drmn0: GPU softreset: 0x00000108
+drmn0:   GRBM_STATUS               = 0xA0003828
+drmn0:   GRBM_STATUS_SE0           = 0x00000007
+drmn0:   GRBM_STATUS_SE1           = 0x00000007
+drmn0:   SRBM_STATUS               = 0x20020E40
+drmn0:   SRBM_STATUS2              = 0x00000000
+drmn0:   R_008674_CP_STALLED_STAT1 = 0x00000000
+drmn0:   R_008678_CP_STALLED_STAT2 = 0x00000000
+drmn0:   R_00867C_CP_BUSY_STAT     = 0x00000802
+drmn0:   R_008680_CP_STAT          = 0x800001E3
+drmn0:   R_00D034_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   R_00D834_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   VM_CONTEXT0_PROTECTION_FAULT_ADDR   0x00000000
+drmn0:   VM_CONTEXT0_PROTECTION_FAULT_STATUS 0x00000000
+drmn0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x00000000
+drmn0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x00000000
+drmn0: Wait for MC idle timedout !
+drmn0: GRBM_SOFT_RESET=0x00004001
+drmn0: SRBM_SOFT_RESET=0x00010500
+drmn0:   GRBM_STATUS               = 0x00003828
+drmn0:   GRBM_STATUS_SE0           = 0x00000007
+drmn0:   GRBM_STATUS_SE1           = 0x00000007
+drmn0:   SRBM_STATUS               = 0x20000640
+drmn0:   SRBM_STATUS2              = 0x00000000
+drmn0:   R_008674_CP_STALLED_STAT1 = 0x00000000
+drmn0:   R_008678_CP_STALLED_STAT2 = 0x00000000
+drmn0:   R_00867C_CP_BUSY_STAT     = 0x00000000
+drmn0:   R_008680_CP_STAT          = 0x00000000
+drmn0:   R_00D034_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   R_00D834_DMA_STATUS_REG   = 0x44C83D57
+drmn0: GPU reset succeeded, trying to resume
+drmn0: Wait for MC idle timedout !
+drmn0: Wait for MC idle timedout !
+[drm] PCIE GART of 1024M enabled (table at 0x00000000001D6000).
+drmn0: WB enabled
+drmn0: fence driver on ring 0 use gpu addr 0x0000000020000c00 and cpu addr 0x0xfffff800396d6c00
+drmn0: fence driver on ring 5 use gpu addr 0x0000000000075a18 and cpu addr 0x0xfffff800c0075a18
+drmn0: failed VCE resume (-22).
+drmn0: fence driver on ring 1 use gpu addr 0x0000000020000c04 and cpu addr 0x0xfffff800396d6c04
+drmn0: fence driver on ring 2 use gpu addr 0x0000000020000c08 and cpu addr 0x0xfffff800396d6c08
+drmn0: fence driver on ring 3 use gpu addr 0x0000000020000c0c and cpu addr 0x0xfffff800396d6c0c
+drmn0: fence driver on ring 4 use gpu addr 0x0000000020000c10 and cpu addr 0x0xfffff800396d6c10
+[drm:r600_ring_test] radeon: ring 0 test failed (scratch(0x8504)=0xCAFEDEAD)
+[drm:cayman_resume] cayman startup failed on resume
+[drm:radeon_dp_link_train_cr] displayport link status failed
+[drm:radeon_dp_link_train_cr] clock recovery failed
+drmn0: ring 0 stalled for more than 10408msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 10934msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 11465msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 11968msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 12498msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 13027msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 13542msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 14067msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 14598msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 15129msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 15631msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 16133msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 16650msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 17177msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 17708msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 18238msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 18769msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 19298msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 19828msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 20358msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 20888msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 21409msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 21940msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 22459msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 22990msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 23512msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 24043msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 24573msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 25103msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 25632msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 26164msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 26692msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 27224msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 27742msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 28248msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 28779msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 29310msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 29841msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 30372msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: Saved 262127 dwords of commands on ring 0.
+drmn0: GPU softreset: 0x00000108
+drmn0:   GRBM_STATUS               = 0xA0003828
+drmn0:   GRBM_STATUS_SE0           = 0x00000007
+drmn0:   GRBM_STATUS_SE1           = 0x00000007
+drmn0:   SRBM_STATUS               = 0x20020640
+drmn0:   SRBM_STATUS2              = 0x00000000
+drmn0:   R_008674_CP_STALLED_STAT1 = 0x00000000
+drmn0:   R_008678_CP_STALLED_STAT2 = 0x00000000
+drmn0:   R_00867C_CP_BUSY_STAT     = 0x00000802
+drmn0:   R_008680_CP_STAT          = 0x800001E3
+drmn0:   R_00D034_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   R_00D834_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   VM_CONTEXT0_PROTECTION_FAULT_ADDR   0x00000000
+drmn0:   VM_CONTEXT0_PROTECTION_FAULT_STATUS 0x00000000
+drmn0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x00000000
+drmn0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x00000000
+drmn0: Wait for MC idle timedout !
+drmn0: GRBM_SOFT_RESET=0x00004001
+drmn0: SRBM_SOFT_RESET=0x00010500
+drmn0:   GRBM_STATUS               = 0x00003828
+drmn0:   GRBM_STATUS_SE0           = 0x00000007
+drmn0:   GRBM_STATUS_SE1           = 0x00000007
+drmn0:   SRBM_STATUS               = 0x20000640
+drmn0:   SRBM_STATUS2              = 0x00000000
+drmn0:   R_008674_CP_STALLED_STAT1 = 0x00000000
+drmn0:   R_008678_CP_STALLED_STAT2 = 0x00000000
+drmn0:   R_00867C_CP_BUSY_STAT     = 0x00000000
+drmn0:   R_008680_CP_STAT          = 0x00000000
+drmn0:   R_00D034_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   R_00D834_DMA_STATUS_REG   = 0x44C83D57
+drmn0: GPU reset succeeded, trying to resume
+drmn0: Wait for MC idle timedout !
+drmn0: Wait for MC idle timedout !
+[drm] PCIE GART of 1024M enabled (table at 0x00000000001D6000).
+drmn0: WB enabled
+drmn0: fence driver on ring 0 use gpu addr 0x0000000020000c00 and cpu addr 0x0xfffff800396d6c00
+drmn0: fence driver on ring 5 use gpu addr 0x0000000000075a18 and cpu addr 0x0xfffff800c0075a18
+drmn0: failed VCE resume (-22).
+drmn0: fence driver on ring 1 use gpu addr 0x0000000020000c04 and cpu addr 0x0xfffff800396d6c04
+drmn0: fence driver on ring 2 use gpu addr 0x0000000020000c08 and cpu addr 0x0xfffff800396d6c08
+drmn0: fence driver on ring 3 use gpu addr 0x0000000020000c0c and cpu addr 0x0xfffff800396d6c0c
+drmn0: fence driver on ring 4 use gpu addr 0x0000000020000c10 and cpu addr 0x0xfffff800396d6c10
+[drm:r600_ring_test] radeon: ring 0 test failed (scratch(0x8504)=0xCAFEDEAD)
+[drm:cayman_resume] cayman startup failed on resume
+[drm:radeon_dp_link_train_cr] displayport link status failed
+[drm:radeon_dp_link_train_cr] clock recovery failed
+drmn0: ring 0 stalled for more than 10391msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 10921msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 11441msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 11972msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 12502msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 13032msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 13562msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 14092msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 14622msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 15146msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 15676msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 16207msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 16736msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 17266msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 17796msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 18326msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 18856msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 19386msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 19916msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 20446msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 20976msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 21506msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 22036msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 22566msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 23096msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 23626msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 24156msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 24686msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 25216msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 25746msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 26276msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 26806msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 27336msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 27866msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 28396msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 28926msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 29456msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 29986msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: Saved 262127 dwords of commands on ring 0.
+drmn0: GPU softreset: 0x00000108
+drmn0:   GRBM_STATUS               = 0xA0003828
+drmn0:   GRBM_STATUS_SE0           = 0x00000007
+drmn0:   GRBM_STATUS_SE1           = 0x00000007
+drmn0:   SRBM_STATUS               = 0x20020640
+drmn0:   SRBM_STATUS2              = 0x00000000
+drmn0:   R_008674_CP_STALLED_STAT1 = 0x00000000
+drmn0:   R_008678_CP_STALLED_STAT2 = 0x00000000
+drmn0:   R_00867C_CP_BUSY_STAT     = 0x00000802
+drmn0:   R_008680_CP_STAT          = 0x800001E3
+drmn0:   R_00D034_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   R_00D834_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   VM_CONTEXT0_PROTECTION_FAULT_ADDR   0x00000000
+drmn0:   VM_CONTEXT0_PROTECTION_FAULT_STATUS 0x00000000
+drmn0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x00000000
+drmn0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x00000000
+drmn0: Wait for MC idle timedout !
+drmn0: GRBM_SOFT_RESET=0x00004001
+drmn0: SRBM_SOFT_RESET=0x00010500
+drmn0:   GRBM_STATUS               = 0x00003828
+drmn0:   GRBM_STATUS_SE0           = 0x00000007
+drmn0:   GRBM_STATUS_SE1           = 0x00000007
+drmn0:   SRBM_STATUS               = 0x20000640
+drmn0:   SRBM_STATUS2              = 0x00000000
+drmn0:   R_008674_CP_STALLED_STAT1 = 0x00000000
+drmn0:   R_008678_CP_STALLED_STAT2 = 0x00000000
+drmn0:   R_00867C_CP_BUSY_STAT     = 0x00000000
+drmn0:   R_008680_CP_STAT          = 0x00000000
+drmn0:   R_00D034_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   R_00D834_DMA_STATUS_REG   = 0x44C83D57
+drmn0: GPU reset succeeded, trying to resume
+drmn0: Wait for MC idle timedout !
+drmn0: Wait for MC idle timedout !
+[drm] PCIE GART of 1024M enabled (table at 0x00000000001D6000).
+drmn0: WB enabled
+drmn0: fence driver on ring 0 use gpu addr 0x0000000020000c00 and cpu addr 0x0xfffff800396d6c00
+drmn0: fence driver on ring 5 use gpu addr 0x0000000000075a18 and cpu addr 0x0xfffff800c0075a18
+drmn0: failed VCE resume (-22).
+drmn0: fence driver on ring 1 use gpu addr 0x0000000020000c04 and cpu addr 0x0xfffff800396d6c04
+drmn0: fence driver on ring 2 use gpu addr 0x0000000020000c08 and cpu addr 0x0xfffff800396d6c08
+drmn0: fence driver on ring 3 use gpu addr 0x0000000020000c0c and cpu addr 0x0xfffff800396d6c0c
+drmn0: fence driver on ring 4 use gpu addr 0x0000000020000c10 and cpu addr 0x0xfffff800396d6c10
+[drm:r600_ring_test] radeon: ring 0 test failed (scratch(0x8504)=0xCAFEDEAD)
+[drm:cayman_resume] cayman startup failed on resume
+[drm:radeon_dp_link_train_cr] displayport link status failed
+[drm:radeon_dp_link_train_cr] clock recovery failed
+drmn0: ring 0 stalled for more than 10454msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 10986msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 11517msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 12048msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 12579msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 13110msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 13641msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 14173msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 14674msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 15206msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 15736msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 16268msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 16798msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 17329msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 17841msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 18372msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 18903msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 19434msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 19965msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 20497msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 21028msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 21559msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 22090msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 22622msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 23153msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 23684msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 24215msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 24746msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 25277msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 25807msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 26338msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 26868msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 27399msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 27929msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 28460msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 28990msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 29521msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 30051msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: Saved 262127 dwords of commands on ring 0.
+drmn0: GPU softreset: 0x00000108
+drmn0:   GRBM_STATUS               = 0xA0003828
+drmn0:   GRBM_STATUS_SE0           = 0x00000007
+drmn0:   GRBM_STATUS_SE1           = 0x00000007
+drmn0:   SRBM_STATUS               = 0x20020E40
+drmn0:   SRBM_STATUS2              = 0x00000000
+drmn0:   R_008674_CP_STALLED_STAT1 = 0x00000000
+drmn0:   R_008678_CP_STALLED_STAT2 = 0x00000000
+drmn0:   R_00867C_CP_BUSY_STAT     = 0x00000802
+drmn0:   R_008680_CP_STAT          = 0x800001E3
+drmn0:   R_00D034_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   R_00D834_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   VM_CONTEXT0_PROTECTION_FAULT_ADDR   0x00000000
+drmn0:   VM_CONTEXT0_PROTECTION_FAULT_STATUS 0x00000000
+drmn0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x00000000
+drmn0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x00000000
+drmn0: Wait for MC idle timedout !
+drmn0: GRBM_SOFT_RESET=0x00004001
+drmn0: SRBM_SOFT_RESET=0x00010500
+drmn0:   GRBM_STATUS               = 0x00003828
+drmn0:   GRBM_STATUS_SE0           = 0x00000007
+drmn0:   GRBM_STATUS_SE1           = 0x00000007
+drmn0:   SRBM_STATUS               = 0x20000640
+drmn0:   SRBM_STATUS2              = 0x00000000
+drmn0:   R_008674_CP_STALLED_STAT1 = 0x00000000
+drmn0:   R_008678_CP_STALLED_STAT2 = 0x00000000
+drmn0:   R_00867C_CP_BUSY_STAT     = 0x00000000
+drmn0:   R_008680_CP_STAT          = 0x00000000
+drmn0:   R_00D034_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   R_00D834_DMA_STATUS_REG   = 0x44C83D57
+drmn0: GPU reset succeeded, trying to resume
+drmn0: Wait for MC idle timedout !
+drmn0: Wait for MC idle timedout !
+[drm] PCIE GART of 1024M enabled (table at 0x00000000001D6000).
+drmn0: WB enabled
+drmn0: fence driver on ring 0 use gpu addr 0x0000000020000c00 and cpu addr 0x0xfffff800396d6c00
+drmn0: fence driver on ring 5 use gpu addr 0x0000000000075a18 and cpu addr 0x0xfffff800c0075a18
+drmn0: failed VCE resume (-22).
+drmn0: fence driver on ring 1 use gpu addr 0x0000000020000c04 and cpu addr 0x0xfffff800396d6c04
+drmn0: fence driver on ring 2 use gpu addr 0x0000000020000c08 and cpu addr 0x0xfffff800396d6c08
+drmn0: fence driver on ring 3 use gpu addr 0x0000000020000c0c and cpu addr 0x0xfffff800396d6c0c
+drmn0: fence driver on ring 4 use gpu addr 0x0000000020000c10 and cpu addr 0x0xfffff800396d6c10
+[drm:r600_ring_test] radeon: ring 0 test failed (scratch(0x8504)=0xCAFEDEAD)
+[drm:cayman_resume] cayman startup failed on resume
+[drm:radeon_dp_link_train_cr] displayport link status failed
+[drm:radeon_dp_link_train_cr] clock recovery failed
+drmn0: ring 0 stalled for more than 10448msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 10979msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 11509msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 12032msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 12564msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 13095msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 13625msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 14156msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 14686msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 15217msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 15747msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 16278msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 16808msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 17339msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 17869msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 18400msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 18930msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 19461msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 19991msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 20521msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 21052msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 21583msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 22113msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 22644msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 23174msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 23704msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 24234msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 24764msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 25291msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 25821msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 26351msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 26881msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 27406msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 27936msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 28466msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 28996msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 29526msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 30056msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: Saved 262127 dwords of commands on ring 0.
+drmn0: GPU softreset: 0x00000108
+drmn0:   GRBM_STATUS               = 0xA0003828
+drmn0:   GRBM_STATUS_SE0           = 0x00000007
+drmn0:   GRBM_STATUS_SE1           = 0x00000007
+drmn0:   SRBM_STATUS               = 0x20020640
+drmn0:   SRBM_STATUS2              = 0x00000000
+drmn0:   R_008674_CP_STALLED_STAT1 = 0x00000000
+drmn0:   R_008678_CP_STALLED_STAT2 = 0x00000000
+drmn0:   R_00867C_CP_BUSY_STAT     = 0x00000802
+drmn0:   R_008680_CP_STAT          = 0x800001E3
+drmn0:   R_00D034_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   R_00D834_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   VM_CONTEXT0_PROTECTION_FAULT_ADDR   0x00000000
+drmn0:   VM_CONTEXT0_PROTECTION_FAULT_STATUS 0x00000000
+drmn0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x00000000
+drmn0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x00000000
+drmn0: Wait for MC idle timedout !
+drmn0: GRBM_SOFT_RESET=0x00004001
+drmn0: SRBM_SOFT_RESET=0x00010500
+drmn0:   GRBM_STATUS               = 0x00003828
+drmn0:   GRBM_STATUS_SE0           = 0x00000007
+drmn0:   GRBM_STATUS_SE1           = 0x00000007
+drmn0:   SRBM_STATUS               = 0x20000640
+drmn0:   SRBM_STATUS2              = 0x00000000
+drmn0:   R_008674_CP_STALLED_STAT1 = 0x00000000
+drmn0:   R_008678_CP_STALLED_STAT2 = 0x00000000
+drmn0:   R_00867C_CP_BUSY_STAT     = 0x00000000
+drmn0:   R_008680_CP_STAT          = 0x00000000
+drmn0:   R_00D034_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   R_00D834_DMA_STATUS_REG   = 0x44C83D57
+drmn0: GPU reset succeeded, trying to resume
+drmn0: Wait for MC idle timedout !
+drmn0: Wait for MC idle timedout !
+[drm] PCIE GART of 1024M enabled (table at 0x00000000001D6000).
+drmn0: WB enabled
+drmn0: fence driver on ring 0 use gpu addr 0x0000000020000c00 and cpu addr 0x0xfffff800396d6c00
+drmn0: fence driver on ring 5 use gpu addr 0x0000000000075a18 and cpu addr 0x0xfffff800c0075a18
+drmn0: failed VCE resume (-22).
+drmn0: fence driver on ring 1 use gpu addr 0x0000000020000c04 and cpu addr 0x0xfffff800396d6c04
+drmn0: fence driver on ring 2 use gpu addr 0x0000000020000c08 and cpu addr 0x0xfffff800396d6c08
+drmn0: fence driver on ring 3 use gpu addr 0x0000000020000c0c and cpu addr 0x0xfffff800396d6c0c
+drmn0: fence driver on ring 4 use gpu addr 0x0000000020000c10 and cpu addr 0x0xfffff800396d6c10
+[drm:r600_ring_test] radeon: ring 0 test failed (scratch(0x8504)=0xCAFEDEAD)
+[drm:cayman_resume] cayman startup failed on resume
+[drm:radeon_dp_link_train_cr] displayport link status failed
+[drm:radeon_dp_link_train_cr] clock recovery failed
+drmn0: ring 0 stalled for more than 10486msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 11016msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 11546msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 12076msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 12606msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 13136msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 13666msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 14196msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 14720msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 15250msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 15780msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 16310msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 16840msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 17370msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 17900msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 18430msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 18960msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 19490msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 20014msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 20544msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 21074msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 21604msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 22134msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 22664msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 23194msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 23724msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 24254msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 24784msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 25314msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 25844msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 26374msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 26904msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 27434msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 27964msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 28494msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 29024msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 29553msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 30083msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: Saved 262127 dwords of commands on ring 0.
+drmn0: GPU softreset: 0x00000108
+drmn0:   GRBM_STATUS               = 0xA0003828
+drmn0:   GRBM_STATUS_SE0           = 0x00000007
+drmn0:   GRBM_STATUS_SE1           = 0x00000007
+drmn0:   SRBM_STATUS               = 0x20020E40
+drmn0:   SRBM_STATUS2              = 0x00000000
+drmn0:   R_008674_CP_STALLED_STAT1 = 0x00000000
+drmn0:   R_008678_CP_STALLED_STAT2 = 0x00000000
+drmn0:   R_00867C_CP_BUSY_STAT     = 0x00000802
+drmn0:   R_008680_CP_STAT          = 0x800001E3
+drmn0:   R_00D034_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   R_00D834_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   VM_CONTEXT0_PROTECTION_FAULT_ADDR   0x00000000
+drmn0:   VM_CONTEXT0_PROTECTION_FAULT_STATUS 0x00000000
+drmn0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x00000000
+drmn0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x00000000
+drmn0: Wait for MC idle timedout !
+drmn0: GRBM_SOFT_RESET=0x00004001
+drmn0: SRBM_SOFT_RESET=0x00010500
+drmn0:   GRBM_STATUS               = 0x00003828
+drmn0:   GRBM_STATUS_SE0           = 0x00000007
+drmn0:   GRBM_STATUS_SE1           = 0x00000007
+drmn0:   SRBM_STATUS               = 0x20000640
+drmn0:   SRBM_STATUS2              = 0x00000000
+drmn0:   R_008674_CP_STALLED_STAT1 = 0x00000000
+drmn0:   R_008678_CP_STALLED_STAT2 = 0x00000000
+drmn0:   R_00867C_CP_BUSY_STAT     = 0x00000000
+drmn0:   R_008680_CP_STAT          = 0x00000000
+drmn0:   R_00D034_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   R_00D834_DMA_STATUS_REG   = 0x44C83D57
+drmn0: GPU reset succeeded, trying to resume
+drmn0: Wait for MC idle timedout !
+drmn0: Wait for MC idle timedout !
+[drm] PCIE GART of 1024M enabled (table at 0x00000000001D6000).
+drmn0: WB enabled
+drmn0: fence driver on ring 0 use gpu addr 0x0000000020000c00 and cpu addr 0x0xfffff800396d6c00
+drmn0: fence driver on ring 5 use gpu addr 0x0000000000075a18 and cpu addr 0x0xfffff800c0075a18
+drmn0: failed VCE resume (-22).
+drmn0: fence driver on ring 1 use gpu addr 0x0000000020000c04 and cpu addr 0x0xfffff800396d6c04
+drmn0: fence driver on ring 2 use gpu addr 0x0000000020000c08 and cpu addr 0x0xfffff800396d6c08
+drmn0: fence driver on ring 3 use gpu addr 0x0000000020000c0c and cpu addr 0x0xfffff800396d6c0c
+drmn0: fence driver on ring 4 use gpu addr 0x0000000020000c10 and cpu addr 0x0xfffff800396d6c10
+[drm:r600_ring_test] radeon: ring 0 test failed (scratch(0x8504)=0xCAFEDEAD)
+[drm:cayman_resume] cayman startup failed on resume
+[drm:radeon_dp_link_train_cr] displayport link status failed
+[drm:radeon_dp_link_train_cr] clock recovery failed
+drmn0: ring 0 stalled for more than 10034msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 10565msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 11096msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 11627msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 12158msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 12689msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 13220msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 13749msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 14280msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 14811msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 15341msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 15872msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 16403msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 16932msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 17462msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 17992msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 18522msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 19052msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 19582msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 20108msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 20611msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 21142msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 21673msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 22204msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 22735msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 23266msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 23797msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 24328msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 24859msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 25389msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 25920msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 26451msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 26982msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 27512msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 28043msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 28574msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 29074msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 29605msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 30128msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: Saved 262127 dwords of commands on ring 0.
+drmn0: GPU softreset: 0x00000108
+drmn0:   GRBM_STATUS               = 0xA0003828
+drmn0:   GRBM_STATUS_SE0           = 0x00000007
+drmn0:   GRBM_STATUS_SE1           = 0x00000007
+drmn0:   SRBM_STATUS               = 0x20020640
+drmn0:   SRBM_STATUS2              = 0x00000000
+drmn0:   R_008674_CP_STALLED_STAT1 = 0x00000000
+drmn0:   R_008678_CP_STALLED_STAT2 = 0x00000000
+drmn0:   R_00867C_CP_BUSY_STAT     = 0x00000802
+drmn0:   R_008680_CP_STAT          = 0x800001E3
+drmn0:   R_00D034_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   R_00D834_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   VM_CONTEXT0_PROTECTION_FAULT_ADDR   0x00000000
+drmn0:   VM_CONTEXT0_PROTECTION_FAULT_STATUS 0x00000000
+drmn0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x00000000
+drmn0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x00000000
+drmn0: Wait for MC idle timedout !
+drmn0: GRBM_SOFT_RESET=0x00004001
+drmn0: SRBM_SOFT_RESET=0x00010500
+drmn0:   GRBM_STATUS               = 0x00003828
+drmn0:   GRBM_STATUS_SE0           = 0x00000007
+drmn0:   GRBM_STATUS_SE1           = 0x00000007
+drmn0:   SRBM_STATUS               = 0x20000640
+drmn0:   SRBM_STATUS2              = 0x00000000
+drmn0:   R_008674_CP_STALLED_STAT1 = 0x00000000
+drmn0:   R_008678_CP_STALLED_STAT2 = 0x00000000
+drmn0:   R_00867C_CP_BUSY_STAT     = 0x00000000
+drmn0:   R_008680_CP_STAT          = 0x00000000
+drmn0:   R_00D034_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   R_00D834_DMA_STATUS_REG   = 0x44C83D57
+drmn0: GPU reset succeeded, trying to resume
+drmn0: Wait for MC idle timedout !
+drmn0: Wait for MC idle timedout !
+[drm] PCIE GART of 1024M enabled (table at 0x00000000001D6000).
+drmn0: WB enabled
+drmn0: fence driver on ring 0 use gpu addr 0x0000000020000c00 and cpu addr 0x0xfffff800396d6c00
+drmn0: fence driver on ring 5 use gpu addr 0x0000000000075a18 and cpu addr 0x0xfffff800c0075a18
+drmn0: failed VCE resume (-22).
+drmn0: fence driver on ring 1 use gpu addr 0x0000000020000c04 and cpu addr 0x0xfffff800396d6c04
+drmn0: fence driver on ring 2 use gpu addr 0x0000000020000c08 and cpu addr 0x0xfffff800396d6c08
+drmn0: fence driver on ring 3 use gpu addr 0x0000000020000c0c and cpu addr 0x0xfffff800396d6c0c
+drmn0: fence driver on ring 4 use gpu addr 0x0000000020000c10 and cpu addr 0x0xfffff800396d6c10
+[drm:r600_ring_test] radeon: ring 0 test failed (scratch(0x8504)=0xCAFEDEAD)
+[drm:cayman_resume] cayman startup failed on resume
+[drm:radeon_dp_link_train_cr] displayport link status failed
+[drm:radeon_dp_link_train_cr] clock recovery failed
+drmn0: ring 0 stalled for more than 10506msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 11037msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 11568msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 12099msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 12623msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 13153msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 13683msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 14214msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 14745msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 15267msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 15797msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 16327msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 16857msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 17387msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 17917msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 18448msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 18972msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 19502msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 20033msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 20562msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 21093msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 21622msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 22152msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 22682msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 23212msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 23742msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 24272msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 24792msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 25323msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 25853msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 26361msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 26882msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 27390msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 27912msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 28443msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 28974msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 29504msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 30034msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: Saved 262127 dwords of commands on ring 0.
+drmn0: GPU softreset: 0x00000108
+drmn0:   GRBM_STATUS               = 0xA0003828
+drmn0:   GRBM_STATUS_SE0           = 0x00000007
+drmn0:   GRBM_STATUS_SE1           = 0x00000007
+drmn0:   SRBM_STATUS               = 0x20020640
+drmn0:   SRBM_STATUS2              = 0x00000000
+drmn0:   R_008674_CP_STALLED_STAT1 = 0x00000000
+drmn0:   R_008678_CP_STALLED_STAT2 = 0x00000000
+drmn0:   R_00867C_CP_BUSY_STAT     = 0x00000802
+drmn0:   R_008680_CP_STAT          = 0x800001E3
+drmn0:   R_00D034_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   R_00D834_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   VM_CONTEXT0_PROTECTION_FAULT_ADDR   0x00000000
+drmn0:   VM_CONTEXT0_PROTECTION_FAULT_STATUS 0x00000000
+drmn0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x00000000
+drmn0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x00000000
+drmn0: Wait for MC idle timedout !
+drmn0: GRBM_SOFT_RESET=0x00004001
+drmn0: SRBM_SOFT_RESET=0x00010500
+drmn0:   GRBM_STATUS               = 0x00003828
+drmn0:   GRBM_STATUS_SE0           = 0x00000007
+drmn0:   GRBM_STATUS_SE1           = 0x00000007
+drmn0:   SRBM_STATUS               = 0x20000640
+drmn0:   SRBM_STATUS2              = 0x00000000
+drmn0:   R_008674_CP_STALLED_STAT1 = 0x00000000
+drmn0:   R_008678_CP_STALLED_STAT2 = 0x00000000
+drmn0:   R_00867C_CP_BUSY_STAT     = 0x00000000
+drmn0:   R_008680_CP_STAT          = 0x00000000
+drmn0:   R_00D034_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   R_00D834_DMA_STATUS_REG   = 0x44C83D57
+drmn0: GPU reset succeeded, trying to resume
+drmn0: Wait for MC idle timedout !
+drmn0: Wait for MC idle timedout !
+[drm] PCIE GART of 1024M enabled (table at 0x00000000001D6000).
+drmn0: WB enabled
+drmn0: fence driver on ring 0 use gpu addr 0x0000000020000c00 and cpu addr 0x0xfffff800396d6c00
+drmn0: fence driver on ring 5 use gpu addr 0x0000000000075a18 and cpu addr 0x0xfffff800c0075a18
+drmn0: failed VCE resume (-22).
+drmn0: fence driver on ring 1 use gpu addr 0x0000000020000c04 and cpu addr 0x0xfffff800396d6c04
+drmn0: fence driver on ring 2 use gpu addr 0x0000000020000c08 and cpu addr 0x0xfffff800396d6c08
+drmn0: fence driver on ring 3 use gpu addr 0x0000000020000c0c and cpu addr 0x0xfffff800396d6c0c
+drmn0: fence driver on ring 4 use gpu addr 0x0000000020000c10 and cpu addr 0x0xfffff800396d6c10
+[drm:r600_ring_test] radeon: ring 0 test failed (scratch(0x8504)=0xCAFEDEAD)
+[drm:cayman_resume] cayman startup failed on resume
+[drm:radeon_dp_link_train_cr] displayport link status failed
+[drm:radeon_dp_link_train_cr] clock recovery failed
+drmn0: ring 0 stalled for more than 10422msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 10952msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 11463msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 11994msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 12525msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 13056msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 13587msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 14118msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 14649msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 15180msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 15711msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 16241msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 16741msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 17243msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 17767msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 18298msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 18828msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 19358msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 19882msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 20412msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 20943msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 21472msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 21992msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 22523msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 23054msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 23585msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 24115msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 24646msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 25176msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 25701msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 26231msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 26761msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 27284msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 27815msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 28345msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 28876msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 29377msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 29907msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: Saved 262127 dwords of commands on ring 0.
+drmn0: GPU softreset: 0x00000108
+drmn0:   GRBM_STATUS               = 0xA0003828
+drmn0:   GRBM_STATUS_SE0           = 0x00000007
+drmn0:   GRBM_STATUS_SE1           = 0x00000007
+drmn0:   SRBM_STATUS               = 0x20020640
+drmn0:   SRBM_STATUS2              = 0x00000000
+drmn0:   R_008674_CP_STALLED_STAT1 = 0x00000000
+drmn0:   R_008678_CP_STALLED_STAT2 = 0x00000000
+drmn0:   R_00867C_CP_BUSY_STAT     = 0x00000802
+drmn0:   R_008680_CP_STAT          = 0x800001E3
+drmn0:   R_00D034_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   R_00D834_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   VM_CONTEXT0_PROTECTION_FAULT_ADDR   0x00000000
+drmn0:   VM_CONTEXT0_PROTECTION_FAULT_STATUS 0x00000000
+drmn0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x00000000
+drmn0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x00000000
+drmn0: Wait for MC idle timedout !
+drmn0: GRBM_SOFT_RESET=0x00004001
+drmn0: SRBM_SOFT_RESET=0x00010500
+drmn0:   GRBM_STATUS               = 0x00003828
+drmn0:   GRBM_STATUS_SE0           = 0x00000007
+drmn0:   GRBM_STATUS_SE1           = 0x00000007
+drmn0:   SRBM_STATUS               = 0x20000640
+drmn0:   SRBM_STATUS2              = 0x00000000
+drmn0:   R_008674_CP_STALLED_STAT1 = 0x00000000
+drmn0:   R_008678_CP_STALLED_STAT2 = 0x00000000
+drmn0:   R_00867C_CP_BUSY_STAT     = 0x00000000
+drmn0:   R_008680_CP_STAT          = 0x00000000
+drmn0:   R_00D034_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   R_00D834_DMA_STATUS_REG   = 0x44C83D57
+drmn0: GPU reset succeeded, trying to resume
+drmn0: Wait for MC idle timedout !
+drmn0: Wait for MC idle timedout !
+[drm] PCIE GART of 1024M enabled (table at 0x00000000001D6000).
+drmn0: WB enabled
+drmn0: fence driver on ring 0 use gpu addr 0x0000000020000c00 and cpu addr 0x0xfffff800396d6c00
+drmn0: fence driver on ring 5 use gpu addr 0x0000000000075a18 and cpu addr 0x0xfffff800c0075a18
+drmn0: failed VCE resume (-22).
+drmn0: fence driver on ring 1 use gpu addr 0x0000000020000c04 and cpu addr 0x0xfffff800396d6c04
+drmn0: fence driver on ring 2 use gpu addr 0x0000000020000c08 and cpu addr 0x0xfffff800396d6c08
+drmn0: fence driver on ring 3 use gpu addr 0x0000000020000c0c and cpu addr 0x0xfffff800396d6c0c
+drmn0: fence driver on ring 4 use gpu addr 0x0000000020000c10 and cpu addr 0x0xfffff800396d6c10
+[drm:r600_ring_test] radeon: ring 0 test failed (scratch(0x8504)=0xCAFEDEAD)
+[drm:cayman_resume] cayman startup failed on resume
+[drm:radeon_dp_link_train_cr] displayport link status failed
+[drm:radeon_dp_link_train_cr] clock recovery failed
+drmn0: ring 0 stalled for more than 10366msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 10866msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 11387msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 11918msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 12448msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 12979msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 13510msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 14040msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 14565msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 15095msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 15626msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 16135msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 16635msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 17165msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 17695msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 18225msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 18755msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 19281msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 19811msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 20340msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 20870msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 21394msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 21923msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 22453msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 22983msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 23513msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 24044msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 24573msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 25104msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 25633msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 26164msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 26693msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 27223msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 27749msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 28252msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 28758msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 29290msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 29818msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 30349msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: Saved 262127 dwords of commands on ring 0.
+drmn0: GPU softreset: 0x00000108
+drmn0:   GRBM_STATUS               = 0xA0003828
+drmn0:   GRBM_STATUS_SE0           = 0x00000007
+drmn0:   GRBM_STATUS_SE1           = 0x00000007
+drmn0:   SRBM_STATUS               = 0x20020640
+drmn0:   SRBM_STATUS2              = 0x00000000
+drmn0:   R_008674_CP_STALLED_STAT1 = 0x00000000
+drmn0:   R_008678_CP_STALLED_STAT2 = 0x00000000
+drmn0:   R_00867C_CP_BUSY_STAT     = 0x00000802
+drmn0:   R_008680_CP_STAT          = 0x800001E3
+drmn0:   R_00D034_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   R_00D834_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   VM_CONTEXT0_PROTECTION_FAULT_ADDR   0x00000000
+drmn0:   VM_CONTEXT0_PROTECTION_FAULT_STATUS 0x00000000
+drmn0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x00000000
+drmn0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x00000000
+drmn0: Wait for MC idle timedout !
+drmn0: GRBM_SOFT_RESET=0x00004001
+drmn0: SRBM_SOFT_RESET=0x00010500
+drmn0:   GRBM_STATUS               = 0x00003828
+drmn0:   GRBM_STATUS_SE0           = 0x00000007
+drmn0:   GRBM_STATUS_SE1           = 0x00000007
+drmn0:   SRBM_STATUS               = 0x20000640
+drmn0:   SRBM_STATUS2              = 0x00000000
+drmn0:   R_008674_CP_STALLED_STAT1 = 0x00000000
+drmn0:   R_008678_CP_STALLED_STAT2 = 0x00000000
+drmn0:   R_00867C_CP_BUSY_STAT     = 0x00000000
+drmn0:   R_008680_CP_STAT          = 0x00000000
+drmn0:   R_00D034_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   R_00D834_DMA_STATUS_REG   = 0x44C83D57
+drmn0: GPU reset succeeded, trying to resume
+drmn0: Wait for MC idle timedout !
+drmn0: Wait for MC idle timedout !
+[drm] PCIE GART of 1024M enabled (table at 0x00000000001D6000).
+drmn0: WB enabled
+drmn0: fence driver on ring 0 use gpu addr 0x0000000020000c00 and cpu addr 0x0xfffff800396d6c00
+drmn0: fence driver on ring 5 use gpu addr 0x0000000000075a18 and cpu addr 0x0xfffff800c0075a18
+drmn0: failed VCE resume (-22).
+drmn0: fence driver on ring 1 use gpu addr 0x0000000020000c04 and cpu addr 0x0xfffff800396d6c04
+drmn0: fence driver on ring 2 use gpu addr 0x0000000020000c08 and cpu addr 0x0xfffff800396d6c08
+drmn0: fence driver on ring 3 use gpu addr 0x0000000020000c0c and cpu addr 0x0xfffff800396d6c0c
+drmn0: fence driver on ring 4 use gpu addr 0x0000000020000c10 and cpu addr 0x0xfffff800396d6c10
+[drm:r600_ring_test] radeon: ring 0 test failed (scratch(0x8504)=0xCAFEDEAD)
+[drm:cayman_resume] cayman startup failed on resume
+[drm:radeon_dp_link_train_cr] displayport link status failed
+[drm:radeon_dp_link_train_cr] clock recovery failed
+drmn0: ring 0 stalled for more than 10332msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 10863msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 11393msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 11924msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 12454msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 12985msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 13516msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 14046msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 14577msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 15107msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 15628msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 16158msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 16689msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 17219msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 17749msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 18280msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 18810msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 19341msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 19859msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 20390msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 20902msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 21433msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 21962msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 22493msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 23022msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 23553msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 24082msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 24613msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 25138msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 25669msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 26186msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 26717msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 27246msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 27777msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 28300msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 28831msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 29360msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: ring 0 stalled for more than 29891msec
+drmn0: GPU lockup (current fence id 0x0000000000000001 last fence id 0x0000000000000002 on ring 0)
+drmn0: Saved 262127 dwords of commands on ring 0.
+drmn0: GPU softreset: 0x00000108
+drmn0:   GRBM_STATUS               = 0xA0003828
+drmn0:   GRBM_STATUS_SE0           = 0x00000007
+drmn0:   GRBM_STATUS_SE1           = 0x00000007
+drmn0:   SRBM_STATUS               = 0x20020E40
+drmn0:   SRBM_STATUS2              = 0x00000000
+drmn0:   R_008674_CP_STALLED_STAT1 = 0x00000000
+drmn0:   R_008678_CP_STALLED_STAT2 = 0x00000000
+drmn0:   R_00867C_CP_BUSY_STAT     = 0x00000802
+drmn0:   R_008680_CP_STAT          = 0x800001E3
+drmn0:   R_00D034_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   R_00D834_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   VM_CONTEXT0_PROTECTION_FAULT_ADDR   0x00000000
+drmn0:   VM_CONTEXT0_PROTECTION_FAULT_STATUS 0x00000000
+drmn0:   VM_CONTEXT1_PROTECTION_FAULT_ADDR   0x00000000
+drmn0:   VM_CONTEXT1_PROTECTION_FAULT_STATUS 0x00000000
+drmn0: Wait for MC idle timedout !
+drmn0: GRBM_SOFT_RESET=0x00004001
+drmn0: SRBM_SOFT_RESET=0x00010500
+drmn0:   GRBM_STATUS               = 0x00003828
+drmn0:   GRBM_STATUS_SE0           = 0x00000007
+drmn0:   GRBM_STATUS_SE1           = 0x00000007
+drmn0:   SRBM_STATUS               = 0x20000640
+drmn0:   SRBM_STATUS2              = 0x00000000
+drmn0:   R_008674_CP_STALLED_STAT1 = 0x00000000
+drmn0:   R_008678_CP_STALLED_STAT2 = 0x00000000
+drmn0:   R_00867C_CP_BUSY_STAT     = 0x00000000
+drmn0:   R_008680_CP_STAT          = 0x00000000
+drmn0:   R_00D034_DMA_STATUS_REG   = 0x44C83D57
+drmn0:   R_00D834_DMA_STATUS_REG   = 0x44C83D57
+drmn0: GPU reset succeeded, trying to resume
+drmn0: Wait for MC idle timedout !
+drmn0: Wait for MC idle timedout !
+[drm] PCIE GART of 1024M enabled (table at 0x00000000001D6000).
+drmn0: WB enabled
+drmn0: fence driver on ring 0 use gpu addr 0x0000000020000c00 and cpu addr 0x0xfffff800396d6c00
+drmn0: fence driver on ring 5 use gpu addr 0x0000000000075a18 and cpu addr 0x0xfffff800c0075a18
+drmn0: failed VCE resume (-22).
+drmn0: fence driver on ring 1 use gpu addr 0x0000000020000c04 and cpu addr 0x0xfffff800396d6c04
+drmn0: fence driver on ring 2 use gpu addr 0x0000000020000c08 and cpu addr 0x0xfffff800396d6c08
+drmn0: fence driver on ring 3 use gpu addr 0x0000000020000c0c and cpu addr 0x0xfffff800396d6c0c
+drmn0: fence driver on ring 4 use gpu addr 0x0000000020000c10 and cpu addr 0x0xfffff800396d6c10
+[drm:r600_ring_test] radeon: ring 0 test failed (scratch(0x8504)=0xCAFEDEAD)
+[drm:cayman_resume] cayman startup failed on resume
+[drm:radeon_dp_link_train_cr] displayport link status failed
+[drm:radeon_dp_link_train_cr] clock recovery failed
