@@ -1,7 +1,7 @@
 Apr 26 16:48:30 anubis newsyslog[90195]: logfile first created
 Apr 26 16:48:30 anubis syslogd: kernel boot file is /boot/kernel/kernel
 Apr 26 16:48:30 anubis kernel: Waiting (max 60 seconds) for system process `vnlru' to stop... done
-Apr 26 16:48:30 anubis kernel: Waiting (max 60 seconds) for system process `syncer' to stop... 
+Apr 26 16:48:30 anubis kernel: Waiting (max 60 seconds) for system process `syncer' to stop...
 Apr 26 16:48:30 anubis kernel: Syncing disks, vnodes remaining... 0 0 0 0 done
 Apr 26 16:48:30 anubis kernel: Waiting (max 60 seconds) for system thread `bufdaemon' to stop... done
 Apr 26 16:48:30 anubis kernel: Waiting (max 60 seconds) for system thread `bufspacedaemon-0' to stop... done
@@ -17,19 +17,19 @@ Apr 26 16:48:30 anubis kernel: umass0 on uhub4
 Apr 26 16:48:30 anubis kernel: umass0: <Initio DVDRAM GMA-4082N, class 0/0, rev 2.00/1.06, addr 2> on usbus1
 Apr 26 16:48:30 anubis kernel: umass0:  8070i (ATAPI) over Bulk-Only; quirks = 0x4000
 Apr 26 16:48:30 anubis kernel: umass0:2:0: Attached to scbus2
-Apr 26 16:48:30 anubis kernel: (probe0:umass-sim0:0:0:0): INQUIRY. CDB: 12 00 00 00 24 00 
+Apr 26 16:48:30 anubis kernel: (probe0:umass-sim0:0:0:0): INQUIRY. CDB: 12 00 00 00 24 00
 Apr 26 16:48:30 anubis kernel: (probe0:umass-sim0:0:0:0): CAM status: CCB request completed with an error
 Apr 26 16:48:30 anubis kernel: (probe0:umass-sim0:0:0:0): Retrying command, 3 more tries remain
-Apr 26 16:48:30 anubis kernel: (probe0:umass-sim0:0:0:0): INQUIRY. CDB: 12 00 00 00 24 00 
+Apr 26 16:48:30 anubis kernel: (probe0:umass-sim0:0:0:0): INQUIRY. CDB: 12 00 00 00 24 00
 Apr 26 16:48:30 anubis kernel: (probe0:umass-sim0:0:0:0): CAM status: CCB request completed with an error
 Apr 26 16:48:30 anubis kernel: (probe0:umass-sim0:0:0:0): Retrying command, 2 more tries remain
-Apr 26 16:48:30 anubis kernel: (probe0:umass-sim0:0:0:0): INQUIRY. CDB: 12 00 00 00 24 00 
+Apr 26 16:48:30 anubis kernel: (probe0:umass-sim0:0:0:0): INQUIRY. CDB: 12 00 00 00 24 00
 Apr 26 16:48:30 anubis kernel: (probe0:umass-sim0:0:0:0): CAM status: CCB request completed with an error
 Apr 26 16:48:30 anubis kernel: (probe0:umass-sim0:0:0:0): Retrying command, 1 more tries remain
-Apr 26 16:48:30 anubis kernel: (probe0:umass-sim0:0:0:0): INQUIRY. CDB: 12 00 00 00 24 00 
+Apr 26 16:48:30 anubis kernel: (probe0:umass-sim0:0:0:0): INQUIRY. CDB: 12 00 00 00 24 00
 Apr 26 16:48:30 anubis kernel: (probe0:umass-sim0:0:0:0): CAM status: CCB request completed with an error
 Apr 26 16:48:30 anubis kernel: (probe0:umass-sim0:0:0:0): Retrying command, 0 more tries remain
-Apr 26 16:48:30 anubis kernel: (probe0:umass-sim0:0:0:0): INQUIRY. CDB: 12 00 00 00 24 00 
+Apr 26 16:48:30 anubis kernel: (probe0:umass-sim0:0:0:0): INQUIRY. CDB: 12 00 00 00 24 00
 Apr 26 16:48:30 anubis kernel: (probe0:umass-sim0:0:0:0): CAM status: CCB request completed with an error
 Apr 26 16:48:30 anubis kernel: (probe0:umass-sim0:0:0:0): Error 5, Retries exhausted
 Apr 26 16:48:30 anubis kernel: umass0: detached
@@ -108,7 +108,7 @@ Apr 26 16:48:30 anubis kernel: re0: Ethernet address: 50:b7:c3:78:97:4d
 Apr 26 16:48:30 anubis kernel: re0: netmap queues/slots: TX 1/256, RX 1/256
 Apr 26 16:48:30 anubis kernel: xhci0: <XHCI (generic) USB 3.0 controller> mem 0xfeb48000-0xfeb49fff at device 16.0 on pci0
 Apr 26 16:48:30 anubis kernel: xhci0: 32 bytes context size, 64-bit DMA
-Apr 26 16:48:30 anubis kernel: xhci0: Unable to map MSI-X table 
+Apr 26 16:48:30 anubis kernel: xhci0: Unable to map MSI-X table
 Apr 26 16:48:30 anubis kernel: usbus0 on xhci0
 Apr 26 16:48:30 anubis kernel: usbus0: 5.0Gbps Super Speed USB v3.0
 Apr 26 16:48:30 anubis kernel: ahci0: <AMD Hudson-2 AHCI SATA controller> port 0xf140-0xf147,0xf130-0xf133,0xf120-0xf127,0xf110-0xf113,0xf100-0xf10f mem 0xfeb4e000-0xfeb4e7ff at device 17.0 on pci0
@@ -297,7 +297,7 @@ Apr 26 17:05:33 anubis kernel: re0: Ethernet address: 50:b7:c3:78:97:4d
 Apr 26 17:05:33 anubis kernel: re0: netmap queues/slots: TX 1/256, RX 1/256
 Apr 26 17:05:33 anubis kernel: xhci0: <XHCI (generic) USB 3.0 controller> mem 0xfeb48000-0xfeb49fff at device 16.0 on pci0
 Apr 26 17:05:33 anubis kernel: xhci0: 32 bytes context size, 64-bit DMA
-Apr 26 17:05:33 anubis kernel: xhci0: Unable to map MSI-X table 
+Apr 26 17:05:33 anubis kernel: xhci0: Unable to map MSI-X table
 Apr 26 17:05:33 anubis kernel: usbus0 on xhci0
 Apr 26 17:05:33 anubis kernel: usbus0: 5.0Gbps Super Speed USB v3.0
 Apr 26 17:05:33 anubis kernel: ahci0: <AMD Hudson-2 AHCI SATA controller> port 0xf140-0xf147,0xf130-0xf133,0xf120-0xf127,0xf110-0xf113,0xf100-0xf10f mem 0xfeb4e000-0xfeb4e7ff at device 17.0 on pci0
@@ -726,7 +726,7 @@ Apr 26 18:00:48 anubis reboot[71641]: rebooted by root
 Apr 26 18:00:48 anubis syslogd: exiting on signal 15
 Apr 26 18:02:10 anubis syslogd: kernel boot file is /boot/kernel/kernel
 Apr 26 18:02:10 anubis kernel: Waiting (max 60 seconds) for system process `vnlru' to stop... done
-Apr 26 18:02:10 anubis kernel: Waiting (max 60 seconds) for system process `syncer' to stop... 
+Apr 26 18:02:10 anubis kernel: Waiting (max 60 seconds) for system process `syncer' to stop...
 Apr 26 18:02:10 anubis kernel: Syncing disks, vnodes remaining... 0 0 0 0 done
 Apr 26 18:02:10 anubis kernel: Waiting (max 60 seconds) for system thread `bufdaemon' to stop... done
 Apr 26 18:02:10 anubis kernel: Waiting (max 60 seconds) for system thread `bufspacedaemon-0' to stop... done
@@ -811,7 +811,7 @@ Apr 26 18:02:10 anubis kernel: re0: Ethernet address: 50:b7:c3:78:97:4d
 Apr 26 18:02:10 anubis kernel: re0: netmap queues/slots: TX 1/256, RX 1/256
 Apr 26 18:02:10 anubis kernel: xhci0: <XHCI (generic) USB 3.0 controller> mem 0xfeb48000-0xfeb49fff at device 16.0 on pci0
 Apr 26 18:02:10 anubis kernel: xhci0: 32 bytes context size, 64-bit DMA
-Apr 26 18:02:10 anubis kernel: xhci0: Unable to map MSI-X table 
+Apr 26 18:02:10 anubis kernel: xhci0: Unable to map MSI-X table
 Apr 26 18:02:10 anubis kernel: usbus0 on xhci0
 Apr 26 18:02:10 anubis kernel: usbus0: 5.0Gbps Super Speed USB v3.0
 Apr 26 18:02:10 anubis kernel: ahci0: <AMD Hudson-2 AHCI SATA controller> port 0xf140-0xf147,0xf130-0xf133,0xf120-0xf127,0xf110-0xf113,0xf100-0xf10f mem 0xfeb4e000-0xfeb4e7ff at device 17.0 on pci0
@@ -920,7 +920,7 @@ Apr 26 18:02:10 anubis kernel: [drm:radeon_atombios_init] Unable to find PCI I/O
 Apr 26 18:02:10 anubis kernel: ATOM BIOS: BR042452.007
 Apr 26 18:02:10 anubis kernel: drmn0: VRAM: 512M 0x0000000000000000 - 0x000000001FFFFFFF (512M used)
 Apr 26 18:02:10 anubis kernel: drmn0: GTT: 1024M 0x0000000020000000 - 0x000000005FFFFFFF
-Apr 26 18:02:10 anubis kernel: Successfully added WC MTRR for [0xc0000000-0xcfffffff]: 0; 
+Apr 26 18:02:10 anubis kernel: Successfully added WC MTRR for [0xc0000000-0xcfffffff]: 0;
 Apr 26 18:02:10 anubis kernel: [drm] Detected VRAM RAM=512M, BAR=256M
 Apr 26 18:02:10 anubis kernel: [drm] RAM width 64bits DDR
 Apr 26 18:02:10 anubis kernel: [TTM] Zone  kernel: Available graphics memory: 3888642 kiB
@@ -1118,7 +1118,7 @@ Apr 26 18:34:39 anubis kernel: re0: Ethernet address: 50:b7:c3:78:97:4d
 Apr 26 18:34:39 anubis kernel: re0: netmap queues/slots: TX 1/256, RX 1/256
 Apr 26 18:34:39 anubis kernel: xhci0: <XHCI (generic) USB 3.0 controller> mem 0xfeb48000-0xfeb49fff at device 16.0 on pci0
 Apr 26 18:34:39 anubis kernel: xhci0: 32 bytes context size, 64-bit DMA
-Apr 26 18:34:39 anubis kernel: xhci0: Unable to map MSI-X table 
+Apr 26 18:34:39 anubis kernel: xhci0: Unable to map MSI-X table
 Apr 26 18:34:39 anubis kernel: usbus0 on xhci0
 Apr 26 18:34:39 anubis kernel: usbus0: 5.0Gbps Super Speed USB v3.0
 Apr 26 18:34:39 anubis kernel: ahci0: <AMD Hudson-2 AHCI SATA controller> port 0xf140-0xf147,0xf130-0xf133,0xf120-0xf127,0xf110-0xf113,0xf100-0xf10f mem 0xfeb4e000-0xfeb4e7ff at device 17.0 on pci0
@@ -1227,7 +1227,7 @@ Apr 26 18:34:39 anubis kernel: [drm:radeon_atombios_init] Unable to find PCI I/O
 Apr 26 18:34:39 anubis kernel: ATOM BIOS: BR042452.007
 Apr 26 18:34:39 anubis kernel: drmn0: VRAM: 512M 0x0000000000000000 - 0x000000001FFFFFFF (512M used)
 Apr 26 18:34:39 anubis kernel: drmn0: GTT: 1024M 0x0000000020000000 - 0x000000005FFFFFFF
-Apr 26 18:34:39 anubis kernel: Successfully added WC MTRR for [0xc0000000-0xcfffffff]: 0; 
+Apr 26 18:34:39 anubis kernel: Successfully added WC MTRR for [0xc0000000-0xcfffffff]: 0;
 Apr 26 18:34:39 anubis kernel: [drm] Detected VRAM RAM=512M, BAR=256M
 Apr 26 18:34:39 anubis kernel: [drm] RAM width 64bits DDR
 Apr 26 18:34:39 anubis kernel: [TTM] Zone  kernel: Available graphics memory: 3888642 kiB
@@ -1351,7 +1351,7 @@ Apr 26 18:53:35 anubis reboot[12346]: rebooted by root
 Apr 26 18:53:35 anubis syslogd: exiting on signal 15
 Apr 26 18:54:48 anubis syslogd: kernel boot file is /boot/kernel/kernel
 Apr 26 18:54:48 anubis kernel: Waiting (max 60 seconds) for system process `vnlru' to stop... done
-Apr 26 18:54:48 anubis kernel: Waiting (max 60 seconds) for system process `syncer' to stop... 
+Apr 26 18:54:48 anubis kernel: Waiting (max 60 seconds) for system process `syncer' to stop...
 Apr 26 18:54:48 anubis kernel: Syncing disks, vnodes remaining... 0 0 0 0 0 done
 Apr 26 18:54:48 anubis kernel: Waiting (max 60 seconds) for system thread `bufdaemon' to stop... done
 Apr 26 18:54:48 anubis kernel: Waiting (max 60 seconds) for system thread `bufspacedaemon-0' to stop... done
@@ -1436,7 +1436,7 @@ Apr 26 18:54:48 anubis kernel: re0: Ethernet address: 50:b7:c3:78:97:4d
 Apr 26 18:54:48 anubis kernel: re0: netmap queues/slots: TX 1/256, RX 1/256
 Apr 26 18:54:48 anubis kernel: xhci0: <XHCI (generic) USB 3.0 controller> mem 0xfeb48000-0xfeb49fff at device 16.0 on pci0
 Apr 26 18:54:48 anubis kernel: xhci0: 32 bytes context size, 64-bit DMA
-Apr 26 18:54:48 anubis kernel: xhci0: Unable to map MSI-X table 
+Apr 26 18:54:48 anubis kernel: xhci0: Unable to map MSI-X table
 Apr 26 18:54:48 anubis kernel: usbus0 on xhci0
 Apr 26 18:54:48 anubis kernel: usbus0: 5.0Gbps Super Speed USB v3.0
 Apr 26 18:54:48 anubis kernel: ahci0: <AMD Hudson-2 AHCI SATA controller> port 0xf140-0xf147,0xf130-0xf133,0xf120-0xf127,0xf110-0xf113,0xf100-0xf10f mem 0xfeb4e000-0xfeb4e7ff at device 17.0 on pci0
@@ -1570,7 +1570,7 @@ Apr 26 18:56:05 anubis reboot[48442]: rebooted by root
 Apr 26 18:56:05 anubis syslogd: exiting on signal 15
 Apr 26 19:15:51 anubis syslogd: kernel boot file is /boot/kernel/kernel
 Apr 26 19:15:51 anubis kernel: Waiting (max 60 seconds) for system process `vnlru' to stop... done
-Apr 26 19:15:51 anubis kernel: Waiting (max 60 seconds) for system process `syncer' to stop... 
+Apr 26 19:15:51 anubis kernel: Waiting (max 60 seconds) for system process `syncer' to stop...
 Apr 26 19:15:51 anubis kernel: Syncing disks, vnodes remaining... 0 0 0 0 done
 Apr 26 19:15:51 anubis kernel: Waiting (max 60 seconds) for system thread `bufdaemon' to stop... done
 Apr 26 19:15:51 anubis kernel: Waiting (max 60 seconds) for system thread `bufspacedaemon-0' to stop... done
@@ -1655,7 +1655,7 @@ Apr 26 19:15:51 anubis kernel: re0: Ethernet address: 50:b7:c3:78:97:4d
 Apr 26 19:15:51 anubis kernel: re0: netmap queues/slots: TX 1/256, RX 1/256
 Apr 26 19:15:51 anubis kernel: xhci0: <XHCI (generic) USB 3.0 controller> mem 0xfeb48000-0xfeb49fff at device 16.0 on pci0
 Apr 26 19:15:51 anubis kernel: xhci0: 32 bytes context size, 64-bit DMA
-Apr 26 19:15:51 anubis kernel: xhci0: Unable to map MSI-X table 
+Apr 26 19:15:51 anubis kernel: xhci0: Unable to map MSI-X table
 Apr 26 19:15:51 anubis kernel: usbus0 on xhci0
 Apr 26 19:15:51 anubis kernel: usbus0: 5.0Gbps Super Speed USB v3.0
 Apr 26 19:15:51 anubis kernel: ahci0: <AMD Hudson-2 AHCI SATA controller> port 0xf140-0xf147,0xf130-0xf133,0xf120-0xf127,0xf110-0xf113,0xf100-0xf10f mem 0xfeb4e000-0xfeb4e7ff at device 17.0 on pci0
@@ -1784,7 +1784,7 @@ Apr 26 19:18:59 anubis reboot[95036]: rebooted by root
 Apr 26 19:18:59 anubis syslogd: exiting on signal 15
 Apr 26 19:20:01 anubis syslogd: kernel boot file is /boot/kernel/kernel
 Apr 26 19:20:01 anubis kernel: Waiting (max 60 seconds) for system process `vnlru' to stop... done
-Apr 26 19:20:01 anubis kernel: Waiting (max 60 seconds) for system process `syncer' to stop... 
+Apr 26 19:20:01 anubis kernel: Waiting (max 60 seconds) for system process `syncer' to stop...
 Apr 26 19:20:01 anubis kernel: Syncing disks, vnodes remaining... 0 0 0 0 done
 Apr 26 19:20:01 anubis kernel: Waiting (max 60 seconds) for system thread `bufdaemon' to stop... done
 Apr 26 19:20:01 anubis kernel: Waiting (max 60 seconds) for system thread `bufspacedaemon-0' to stop... done
@@ -1869,7 +1869,7 @@ Apr 26 19:20:01 anubis kernel: re0: Ethernet address: 50:b7:c3:78:97:4d
 Apr 26 19:20:01 anubis kernel: re0: netmap queues/slots: TX 1/256, RX 1/256
 Apr 26 19:20:01 anubis kernel: xhci0: <XHCI (generic) USB 3.0 controller> mem 0xfeb48000-0xfeb49fff at device 16.0 on pci0
 Apr 26 19:20:01 anubis kernel: xhci0: 32 bytes context size, 64-bit DMA
-Apr 26 19:20:01 anubis kernel: xhci0: Unable to map MSI-X table 
+Apr 26 19:20:01 anubis kernel: xhci0: Unable to map MSI-X table
 Apr 26 19:20:01 anubis kernel: usbus0 on xhci0
 Apr 26 19:20:01 anubis kernel: usbus0: 5.0Gbps Super Speed USB v3.0
 Apr 26 19:20:01 anubis kernel: ahci0: <AMD Hudson-2 AHCI SATA controller> port 0xf140-0xf147,0xf130-0xf133,0xf120-0xf127,0xf110-0xf113,0xf100-0xf10f mem 0xfeb4e000-0xfeb4e7ff at device 17.0 on pci0
@@ -1978,7 +1978,7 @@ Apr 26 19:20:01 anubis kernel: [drm:radeon_atombios_init] Unable to find PCI I/O
 Apr 26 19:20:01 anubis kernel: ATOM BIOS: BR042452.007
 Apr 26 19:20:01 anubis kernel: drmn0: VRAM: 512M 0x0000000000000000 - 0x000000001FFFFFFF (512M used)
 Apr 26 19:20:01 anubis kernel: drmn0: GTT: 1024M 0x0000000020000000 - 0x000000005FFFFFFF
-Apr 26 19:20:01 anubis kernel: Successfully added WC MTRR for [0xc0000000-0xcfffffff]: 0; 
+Apr 26 19:20:01 anubis kernel: Successfully added WC MTRR for [0xc0000000-0xcfffffff]: 0;
 Apr 26 19:20:01 anubis kernel: [drm] Detected VRAM RAM=512M, BAR=256M
 Apr 26 19:20:01 anubis kernel: [drm] RAM width 64bits DDR
 Apr 26 19:20:01 anubis kernel: [TTM] Zone  kernel: Available graphics memory: 3888642 kiB
@@ -3337,7 +3337,7 @@ Apr 26 19:54:48 anubis kernel: re0: Ethernet address: 50:b7:c3:78:97:4d
 Apr 26 19:54:48 anubis kernel: re0: netmap queues/slots: TX 1/256, RX 1/256
 Apr 26 19:54:48 anubis kernel: xhci0: <XHCI (generic) USB 3.0 controller> mem 0xfeb48000-0xfeb49fff at device 16.0 on pci0
 Apr 26 19:54:48 anubis kernel: xhci0: 32 bytes context size, 64-bit DMA
-Apr 26 19:54:48 anubis kernel: xhci0: Unable to map MSI-X table 
+Apr 26 19:54:48 anubis kernel: xhci0: Unable to map MSI-X table
 Apr 26 19:54:48 anubis kernel: usbus0 on xhci0
 Apr 26 19:54:48 anubis kernel: usbus0: 5.0Gbps Super Speed USB v3.0
 Apr 26 19:54:48 anubis kernel: ahci0: <AMD Hudson-2 AHCI SATA controller> port 0xf140-0xf147,0xf130-0xf133,0xf120-0xf127,0xf110-0xf113,0xf100-0xf10f mem 0xfeb4e000-0xfeb4e7ff at device 17.0 on pci0
@@ -3446,7 +3446,7 @@ Apr 26 19:54:48 anubis kernel: [drm:radeon_atombios_init] Unable to find PCI I/O
 Apr 26 19:54:48 anubis kernel: ATOM BIOS: BR042452.007
 Apr 26 19:54:48 anubis kernel: drmn0: VRAM: 512M 0x0000000000000000 - 0x000000001FFFFFFF (512M used)
 Apr 26 19:54:48 anubis kernel: drmn0: GTT: 1024M 0x0000000020000000 - 0x000000005FFFFFFF
-Apr 26 19:54:48 anubis kernel: Successfully added WC MTRR for [0xc0000000-0xcfffffff]: 0; 
+Apr 26 19:54:48 anubis kernel: Successfully added WC MTRR for [0xc0000000-0xcfffffff]: 0;
 Apr 26 19:54:48 anubis kernel: [drm] Detected VRAM RAM=512M, BAR=256M
 Apr 26 19:54:48 anubis kernel: [drm] RAM width 64bits DDR
 Apr 26 19:54:48 anubis kernel: [TTM] Zone  kernel: Available graphics memory: 3888642 kiB
@@ -3592,7 +3592,7 @@ Apr 26 20:09:41 anubis reboot[22698]: rebooted by root
 Apr 26 20:09:41 anubis syslogd: exiting on signal 15
 Apr 26 20:11:04 anubis syslogd: kernel boot file is /boot/kernel/kernel
 Apr 26 20:11:04 anubis kernel: Waiting (max 60 seconds) for system process `vnlru' to stop... done
-Apr 26 20:11:04 anubis kernel: Waiting (max 60 seconds) for system process `syncer' to stop... 
+Apr 26 20:11:04 anubis kernel: Waiting (max 60 seconds) for system process `syncer' to stop...
 Apr 26 20:11:04 anubis kernel: Syncing disks, vnodes remaining... 0 0 0 0 done
 Apr 26 20:11:04 anubis kernel: Waiting (max 60 seconds) for system thread `bufdaemon' to stop... done
 Apr 26 20:11:04 anubis kernel: Waiting (max 60 seconds) for system thread `bufspacedaemon-0' to stop... done
@@ -3678,7 +3678,7 @@ Apr 26 20:11:04 anubis kernel: re0: Ethernet address: 50:b7:c3:78:97:4d
 Apr 26 20:11:04 anubis kernel: re0: netmap queues/slots: TX 1/256, RX 1/256
 Apr 26 20:11:04 anubis kernel: xhci0: <XHCI (generic) USB 3.0 controller> mem 0xfeb48000-0xfeb49fff at device 16.0 on pci0
 Apr 26 20:11:04 anubis kernel: xhci0: 32 bytes context size, 64-bit DMA
-Apr 26 20:11:04 anubis kernel: xhci0: Unable to map MSI-X table 
+Apr 26 20:11:04 anubis kernel: xhci0: Unable to map MSI-X table
 Apr 26 20:11:04 anubis kernel: usbus0 on xhci0
 Apr 26 20:11:04 anubis kernel: usbus0: 5.0Gbps Super Speed USB v3.0
 Apr 26 20:11:04 anubis kernel: ahci0: <AMD Hudson-2 AHCI SATA controller> port 0xf140-0xf147,0xf130-0xf133,0xf120-0xf127,0xf110-0xf113,0xf100-0xf10f mem 0xfeb4e000-0xfeb4e7ff at device 17.0 on pci0
@@ -3787,7 +3787,7 @@ Apr 26 20:11:04 anubis kernel: [drm:radeon_atombios_init] Unable to find PCI I/O
 Apr 26 20:11:04 anubis kernel: ATOM BIOS: BR042452.007
 Apr 26 20:11:04 anubis kernel: drmn0: VRAM: 512M 0x0000000000000000 - 0x000000001FFFFFFF (512M used)
 Apr 26 20:11:04 anubis kernel: drmn0: GTT: 1024M 0x0000000020000000 - 0x000000005FFFFFFF
-Apr 26 20:11:04 anubis kernel: Successfully added WC MTRR for [0xc0000000-0xcfffffff]: 0; 
+Apr 26 20:11:04 anubis kernel: Successfully added WC MTRR for [0xc0000000-0xcfffffff]: 0;
 Apr 26 20:11:04 anubis kernel: [drm] Detected VRAM RAM=512M, BAR=256M
 Apr 26 20:11:04 anubis kernel: [drm] RAM width 64bits DDR
 Apr 26 20:11:04 anubis kernel: [TTM] Zone  kernel: Available graphics memory: 3888642 kiB
@@ -4139,7 +4139,7 @@ Apr 26 21:39:14 anubis kernel: re0: Ethernet address: 50:b7:c3:78:97:4d
 Apr 26 21:39:14 anubis kernel: re0: netmap queues/slots: TX 1/256, RX 1/256
 Apr 26 21:39:14 anubis kernel: xhci0: <XHCI (generic) USB 3.0 controller> mem 0xfeb48000-0xfeb49fff at device 16.0 on pci0
 Apr 26 21:39:14 anubis kernel: xhci0: 32 bytes context size, 64-bit DMA
-Apr 26 21:39:14 anubis kernel: xhci0: Unable to map MSI-X table 
+Apr 26 21:39:14 anubis kernel: xhci0: Unable to map MSI-X table
 Apr 26 21:39:14 anubis kernel: usbus0 on xhci0
 Apr 26 21:39:14 anubis kernel: usbus0: 5.0Gbps Super Speed USB v3.0
 Apr 26 21:39:14 anubis kernel: ahci0: <AMD Hudson-2 AHCI SATA controller> port 0xf140-0xf147,0xf130-0xf133,0xf120-0xf127,0xf110-0xf113,0xf100-0xf10f mem 0xfeb4e000-0xfeb4e7ff at device 17.0 on pci0
@@ -4239,7 +4239,7 @@ Apr 26 21:39:14 anubis kernel: Root mount waiting for: usbus4
 Apr 26 21:39:14 anubis kernel: ugen3.2: <vendor 0x0cf3 product 0x3004> at usbus3
 Apr 26 21:39:14 anubis kernel: ugen4.2: <Generic WebCam SC-13HDL12131N> at usbus4
 Apr 26 21:39:14 anubis kernel: Waiting (max 60 seconds) for system process `vnlru' to stop... done
-Apr 26 21:39:14 anubis kernel: Waiting (max 60 seconds) for system process `syncer' to stop... 
+Apr 26 21:39:14 anubis kernel: Waiting (max 60 seconds) for system process `syncer' to stop...
 Apr 26 21:39:14 anubis kernel: Syncing disks, vnodes remaining... 0 0 done
 Apr 26 21:39:14 anubis kernel: Waiting (max 60 seconds) for system thread `bufdaemon' to stop... done
 Apr 26 21:39:14 anubis kernel: Waiting (max 60 seconds) for system thread `bufspacedaemon-0' to stop... done
@@ -4325,7 +4325,7 @@ Apr 26 21:39:14 anubis kernel: re0: Ethernet address: 50:b7:c3:78:97:4d
 Apr 26 21:39:14 anubis kernel: re0: netmap queues/slots: TX 1/256, RX 1/256
 Apr 26 21:39:14 anubis kernel: xhci0: <XHCI (generic) USB 3.0 controller> mem 0xfeb48000-0xfeb49fff at device 16.0 on pci0
 Apr 26 21:39:14 anubis kernel: xhci0: 32 bytes context size, 64-bit DMA
-Apr 26 21:39:14 anubis kernel: xhci0: Unable to map MSI-X table 
+Apr 26 21:39:14 anubis kernel: xhci0: Unable to map MSI-X table
 Apr 26 21:39:14 anubis kernel: usbus0 on xhci0
 Apr 26 21:39:14 anubis kernel: usbus0: 5.0Gbps Super Speed USB v3.0
 Apr 26 21:39:14 anubis kernel: ahci0: <AMD Hudson-2 AHCI SATA controller> port 0xf140-0xf147,0xf130-0xf133,0xf120-0xf127,0xf110-0xf113,0xf100-0xf10f mem 0xfeb4e000-0xfeb4e7ff at device 17.0 on pci0
@@ -4434,7 +4434,7 @@ Apr 26 21:39:14 anubis kernel: [drm:radeon_atombios_init] Unable to find PCI I/O
 Apr 26 21:39:14 anubis kernel: ATOM BIOS: BR042452.007
 Apr 26 21:39:14 anubis kernel: drmn0: VRAM: 512M 0x0000000000000000 - 0x000000001FFFFFFF (512M used)
 Apr 26 21:39:14 anubis kernel: drmn0: GTT: 1024M 0x0000000020000000 - 0x000000005FFFFFFF
-Apr 26 21:39:14 anubis kernel: Successfully added WC MTRR for [0xc0000000-0xcfffffff]: 0; 
+Apr 26 21:39:14 anubis kernel: Successfully added WC MTRR for [0xc0000000-0xcfffffff]: 0;
 Apr 26 21:39:14 anubis kernel: [drm] Detected VRAM RAM=512M, BAR=256M
 Apr 26 21:39:14 anubis kernel: [drm] RAM width 64bits DDR
 Apr 26 21:39:14 anubis kernel: [TTM] Zone  kernel: Available graphics memory: 3888642 kiB
@@ -5781,7 +5781,7 @@ Apr 26 22:24:19 anubis kernel: re0: Ethernet address: 50:b7:c3:78:97:4d
 Apr 26 22:24:19 anubis kernel: re0: netmap queues/slots: TX 1/256, RX 1/256
 Apr 26 22:24:19 anubis kernel: xhci0: <XHCI (generic) USB 3.0 controller> mem 0xfeb48000-0xfeb49fff at device 16.0 on pci0
 Apr 26 22:24:19 anubis kernel: xhci0: 32 bytes context size, 64-bit DMA
-Apr 26 22:24:19 anubis kernel: xhci0: Unable to map MSI-X table 
+Apr 26 22:24:19 anubis kernel: xhci0: Unable to map MSI-X table
 Apr 26 22:24:19 anubis kernel: usbus0 on xhci0
 Apr 26 22:24:19 anubis kernel: usbus0: 5.0Gbps Super Speed USB v3.0
 Apr 26 22:24:19 anubis kernel: ahci0: <AMD Hudson-2 AHCI SATA controller> port 0xf140-0xf147,0xf130-0xf133,0xf120-0xf127,0xf110-0xf113,0xf100-0xf10f mem 0xfeb4e000-0xfeb4e7ff at device 17.0 on pci0
@@ -5890,7 +5890,7 @@ Apr 26 22:24:19 anubis kernel: [drm:radeon_atombios_init] Unable to find PCI I/O
 Apr 26 22:24:19 anubis kernel: ATOM BIOS: BR042452.007
 Apr 26 22:24:19 anubis kernel: drmn0: VRAM: 512M 0x0000000000000000 - 0x000000001FFFFFFF (512M used)
 Apr 26 22:24:19 anubis kernel: drmn0: GTT: 1024M 0x0000000020000000 - 0x000000005FFFFFFF
-Apr 26 22:24:19 anubis kernel: Successfully added WC MTRR for [0xc0000000-0xcfffffff]: 0; 
+Apr 26 22:24:19 anubis kernel: Successfully added WC MTRR for [0xc0000000-0xcfffffff]: 0;
 Apr 26 22:24:19 anubis kernel: [drm] Detected VRAM RAM=512M, BAR=256M
 Apr 26 22:24:19 anubis kernel: [drm] RAM width 64bits DDR
 Apr 26 22:24:19 anubis kernel: [TTM] Zone  kernel: Available graphics memory: 3888642 kiB
@@ -6087,7 +6087,7 @@ Apr 26 22:25:50 anubis kernel: re0: Ethernet address: 50:b7:c3:78:97:4d
 Apr 26 22:25:50 anubis kernel: re0: netmap queues/slots: TX 1/256, RX 1/256
 Apr 26 22:25:50 anubis kernel: xhci0: <XHCI (generic) USB 3.0 controller> mem 0xfeb48000-0xfeb49fff at device 16.0 on pci0
 Apr 26 22:25:50 anubis kernel: xhci0: 32 bytes context size, 64-bit DMA
-Apr 26 22:25:50 anubis kernel: xhci0: Unable to map MSI-X table 
+Apr 26 22:25:50 anubis kernel: xhci0: Unable to map MSI-X table
 Apr 26 22:25:50 anubis kernel: usbus0 on xhci0
 Apr 26 22:25:50 anubis kernel: usbus0: 5.0Gbps Super Speed USB v3.0
 Apr 26 22:25:50 anubis kernel: ahci0: <AMD Hudson-2 AHCI SATA controller> port 0xf140-0xf147,0xf130-0xf133,0xf120-0xf127,0xf110-0xf113,0xf100-0xf10f mem 0xfeb4e000-0xfeb4e7ff at device 17.0 on pci0
@@ -6196,7 +6196,7 @@ Apr 26 22:25:50 anubis kernel: [drm:radeon_atombios_init] Unable to find PCI I/O
 Apr 26 22:25:50 anubis kernel: ATOM BIOS: BR042452.007
 Apr 26 22:25:50 anubis kernel: drmn0: VRAM: 512M 0x0000000000000000 - 0x000000001FFFFFFF (512M used)
 Apr 26 22:25:50 anubis kernel: drmn0: GTT: 1024M 0x0000000020000000 - 0x000000005FFFFFFF
-Apr 26 22:25:50 anubis kernel: Successfully added WC MTRR for [0xc0000000-0xcfffffff]: 0; 
+Apr 26 22:25:50 anubis kernel: Successfully added WC MTRR for [0xc0000000-0xcfffffff]: 0;
 Apr 26 22:25:50 anubis kernel: [drm] Detected VRAM RAM=512M, BAR=256M
 Apr 26 22:25:50 anubis kernel: [drm] RAM width 64bits DDR
 Apr 26 22:25:50 anubis kernel: [TTM] Zone  kernel: Available graphics memory: 3888642 kiB
@@ -7590,7 +7590,7 @@ Apr 26 22:33:09 anubis kernel: re0: Ethernet address: 50:b7:c3:78:97:4d
 Apr 26 22:33:09 anubis kernel: re0: netmap queues/slots: TX 1/256, RX 1/256
 Apr 26 22:33:09 anubis kernel: xhci0: <XHCI (generic) USB 3.0 controller> mem 0xfeb48000-0xfeb49fff at device 16.0 on pci0
 Apr 26 22:33:09 anubis kernel: xhci0: 32 bytes context size, 64-bit DMA
-Apr 26 22:33:09 anubis kernel: xhci0: Unable to map MSI-X table 
+Apr 26 22:33:09 anubis kernel: xhci0: Unable to map MSI-X table
 Apr 26 22:33:09 anubis kernel: usbus0 on xhci0
 Apr 26 22:33:09 anubis kernel: usbus0: 5.0Gbps Super Speed USB v3.0
 Apr 26 22:33:09 anubis kernel: ahci0: <AMD Hudson-2 AHCI SATA controller> port 0xf140-0xf147,0xf130-0xf133,0xf120-0xf127,0xf110-0xf113,0xf100-0xf10f mem 0xfeb4e000-0xfeb4e7ff at device 17.0 on pci0
@@ -7699,7 +7699,7 @@ Apr 26 22:33:09 anubis kernel: [drm:radeon_atombios_init] Unable to find PCI I/O
 Apr 26 22:33:09 anubis kernel: ATOM BIOS: BR042452.007
 Apr 26 22:33:09 anubis kernel: drmn0: VRAM: 512M 0x0000000000000000 - 0x000000001FFFFFFF (512M used)
 Apr 26 22:33:09 anubis kernel: drmn0: GTT: 1024M 0x0000000020000000 - 0x000000005FFFFFFF
-Apr 26 22:33:09 anubis kernel: Successfully added WC MTRR for [0xc0000000-0xcfffffff]: 0; 
+Apr 26 22:33:09 anubis kernel: Successfully added WC MTRR for [0xc0000000-0xcfffffff]: 0;
 Apr 26 22:33:09 anubis kernel: [drm] Detected VRAM RAM=512M, BAR=256M
 Apr 26 22:33:09 anubis kernel: [drm] RAM width 64bits DDR
 Apr 26 22:33:09 anubis kernel: [TTM] Zone  kernel: Available graphics memory: 3888642 kiB
@@ -7898,7 +7898,7 @@ Apr 26 23:08:26 anubis reboot[66676]: rebooted by root
 Apr 26 23:08:26 anubis syslogd: exiting on signal 15
 Apr 26 23:09:52 anubis syslogd: kernel boot file is /boot/kernel/kernel
 Apr 26 23:09:52 anubis kernel: Waiting (max 60 seconds) for system process `vnlru' to stop... done
-Apr 26 23:09:52 anubis kernel: 
+Apr 26 23:09:52 anubis kernel:
 Apr 26 23:09:52 anubis kernel: Syncing disks, vnodes remaining... 0 Waiting (max 60 seconds) for system process `syncer' to stop... 0 0 0 0 done
 Apr 26 23:09:52 anubis kernel: Waiting (max 60 seconds) for system thread `bufdaemon' to stop... done
 Apr 26 23:09:52 anubis kernel: Waiting (max 60 seconds) for system thread `bufspacedaemon-0' to stop... done
@@ -7984,7 +7984,7 @@ Apr 26 23:09:52 anubis kernel: re0: Ethernet address: 50:b7:c3:78:97:4d
 Apr 26 23:09:52 anubis kernel: re0: netmap queues/slots: TX 1/256, RX 1/256
 Apr 26 23:09:52 anubis kernel: xhci0: <XHCI (generic) USB 3.0 controller> mem 0xfeb48000-0xfeb49fff at device 16.0 on pci0
 Apr 26 23:09:52 anubis kernel: xhci0: 32 bytes context size, 64-bit DMA
-Apr 26 23:09:52 anubis kernel: xhci0: Unable to map MSI-X table 
+Apr 26 23:09:52 anubis kernel: xhci0: Unable to map MSI-X table
 Apr 26 23:09:52 anubis kernel: usbus0 on xhci0
 Apr 26 23:09:52 anubis kernel: usbus0: 5.0Gbps Super Speed USB v3.0
 Apr 26 23:09:52 anubis kernel: ahci0: <AMD Hudson-2 AHCI SATA controller> port 0xf140-0xf147,0xf130-0xf133,0xf120-0xf127,0xf110-0xf113,0xf100-0xf10f mem 0xfeb4e000-0xfeb4e7ff at device 17.0 on pci0
@@ -8093,7 +8093,7 @@ Apr 26 23:09:52 anubis kernel: [drm:radeon_atombios_init] Unable to find PCI I/O
 Apr 26 23:09:52 anubis kernel: ATOM BIOS: BR042452.007
 Apr 26 23:09:52 anubis kernel: drmn0: VRAM: 512M 0x0000000000000000 - 0x000000001FFFFFFF (512M used)
 Apr 26 23:09:52 anubis kernel: drmn0: GTT: 1024M 0x0000000020000000 - 0x000000005FFFFFFF
-Apr 26 23:09:52 anubis kernel: Successfully added WC MTRR for [0xc0000000-0xcfffffff]: 0; 
+Apr 26 23:09:52 anubis kernel: Successfully added WC MTRR for [0xc0000000-0xcfffffff]: 0;
 Apr 26 23:09:52 anubis kernel: [drm] Detected VRAM RAM=512M, BAR=256M
 Apr 26 23:09:52 anubis kernel: [drm] RAM width 64bits DDR
 Apr 26 23:09:52 anubis kernel: [TTM] Zone  kernel: Available graphics memory: 3888642 kiB
@@ -8213,7 +8213,7 @@ Apr 26 23:09:52 anubis ntpd[90122]: leapsecond file ('/var/db/ntpd.leap-seconds.
 Apr 26 23:09:52 anubis ntpd[90122]: leapsecond file ('/var/db/ntpd.leap-seconds.list'): loaded, expire=2019-12-28T00:00:00Z last=2017-01-01T00:00:00Z ofs=37
 Apr 26 23:09:52 anubis ntpd[90122]: leapsecond file ('/var/db/ntpd.leap-seconds.list'): expired 121 days ago
 Apr 26 23:10:29 anubis login[46814]: ROOT LOGIN (root) ON ttyv0
-Apr 26 23:10:31 anubis shutdown[51822]: power-down by root: 
+Apr 26 23:10:31 anubis shutdown[51822]: power-down by root:
 Apr 26 23:10:31 anubis kernel: .
 Apr 26 23:10:32 anubis kernel: , 2118.
 Apr 26 23:10:33 anubis ntpd[90122]: ntpd exiting on signal 15 (Terminated)
@@ -8296,7 +8296,7 @@ Apr 27 07:23:51 anubis kernel: re0: Ethernet address: 50:b7:c3:78:97:4d
 Apr 27 07:23:51 anubis kernel: re0: netmap queues/slots: TX 1/256, RX 1/256
 Apr 27 07:23:51 anubis kernel: xhci0: <XHCI (generic) USB 3.0 controller> mem 0xfeb48000-0xfeb49fff at device 16.0 on pci0
 Apr 27 07:23:51 anubis kernel: xhci0: 32 bytes context size, 64-bit DMA
-Apr 27 07:23:51 anubis kernel: xhci0: Unable to map MSI-X table 
+Apr 27 07:23:51 anubis kernel: xhci0: Unable to map MSI-X table
 Apr 27 07:23:51 anubis kernel: usbus0 on xhci0
 Apr 27 07:23:51 anubis kernel: usbus0: 5.0Gbps Super Speed USB v3.0
 Apr 27 07:23:51 anubis kernel: ahci0: <AMD Hudson-2 AHCI SATA controller> port 0xf140-0xf147,0xf130-0xf133,0xf120-0xf127,0xf110-0xf113,0xf100-0xf10f mem 0xfeb4e000-0xfeb4e7ff at device 17.0 on pci0
@@ -8405,7 +8405,7 @@ Apr 27 07:23:51 anubis kernel: [drm:radeon_atombios_init] Unable to find PCI I/O
 Apr 27 07:23:51 anubis kernel: ATOM BIOS: BR042452.007
 Apr 27 07:23:51 anubis kernel: drmn0: VRAM: 512M 0x0000000000000000 - 0x000000001FFFFFFF (512M used)
 Apr 27 07:23:51 anubis kernel: drmn0: GTT: 1024M 0x0000000020000000 - 0x000000005FFFFFFF
-Apr 27 07:23:51 anubis kernel: Successfully added WC MTRR for [0xc0000000-0xcfffffff]: 0; 
+Apr 27 07:23:51 anubis kernel: Successfully added WC MTRR for [0xc0000000-0xcfffffff]: 0;
 Apr 27 07:23:51 anubis kernel: [drm] Detected VRAM RAM=512M, BAR=256M
 Apr 27 07:23:51 anubis kernel: [drm] RAM width 64bits DDR
 Apr 27 07:23:51 anubis kernel: [TTM] Zone  kernel: Available graphics memory: 3888642 kiB
@@ -8524,7 +8524,7 @@ Apr 27 07:23:51 anubis ntpd[57100]: leapsecond file ('/var/db/ntpd.leap-seconds.
 Apr 27 07:23:51 anubis ntpd[57100]: leapsecond file ('/var/db/ntpd.leap-seconds.list'): loaded, expire=2019-12-28T00:00:00Z last=2017-01-01T00:00:00Z ofs=37
 Apr 27 07:23:51 anubis ntpd[57100]: leapsecond file ('/var/db/ntpd.leap-seconds.list'): expired 122 days ago
 Apr 27 07:50:38 anubis login[92951]: ROOT LOGIN (root) ON ttyv0
-Apr 27 07:59:16 anubis shutdown[180]: power-down by root: 
+Apr 27 07:59:16 anubis shutdown[180]: power-down by root:
 Apr 27 07:59:17 anubis kernel: , 83082.
 Apr 27 07:59:18 anubis kernel: , 65503.
 Apr 27 07:59:19 anubis ntpd[57100]: ntpd exiting on signal 15 (Terminated)
@@ -8607,7 +8607,7 @@ Apr 27 08:51:58 anubis kernel: re0: Ethernet address: 50:b7:c3:78:97:4d
 Apr 27 08:51:58 anubis kernel: re0: netmap queues/slots: TX 1/256, RX 1/256
 Apr 27 08:51:58 anubis kernel: xhci0: <XHCI (generic) USB 3.0 controller> mem 0xfeb48000-0xfeb49fff at device 16.0 on pci0
 Apr 27 08:51:58 anubis kernel: xhci0: 32 bytes context size, 64-bit DMA
-Apr 27 08:51:58 anubis kernel: xhci0: Unable to map MSI-X table 
+Apr 27 08:51:58 anubis kernel: xhci0: Unable to map MSI-X table
 Apr 27 08:51:58 anubis kernel: usbus0 on xhci0
 Apr 27 08:51:58 anubis kernel: usbus0: 5.0Gbps Super Speed USB v3.0
 Apr 27 08:51:58 anubis kernel: ahci0: <AMD Hudson-2 AHCI SATA controller> port 0xf140-0xf147,0xf130-0xf133,0xf120-0xf127,0xf110-0xf113,0xf100-0xf10f mem 0xfeb4e000-0xfeb4e7ff at device 17.0 on pci0
@@ -8716,7 +8716,7 @@ Apr 27 08:51:58 anubis kernel: [drm:radeon_atombios_init] Unable to find PCI I/O
 Apr 27 08:51:58 anubis kernel: ATOM BIOS: BR042452.007
 Apr 27 08:51:58 anubis kernel: drmn0: VRAM: 512M 0x0000000000000000 - 0x000000001FFFFFFF (512M used)
 Apr 27 08:51:58 anubis kernel: drmn0: GTT: 1024M 0x0000000020000000 - 0x000000005FFFFFFF
-Apr 27 08:51:58 anubis kernel: Successfully added WC MTRR for [0xc0000000-0xcfffffff]: 0; 
+Apr 27 08:51:58 anubis kernel: Successfully added WC MTRR for [0xc0000000-0xcfffffff]: 0;
 Apr 27 08:51:58 anubis kernel: [drm] Detected VRAM RAM=512M, BAR=256M
 Apr 27 08:51:58 anubis kernel: [drm] RAM width 64bits DDR
 Apr 27 08:51:58 anubis kernel: [TTM] Zone  kernel: Available graphics memory: 3888642 kiB
@@ -8824,7 +8824,7 @@ Apr 27 08:51:58 anubis ntpd[83275]: leapsecond file ('/var/db/ntpd.leap-seconds.
 Apr 27 08:51:58 anubis ntpd[83275]: leapsecond file ('/var/db/ntpd.leap-seconds.list'): loaded, expire=2019-12-28T00:00:00Z last=2017-01-01T00:00:00Z ofs=37
 Apr 27 08:51:58 anubis ntpd[83275]: leapsecond file ('/var/db/ntpd.leap-seconds.list'): expired 122 days ago
 Apr 27 08:57:26 anubis login[39193]: ROOT LOGIN (root) ON ttyv0
-Apr 27 08:57:29 anubis shutdown[40510]: power-down by root: 
+Apr 27 08:57:29 anubis shutdown[40510]: power-down by root:
 Apr 27 08:57:30 anubis kernel: , 28722.
 Apr 27 08:57:31 anubis kernel: , 99742.
 Apr 27 08:57:31 anubis ntpd[83275]: ntpd exiting on signal 15 (Terminated)
@@ -8907,7 +8907,7 @@ Apr 27 09:06:51 anubis kernel: re0: Ethernet address: 50:b7:c3:78:97:4d
 Apr 27 09:06:51 anubis kernel: re0: netmap queues/slots: TX 1/256, RX 1/256
 Apr 27 09:06:51 anubis kernel: xhci0: <XHCI (generic) USB 3.0 controller> mem 0xfeb48000-0xfeb49fff at device 16.0 on pci0
 Apr 27 09:06:51 anubis kernel: xhci0: 32 bytes context size, 64-bit DMA
-Apr 27 09:06:51 anubis kernel: xhci0: Unable to map MSI-X table 
+Apr 27 09:06:51 anubis kernel: xhci0: Unable to map MSI-X table
 Apr 27 09:06:51 anubis kernel: usbus0 on xhci0
 Apr 27 09:06:51 anubis kernel: usbus0: 5.0Gbps Super Speed USB v3.0
 Apr 27 09:06:51 anubis kernel: ahci0: <AMD Hudson-2 AHCI SATA controller> port 0xf140-0xf147,0xf130-0xf133,0xf120-0xf127,0xf110-0xf113,0xf100-0xf10f mem 0xfeb4e000-0xfeb4e7ff at device 17.0 on pci0
@@ -9015,7 +9015,7 @@ Apr 27 09:06:51 anubis kernel: [drm:radeon_atombios_init] Unable to find PCI I/O
 Apr 27 09:06:51 anubis kernel: ATOM BIOS: BR042452.007
 Apr 27 09:06:51 anubis kernel: drmn0: VRAM: 512M 0x0000000000000000 - 0x000000001FFFFFFF (512M used)
 Apr 27 09:06:51 anubis kernel: drmn0: GTT: 1024M 0x0000000020000000 - 0x000000005FFFFFFF
-Apr 27 09:06:51 anubis kernel: Successfully added WC MTRR for [0xc0000000-0xcfffffff]: 0; 
+Apr 27 09:06:51 anubis kernel: Successfully added WC MTRR for [0xc0000000-0xcfffffff]: 0;
 Apr 27 09:06:51 anubis kernel: [drm] Detected VRAM RAM=512M, BAR=256M
 Apr 27 09:06:51 anubis kernel: [drm] RAM width 64bits DDR
 Apr 27 09:06:51 anubis kernel: [TTM] Zone  kernel: Available graphics memory: 3888642 kiB
@@ -9134,7 +9134,7 @@ Apr 27 09:06:51 anubis ntpd[87420]: leapsecond file ('/var/db/ntpd.leap-seconds.
 Apr 27 09:06:51 anubis ntpd[87420]: leapsecond file ('/var/db/ntpd.leap-seconds.list'): loaded, expire=2019-12-28T00:00:00Z last=2017-01-01T00:00:00Z ofs=37
 Apr 27 09:06:51 anubis ntpd[87420]: leapsecond file ('/var/db/ntpd.leap-seconds.list'): expired 122 days ago
 Apr 27 09:14:30 anubis login[2080]: ROOT LOGIN (root) ON ttyv0
-Apr 27 09:14:35 anubis shutdown[4356]: power-down by root: 
+Apr 27 09:14:35 anubis shutdown[4356]: power-down by root:
 Apr 27 09:14:36 anubis kernel: , 93620.
 Apr 27 09:14:37 anubis kernel: , 89598.
 Apr 27 09:14:37 anubis ntpd[87420]: ntpd exiting on signal 15 (Terminated)
@@ -9217,7 +9217,7 @@ Apr 27 09:21:07 anubis kernel: re0: Ethernet address: 50:b7:c3:78:97:4d
 Apr 27 09:21:07 anubis kernel: re0: netmap queues/slots: TX 1/256, RX 1/256
 Apr 27 09:21:07 anubis kernel: xhci0: <XHCI (generic) USB 3.0 controller> mem 0xfeb48000-0xfeb49fff at device 16.0 on pci0
 Apr 27 09:21:07 anubis kernel: xhci0: 32 bytes context size, 64-bit DMA
-Apr 27 09:21:07 anubis kernel: xhci0: Unable to map MSI-X table 
+Apr 27 09:21:07 anubis kernel: xhci0: Unable to map MSI-X table
 Apr 27 09:21:07 anubis kernel: usbus0 on xhci0
 Apr 27 09:21:07 anubis kernel: usbus0: 5.0Gbps Super Speed USB v3.0
 Apr 27 09:21:07 anubis kernel: ahci0: <AMD Hudson-2 AHCI SATA controller> port 0xf140-0xf147,0xf130-0xf133,0xf120-0xf127,0xf110-0xf113,0xf100-0xf10f mem 0xfeb4e000-0xfeb4e7ff at device 17.0 on pci0
@@ -9326,7 +9326,7 @@ Apr 27 09:21:07 anubis kernel: [drm:radeon_atombios_init] Unable to find PCI I/O
 Apr 27 09:21:07 anubis kernel: ATOM BIOS: BR042452.007
 Apr 27 09:21:07 anubis kernel: drmn0: VRAM: 512M 0x0000000000000000 - 0x000000001FFFFFFF (512M used)
 Apr 27 09:21:07 anubis kernel: drmn0: GTT: 1024M 0x0000000020000000 - 0x000000005FFFFFFF
-Apr 27 09:21:07 anubis kernel: Successfully added WC MTRR for [0xc0000000-0xcfffffff]: 0; 
+Apr 27 09:21:07 anubis kernel: Successfully added WC MTRR for [0xc0000000-0xcfffffff]: 0;
 Apr 27 09:21:07 anubis kernel: [drm] Detected VRAM RAM=512M, BAR=256M
 Apr 27 09:21:07 anubis kernel: [drm] RAM width 64bits DDR
 Apr 27 09:21:07 anubis kernel: [TTM] Zone  kernel: Available graphics memory: 3888642 kiB
@@ -9446,7 +9446,7 @@ Apr 27 09:21:08 anubis ntpd[76249]: leapsecond file ('/var/db/ntpd.leap-seconds.
 Apr 27 09:21:08 anubis ntpd[76249]: leapsecond file ('/var/db/ntpd.leap-seconds.list'): loaded, expire=2019-12-28T00:00:00Z last=2017-01-01T00:00:00Z ofs=37
 Apr 27 09:21:08 anubis ntpd[76249]: leapsecond file ('/var/db/ntpd.leap-seconds.list'): expired 122 days ago
 Apr 27 09:53:51 anubis login[36555]: ROOT LOGIN (root) ON ttyv0
-Apr 27 09:53:57 anubis shutdown[53918]: power-down by root: 
+Apr 27 09:53:57 anubis shutdown[53918]: power-down by root:
 Apr 27 09:53:57 anubis kernel: .
 Apr 27 09:53:58 anubis kernel: , 87786.
 Apr 27 09:53:59 anubis ntpd[76249]: ntpd exiting on signal 15 (Terminated)
@@ -9529,7 +9529,7 @@ Apr 27 10:27:05 anubis kernel: re0: Ethernet address: 50:b7:c3:78:97:4d
 Apr 27 10:27:05 anubis kernel: re0: netmap queues/slots: TX 1/256, RX 1/256
 Apr 27 10:27:05 anubis kernel: xhci0: <XHCI (generic) USB 3.0 controller> mem 0xfeb48000-0xfeb49fff at device 16.0 on pci0
 Apr 27 10:27:05 anubis kernel: xhci0: 32 bytes context size, 64-bit DMA
-Apr 27 10:27:05 anubis kernel: xhci0: Unable to map MSI-X table 
+Apr 27 10:27:05 anubis kernel: xhci0: Unable to map MSI-X table
 Apr 27 10:27:05 anubis kernel: usbus0 on xhci0
 Apr 27 10:27:05 anubis kernel: usbus0: 5.0Gbps Super Speed USB v3.0
 Apr 27 10:27:05 anubis kernel: ahci0: <AMD Hudson-2 AHCI SATA controller> port 0xf140-0xf147,0xf130-0xf133,0xf120-0xf127,0xf110-0xf113,0xf100-0xf10f mem 0xfeb4e000-0xfeb4e7ff at device 17.0 on pci0
@@ -9638,7 +9638,7 @@ Apr 27 10:27:05 anubis kernel: [drm:radeon_atombios_init] Unable to find PCI I/O
 Apr 27 10:27:05 anubis kernel: ATOM BIOS: BR042452.007
 Apr 27 10:27:05 anubis kernel: drmn0: VRAM: 512M 0x0000000000000000 - 0x000000001FFFFFFF (512M used)
 Apr 27 10:27:05 anubis kernel: drmn0: GTT: 1024M 0x0000000020000000 - 0x000000005FFFFFFF
-Apr 27 10:27:05 anubis kernel: Successfully added WC MTRR for [0xc0000000-0xcfffffff]: 0; 
+Apr 27 10:27:05 anubis kernel: Successfully added WC MTRR for [0xc0000000-0xcfffffff]: 0;
 Apr 27 10:27:05 anubis kernel: [drm] Detected VRAM RAM=512M, BAR=256M
 Apr 27 10:27:05 anubis kernel: [drm] RAM width 64bits DDR
 Apr 27 10:27:05 anubis kernel: [TTM] Zone  kernel: Available graphics memory: 3888642 kiB
@@ -10904,7 +10904,7 @@ Apr 27 10:37:16 anubis kernel: re0: Ethernet address: 50:b7:c3:78:97:4d
 Apr 27 10:37:16 anubis kernel: re0: netmap queues/slots: TX 1/256, RX 1/256
 Apr 27 10:37:16 anubis kernel: xhci0: <XHCI (generic) USB 3.0 controller> mem 0xfeb48000-0xfeb49fff at device 16.0 on pci0
 Apr 27 10:37:16 anubis kernel: xhci0: 32 bytes context size, 64-bit DMA
-Apr 27 10:37:16 anubis kernel: xhci0: Unable to map MSI-X table 
+Apr 27 10:37:16 anubis kernel: xhci0: Unable to map MSI-X table
 Apr 27 10:37:16 anubis kernel: usbus0 on xhci0
 Apr 27 10:37:16 anubis kernel: usbus0: 5.0Gbps Super Speed USB v3.0
 Apr 27 10:37:16 anubis kernel: ahci0: <AMD Hudson-2 AHCI SATA controller> port 0xf140-0xf147,0xf130-0xf133,0xf120-0xf127,0xf110-0xf113,0xf100-0xf10f mem 0xfeb4e000-0xfeb4e7ff at device 17.0 on pci0
@@ -11013,7 +11013,7 @@ Apr 27 10:37:16 anubis kernel: [drm:radeon_atombios_init] Unable to find PCI I/O
 Apr 27 10:37:16 anubis kernel: ATOM BIOS: BR042452.007
 Apr 27 10:37:16 anubis kernel: drmn0: VRAM: 512M 0x0000000000000000 - 0x000000001FFFFFFF (512M used)
 Apr 27 10:37:16 anubis kernel: drmn0: GTT: 1024M 0x0000000020000000 - 0x000000005FFFFFFF
-Apr 27 10:37:16 anubis kernel: Successfully added WC MTRR for [0xc0000000-0xcfffffff]: 0; 
+Apr 27 10:37:16 anubis kernel: Successfully added WC MTRR for [0xc0000000-0xcfffffff]: 0;
 Apr 27 10:37:16 anubis kernel: [drm] Detected VRAM RAM=512M, BAR=256M
 Apr 27 10:37:16 anubis kernel: [drm] RAM width 64bits DDR
 Apr 27 10:37:16 anubis kernel: [TTM] Zone  kernel: Available graphics memory: 3888642 kiB
