@@ -1,0 +1,81 @@
+# some hw related infos
+
+https://www.laptoparena.net/samsung/notebook-samsung-5-535u3c-a02-np535u3c-a02de-silver-18612
+
+
+Processor manufacturer	AMD
+Processor family	AMD A6
+Processor frequency	2.1 GHz
+Motherboard chipset	AMD A70M
+Processor boost frequency	2.6 GHz
+Processor model	A6-4455M
+Processor cores	2
+Processor threads	2
+Processor cache	2 MB
+
+Memory
+Internal memory type	DDR3-SDRAM
+Internal memory	8 GB
+Memory clock speed	1333 MHz
+Memory slots	1x SO-DIMM
+Maximum internal memory	8 GB
+Memory layout (slots x size)	1 x 1 GB
+
+Display
+Display diagonal	13.3 inch
+Display brightness	300 cd/m²
+Aspect ratio	16:9
+HD type	HD
+LED backlight	Y
+Display resolution	1366 x 768 pixels
+
+Graphics
+On-board graphics adapter	Y
+On-board graphics adapter family	AMD Radeon HD 7000
+On-board graphics adapter model	AMD Radeon HD 7500G
+
+Storage
+HDD interface	Serial ATA II
+Compatible memory cards	MMC, SD, SDHC, SDXC
+Card reader integrated	Y
+
+Networking
+Wi-Fi	Y
+Wi-Fi standards	IEEE 802.11a, IEEE 802.11b, IEEE 802.11g, IEEE 802.11n
+Ethernet LAN	Y
+Ethernet LAN data rates	10, 100, 1000 Mbit/s
+Bluetooth	Y
+Bluetooth version	4.0
+
+Ports & interfaces
+USB 3.2 Gen 1 (3.1 Gen 1) Type-A ports quantity	1
+Charging port type	DC-in jack
+USB 3.0 (3.1 Gen 1) Type-A ports quantity	1
+Headphone outputs	1
+Microphone in	Y
+Combo headphone/mic port	Y
+USB 2.0 ports quantity	2
+HDMI ports quantity	1
+Ethernet LAN (RJ-45) ports	1
+VGA (D-Sub) ports quantity	1
+Audio
+Built-in microphone	Y
+Number of built-in speakers	2
+Audio system	HD
+Speaker power	2 W
+Built-in speaker(s)	Y
+
+Camera
+Front camera	Y
+Front camera resolution (numeric)	1.3 MP
+
+Keyboard
+Windows keys	Y
+Pointing device	Touchpad + Scroll zone
+Battery
+Battery technology	Lithium Polymer (LiPo)
+Battery capacity (Watt-hours)	45 Wh
+Number of battery cells	4
+Battery life (max)	6 h
+Battery capacity	6100 mAh
+Battery capacity (Watt hours)	45 Wh
