@@ -35,3 +35,6 @@
 192.168.178.95            baalue-95.my.domain                   baalue-15
 192.168.178.96            baalue-96.my.domain                   baalue-16
 #
+192.168.178.128		  macmini.my.domain 			macmini
+192.168.178.129		  ibook.my.domain			ibook
+192.168.178.130		  powermac.my.domain 			powermac

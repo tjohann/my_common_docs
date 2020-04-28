@@ -3,7 +3,6 @@
 
 xorg/desktop/laptop stuff
 -------------------------
-
 https://cooltrainer.org/a-freebsd-desktop-howto/
 https://vermaden.wordpress.com/freebsd-desktop/
 https://i-bsd.com/drm-console/
@@ -24,13 +23,17 @@ clamav stuff
 https://blog.socruel.nu/freebsd/how-to-install-and-configure-clamav-on-freebsd.html?utm_source=discoverbsd
 
 
-
 distcc stuff
 ------------
 https://kukunotes.wordpress.com/2011/09/05/freebsd-installing-ports-via-distcc/
 
 
-
 grub stuff
 ----------
 https://www.nixcraft.com/t/any-remote-boot-select-for-the-grub-menu-over-tcp-ip/1003
+
+
+old images
+----------
+http://ftp-archive.freebsd.org/pub/FreeBSD-Archive/old-releases/amd64/
+
