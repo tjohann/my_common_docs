@@ -1,0 +1,177 @@
+;; -*-Emacs-Lisp-*-
+
+;; This file is designed to be re-evaled; use the variable first-time
+;; to avoid any problems with this.
+(defvar first-time t
+  "Flag signifying this is the first time that .emacs has been evaled")
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(column-number-mode t)
+ '(cua-mode t nil (cua-base))
+ '(markdown-command "/sbin/pandoc")
+ '(scroll-bar-mode nil)
+ '(show-paren-mode t)
+ '(size-indication-mode t)
+ '(tool-bar-mode nil))
+
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:family "xos4 Terminus" :foundry "xos4" :slant normal :weight normal :height 90 :width normal)))))
+
+;; melpa stuff -> http://ergoemacs.org/emacs/emacs_package_system.html
+;;(when (>= emacs-major-version 24)
+;;  (require 'package)
+;;  (add-to-list
+;;   'package-archives
+;;   '("melpa" . "http://melpa.org/packages/")
+;;   t)
+;;  (package-initialize))
+
+(require 'package)
+(add-to-list 'package-archives
+             '("melpa" . "https://melpa.org/packages/"))
+(when (< emacs-major-version 24)
+  ;; For important compatibility libraries like cl-lib
+  (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
+(package-initialize)
+
+
+;; Display trailing whitespace at en of lines
+(defun toggle-trailing-whitespace-display ()
+  "Toggle the display of trailing whitespace, by changing the
+buffer-local variable `show-trailing-whitespace'."
+  (interactive)
+  (save-excursion
+    (if show-trailing-whitespace
+        (setq show-trailing-whitespace nil)
+      (setq show-trailing-whitespace t))
+    (force-window-update (current-buffer)))
+  (message (concat "Display of EOL spaces "
+                   (if show-trailing-whitespace
+                       "enabled" "disabled"))))
+(setq-default show-trailing-whitespace t)
+(global-set-key "\C-ce" 'toggle-trailing-whitespace-display)
+
+;; Torvalds Linux-style from Documentation/CodingStyle
+(defun c-lineup-arglist-tabs-only (ignored)
+  "Line up argument lists by tabs, not spaces"
+  (let* ((anchor (c-langelem-pos c-syntactic-element))
+	 (column (c-langelem-2nd-pos c-syntactic-element))
+	 (offset (- (1+ column) anchor))
+	 (steps (floor offset c-basic-offset)))
+    (* (max steps 1)
+       c-basic-offset)))
+
+(add-hook 'c-mode-common-hook
+          (lambda ()
+            ;; Add kernel style
+            (c-add-style
+             "linux-tabs-only"
+             '("linux" (c-offsets-alist
+                        (arglist-cont-nonempty
+                         c-lineup-gcc-asm-reg
+                         c-lineup-arglist-tabs-only))))))
+
+(add-hook 'c-mode-hook
+          (lambda ()
+            (let ((filename (buffer-file-name)))
+              ;; Enable kernel mode for the appropriate files
+              (when (and filename
+                         (string-match (expand-file-name "~/")
+                                       filename))
+                (setq indent-tabs-mode t)
+                (c-set-style "linux-tabs-only")))))
+
+(add-hook 'c-mode-hook
+          (lambda ()
+            (let ((filename (buffer-file-name)))
+              ;; Enable kernel mode for the appropriate files
+              (when (and filename
+                         (string-match (expand-file-name "/opt/")
+                                       filename))
+                (setq indent-tabs-mode t)
+                (c-set-style "linux-tabs-only")))))
+
+; style I want to use in c++ mode
+(c-add-style "my-style"
+	     '("linux"
+	       (setq indent-tabs-mode t)))
+
+(defun my-c++-mode-hook ()
+  (c-set-style "my-style")        ; use my-style defined above
+  "linux-tabs-only"
+             '("linux" (c-offsets-alist
+                        (arglist-cont-nonempty
+                         c-lineup-gcc-asm-reg
+                         c-lineup-arglist-tabs-only))))
+
+(add-hook 'c++-mode-hook 'my-c++-mode-hook)
+
+;; disable startup buffer
+(setq inhibit-startup-message t)
+;; disable tool bar (for menu-bar use ALT-M menu-bar-mode)
+(tool-bar-mode -1)
+(menu-bar-mode -1)
+
+;; Meta
+(global-set-key "\M-r" 'replace-string)
+(global-set-key "\M-g" 'goto-line)
+;; next-multiframe-window -> next frame C-x o
+;; other-frame -> next frame C-x 5 o
+(global-set-key "\M-n" 'next-multiframe-window)
+;; resize frame
+;; <C-up> -> ctrl-up
+;; <M-up> -> ctrl-up
+(global-set-key (kbd "<M-up>") 'shrink-window)
+(global-set-key (kbd "<M-down>") 'enlarge-window)
+(global-set-key (kbd "<M-left>") 'shrink-window-horizontally)
+(global-set-key (kbd "<M-right>") 'enlarge-window-horizontally)
+
+;; Function keys
+;;(global-set-key [f1] 'manual-entry)
+;;(global-set-key [f2] 'info)
+;;(global-set-key [f3] 'repeat-complex-command)
+;;(global-set-key [f4] 'advertised-undo)
+;;(global-set-key [f5] 'eval-current-buffer)
+;;(global-set-key [f6] 'buffer-menu)
+;;(global-set-key [f7] 'other-window)
+;;(global-set-key [f8] 'find-file)
+;;(global-set-key [f9] 'save-buffer)
+;;(global-set-key [f10] 'next-error)
+;;(global-set-key [f11] 'compile)
+;;(global-set-key [f12] 'grep)
+
+;; add slime stuff
+;;(add-to-list 'load-path "/home/tjohann/src/slime/")  ; your SLIME directory
+;;(setq inferior-lisp-program "/usr/bin/sbcl") ; your Lisp system
+;;(require 'slime)
+;;(slime-setup)
+
+;; define function to shutdown emacs server instance
+(defun server-shutdown ()
+  "Save buffers, Quit, and Shutdown (kill) server"
+  (interactive)
+  (save-some-buffers)
+  (kill-emacs)
+  )
+
+;; define function to shutdown emacs server instance -> another one
+(defun shutdown-emacs-server () (interactive)
+  (when (not (eq window-system 'x))
+    (message "Initializing x windows system.")
+    (x-initialize-window-system)
+    (when (not x-display-name) (setq x-display-name (getenv "DISPLAY")))
+    (select-frame (make-frame-on-display x-display-name '((window-system . x))))
+  )
+  (let ((last-nonmenu-event nil)(window-system "x"))(save-buffers-kill-emacs)))
+
+;; set size
+(if window-system
+	      (set-frame-size (selected-frame) 95 40))
