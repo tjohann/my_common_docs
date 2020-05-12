@@ -12,6 +12,11 @@ https://github.com/FreeBSDDesktop
 https://www.freebsd.org/cgi/man.cgi?query=xkeyboard-config&sektion=7&manpath=freebsd-release-ports
 
 
+handling touchpad and typing
+----------------------------
+https://blog.grem.de/pages/t470s.html
+
+
 specific graphics stuff
 -----------------------
 https://wiki.freebsd.org/Graphics

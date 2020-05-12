@@ -21,3 +21,14 @@ some howtos/tutorials
 ---------------------
 http://www.gnu.org/software/emacs/tour/
 http://tuhdo.github.io/emacs-tutor.html    <---- mega cool
+
+
+using github markdown or similar
+--------------------------------
+
+install pandoc (on FreeBSD it`s in hs-pandoc)
+install markdown-mode via melpa:
+M+x package-install
+M+x markdown-mode
+
+see also https://github.com/defunkt/markdown-mode
