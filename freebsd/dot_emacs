@@ -12,7 +12,8 @@
  ;; If there is more than one, they won't work right.
  '(column-number-mode t)
  '(cua-mode t nil (cua-base))
- '(markdown-command "/sbin/pandoc")
+ '(markdown-command "/usr/local/bin/pandoc")
+ '(package-selected-packages '(markdown-mode))
  '(scroll-bar-mode nil)
  '(show-paren-mode t)
  '(size-indication-mode t)
@@ -23,7 +24,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "xos4 Terminus" :foundry "xos4" :slant normal :weight normal :height 90 :width normal)))))
+ '(default ((t (:family "xos4 Terminus" :foundry "xos4" :slant normal :weight normal :height 105 :width normal)))))
 
 ;; melpa stuff -> http://ergoemacs.org/emacs/emacs_package_system.html
 ;;(when (>= emacs-major-version 24)
@@ -99,7 +100,7 @@ buffer-local variable `show-trailing-whitespace'."
                 (setq indent-tabs-mode t)
                 (c-set-style "linux-tabs-only")))))
 
-; style I want to use in c++ mode
+;; style I want to use in c++ mode
 (c-add-style "my-style"
 	     '("linux"
 	       (setq indent-tabs-mode t)))
@@ -113,6 +114,9 @@ buffer-local variable `show-trailing-whitespace'."
                          c-lineup-arglist-tabs-only))))
 
 (add-hook 'c++-mode-hook 'my-c++-mode-hook)
+
+;; add pdf stuff
+(load "pdf-tools-init.el")
 
 ;; disable startup buffer
 (setq inhibit-startup-message t)
