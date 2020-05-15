@@ -1,0 +1,1010 @@
+CoinMP-1.8.4_3                 Optimization library with support for COIN-OR CLP, CBC, and CGL
+GentiumBasic-1102_1            Gentium Basic and Gentium Book Basic TrueType fonts
+ImageMagick6-6.9.10.90,1       Image processing tools (legacy version)
+ORBit2-2.14.19_2               High-performance CORBA ORB with support for the C language
+adwaita-icon-theme-3.28.0      GNOME Symbolic Icons
+af-libreoffice-6.3.4           af language pack for libreoffice
+alsa-lib-1.1.2_2               ALSA compatibility library
+alsa-plugins-1.1.1_6           ALSA compatibility library plugins
+am-libreoffice-6.3.4           am language pack for libreoffice
+aom-1.0.0.3304                 AV1 reference encoder/decoder
+appres-1.0.5                   Program to list application's resources
+apr-1.7.0.1.6.1_1              Apache Portability Library
+ar-libreoffice-6.3.4           ar language pack for libreoffice
+argyllcms-1.9.2_5              ICC compatible color management system
+as-libreoffice-6.3.4           as language pack for libreoffice
+ast-libreoffice-6.3.4          ast language pack for libreoffice
+at-spi2-atk-2.26.2             Assisted Technology Provider module for GTK+
+at-spi2-core-2.28.0            Assistive Technology Service Provider Interface
+atk-2.28.1                     GNOME accessibility toolkit (ATK)
+audacious-3.10.1_1             Lightweight and versatile audio player
+audacious-plugins-3.10.1_5     Plugins needed for audacious
+audacious-skins-0.4            Collection of audacious skins
+autoconf-2.69_3                Automatically configure source code on many Un*x platforms
+autoconf-wrapper-20131203      Wrapper script for GNU autoconf
+automake-1.16.1_2              GNU Standards-compliant Makefile generator
+avahi-app-0.7_3                Service discovery on a local network
+avr-binutils-2.33.1_2,1        GNU binary tools
+avr-gcc-9.1.0                  FSF GCC for Atmel AVR 8-bit RISC cross-development
+avr-gdb-7.3.1_6                GNU GDB for the AVR target
+avr-libc-2.0.0_2,1             C and math library for the Atmel AVR controller family
+avra-1.4.1                     Macro Assembler for Atmel AVR microcontrollers
+avrdude-6.3_3                  Program for programming the on-chip memory of Atmel AVR CPUs
+bash-5.0.16                    GNU Project's Bourne Again SHell
+bash-completion-2.10,2         Programmable completion library for Bash
+be-libreoffice-6.3.4           be language pack for libreoffice
+bg-libreoffice-6.3.4           bg language pack for libreoffice
+bhyve-firmware-1.0_1           Collection of Firmware for bhyve
+binutils-2.33.1_2,1            GNU binary tools
+bitmap-1.0.9                   Bitmap editor and converter utilities for X
+bn-libreoffice-6.3.4           bn language pack for libreoffice
+bn_IN-libreoffice-6.3.4        bn_IN language pack for libreoffice
+bo-libreoffice-6.3.4           bo language pack for libreoffice
+boehm-gc-8.0.4_1               Garbage collection and memory leak detection for C and C++
+boehm-gc-threaded-8.0.4_1      Garbage collection and memory leak detection for C and C++
+boost-libs-1.72.0_1            Free portable C++ libraries (without Boost.Python)
+br-libreoffice-6.3.4           br language pack for libreoffice
+brotli-1.0.7_2,1               Generic-purpose lossless compression algorithm
+brx-libreoffice-6.3.4          brx language pack for libreoffice
+bs-libreoffice-6.3.4           bs language pack for libreoffice
+ca-libreoffice-6.3.4           ca language pack for libreoffice
+ca_root_nss-3.52               Root certificate bundle from the Mozilla Project
+ca_valencia-libreoffice-6.3.4  ca_valencia language pack for libreoffice
+cairo-1.16.0,2                 Vector graphics library with cross-device output support
+cantarell-fonts-0.101_1        Cantarell, a Humanist sans-serif font family
+cdrdao-1.2.4_3                 Record CD-R[W]s in disk-at-once mode
+clucene-2.3.3.4_19             CLucene is a C++ port of Lucene
+clutter-1.26.2                 OpenGL based interactive canvas library
+cmake-3.16.5                   Cross-platform Makefile generator
+cmake-doc-3.16.5               HTML and Qt Creator helpfiles for CMake
+cmake-fedora-2.9.2             Set of cmake modules for fedora developers
+cmocka-1.1.5                   Unit testing framework for C with support for mock objects
+cogl-1.22.4                    Clutter OpenGL abstraction library
+colord-1.3.5                   Manage color profiles to accurately color input/output devices
+consolekit2-1.2.1_1            Framework for defining and tracking users
+cowsay-3.04_1                  Configurable talking characters in ASCII art
+crosextrafonts-caladea-20130214_4 Font created by Google for ChromeOS to replace MS Cambria
+crosextrafonts-carlito-20130920_4 Font created by Google for ChromeOS to replace MS Calibri
+cs-libreoffice-6.3.4           cs language pack for libreoffice
+cscope-15.8b_1                 Interactive C program browser
+ctags-5.8                      Feature-filled tagfile generator for vi and emacs clones
+cups-2.2.13                    Common UNIX Printing System
+curl-7.69.1                    Command line tool and library for transferring data with URLs
+cvsps-2.1_2                    Create patchset information from CVS
+cy-libreoffice-6.3.4           cy language pack for libreoffice
+cyrus-sasl-2.1.27_1            RFC 2222 SASL (Simple Authentication and Security Layer)
+da-libreoffice-6.3.4           da language pack for libreoffice
+dav1d-0.6.0                    Small and fast AV1 decoder
+db5-5.3.28_7                   Oracle Berkeley DB, revision 5.3
+dbus-1.12.16                   Message bus system for inter-application communication
+dbus-glib-0.110                GLib bindings for the D-BUS messaging system
+dconf-0.28.0                   Configuration database system for GNOME
+de-freebsd-doc-54003,1         German translation of the FreeBSD Documentation Project
+de-libreoffice-6.3.4           de language pack for libreoffice
+dejavu-2.37_1                  Bitstream Vera Fonts clone with a wider range of characters
+desktop-file-utils-0.24        Couple of command line utilities for working with desktop entries
+dgo-libreoffice-6.3.4          dgo language pack for libreoffice
+dialog4ports-0.1.6             Console Interface to configure ports
+diff-pdf-0.3.20190713_3        Tool for visually comparing two PDFs
+djvulibre-3.5.27_2             DjVu base libraries and utilities
+dmidecode-3.2                  Tool for dumping DMI (SMBIOS) contents in human-readable format
+doc-mode.el-emacs28-1.1_17     Asciidoc fontlocking for emacs
+docbook-1.5                    Meta-port for the different versions of the DocBook DTD
+docbook-sgml-4.5_1             DocBook SGML DTD
+docbook-xml-5.0_3              DocBook XML DTD
+docbook-xsl-1.79.1_1,1         XSL DocBook stylesheets
+drm-fbsd12.0-kmod-4.16.g20200221 DRM modules for the linuxkpi-based KMS components
+drm-kmod-g20190710             Metaport of DRM modules for the linuxkpi-based KMS components
+dsb-libreoffice-6.3.4          dsb language pack for libreoffice
+dz-libreoffice-6.3.4           dz language pack for libreoffice
+e2fsprogs-libuuid-1.45.6       UUID library from e2fsprogs package
+el-libreoffice-6.3.4           el language pack for libreoffice
+emacs-devel-28.0.50.20200314,2 GNU editing macros
+en-freebsd-doc-54003,1         Documentation from the FreeBSD Documentation Project
+en_GB-libreoffice-6.3.4        en_GB language pack for libreoffice
+en_ZA-libreoffice-6.3.4        en_ZA language pack for libreoffice
+enchant-1.6.0_9                Dictionary/spellchecking framework
+enchant2-2.2.3_4               Dictionary/spellchecking framework
+encodings-1.0.5,1              X.Org Encoding fonts
+eo-libreoffice-6.3.4           eo language pack for libreoffice
+epl.el-emacs28-0.8_4           Emacs Package Library
+es-libreoffice-6.3.4           es language pack for libreoffice
+et-libreoffice-6.3.4           et language pack for libreoffice
+etc_os-release-0.1_2           Operating system identification file
+eu-libreoffice-6.3.4           eu language pack for libreoffice
+evince-3.28.5_12               GNOME 3 multi-format document viewer
+exempi-2.2.2_1                 Port of Adobe XMP SDK to work on UNIX
+exiv2-0.27.2,1                 Exif, IPTC, and XMP metadata manipulation library and tools
+expat-2.2.8                    XML 1.0 parser written in C
+fa-libreoffice-6.3.4           fa language pack for libreoffice
+faac-1.29.9.2_3                MPEG-2 and MPEG-4 AAC audio encoder
+faad2-2.8.8,1                  MPEG-2 and MPEG-4 AAC audio decoder
+ffmpeg-4.2.2_9,1               Realtime audio/video encoder/converter and streaming server
+fftw3-3.3.8_5                  Fast C routines to compute the Discrete Fourier Transform
+fi-libreoffice-6.3.4           fi language pack for libreoffice
+firefox-76.0.1_1,1             Web browser based on the browser portion of Mozilla
+firmware-utils-20111222        Create device firmware images
+flac-1.3.3                     Free lossless audio codec
+font-adobe-100dpi-1.0.3_4      X.Org Adobe 100dpi font
+font-adobe-75dpi-1.0.3_4       X.Org Adobe 75dpi font
+font-adobe-utopia-100dpi-1.0.4_4 X.Org Adobe Utopia 100dpi font
+font-adobe-utopia-75dpi-1.0.4_4 X.Org Adobe Utopia 75dpi font
+font-adobe-utopia-type1-1.0.4_4 X.Org Adobe Utopia Type1 font
+font-alias-1.0.3_3             X.Org Font aliases
+font-arabic-misc-1.0.3_4       X.Org miscellaneous Arabic fonts
+font-bh-100dpi-1.0.3_4         X.Org Bigelow Holmes 100dpi font
+font-bh-75dpi-1.0.3_4          X.Org Bigelow Holmes 75dpi font
+font-bh-lucidatypewriter-100dpi-1.0.3_4 X.Org Bigelow Holmes Lucida TypeWriter 100dpi font
+font-bh-lucidatypewriter-75dpi-1.0.3_4 X.Org Bigelow Holmes Lucida TypeWriter 75dpi font
+font-bh-ttf-1.0.3_4            X.Org Bigelow & Holmes TTF font
+font-bh-type1-1.0.3_4          X.Org Bigelow Holmes Type1 font
+font-bitstream-100dpi-1.0.3_4  X.Org Bitstream Vera 100dpi font
+font-bitstream-75dpi-1.0.3_4   X.Org Bitstream Vera 75dpi font
+font-bitstream-type1-1.0.3_4   X.Org Bitstream Vera Type1 font
+font-cronyx-cyrillic-1.0.3_4   X.Org Cronyx Cyrillic font
+font-cursor-misc-1.0.3_4       X.Org miscellaneous Cursor fonts
+font-daewoo-misc-1.0.3_4       X.Org miscellaneous Daewoo fonts
+font-dec-misc-1.0.3_4          X.Org miscellaneous Dec fonts
+font-ibm-type1-1.0.3_4         X.Org IBM Type1 font
+font-isas-misc-1.0.3_4         X.Org miscellaneous ISAS fonts
+font-jis-misc-1.0.3_4          X.Org miscellaneous JIS fonts
+font-micro-misc-1.0.3_4        X.Org miscellaneous Micro fonts
+font-misc-cyrillic-1.0.3_4     X.Org miscellaneous Cyrillic font
+font-misc-ethiopic-1.0.3_4     X.Org miscellaneous Ethiopic font
+font-misc-meltho-1.0.3_4       X.Org miscellaneous Meltho font
+font-misc-misc-1.1.2_4         X.Org miscellaneous Misc fonts
+font-mutt-misc-1.0.3_4         X.Org miscellaneous Mutt fonts
+font-schumacher-misc-1.1.2_4   X.Org miscellaneous Schumacher fonts
+font-screen-cyrillic-1.0.4_4   X.Org Screen Cyrillic font
+font-sony-misc-1.0.3_4         X.Org miscellaneous Sony fonts
+font-sun-misc-1.0.3_4          X.Org miscellaneous Sun fonts
+font-winitzki-cyrillic-1.0.3_4 X.Org Winitzki Cyrillic font
+font-xfree86-type1-1.0.4_4     X.Org XFree86 Type1 font
+fontconfig-2.13.92_2,1         XML-based font configuration API for X Windows
+fortune-mod-freebsd-classic-g20171128 Classic FreeBSD fortunes (including offensives)
+fortune-mod-futurama-0.2_4     Compilation of quotes from the TV series "Futurama"
+fr-libreoffice-6.3.4           fr language pack for libreoffice
+freeglut-3.0.0_2               open source implementation of the GLUT library
+freetype2-2.10.1               Free and portable TrueType font rendering engine
+fribidi-0.19.7                 Free Implementation of the Unicode Bidirectional Algorithm
+fusefs-libs-2.9.9_1            FUSE allows filesystem implementation in userspace
+fy-libreoffice-6.3.4           fy language pack for libreoffice
+ga-libreoffice-6.3.4           ga language pack for libreoffice
+gamin-0.1.10_10                File and directory monitoring system
+garcon-0.6.4_2                 Freedesktop compliant menu library
+gcc-9_4                        Meta-port for the default version of the GNU Compiler Collection
+gcc9-9.3.0                     GNU Compiler Collection 9
+gccmakedep-1.0.3               Create dependencies in makefiles using 'gcc -M'
+gconf2-3.2.6_5                 Configuration database system for GNOME
+gcr-3.28.0                     Library for bits of crypto UI and parsing
+gd-libreoffice-6.3.4           gd language pack for libreoffice
+gdb-9.1                        GNU GDB of newer version than comes with the system
+gdbm-1.18.1_1                  GNU database manager
+gdk-pixbuf2-2.40.0             Graphic library for GTK+
+geoclue-2.5.5                  D-Bus service that provides location information
+getopt-1.1.6                   Replacement for getopt(1) that supports GNU-style long options
+gettext-runtime-0.20.1         GNU gettext runtime libraries and programs
+gexiv2-0.12.0_1                GObject-based wrapper around Exiv2 library
+gfbgraph-0.2.3                 GObject library for Facebook Graph API
+ghostscript9-agpl-base-9.52_1  PostScript and PDF interpreter
+ghostscript9-agpl-x11-9.52     PostScript and PDF interpreter, X11 support
+giflib-5.2.1                   Tools and library routines for working with GIF images
+gigolo-0.5.1                   Frontend to easily manage filesystem connections
+git-2.26.2                     Distributed source code management tool
+git-extras-5.1.0               Sub-commands for repo summary, repl, changelog population, and more
+git-modes-emacs28-1.2.8_3,1    GNU Emacs modes for Git-related files
+gjs-1.52.4_3                   GNOME Javascript binding
+gl-libreoffice-6.3.4           gl language pack for libreoffice
+glew-2.1.0                     OpenGL Extension Wrangler Library
+glib-2.56.3_7,1                Some useful routines of C programming (current stable version)
+glib-networking-2.56.1_2       Network-related giomodules for glib
+gmake-4.2.1_3                  GNU version of 'make' utility
+gmime30-3.2.5                  Library (written in C) for parsing and creating messages using MIME
+gmp-6.2.0                      Free library for arbitrary precision arithmetic
+gnome-autoar-0.2.4             Glib wrapper around libarchives
+gnome-desktop-3.28.2           Additional UI API for GNOME 3
+gnome-documents-3.28.2_2       Document manager application designed to work with GNOME 3
+gnome-icon-theme-3.12.0_1      Collection of icons for the GNOME desktop
+gnome-icon-theme-symbolic-3.12.0 GNOME Symbolic Icons
+gnome-menus-3.13.3_1           Implementation of the FreeDesktop Desktop Menu Spec
+gnome-mime-data-2.18.0_5       MIME and Application database for GNOME
+gnome-mount-0.8_13             Front-end to mount, umount, and eject using HAL
+gnome-online-accounts-3.28.0_2 Interface provider to access the user's online accounts
+gnome-online-miners-3.26.0     Crawls through your online content
+gnome-themes-2.32.1_1          Collection of themes and icons for GNOME2
+gnome-themes-extras-2.22.0_10  More themes for the GNOME 2 desktop environment
+gnome-vfs-2.24.4_11            GNOME Virtual File System
+gnome_subr-1.0                 Common startup and shutdown subroutines used by GNOME scripts
+gnupg-2.2.20                   Complete and free PGP implementation
+gnutls-3.6.13                  GNU Transport Layer Security library
+gobject-introspection-1.56.1,1 Generate interface introspection data for GObject libraries
+gocr-0.52                      OCR (Optical Character Recognition) program
+goocanvas2-2.0.4               Canvas widget for GTK+ 3
+gpgme-1.13.1                   Library to make access to GnuPG easier
+gpu-firmware-kmod-g20200130    Firmware modules for the linuxkpi-based KMS components
+graphene-1.10.0                Optimizations for speeding up vector operations
+graphite2-1.3.14               Rendering capabilities for complex non-Roman writing systems
+greybird-theme-3.22.12         Gtk and xfwm4 themes for the Xfce Desktop
+grilo-0.3.7                    Framework focused on making media discovery and browsing
+groff-1.22.4_3                 Software typesetting package
+gscan2pdf-2.6.2                Produce PDF from scanned documents
+gsed-4.8                       GNU stream editor
+gsettings-desktop-schemas-3.28.1 Collection of globally shared GSetting schemas
+gsfonts-8.11_8                 Standard Fonts for Ghostscript
+gstreamer-0.10.36_6            Development framework for creating media applications
+gstreamer-plugins-0.10.36_12,3 GStreamer written collection of plugins handling several media types
+gstreamer1-1.16.2              Media applications framework
+gstreamer1-libav-1.16.2        GStreamer plug-in with many audio/video decoders/encoders
+gstreamer1-plugins-1.16.2      GStreamer written collection of plugins handling several media types
+gstreamer1-plugins-a52dec-1.16.2 GStreamer ATSC A/52 stream aka AC-3 (dvd audio) plugin
+gstreamer1-plugins-bad-1.16.2  GStreamer-plugins that need more quality, testing or documentation
+gstreamer1-plugins-core-1.16   Core set of typical audio and video GStreamer plugins
+gstreamer1-plugins-dts-1.16.2  GStreamer dts audio decode plugin
+gstreamer1-plugins-dvdread-1.16.2_1 GStreamer DVD access plugin with libdvdread
+gstreamer1-plugins-faac-1.16.2 GStreamer MPEG-2 and MPEG-4 AAC encoder plugin
+gstreamer1-plugins-faad-1.16.2 GStreamer MPEG-2 and MPEG-4 AAC decoder plugin
+gstreamer1-plugins-flac-1.16.2 GStreamer free lossless audio encoder/decoder plugin
+gstreamer1-plugins-gl-1.16.2   GStreamer GL graphics plugin
+gstreamer1-plugins-good-1.16.2 GStreamer-plugins good-quality plug-ins
+gstreamer1-plugins-lame-1.16.2 GStreamer High-quality free mp3 encode plugin
+gstreamer1-plugins-mpg123-1.16.2 GStreamer MPEG Layer 1, 2, and 3 plugin
+gstreamer1-plugins-ogg-1.16.2  GStreamer Ogg bitstream plugin
+gstreamer1-plugins-pango-1.16.2 GStreamer pango textoverlay plugin
+gstreamer1-plugins-png-1.16.2  GStreamer png plugin
+gstreamer1-plugins-resindvd-1.16.2_1 GStreamer resindvd DVD playback plugin
+gstreamer1-plugins-rtmp-1.16.2 GStreamer RTMP stream source and sink plugin
+gstreamer1-plugins-soup-1.16.2 GStreamer soup based http input plugin
+gstreamer1-plugins-theora-1.16.2 GStreamer theora plugin
+gstreamer1-plugins-ugly-1.16.2 GStreamer-plugins set of good-quality plug-ins that might have distribution problems
+gstreamer1-plugins-vorbis-1.16.2 GStreamer vorbis encoder/decoder plugin
+gstreamer1-plugins-wavpack-1.16.2 GStreamer wavpack encode/decode plugin
+gstreamer1-plugins-x-1.16.2    GStreamer X and Xvideo output plugins
+gsynaptics-0.9.16_3            GNOME Synaptics Touchpad setting tool
+gtk-engines2-2.20.2_3          Theme engine for the GTK+-2.0 toolkit
+gtk-murrine-engine-0.98.2_5    Murrine GTK+ 2.x cairo based engine
+gtk-update-icon-cache-2.24.32  Gtk-update-icon-cache utility from the Gtk+ toolkit
+gtk-xfce-engine-3.2.0          Xfce GTK2 theme engine
+gtk2-2.24.32                   Gimp Toolkit for X11 GUI (previous stable version)
+gtk3-3.24.10_1                 Gimp Toolkit for X11 GUI (current stable version)
+gtksourceview3-3.24.8_3        Text widget that adds syntax highlighting to the GtkTextView widget
+gtkspell-2.0.16_6              GTK+ 2 spell checking component
+gu-libreoffice-6.3.4           gu language pack for libreoffice
+gug-libreoffice-6.3.4          gug language pack for libreoffice
+gvfs-1.30.4_3                  GNOME virtual file system
+hal-0.5.14_34                  Hardware Abstraction Layer for simplifying device access
+harfbuzz-2.6.4                 OpenType text shaping engine
+harfbuzz-icu-2.6.4_1           Harfbuzz ICU support
+he-libreoffice-6.3.4           he language pack for libreoffice
+hi-libreoffice-6.3.4           hi language pack for libreoffice
+hicolor-icon-theme-0.17        High-color icon theme shell from the FreeDesktop project
+hr-libreoffice-6.3.4           hr language pack for libreoffice
+hs-pandoc-2.9.2                Conversion between markup formats
+hsb-libreoffice-6.3.4          hsb language pack for libreoffice
+htop-2.2.0_1                   Better top(1) - interactive process viewer
+hu-libreoffice-6.3.4           hu language pack for libreoffice
+hunspell-1.7.0_2               Improved spell-checker for Hungarian and other languages
+hyphen-2.8.8                   Library for high quality hyphenation and justification
+iceauth-1.0.8_2                ICE authority file utility for X
+icu-66.1,1                     International Components for Unicode (from IBM)
+id-libreoffice-6.3.4           id language pack for libreoffice
+indexinfo-0.3.1                Utility to regenerate the GNU info page index
+is-libreoffice-6.3.4           is language pack for libreoffice
+isl-0.19                       Integer Set Library
+iso-codes-4.2                  Lists of the country, language, and currency iso names
+iso8879-1986_3                 Character entity sets from ISO 8879:1986 (SGML)
+it-libreoffice-6.3.4           it language pack for libreoffice
+ja-libreoffice-6.3.4           ja language pack for libreoffice
+jansson-2.12                   C library for encoding, decoding, and manipulating JSON data
+jasper-2.0.16_1                Implementation of the codec specified in the JPEG-2000 standard
+jbig2dec-0.18                  Decoder implementation of the JBIG2 image compression format
+jbigkit-2.1_1                  Lossless compression for bi-level images such as scanned pages, faxes
+jpeg-turbo-2.0.4               SIMD-accelerated JPEG codec which replaces libjpeg
+json-glib-1.4.4                JSON (RFC 4627) interface for Glib
+jsoncpp-1.9.2                  JSON reader and writer library for C++
+ka-libreoffice-6.3.4           ka language pack for libreoffice
+kab-libreoffice-6.3.4          kab language pack for libreoffice
+keybinder-0.3.1_4              Library for registering keyboard shortcuts
+kk-libreoffice-6.3.4           kk language pack for libreoffice
+km-libreoffice-6.3.4           km language pack for libreoffice
+kmr_Latn-libreoffice-6.3.4     kmr_Latn language pack for libreoffice
+kn-libreoffice-6.3.4           kn language pack for libreoffice
+ko-libreoffice-6.3.4           ko language pack for libreoffice
+kok-libreoffice-6.3.4          kok language pack for libreoffice
+ks-libreoffice-6.3.4           ks language pack for libreoffice
+ksh93-devel-2020.02.24         Development branch of AT&T KornShell 93
+lb-libreoffice-6.3.4           lb language pack for libreoffice
+lcms2-2.9                      Accurate, fast, and small-footprint color management engine
+libFS-1.0.8                    The FS library
+libGLU-9.0.1                   OpenGL utility library
+libICE-1.0.10,1                Inter Client Exchange library for X11
+libIDL-0.8.14_4                Library for creating trees of CORBA IDL files
+libSM-1.2.3,1                  Session Management library for X11
+libX11-1.6.9,1                 X11 library
+libXScrnSaver-1.2.3_2          The XScrnSaver library
+libXau-1.0.9                   Authentication Protocol library for X11
+libXaw-1.0.13_3,2              X Athena Widgets library
+libXcomposite-0.4.5,1          X Composite extension library
+libXcursor-1.2.0               X client-side cursor loading library
+libXdamage-1.1.5               X Damage extension library
+libXdmcp-1.1.3                 X Display Manager Control Protocol library
+libXext-1.3.4,1                X11 Extension library
+libXfixes-5.0.3_2              X Fixes extension library
+libXfont-1.5.4_2,2             X font library
+libXfont2-2.0.4                X font library
+libXft-2.3.3                   Client-sided font API for X applications
+libXi-1.7.10,1                 X Input extension library
+libXinerama-1.1.4_2,1          X11 Xinerama library
+libXmu-1.1.3,1                 X Miscellaneous Utilities libraries
+libXpm-3.5.13                  X Pixmap library
+libXpresent-1.0.0              X Present Extension library
+libXrandr-1.5.2                X Resize and Rotate extension library
+libXrender-0.9.10_2            X Render extension library
+libXres-1.2.0_2                X Resource usage library
+libXt-1.2.0,1                  X Toolkit library
+libXtst-1.2.3_2                X Test extension
+libXv-1.0.11_2,1               X Video Extension library
+libXvMC-1.0.12                 X Video Extension Motion Compensation library
+libXxf86dga-1.1.5              X DGA Extension
+libXxf86vm-1.1.4_3             X Vidmode Extension
+liba52-0.7.4_3                 Free library for decoding ATSC A/52 streams, aka AC-3
+libabw-0.1.3                   Library providing ability to interpret Abiword documents
+libao-1.2.0_4                  Portable audio output library
+libarchive-3.4.2,1             Library to create and read several streaming archive formats
+libart_lgpl-2.3.21_3,1         Library for high-performance 2D graphics
+libass-0.14.0                  Portable ASS/SSA subtitle renderer
+libassuan-2.5.3                IPC library used by GnuPG and gpgme
+libbonobo-2.32.1               Component and compound document system for GNOME2
+libbonoboui-2.24.5_1           GUI frontend to the libbonobo component of GNOME 2
+libburn-1.5.0                  Libburnia library to read/write optical discs
+libcanberra-0.30_5             Implementation of the Freedesktop sound theme spec
+libcanberra-gtk3-0.30_5        Implementation of the Freedesktop sound theme spec
+libcddb-1.3.2_4                Library to access data on a CDDB server
+libcdio-2.1.0                  Compact Disc Input and Control Library
+libcdio-paranoia-10.2+2.0.1    Read audio from the CDROM directly as data
+libcdr01-0.1.5_7               Library and tools for parsing Corel Draw file format
+libcmis-0.5.2_1                Client library for the CMIS interface
+libconfuse-3.2.1_1             Configuration file parsing library
+libcroco-0.6.13                CSS2 parsing library
+libcue-2.1.0                   CUE Sheet Parser Library
+libdaemon-0.14_1               Lightweight C library that eases the writing of UNIX daemons
+libdca-0.0.6_1                 Free DTS Coherent Acoustics decoder
+libdmx-1.1.4_2                 DMX extension library
+libdrm-2.4.99,1                Userspace interface to kernel Direct Rendering Module services
+libdvbpsi-1.3.3                Library for MPEG TS and DVB PSI tables decoding and generation
+libdvdnav-6.1.0                Videolan version of the libdvdnav project
+libdvdread-6.1.0               Videolan version of the libdvdread project
+libe-book-0.1.3_17             Library for import of reflowable e-book formats
+libebml-1.3.10                 EBML (Extensible Binary Meta Language), sort of binary version of XML
+libedit-3.1.20191211,1         Command line editor library
+libepoll-shim-0.0.20200223     Small epoll implementation using kqueue
+libepoxy-1.5.4                 Library to handle OpenGL function pointer management
+libepubgen-0.1.0_9             Library for generating documents in ePub format
+liberation-fonts-ttf-2.1.0,2   Liberation fonts from Red Hat to replace MS TTF fonts
+libetonyek01-0.1.9_5,1         Library to interpret and import Apple Keynote presentations
+libevdev-1.5.9_1               Linux Event Device library
+libevent-2.1.11                API for executing callback functions on events or timeouts
+libexif-0.6.21_5               Library to read digital camera file meta-data
+libexo-0.12.11                 Application library for the Xfce desktop environment
+libexttextcat-3.4.5            Language guessing by N-Gram-Based Text Categorization
+libffi-3.2.1_3                 Foreign Function Interface
+libfontenc-1.1.4               The fontenc Library
+libfreehand-0.1.2_17           Library for interpreting and importing Adobe/Macromedia drawings
+libftdi1-1.4_15                Library (using libusb) to talk to FTDI chips
+libgcrypt-1.8.5                General purpose cryptographic library based on the code from GnuPG
+libgd-2.2.5_2,1                Graphics library for fast creation of images
+libgdata-0.17.9                GLib based implimentation of the GData protocol
+libgepub-0.6.0_1               GObject based library for handling and rendering epub documents
+libglade2-2.6.4_10             GNOME glade library
+libgltf-0.0.2_21               C++ Library for rendering OpenGL models stored in glTF format
+libgnome-2.32.1                Libraries for GNOME, a GNU desktop environment
+libgnome-keyring-3.12.0_2      Program that keeps passwords and other secrets
+libgnomecanvas-2.30.3_4        Graphics library for GNOME
+libgnomeui-2.24.5              Libraries for the GNOME GUI, a GNU desktop environment
+libgpg-error-1.37              Common error values for all GnuPG components
+libgphoto2-2.5.23              Universal digital camera control library
+libgrss-0.7.0                  Library for easy management of RSS/Atom/Pie feeds
+libgsf-1.14.46                 Extensible I/O abstraction for dealing with structured file formats
+libgtop-2.38.0_2               GNOME top library
+libgudev-230_1                 GObject bindings for libudev.
+libgxps-0.3.1                  GObject based library for rendering XPS documents
+libiconv-1.14_11               Character set conversion library
+libidn-1.35                    Internationalized Domain Names command line tool
+libidn2-2.3.0_1                Implementation of IDNA2008 internationalized domain names
+libinotify-20180201_1          Kevent based inotify compatible library
+libinput-1.15.4                Generic input library
+libiptcdata-1.0.4_2            Library for manipulating IPTC metadata stored in image files
+libisofs-1.5.0                 Libburnia ISO9660 filesystem creation library
+libksba-1.3.5_1                KSBA is an X.509 Library
+liblangtag-0.6.2               Interface library to access tags for identifying languages
+liblqr-1-0.4.2                 Easy to use C/C++ seam carving library
+libltdl-2.4.6                  System independent dlopen wrapper
+liblz4-1.9.2_1,1               LZ4 compression library, lossless and very fast
+libmad-0.15.1b_7               Libmad library (part of MAD project)
+libmatroska-1.5.2_1            Extensible Multimedia Container Format
+libmaxminddb-1.4.2             Library for the MaxMind DB file format used for GeoIP2
+libmms-0.6.4_1                 Library for parsing mms:// and mmsh:// type network streams
+libmpeg2-0.5.1_6               Free library for decoding MPEG-2 and MPEG-1 video streams
+libmspack-0.10.1               Library for Microsoft compression formats
+libmspub01-0.1.4_15            Library and tools for parsing Microsoft Publisher file format
+libmtdev-1.1.5_2               Multitouch Protocol Translation Library
+libmwaw03-0.3.15               Import library for some old mac text documents
+libmysofa-0.9                  SOFA (Spatially Oriented Format for Acoustics) file reader
+libnghttp2-1.40.0              HTTP/2.0 C Library
+libnotify-0.7.8                Library for desktop notifications
+libnumbertext-1.0.5_1          Number to number name and money text conversion libraries
+liboauth-1.0.3_4               C library implementing the OAuth Core standard
+libodfgen01-0.1.7_3            Library for generating documents in Open Document Format (ODF)
+libogg-1.3.4,4                 Ogg bitstream library
+liborcus-0.14.1_4              Standalone file import filter library for spreadsheet documents
+libotf-0.9.16                  Library for handling OpenType fonts
+libpagemaker-0.0.4_10          Library and tools for parsing Aldus/Adobe PageMaker documents
+libpaper-1.1.24.4              Library providing routines for paper size management
+libpciaccess-0.16              Generic PCI access library
+libproxy-0.4.15                Library that provides automatic proxy configuration management
+libpthread-stubs-0.4           This library provides weak aliases for pthread functions
+libquvi-scripts09-0.9.20131130_1 Embedded lua scripts for libquvi and utility scripts
+libquvi09-0.9.4_4              Cross-platform library for parsing flash media stream URLs
+libqxp-0.0.0_15                Library for parsing QuarkXPress documents
+libraqm-0.6.0                  Library that encapsulates complex text layout logic
+libraw-0.19.5                  Library for manipulating raw images
+libreoffice-6.3.4_5            Full integrated office productivity suite
+libreoffice-i18n-6.3.4         Localized interface for libreoffice
+librevenge-0.0.4_13            Base library for writing document import filters
+librsvg2-2.40.21               Library for parsing and rendering SVG vector-graphic files
+librtmp-2.4.20151223_4         RTMP stream library
+libsamplerate-0.1.9            Secret Rabbit Code: a Sample Rate Converter for audio
+libsecret-0.18.6_1             Library to access the secret service API
+libsmi-0.4.8_1                 Library to access SMI MIB information
+libsndfile-1.0.28_2            Reading and writing files containing sampled sound (like WAV or AIFF)
+libsoup-2.62.3                 SOAP (Simple Object Access Protocol) implementation in C
+libsoup-gnome-2.62.3           SOAP (Simple Object Access Protocol) implementation in C
+libspectre-0.2.8               Small library for rendering Postscript documents
+libstaroffice-0.0.6_8          Library to build a filter for old StarOffice's documents
+libsunacl-1.0.1                Wrapper providing SunOS NFSv4 ACL API
+libsynaptics-0.14.6.c          Library to access the Xorg/XFree86 Synaptics TouchPad Driver
+libtasn1-4.15.0                ASN.1 structure parser library
+libtheora-1.1.1_7              Theora video codec for the Ogg multimedia streaming system
+libtool-2.4.6_1                Generic shared library support script
+libudev-devd-0.4.1             libudev-compatible interface for devd
+libunistring-0.9.10_1          Unicode string library
+libunwind-20170615             Generic stack unwinding library
+libuv-1.35.0                   Multi-platform support library with a focus on asynchronous I/O
+libv4l-1.6.3_4                 Video4Linux library
+libva-2.6.1_2                  VAAPI wrapper and dummy driver
+libvdpau-1.3_1                 VDPAU wrapper and tracing library
+libvisio01-0.1.7_1             Library and tools for parsing the visio file format structure
+libvolume_id-0.81.1            Library to provide file system type information
+libvorbis-1.3.6,3              Audio compression codec library
+libvpx-1.8.2_1                 VP8/VP9 reference encoder/decoder
+libwacom-1.3                   Adds tablet support to libinput
+libwmf-0.2.8.4_15              Tools and library for converting Microsoft WMF (windows metafile)
+libwnck3-3.24.1                Library used for writing pagers and taskslists
+libwpd010-0.10.3_4             Tools for importing and exporting WordPerfect(tm) documents
+libwpe-1.4.0.1                 General-purpose library for WPE WebKit
+libwpg03-0.3.3_1               Library and tools to work with WordPerfect Graphics (WPG) files
+libwps-0.4.10_2                Microsoft file word processor format import filter library
+libx264-0.159.2991             H.264/MPEG-4 AVC Video Encoding (Library)
+libxcb-1.13.1                  The X protocol C-language Binding (XCB) library
+libxfce4menu-4.14.1_1          Widgets library for the Xfce desktop environment
+libxfce4util-4.14.0            Extension library for the Xfce desktop environment
+libxkbcommon-0.10.0_2          Keymap handling library for toolkits and window systems
+libxkbfile-1.1.0               XKB file library
+libxklavier-5.3_1,1            Utility library to make XKB stuff easier
+libxml2-2.9.10                 XML parser library for GNOME
+libxshmfence-1.3               Shared memory 'SyncFence' synchronization primitive
+libxslt-1.1.34_1               The XSLT C library for GNOME
+libyaml-0.2.2                  YAML 1.1 parser and emitter written in C
+libzapojit-0.0.3_2             GLib/GObject wrapper for the Skydrive and Hotmail API
+libzmf-0.0.2_20                Library that parses the file format of Zoner Callisto/Draw documents
+linux-c7-7.7.1908              Meta-port for all things CentOS 7.7.1908
+linux-c7-alsa-lib-1.1.8        Advanced Linux Sound Architecture libraries (Linux CentOS 7.7.1908)
+linux-c7-alsa-plugins-oss-1.1.6_3 OSS plugin for ALSA (Linux CentOS 7.7.1908)
+linux-c7-alsa-plugins-pulseaudio-1.1.6_1 PulseAudio plugin for ALSA (Linux CentOS 7.7.1908)
+linux-c7-alsa-utils-1.1.8      Advanced Linux Sound Architecture utilities (Linux CentOS 7.7.1908)
+linux-c7-aspell-0.60.6.1_1     Spelling checker with better logic than ispell (Linux CentOS 7.7.1908)
+linux-c7-atk-2.28.1            Accessibility Toolkit (Linux CentOS 7.7.1908)
+linux-c7-audiofile-0.3.6_1     Implementation of the Audio File Library (Linux CentOS 7.7.1908)
+linux-c7-avahi-libs-0.6.31_3   Libraries for Avahi (Linux CentOS 7.7.1908)
+linux-c7-cairo-1.15.12_1       Vector graphics library Cairo (Linux CentOS 7.7.1908)
+linux-c7-cups-libs-1.6.3_7     Common UNIX Printing System libraries
+linux-c7-curl-7.29.0_9         Tool for transferring files with URL syntax (Linux CentOS 7.7.1908)
+linux-c7-cyrus-sasl-lib-2.1.26_4 RFC 2222 SASL (Simple Authentication and Security Layer) (Linux CentOS 7.7.1908)
+linux-c7-dbus-glib-0.100_1     GLib bindings for D-Bus (Linux CentOS 7.7.1908)
+linux-c7-dbus-libs-1.10.24_1   Libraries for accessing D-BUS (Linux CentOS 7.7.1908)
+linux-c7-devtools-7.7.1908_6   Linux compilers and base libraries (CentOS 7.7.1908)
+linux-c7-dri-18.3.4_1          Mesa libGL runtime libraries (Linux CentOS 7.7.1908)
+linux-c7-elfutils-libelf-0.176 ELF file handling library (CentOS 7.7.1908)
+linux-c7-elfutils-libs-0.176   ELF file handling libraries (CentOS 7.7.1908)
+linux-c7-expat-2.1.0_2         XML 1.0 parser written in C (Linux CentOS 7.7.1908)
+linux-c7-flac-libs-1.3.0_2     Free lossless audio codec (Linux CentOS 7.7.1908)
+linux-c7-fontconfig-2.13.0     XML-based font configuration API for X Windows (Linux CentOS 7.7.1908)
+linux-c7-freetype-2.8_1        Font rendering engine (Linux CentOS 7.7.1908)
+linux-c7-fribidi-1.0.2_1       Unicode Bidirectional Algorithm (Linux CentOS 7.7.1908)
+linux-c7-gdk-pixbuf2-2.36.12   Graphic library for GTK+ (Linux CentOS 7.7.1908)
+linux-c7-glx-utils-8.3.0_1     Mesa GLX utilities (Linux CentOS 7.7.1908)
+linux-c7-gnutls-3.3.29         GNU Transport Layer Security library (Linux CentOS 7.7.1908)
+linux-c7-graphite2-1.3.10      Rendering capabilities for complex non-Roman writing systems (Linux CentOS 7.7.1908)
+linux-c7-gtk2-2.24.31          GTK+ library, version 2.X (Linux CentOS 7.7.1908)
+linux-c7-harfbuzz-1.7.5        OpenType text shaping engine (Linux CentOS 7.7.1908)
+linux-c7-jasper-libs-1.900.1_5 JPEG-2000 reference implementation (Linux CentOS 7.7.1908)
+linux-c7-jbigkit-libs-2.0_2    Lossless compression for bi-level images (Linux CentOS 7.7.1908)
+linux-c7-jpeg-1.2.90_4         SIMD-accelerated JPEG codec (Linux CentOS 7.7.1908)
+linux-c7-libasyncns-0.8_1      Library for executing DNS queries (Linux CentOS 7.7.1908)
+linux-c7-libdrm-2.4.91         Interface to kernel Direct Rendering Module (Linux CentOS 7.6.1810)
+linux-c7-libgcrypt-1.5.3_4     Crypto library based on code used in GnuPG (Linux CentOS 7.7.1908)
+linux-c7-libgfortran-4.8.5_5   Runtime libraries for gfortran (Linux Centos 7.7.1908)
+linux-c7-libglade2-2.6.4_1     GNOME glade library (Linux CentOS 7.7.1908)
+linux-c7-libglvnd-1.0.1        GL Vendor-Neutral Dispatch library (Linux CentOS 7.7.1908)
+linux-c7-libgpg-error-1.12_2   Common error values for all GnuPG components (Linux CentOS 7.7.1908)
+linux-c7-libogg-1.3.0_1        Ogg bitstream library (Linux CentOS 7.7.1908)
+linux-c7-libpciaccess-0.14     Generic PCI access library (CentOS 7.7.1908)
+linux-c7-libpng-1.5.13_2       Library for manipulating PNG images (Linux CentOS 7.7.1908)
+linux-c7-libsigc++20-2.10.0    Callback Framework for C++ (Linux CentOS 7.7.1908)
+linux-c7-libsndfile-1.0.25_3   Reading and writing files containing sampled sound (like WAV or AIFF) (Linux CentOS 7.7.1908)
+linux-c7-libssh2-1.8.0         Library implementing the SSH2 protocol (Linux CentOS 7.7.1908)
+linux-c7-libtasn1-4.10         ASN.1 structure parser library (Linux CentOS 7.7.1908)
+linux-c7-libthai-0.1.14_1      Thai language support library (Linux CentOS 7.7.1908)
+linux-c7-libtheora-1.1.1_1     Theora Video Compression Codec (Linux CentOS 7.7.1908)
+linux-c7-libtiff-4.0.3_4       Library routines for working with TIFF images (Linux CentOS 7.7.1908)
+linux-c7-libv4l-0.9.5_2        Video4Linux library (Linux CentOS 7.7.1908)
+linux-c7-libvorbis-1.3.3_2     Audio compression codec library (Linux CentOS 7.7.1908)
+linux-c7-libxml2-2.9.1_1       Library providing XML and HTML support (Linux CentOS 7.7.1908)
+linux-c7-lz4-1.7.5_1           LZ4 compression library and utilities (Linux CentOS 7.7.1908)
+linux-c7-motif-2.3.4_6         Motif toolkit libraries (Linux CentOS 7.7.1908)
+linux-c7-nettle-2.7.1          Low-level cryptographic library (Linux CentOS 7.7.1908)
+linux-c7-nspr-4.21.0           Netscape Portable Runtime (Linux CentOS 7.7.1908)
+linux-c7-nss-3.44.0_1          Network Security Services (Linux CentOS 7.7.1908)
+linux-c7-openal-soft-1.16.0_3  3D positional spatialized sound library (Linux CentOS 7.7.1908)
+linux-c7-openldap-2.4.44_1     LDAP libraries (Linux CentOS 7.7.1908)
+linux-c7-p11-kit-0.23.5        Library for loading and enumerating of PKCS#11 modules (Linux CentOS 7.7.1908)
+linux-c7-pango-1.42.4_1        Pango library (Linux CentOS 7.7.1908)
+linux-c7-pixman-0.34.0         Low-level pixel manipulation library (Linux CentOS 7.7.1908)
+linux-c7-pulseaudio-libs-10.0_2 Libraries for PulseAudio clients (Linux CentOS 7.7.1908)
+linux-c7-pulseaudio-utils-10.0_1 Utils for PulseAudio clients (Linux CentOS 7.7.1908)
+linux-c7-qt-4.8.7_2            RPM of QT4 (Linux CentOS 7.7.1908)
+linux-c7-qt-x11-4.8.7_2        Cross-platform application and UI framework (Linux CentOS 7.7.1908)
+linux-c7-qtwebkit-2.3.4_2      Qt WebKit implementation (Linux CentOS 7.7.1908)
+linux-c7-sdl-1.2.15_2          Cross-platform multi-media development API (Linux CentOS 7.7.1908)
+linux-c7-sdl20-2.0.10          Cross-platform multi-media development API (Linux CentOS 7.7.1908)
+linux-c7-sdl_image-1.2.12_2    Simple library to load images as SDL interfaces (Linux CentOS 7.7.1908)
+linux-c7-sdl_mixer-1.2.12_1    Sample multi-channel audio mixer library (Linux CentOS 7.7.1908)
+linux-c7-sdl_ttf-2.0.11_2      Simple library to load True Type Fonts as SDL interfaces (Linux CentOS 7.7.1908)
+linux-c7-sqlite-3.7.17_2       Library that implements an embeddable SQL database engine (Linux CentOS 7.7.1908)
+linux-c7-systemd-libs-219_5    Libraries for accessing systemd (Linux CentOS 7.7.1908)
+linux-c7-tcl85-8.5.13_1        Tool Command Language (Linux CentOS 7.7.1908)
+linux-c7-tcp_wrappers-libs-7.6_2 Libraries tcp wrappers (Linux CentOS 7.7.1908)
+linux-c7-tk85-8.5.13_1         Graphical toolkit for TCL (Linux CentOS 7.7.1908)
+linux-c7-trousers-0.3.14_1     Open-source TCG Software Stack (Linux CentOS 7.7.1908)
+linux-c7-wayland-1.15.0        Wayland compositor libraries (Linux CentOS 7.7.1908)
+linux-c7-xorg-libs-7.7_8       Xorg libraries (Linux CentOS 7.7.1908)
+linux_base-c7-7.7.1908_1       Base set of packages needed in Linux mode (Linux CentOS 7.7.1908)
+linuxlibertine-g-20120116_2    Linux Libertine G and Linux Biolinum G fonts
+liveMedia-2020.03.06,2         LIVE.COM Streaming Media
+llvm-90                        Meta-port for the default version of the LLVM Toolchain
+llvm80-8.0.1_3                 LLVM and Clang
+llvm90-9.0.1_1                 LLVM and Clang
+lmdb-0.9.24_1,1                OpenLDAP Lightning Memory-Mapped Database
+lo-libreoffice-6.3.4           lo language pack for libreoffice
+lp_solve-5.5.2.5               Linear Programming Solver
+lrzsz-0.12.20_4                Receive/Send files via X/Y/ZMODEM protocol.  (unrestrictive)
+lsof-4.93.2_10,8               Lists information about open files (similar to fstat(1))
+lt-libreoffice-6.3.4           lt language pack for libreoffice
+lua52-5.2.4                    Small, compilable scripting language providing easy access to C code
+lua52-bitop-1.0.2_1            Bitwise operations on numbers
+lua52-json-1.3.4               JSON parser/creator for Lua
+lua52-lpeg-1.0.2               PEG-based pattern-matching library for Lua
+lua52-luaexpat-1.3.0_4         LuaExpat is a SAX XML parser based on the Expat library
+lua52-luasocket-3.0.r1_4,1     Socket support for the Lua language
+lv-libreoffice-6.3.4           lv language pack for libreoffice
+lzo2-2.10_1                    Portable speedy, lossless data compression library
+m17n-db-1.8.0                  Data files for the m17n library
+m17n-lib-1.8.0_1               Library for the multilingual text handling
+m4-1.4.18_1,1                  GNU M4
+mai-libreoffice-6.3.4          mai language pack for libreoffice
+mailutils-3.9                  Utilities, daemons, and filters for processing e-mail
+markdown-1.0.1_2               Text-to-HTML conversion tool for web writers
+markdown-mode.el-emacs28-2.3_6 Emacs major mode for editing Markdown-formatted text
+mate-themes-3.22.14            Collection of themes and icons for MATE
+meld-3.20.1                    GNOME visual diff and merge tool
+mesa-dri-18.3.2_10             OpenGL hardware acceleration drivers for DRI2+
+mesa-libs-18.3.2_4             OpenGL libraries that support GLX and EGL clients
+metacity-3.18.3_2              Window manager for the adult in you
+mime-support-3.62              MIME Media Types list
+minicom-2.7.1_1                MS-DOS Telix serial communication program "workalike"
+mk-libreoffice-6.3.4           mk language pack for libreoffice
+mkfontscale-1.2.1              Creates an index of scalable font files for X
+ml-libreoffice-6.3.4           ml language pack for libreoffice
+mn-libreoffice-6.3.4           mn language pack for libreoffice
+mni-libreoffice-6.3.4          mni language pack for libreoffice
+montserrat-7.200_1             Sans-serif font inspired by the street signs of Montserrat
+mousepad-0.4.2_1               Simple text editor for the Xfce Desktop
+mpc-1.1.0_2                    Library of complex numbers with arbitrarily high precision
+mpfr-4.0.2                     Library for multiple-precision floating-point computations
+mpg123-1.25.13                 Command-line player for MPEG Layer 1, 2, and 3 audio files
+mr-libreoffice-6.3.4           mr language pack for libreoffice
+mupdf-1.16.0,1                 Lightweight PDF viewer and toolkit
+muse-emacs28-3.20_15           Authoring and publishing environment for Emacs
+my-libreoffice-6.3.4           my language pack for libreoffice
+mysql57-client-5.7.30_1        Multithreaded SQL database (client)
+mythes-1.2.4_7                 Simple thesaurus library
+nautilus-3.28.1_3              File manager for the GNOME desktop
+nb-libreoffice-6.3.4           nb language pack for libreoffice
+ne-libreoffice-6.3.4           ne language pack for libreoffice
+neon-0.30.2_4                  HTTP and WebDAV client library for Unix systems
+netpbm-10.90.00                Toolkit for conversion of images between different formats
+nettle-3.5.1_1                 Low-level cryptographic library
+nl-libreoffice-6.3.4           nl language pack for libreoffice
+nn-libreoffice-6.3.4           nn language pack for libreoffice
+npth-1.6                       New GNU Portable Threads
+nr-libreoffice-6.3.4           nr language pack for libreoffice
+nso-libreoffice-6.3.4          nso language pack for libreoffice
+nspr-4.25                      Platform-neutral API for system level and libc like functions
+nss-3.52                       Libraries to support development of security-enabled applications
+oc-libreoffice-6.3.4           oc language pack for libreoffice
+om-libreoffice-6.3.4           om language pack for libreoffice
+openal-soft-1.20.1             Software implementation of the OpenAL specification
+opencollada-1.6.68_2           Library for reading and writing COLLADA files
+opencv-core-3.4.1_31           Open Source Computer Vision library
+openjpeg-2.3.1                 Open-source JPEG 2000 codec
+openldap-client-2.4.50         Open source LDAP client implementation
+opus-1.3.1                     IETF audio codec
+or-libreoffice-6.3.4           or language pack for libreoffice
+orc-0.4.31                     Library and toolset to operate arrays of data
+p11-kit-0.23.18.1              Library for loading and enumerating of PKCS#11 modules
+p5-Authen-SASL-2.16_1          Perl5 module for SASL authentication
+p5-Bit-Vector-7.4              Library of advanced math functions that includes a Perl OO module
+p5-CGI-4.46                    Handle Common Gateway Interface requests and responses
+p5-Cairo-1.107                 Perl bindings to the cairo graphics library
+p5-Cairo-GObject-1.005         Integrate Cairo into the Glib type system
+p5-Carp-Clan-6.08              Report errors from perspective of caller of a "clan" of modules
+p5-Class-Data-Inheritable-0.08_1 Inheritable, overridable class data
+p5-Config-General-2.63         Perl5 module for handling Apache-style configuration files
+p5-Data-UUID-1.224             Generate Globally/Universally Unique Identifiers (GUIDs/UUIDs)
+p5-Date-Calc-6.4               Gregorian calendar date calculations
+p5-Devel-StackTrace-2.04       Stack trace and stack trace frame objects
+p5-Digest-HMAC-1.03_1          Perl5 interface to HMAC Message-Digest Algorithms
+p5-Error-0.17029               Error/exception handling in object-oriented programming style
+p5-Exception-Class-1.44        Real exception classes in Perl
+p5-Exporter-Tiny-1.002001      Exporter with features of Sub::Exporter but only core dependencies
+p5-ExtUtils-Depends-0.8000     Easily build XS extensions that depend on XS extensions
+p5-ExtUtils-PkgConfig-1.16     Simplistic interface to pkg-config
+p5-Filesys-Df-0.92_1           Perl extension for filesystem space
+p5-Font-TTF-1.06               Perl module for TrueType font hacking
+p5-GSSAPI-0.28_1               Perl extension providing access to the GSSAPIv2 library
+p5-Glib-Object-Introspection-0.048 Dynamically create Perl language bindings
+p5-Glib2-1.3292                This module provides access to Glib and GObject libraries
+p5-Goo-Canvas2-0.06            Perl binding for GooCanvas2
+p5-Gtk2-1.24993                Perl module for Gtk+ 2.x graphical user interface library
+p5-Gtk2-Ex-PodViewer-0.18_4    Displays plain old documentation
+p5-Gtk2-Ex-Simple-List-0.50_7  Simple interface to complex MVC list widget
+p5-Gtk3-0.034                  Perl module for Gtk+ 3.x graphical user interface library
+p5-Gtk3-SimpleList-0.18        Simple interface to Gtk3's complex MVC list widget
+p5-HTML-Parser-3.72            Perl5 module for parsing HTML documents
+p5-HTML-Tagset-3.20_1          Some useful data table in parsing HTML
+p5-IO-Socket-INET6-2.72_1      Perl module with object interface to AF_INET6 domain sockets
+p5-IO-Socket-SSL-2.067         Perl5 interface to SSL sockets
+p5-IO-String-1.08_1            Simplified Perl5 module to handle I/O on in-core strings
+p5-IO-stringy-2.111            Use IO handles with non-file objects
+p5-Image-Sane-5                Perl extension for the SANE (Scanner Access Now Easy) Project
+p5-List-MoreUtils-0.428        Provide the stuff missing in List::Util
+p5-List-MoreUtils-XS-0.428     Provide compiled List::MoreUtils functions
+p5-Locale-gettext-1.07         Message handling functions
+p5-Log-Log4perl-1.49           Log4j implementation for Perl
+p5-Mozilla-CA-20180117         Perl extension for Mozilla CA cert bundle in PEM format
+p5-Net-SSLeay-1.88             Perl5 interface to SSL
+p5-PDF-API2-2.037              Facilitates the creation and modification of PDF files
+p5-Pango-1.227                 Perl module for layout and render i18n text
+p5-Pod-Simple-3.40             Framework for parsing Pod
+p5-Proc-ProcessTable-0.59      Perl interface to the unix process table
+p5-Readonly-2.05               Facility for creating read-only scalars, arrays, hashes
+p5-Set-IntSpan-1.19_1          Manages sets of integers
+p5-Socket6-0.29                IPv6 related part of the C socket.h defines and structure manipulators
+p5-Term-ReadKey-2.38_1         Perl5 module for simple terminal control
+p5-Try-Tiny-0.30               Minimal try/catch with proper localization of $@
+p5-URI-1.76                    Perl5 interface to Uniform Resource Identifier (URI) references
+p5-subversion-1.13.0           Perl bindings for Version control system
+pa_IN-libreoffice-6.3.4        pa_IN language pack for libreoffice
+pam_helper-1.1                 Authenticate applications requiring PAM services
+pango-1.42.4_3                 Open-source framework for the layout and rendering of i18n text
+pangox-compat-0.0.2_2          Deprecated pangoX support
+parole-1.0.5                   Lightweight media player for Xfce4 based on GStreamer
+pciids-20200324                Database of all known IDs used in PCI devices
+pcre-8.43_2                    Perl Compatible Regular Expressions library
+pcre2-10.34                    Perl Compatible Regular Expressions library, version 2
+pdf-tools-emacs28-0.90.34_5    Emacs support library for PDF files
+perl5-5.30.2                   Practical Extraction and Report Language
+pinentry-1.1.0_6               Collection of simple PIN or passphrase entry dialogs
+pinentry-tty-1.1.0             Console version of the GnuPG password dialog
+pixman-0.38.4                  Low-level pixel manipulation library
+pkg-1.13.2                     Package manager
+pkg-info.el-emacs28-0.6_3      Provide information about Emacs packages
+pkgconf-1.6.3,1                Utility to help to configure compiler and linker flags
+pl-libreoffice-6.3.4           pl language pack for libreoffice
+png-1.6.37                     Library for manipulating PNG images
+policykit-0.9_10               Framework for controlling access to system-wide components
+policykit-gnome-0.9.2_9        GNOME frontend to the PolicyKit framework
+polkit-0.116                   Framework for controlling access to system-wide components
+poppler-0.86.1_1               PDF rendering library
+poppler-data-0.4.9_2           Poppler encoding data
+poppler-glib-0.86.1_2          GLib bindings to poppler
+popt-1.16_2                    Getopt(3) like library with a number of enhancements, from Redhat
+protobuf-3.11.4,1              Data interchange format library
+psutils-1.17_5                 Utilities for manipulating PostScript documents
+pt-libreoffice-6.3.4           pt language pack for libreoffice
+pt_BR-libreoffice-6.3.4        pt_BR language pack for libreoffice
+py37-cairo-1.18.1_1            Python 2 bindings for Cairo
+py37-dnspython-1.16.0          DNS toolkit for Python
+py37-evdev-0.8.1_1             Bindings to the Linux input handling subsystem
+py37-gobject3-3.28.3           Python 3.7 bindings for GObject
+py37-iso8601-0.1.12            Simple module to parse ISO 8601 dates
+py37-menulibre-2.2.1           Advanced menu editor
+py37-psutil-5.7.0              Process utilities module for Python
+py37-pypandoc-1.4              Thin wrapper for pandoc
+py37-pyudev-0.21.0             Pure Python libudev binding
+py37-setuptools-44.0.0         Python packages installer
+py37-six-1.14.0                Python 2 and 3 compatibility utilities
+pygobject3-common-3.28.3       Common files for the Python bindings for GObject
+python37-3.7.7                 Interpreted object-oriented programming language
+qt5-core-5.13.2_2              Qt core non-graphical module
+qt5-dbus-5.13.2_1              Qt D-Bus inter-process communication module
+qt5-declarative-5.13.2_1       Qt declarative framework for dynamic user interfaces
+qt5-gui-5.13.2_3               Qt graphical user interface module
+qt5-multimedia-5.13.2_1        Qt audio, video, radio and camera support module
+qt5-network-5.13.2             Qt network module
+qt5-opengl-5.13.2              Qt 5-compatible OpenGL support module
+qt5-printsupport-5.13.2        Qt print support module
+qt5-sql-5.13.2                 Qt SQL database integration module
+qt5-svg-5.13.2                 Qt SVG support module
+qt5-testlib-5.13.2             Qt unit testing module
+qt5-widgets-5.13.2_1           Qt C++ widgets module
+qt5-x11extras-5.13.2           Qt platform-specific features for X11-based systems
+qt5-xmlpatterns-5.13.2_1       Qt support for XPath, XQuery, XSLT and XML Schema
+qtchooser-66_2                 Qt tool wrapper
+radeontool-1.5                 ATI Radeon video card controlling tool useful for laptops
+radeontop-1.2                  Program that shows AMD Radeon GPU resource utilization
+raptor2-2.0.15_13              RDF Parser Toolkit for Redland
+rarian-0.8.1_4                 OMF help system based on the Freedesktop specification
+rasqal-0.9.33_1                High-level interface for RDF
+readline-8.0.4                 Library for editing command lines as they are typed
+redland-1.0.17_4               High-level interface for RDF
+rest-0.7.93                    Easy access to RESTful web services
+rhash-1.3.5                    Utility and library for computing and checking of file hashes
+ristretto-0.10.0_1             Image viewer with Xfce integration
+ro-libreoffice-6.3.4           ro language pack for libreoffice
+ru-libreoffice-6.3.4           ru language pack for libreoffice
+ruby-2.6.5,1                   Object-oriented interpreted scripting language
+rw-libreoffice-6.3.4           rw language pack for libreoffice
+sa_IN-libreoffice-6.3.4        sa_IN language pack for libreoffice
+samba410-4.10.13               Free SMB/CIFS and AD/DC server and client for Unix
+sane-backends-1.0.29           API for access to scanners, digitals camera, frame grabbers etc
+sat-libreoffice-6.3.4          sat language pack for libreoffice
+sd-libreoffice-6.3.4           sd language pack for libreoffice
+sdocbook-xml-1.1_2,2           "Simplified" DocBook XML DTD
+serf-1.3.9_4                   Serf HTTP client library
+sessreg-1.1.2                  Manage utmp/wtmp entries for non-init X clients
+setxkbmap-1.3.2                Set the keyboard using the X Keyboard Extension
+shared-mime-info-1.10_2        MIME types database from the freedesktop.org project
+shell-toolbox-20190528         Collection of shell script development tools
+si-libreoffice-6.3.4           si language pack for libreoffice
+sid-libreoffice-6.3.4          sid language pack for libreoffice
+simavr-1.3_1                   Simulator for several Atmel AVR chips
+sk-libreoffice-6.3.4           sk language pack for libreoffice
+sl-libreoffice-6.3.4           sl language pack for libreoffice
+slim-1.3.6_19                  Graphical login manager for X11, derived from Login.app
+slim-freebsd-black-theme-1.2_1 Simple FreeBSD SLiM theme inspired on the FreeBSD SLiM theme
+slim-freebsd-themes-1.0        FreeBSD Theme pack for SLiM login app
+slim-themes-1.0.1_1            Theme pack for SLiM login app
+slime-emacs28-2.23_3           Superior Lisp Interaction Mode for Emacs
+smproxy-1.0.6                  Session Manager Proxy
+snappy-1.1.8                   Fast compressor/decompressor library
+source-highlight-3.1.9_1       C/C++ and Java sources to HTML converter
+speex-1.2.0,1                  Audio compression format designed for speech
+speexdsp-1.2.0                 Audio compression format designed for speech
+spidermonkey52-52.9.0_6        Standalone JavaScript based from Mozilla 52-esr
+spidermonkey60-60.9.0_2        Standalone JavaScript based from Mozilla 60-esr
+sq-libreoffice-6.3.4           sq language pack for libreoffice
+sqlite3-3.30.1_2,1             SQL database engine in a C library
+sr-libreoffice-6.3.4           sr language pack for libreoffice
+sr_Latn-libreoffice-6.3.4      sr_Latn language pack for libreoffice
+ss-libreoffice-6.3.4           ss language pack for libreoffice
+st-libreoffice-6.3.4           st language pack for libreoffice
+startup-notification-0.12_4    Library that supports startup notification spec from freedesktop.org
+subversion-1.13.0_1            Version control system
+sudo-1.8.31p1                  Allow others to run commands as root
+sv-libreoffice-6.3.4           sv language pack for libreoffice
+sw_TZ-libreoffice-6.3.4        sw_TZ language pack for libreoffice
+sylpheed-3.7.0_3               Lightweight, featureful, and fast GTK+ based e-mail client
+szl-libreoffice-6.3.4          szl language pack for libreoffice
+ta-libreoffice-6.3.4           ta language pack for libreoffice
+tablist-emacs28-1.0_1          Emacs package for extended tabulated-list-mode
+taglib-1.12.b.1                Library for manipulating ID3 tags and Ogg comments
+talloc-2.3.0                   Hierarchical pool based memory allocator
+tcl86-8.6.10                   Tool Command Language
+tdb-1.4.2,1                    Trivial Database
+te-libreoffice-6.3.4           te language pack for libreoffice
+terminus-font-4.48             Terminus Font - a clean fixed width font
+terminus-ttf-4.47.0_2          Terminus Font - a clean fixed width font (TTF version)
+tevent-0.10.1                  Talloc based event loop library
+tg-libreoffice-6.3.4           tg language pack for libreoffice
+th-libreoffice-6.3.4           th language pack for libreoffice
+thunar-1.8.14                  Xfce file manager
+thunar-archive-plugin-0.4.0    Archive plugin for the Thunar File Manager
+thunar-media-tags-plugin-0.3.0 Media tags plugin
+thunar-vcs-plugin-0.2.0        Version Control System plugin for Thunar
+tiff-4.1.0                     Tools and library routines for working with TIFF images
+tk86-8.6.10_1                  Graphical toolkit for Tcl
+tn-libreoffice-6.3.4           tn language pack for libreoffice
+totem-pl-parser-3.26.1         GObject-based library to parse a host of playlist formats
+tpm-emulator-0.7.4_2           Trusted Platform Module (TPM) emulator
+tr-libreoffice-6.3.4           tr language pack for libreoffice
+tracker-2.0.4_6                Object database, tag/metadata database, search tool and indexer
+tracker-miners-2.0.5_14        Miners for tracker2
+tree-1.8.0                     Display a tree-view of directories with optional color or HTML output
+trousers-0.3.14_2              Open-source TCG Software Stack
+ts-libreoffice-6.3.4           ts language pack for libreoffice
+tt-libreoffice-6.3.4           tt language pack for libreoffice
+twemoji-color-font-ttf-12.0.1  Color emoji font using Twitter Unicode 10
+twm-1.0.10                     Tab Window Manager for the X Window System
+twolame-0.4.0                  MPEG Audio Layer 2 encoder
+uchardet-0.0.6                 Universal charset detection library
+uefi-edk2-bhyve-0.2_1,1        UEFI-EDK2 firmware for bhyve
+uefi-edk2-bhyve-csm-0.2_1,1    UEFI-EDK2 firmware for bhyve with CSM
+ug-libreoffice-6.3.4           ug language pack for libreoffice
+uk-libreoffice-6.3.4           uk language pack for libreoffice
+unique-1.1.6_7                 Library for single instance applications
+unpaper-6.1                    Post-processing tool for scanned sheets of paper
+upower-0.99.11                 D-Bus daemon for simplifying power management tasks
+utf8proc-2.4.0                 UTF-8 processing library
+uz-libreoffice-6.3.4           uz language pack for libreoffice
+ve-libreoffice-6.3.4           ve language pack for libreoffice
+vec-libreoffice-6.3.4          vec language pack for libreoffice
+vi-libreoffice-6.3.4           vi language pack for libreoffice
+vim-8.2.0491_1                 Improved version of the vi editor
+vlc-3.0.10,4                   Qt based multimedia player and streaming server
+vte3-0.52.2_3                  Terminal widget with improved accessibility and I18N support
+vulkan-headers-1.1.108.0       Headers for the Vulkan graphics API
+wavpack-5.2.0                  Audio codec for lossless, lossy, and hybrid compression
+wayland-1.18.0_3               Wayland composite "server"
+wayland-protocols-1.20         Wayland protocols
+webcamd-5.3.7.1_1              Port of Linux USB webcam and DVB drivers into userspace
+webkit2-gtk3-2.28.1            Opensource browser engine using the GTK+ 3 toolkit
+webp-1.1.0                     Google WebP image format conversion tool
+wifimgr-1.12                   WiFi Networks Manager
+wireshark-3.2.2                Powerful network analyzer/capture tool
+with-editor-emacs28-2.9.1_1    Use the Emacsclient as the $EDITOR of child processes
+woff2-1.0.2_4                  Library and converter tools for the WOFF 2.0 web font format
+wpebackend-fdo-1.4.1           Freedesktop.org backend for WPE WebKit
+wx28-gtk2-2.8.12_8             The wxWidgets GUI toolkit with GTK+ bindings
+wx28-gtk2-common-2.8.12_8      The wxWidgets GUI toolkit (common files)
+x11perf-1.6.1                  X11 server performance test program
+x265-3.2.1_2                   H.265/High Efficiency Video Coding (HEVC) format
+xauth-1.1                      X authority file utility
+xbacklight-1.2.3               Program to adjust backlight brightness
+xbitmaps-1.1.2                 X.Org bitmaps data
+xcalc-1.1.0                    Scientific calculator for X
+xcb-util-0.4.0_2,1             Module with libxcb/libX11 extension/replacement libraries
+xcb-util-image-0.4.0_1         Port of Xlib's XImage and XShmImage functions
+xcb-util-keysyms-0.4.0_1       Standard X key constants and conversion to/from keycodes
+xcb-util-renderutil-0.3.9_1    Convenience functions for the Render extension
+xcb-util-wm-0.4.1_3            Framework for window manager implementation
+xclock-1.0.9                   Analog and digital clock for X
+xcmsdb-1.0.5                   Device Color Characterization utility for X
+xconsole-1.0.7_1               Monitor system console messages with X
+xcursor-themes-1.0.6           X.org cursors themes
+xcursorgen-1.0.7               Create an X cursor file from a collection of PNG images
+xdg-utils-1.1.3_1              Tools to allow all applications to integrate with the free desktop
+xdm-1.1.12_3                   X.Org X display manager
+xdpyinfo-1.3.2_3               Display information utility for X
+xdriinfo-1.0.6_3               Query configuration information of DRI drivers
+xev-1.2.3                      Print contents of X events
+xf86-input-evdev-2.10.6_5      X.Org event device input driver
+xf86-input-joystick-1.6.3_3    X.Org joystick input driver
+xf86-input-keyboard-1.9.0_4    X.Org keyboard input driver
+xf86-input-libinput-0.29.0     X.Org libinput input driver
+xf86-input-mouse-1.9.3_3       X.Org mouse input driver
+xf86-input-synaptics-1.9.1_6   X.Org synaptics input driver
+xf86-video-amdgpu-19.1.0_1     X.Org amdgpu display driver
+xf86-video-apm-1.3.0_1         X.Org apm display driver
+xf86-video-ati-19.1.0_3,1      X.Org ati display driver
+xf86-video-scfb-0.0.5_2        X.Org syscons display driver
+xf86-video-vesa-2.4.0_3        X.Org vesa display driver
+xf86dga-1.0.3_1                Test program for the XFree86-DGA extension
+xfburn-0.6.2                   CD/DVD burning tool for Xfce
+xfce-4.14                      meta-port for the Xfce Desktop Environment
+xfce-icons-elementary-0.13.1   Elementary icons, extended and maintained for Xfce
+xfce4-appfinder-4.14.0         Application launcher and finder
+xfce4-battery-plugin-1.1.3     Battery monitor panel plugin for Xfce4
+xfce4-bsdcpufreq-plugin-0.3    Displays the current CPU clock frequency in the panel
+xfce4-calculator-plugin-0.7.0_1 Simple calculator for the Xfce panel
+xfce4-clipman-plugin-1.6.0     Clipboard manager for the Xfce panel
+xfce4-conf-4.14.1              D-Bus-based configuration storage system
+xfce4-cpugraph-plugin-1.1.0_1  Graphical representation of the CPU load
+xfce4-dashboard-0.7.7          GNOME shell like dashboard for the Xfce desktop
+xfce4-datetime-plugin-0.8.0    Datetime panel plugin for the Xfce desktop
+xfce4-desktop-4.14.2           Xfce's desktop manager
+xfce4-dev-tools-4.14.0         Xfce development tools
+xfce4-dict-plugin-0.8.3        Xfce4 plugin to query different dictionaries
+xfce4-diskperf-plugin-2.6.2_1  Graphical representation of the disk IO
+xfce4-embed-plugin-1.6.0_2     Embed arbitrary windows into the Xfce panel
+xfce4-equake-plugin-1.3.8.1_1  Earthquake monitor plugin for the Xfce panel
+xfce4-fsguard-plugin-1.1.1     Panel plugin which displays free space of mountpoint
+xfce4-genmon-plugin-4.0.2      Generic Monitor Xfce4 panel plugin
+xfce4-goodies-4.14             Meta-port for software and artwork from the Xfce4 Goodies Project
+xfce4-mailwatch-plugin-1.2.0_10 Mail notification applet for the Xfce panel
+xfce4-mount-plugin-1.1.3_1     Mount and umount utility for the Xfce4 panel
+xfce4-netload-plugin-1.3.2     Network Load plugin for Xfce4
+xfce4-notes-plugin-1.8.1_2     Notes plugin for the Xfce panel
+xfce4-notifyd-0.4.4_1          Visually-appealing notification daemon for Xfce
+xfce4-panel-4.14.3             Xfce's panel
+xfce4-power-manager-1.6.6      Power manager for the Xfce Desktop
+xfce4-screensaver-0.1.10       Xfce 4 screen saver and locker
+xfce4-screenshooter-plugin-1.9.7 Application and panel plugin to take screenshots
+xfce4-session-4.14.2           Xfce's session manager
+xfce4-settings-4.14.2          Xfce 4 settings application
+xfce4-smartbookmark-plugin-0.5.1 Query search engines from the Xfce panel
+xfce4-systemload-plugin-1.2.3  System Load plugin for Xfce4 panel
+xfce4-taskmanager-1.2.2_2      Task manager for the Xfce desktop
+xfce4-terminal-0.8.9.2         Terminal emulator for the X windowing system
+xfce4-time-out-plugin-1.1.0    Time out plugin for Xfce
+xfce4-timer-plugin-1.7.0_2     Timer plugin for Xfce
+xfce4-tumbler-0.2.8_3          Thumbnail service for Xfce desktop
+xfce4-verve-plugin-2.0.0       Command line plugin for the Xfce Desktop
+xfce4-volumed-0.1.13_4         Volume management daemon for the Xfce desktop
+xfce4-wavelan-plugin-0.6.1     Displays various information about a WaveLAN device
+xfce4-weather-plugin-0.10.1    Weather plugin for the Xfce panel
+xfce4-whiskermenu-plugin-2.4.3 Alternate menu for the Xfce Desktop
+xfce4-wm-4.14.0_1              Xfce's window manager
+xfce4-wm-themes-4.10.0_1       Additional themes for xfwm4
+xfce4-xkb-plugin-0.8.1_2       Keyboard layout switching plugin for the Xfce panel
+xgamma-1.0.6                   Gamma correction through the X server
+xgc-1.0.5                      X graphics demo
+xh-libreoffice-6.3.4           xh language pack for libreoffice
+xhost-1.0.8                    Server access control program for X
+xinit-1.4.1,1                  X Window System initializer
+xinput-1.6.3                   Very useful utility for configuring and testing XInput devices
+xkbcomp-1.4.3                  Compile XKB keyboard description
+xkbevd-1.1.4                   XKB event daemon
+xkbutils-1.0.4_2               XKB utility demos
+xkeyboard-config-2.29          X Keyboard Configuration Database
+xkill-1.0.5                    Utility for killing a client by its X resource
+xlsatoms-1.1.3                 List interned atoms defined on a server
+xlsclients-1.1.4               List client applications running on a display
+xmbmon-205_14                  MB monitor for LM78/79, W8378x, AS99127F, VT82C686 and ADM9240
+xmessage-1.0.5                 Display message or query in a X window
+xmlcatmgr-2.2_2                SGML and XML catalog manager
+xmlcharent-0.3_2               XML character entities
+xmlsec1-1.2.29                 XML Security Library
+xmodmap-1.0.10                 Utility for modifying keymaps and pointer button mappings in X
+xorg-7.7_3                     X.Org complete distribution metaport
+xorg-apps-7.7_4                X.org apps meta-port
+xorg-docs-1.7.1,1              X.org documentation files
+xorg-drivers-7.7_6             X.org drivers meta-port
+xorg-fonts-7.7_1               X.org fonts meta-port
+xorg-fonts-100dpi-7.7          X.Org 100dpi bitmap fonts
+xorg-fonts-75dpi-7.7           X.Org 75dpi bitmap fonts
+xorg-fonts-cyrillic-7.7        X.Org Cyrillic bitmap fonts
+xorg-fonts-miscbitmaps-7.7     X.Org miscellaneous bitmap fonts
+xorg-fonts-truetype-7.7_1      X.Org TrueType fonts
+xorg-fonts-type1-7.7           X.Org Type1 fonts
+xorg-libraries-7.7_4           X.org libraries meta-port
+xorg-server-1.20.8_1,1         X.Org X server and related programs
+xorgproto-2019.2               xorg protocol headers
+xpr-1.0.5                      Utility for printing an X window dump
+xprop-1.2.4                    Property displayer for X
+xrandr-1.5.1                   Primitive command line interface to the RandR extension
+xrdb-1.2.0                     X server resource database utility
+xrefresh-1.0.6                 Refresh all or part of an X screen
+xset-1.2.4_3                   User preference utility for X
+xsetroot-1.1.2                 Root window parameter setting utility for X
+xterm-353_1                    Terminal emulator for the X Window System
+xtrans-1.4.0                   Abstract network code for X
+xvid-1.3.7,1                   Opensource MPEG-4 codec, based on OpenDivx
+xvinfo-1.1.4                   Print out X-Video extension adaptor information
+xwd-1.0.7                      Dump an image of an X window
+xwininfo-1.1.5                 Window information utility for X
+xwud-1.0.5                     Image displayer for X
+yajl-2.1.0                     Portable JSON parsing and serialization library in ANSI C
+zenity-3.28.1                  Display GNOME dialogs from the command line
+zh_CN-libreoffice-6.3.4        zh_CN language pack for libreoffice
+zh_TW-libreoffice-6.3.4        zh_TW language pack for libreoffice
+zu-libreoffice-6.3.4           zu language pack for libreoffice
