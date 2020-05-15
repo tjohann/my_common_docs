@@ -11,7 +11,9 @@ aom-1.0.0.3304                 AV1 reference encoder/decoder
 appres-1.0.5                   Program to list application's resources
 apr-1.7.0.1.6.1_1              Apache Portability Library
 ar-libreoffice-6.3.4           ar language pack for libreoffice
+arc-5.21p                      Create & extract files from DOS .ARC files
 argyllcms-1.9.2_5              ICC compatible color management system
+arj-3.10.22_8                  Open source implementation of the ARJ archiver
 as-libreoffice-6.3.4           as language pack for libreoffice
 ast-libreoffice-6.3.4          ast language pack for libreoffice
 at-spi2-atk-2.26.2             Assisted Technology Provider module for GTK+
@@ -43,6 +45,7 @@ bo-libreoffice-6.3.4           bo language pack for libreoffice
 boehm-gc-8.0.4_1               Garbage collection and memory leak detection for C and C++
 boehm-gc-threaded-8.0.4_1      Garbage collection and memory leak detection for C and C++
 boost-libs-1.72.0_1            Free portable C++ libraries (without Boost.Python)
+bpft-4.20040506_1              BPF Traffic collector
 br-libreoffice-6.3.4           br language pack for libreoffice
 brotli-1.0.7_2,1               Generic-purpose lossless compression algorithm
 brx-libreoffice-6.3.4          brx language pack for libreoffice
@@ -53,6 +56,8 @@ ca_valencia-libreoffice-6.3.4  ca_valencia language pack for libreoffice
 cairo-1.16.0,2                 Vector graphics library with cross-device output support
 cantarell-fonts-0.101_1        Cantarell, a Humanist sans-serif font family
 cdrdao-1.2.4_3                 Record CD-R[W]s in disk-at-once mode
+clamav-0.102.2,1               Command line virus scanner written entirely in C
+clamav-unofficial-sigs-7.0.1   Update script for third-party ClamAV databases
 clucene-2.3.3.4_19             CLucene is a C++ port of Lucene
 clutter-1.26.2                 OpenGL based interactive canvas library
 cmake-3.16.5                   Cross-platform Makefile generator
@@ -96,6 +101,7 @@ docbook-xsl-1.79.1_1,1         XSL DocBook stylesheets
 drm-fbsd12.0-kmod-4.16.g20200221 DRM modules for the linuxkpi-based KMS components
 drm-kmod-g20190710             Metaport of DRM modules for the linuxkpi-based KMS components
 dsb-libreoffice-6.3.4          dsb language pack for libreoffice
+dtrace-toolkit-1.0_5           Collection of useful scripts for DTrace
 dz-libreoffice-6.3.4           dz language pack for libreoffice
 e2fsprogs-libuuid-1.45.6       UUID library from e2fsprogs package
 el-libreoffice-6.3.4           el language pack for libreoffice
@@ -299,6 +305,7 @@ jasper-2.0.16_1                Implementation of the codec specified in the JPEG
 jbig2dec-0.18                  Decoder implementation of the JBIG2 image compression format
 jbigkit-2.1_1                  Lossless compression for bi-level images such as scanned pages, faxes
 jpeg-turbo-2.0.4               SIMD-accelerated JPEG codec which replaces libjpeg
+json-c-0.13.1_1                JSON (JavaScript Object Notation) implementation in C
 json-glib-1.4.4                JSON (RFC 4627) interface for Glib
 jsoncpp-1.9.2                  JSON reader and writer library for C++
 ka-libreoffice-6.3.4           ka language pack for libreoffice
@@ -771,6 +778,7 @@ rest-0.7.93                    Easy access to RESTful web services
 rhash-1.3.5                    Utility and library for computing and checking of file hashes
 ristretto-0.10.0_1             Image viewer with Xfce integration
 ro-libreoffice-6.3.4           ro language pack for libreoffice
+rsync-3.1.3_1                  Network file distribution/synchronization utility
 ru-libreoffice-6.3.4           ru language pack for libreoffice
 ruby-2.6.5,1                   Object-oriented interpreted scripting language
 rw-libreoffice-6.3.4           rw language pack for libreoffice
@@ -853,6 +861,7 @@ ug-libreoffice-6.3.4           ug language pack for libreoffice
 uk-libreoffice-6.3.4           uk language pack for libreoffice
 unique-1.1.6_7                 Library for single instance applications
 unpaper-6.1                    Post-processing tool for scanned sheets of paper
+unzoo-4.4_2                    ZOO archive extractor
 upower-0.99.11                 D-Bus daemon for simplifying power management tasks
 utf8proc-2.4.0                 UTF-8 processing library
 uz-libreoffice-6.3.4           uz language pack for libreoffice
