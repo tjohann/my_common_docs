@@ -1,0 +1,72 @@
+# .bashrc
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+# Source global definitions
+[ -f /etc/bashrc ] && . /etc/bashrc
+
+# defining foreground colour
+# -> other format P_RESET="\[$(tput sgr0)\]"
+P_BLACK="$(tput setaf 0)"
+P_WHITE="$(tput setaf 7)"
+P_YELLOW="$(tput setaf 3)"
+P_RED="$(tput setaf 1)"
+P_BLUE="$(tput setaf 4)"
+P_GREEN="$(tput setaf 2)"
+P_RESET="$(tput sgr0)"
+
+# see https://www.tecmint.com/view-colored-man-pages-in-linux/
+export LESS_TERMCAP_mb=$'\e[1;32m'
+export LESS_TERMCAP_md=$'\e[1;32m'
+export LESS_TERMCAP_me=$'\e[0m'
+export LESS_TERMCAP_se=$'\e[0m'
+export LESS_TERMCAP_so=$'\e[01;33m'
+export LESS_TERMCAP_ue=$'\e[0m'
+export LESS_TERMCAP_us=$'\e[1;4;31m'
+
+# Extend PATH & CDPATH
+export PATH=$HOME/bin:$PATH
+#export CDPATH=$CDPATH:~/cubietruck_sdk/:~/arm926_sdk/
+
+# Some alias
+alias df="df -h"
+alias du="du -h"
+alias more=less
+alias cd..="cd .."
+alias ping="ping -c3"
+alias jobs="jobs -pl"
+alias vi="vim"
+
+alias lf="ls -lahFG"
+alias ls='ls -G'
+
+PS1='\u@\h:\w\$ '
+#PS1='[\u@\h \W]\$ '
+#export PS1='\[${P_YELLOW}\u${P_WHITE}@${P_GREEN}\h${P_RESET} [\w]\]> '
+
+[[ $PS1 && -f /usr/local/share/bash-completion/bash_completion.sh ]] && source /usr/local/share/bash-completion/bash_completion.sh
+
+# emacs exports
+#export EDITOR=~/bin/ee
+export ALTERNATE_EDITOR=""
+export EDITOR="emacsclient -t"           # $EDITOR should open in terminal
+export VISUAL="emacsclient -c -a emacs"  # $VISUAL opens in GUI with non-daemon as alternate
+
+# Some python stuff
+PYTHONSTARTUP=$HOME/.pythonrc
+
+# Some go stuff
+export GOPATH=$HOME/golang
+export PATH=$PATH:$GOPATH/bin
+
+# Some exports
+export INCLUDEDIR=$HOME/include
+export BROWSER="firefox"
+export MANPAGER=less
+
+# colored GCC warnings and errors
+export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+
+# it's a must
+fortune futurama | cowsay
