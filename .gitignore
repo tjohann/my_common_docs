@@ -40,3 +40,4 @@ host
 linux-*
 modules_*
 *~
+*.core
