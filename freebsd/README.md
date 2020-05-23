@@ -42,3 +42,12 @@ old images
 ----------
 http://ftp-archive.freebsd.org/pub/FreeBSD-Archive/old-releases/amd64/
 
+
+get and update base system
+--------------------------
+
+svnlite checkout https://svn.freebsd.org/base/stable/12 /usr/src/
+
+set SVN_UPDATE="YES" in /etc/src.conf
+
+and after first checkout use make udate
