@@ -44,6 +44,9 @@
 (package-initialize)
 
 
+(when (eq window-system nil)
+  (xterm-mouse-mode t))
+
 ;; Display trailing whitespace at en of lines
 (defun toggle-trailing-whitespace-display ()
   "Toggle the display of trailing whitespace, by changing the
