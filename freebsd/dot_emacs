@@ -43,7 +43,7 @@
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 (package-initialize)
 
-
+;; make mouse available@console
 (when (eq window-system nil)
   (xterm-mouse-mode t))
 
