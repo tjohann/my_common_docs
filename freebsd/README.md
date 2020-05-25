@@ -11,6 +11,8 @@ https://www.c0ffee.net/blog/freebsd-on-a-laptop/
 https://github.com/FreeBSDDesktop
 https://www.freebsd.org/cgi/man.cgi?query=xkeyboard-config&sektion=7&manpath=freebsd-release-ports
 
+https://www.daemonology.net/blog/2020-05-22-my-new-FreeBSD-laptop-Dell-7390.html?utm_source=discoverbsd
+
 
 handling touchpad and typing
 ----------------------------
