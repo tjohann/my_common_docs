@@ -1,0 +1,6 @@
+some macbook pro related stuff
+==============================
+
+see also below freebsd/macbook for mor infos ...
+
+https://wiki.voidlinux.org/Macbook

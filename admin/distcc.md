@@ -28,3 +28,11 @@ build linux kernel with discc
 -----------------------------
 
 http://blog.samarthparikh.com/2012/10/install-distcc-and-make-linux-kernel.html
+http://wiki.loverpi.com/specs:sbc:distcc-kernel-compile
+
+
+some more useful links
+----------------------
+
+https://distcc.github.io/faq.html
+https://www.synology-forum.nl/firmware-algemeen/cross-compile-on-ds411j-via-distcc/?wap2
