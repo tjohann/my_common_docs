@@ -52,3 +52,7 @@ ip address add 192.168.0.1 dev eth0
 
 # list all active ports
 netstat -tupl
+
+# hdd performance (https://wiki.ubuntuusers.de/Festplatten-Geschwindigkeitstest/)
+sudo hdparm -tT /dev/sda   (mit Cache)
+sudo hdparm -tT --direct /dev/sda   (ohne Cache)
