@@ -15,3 +15,9 @@ https://www.amazon.de/gp/product/B01CK5VY3Y/ref=ppx_yo_dt_b_asin_title_o00_s00?i
 using in M$
 -----------
 https://www.technikaffe.de/anleitung-213-tpm__einrichten_und_sinnvoll_nutzen_am_beispiel_windows_7/
+
+
+
+using TPM with LUKCS
+--------------------
+https://blog.dowhile0.org/2017/10/18/automatic-luks-volumes-unlocking-using-a-tpm2-chip/
