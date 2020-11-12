@@ -92,5 +92,8 @@ put olimex_*.tgz
 cd /home/pfs/project/a/a2/a20devices/nanopi
 put nanopi_*.tgz
 
+cd /home/pfs/project/a/a2/a20devices/orangepi
+put orangepi*.tgz
+
 cd /home/pfs/project/a/a2/a20devices/void-packages
 put binpkgs.tgz
