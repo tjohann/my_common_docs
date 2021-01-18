@@ -1,0 +1,9 @@
+[user]
+	name = .... 
+	email = .... 
+[push]
+	default = simple
+[credential]
+	helper = cache --timeout=3600
+[pull]
+	rebase = false
