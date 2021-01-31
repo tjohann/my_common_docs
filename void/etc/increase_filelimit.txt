@@ -1,0 +1,31 @@
+Increse file limit from 1024 to 4096
+------------------------------------
+
+see also https://rtcamp.com/tutorials/linux/increase-open-files-limit/
+
+
+commands
+--------
+
+ulimut -Hn -> for hard limits ... normally 4096
+ulimut -Sn -> for soft limits ... normally 1024
+
+
+cat /proc/sys/fs/file-max -> total max number of open files ... 3268774
+
+
+changes
+-------
+
+/etc/sysctl.conf -> change file-max (not needed)
+fs.file-max=what_ever_you_want
+
+/etc/security/limits.conf -> change hard/soft limit via pam
+
+for example in add file /etc/security/limits.d/20-softlimit-tjohann.conf with the following content:
+
+# Increase number of openfiles for group users to 4096
+@users soft nofile 4096
+
+-> means all in group users will have a soft limit for open files or 4096
+
