@@ -1,7 +1,7 @@
 Setup of an minimal buildroot image for a bananapi
 ==================================================
 
-Goals: setup a minimal image with as less as possible GPL or related Software (for example: use MUSL and toybox)
+Goals: setup a minimal image with non "mainstream" components
 Additions: see https://git.buildroot.net/buildroot/tree/board/bananapi/bananapi-m1
 
 In folder buildroot_minimal_bananapi you can find the .config`s for the different steps and on sourceforge.net (https://sourceforge.net/projects/a20-minimum-buildroot/) you can find the packed image folder.
@@ -49,9 +49,37 @@ Images in bananapi_minimal_image_v02.tgz
 
 Results:
 
-	/dev/root increas from 2,7 to 2,8M
+	/dev/root increase from 2,7 to 2,8M
 	startup time more or less the same
 
-
-
 NOTE: i moved everthing in a new repository@github -> see https://github.com/tjohann/a20_minimum_buildroot_dev
+
+
+Adapt init system from busybox (bananapi_minimal_config_buildroot_v03)
+----------------------------------------------------------------------
+
+Copy my_busybox.config to package/busybox/my_busybox.config and use bananapi_minimal_config_buildroot_v03 .
+
+Summary in result_bananapi_minimal_config_buildroot_v03.txt
+Images in bananapi_minimal_image_v03.tgz
+
+Results:
+
+	busybox do not realy provide runit -> so change init system to OpenRC
+
+
+Change init system to OpenRC (bananapi_minimal_config_buildroot_v04)
+--------------------------------------------------------------------
+
+Change init system to OpenRC and build again.
+
+Note: OpenRC is already part of buildroot, so no new parts are needed
+
+Summary in result_bananapi_minimal_config_buildroot_v04.txt
+Images in bananapi_minimal_image_v04.tgz
+
+Results (compare with v02 -> v03 makes no sense):
+
+	/dev/root increase from 2,7 to 4,6M (as expected)
+	memory consumption is increasing (as expected)
+	startup time decreases (as expected)
