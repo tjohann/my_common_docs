@@ -29,7 +29,7 @@ scanning bus usb@1c14400 for devices... 1 USB Device(s) found
 scanning bus usb@1c1c000 for devices... 1 USB Device(s) found
 scanning bus usb@1c1c400 for devices... 1 USB Device(s) found
        scanning usb for storage devices... 0 Storage Device(s) found
-Hit any key to stop autoboot:  0 
+Hit any key to stop autoboot:  0
 switch to partitions #0, OK
 mmc0 is current device
 Scanning mmc 0:1...
@@ -176,7 +176,7 @@ Starting kernel ...
 [    1.105577] ahci-sunxi 1c18000.sata: controller can't do PMP, turning off CAP_PMP
 [    1.113067] ahci-sunxi 1c18000.sata: forcing PORTS_IMPL to 0x1
 [    1.118980] ahci-sunxi 1c18000.sata: AHCI 0001.0100 32 slots 1 ports 3 Gbps 0x1 impl platform mode
-[    1.127955] ahci-sunxi 1c18000.sata: flags: ncq sntf pm led clo only pio slum part ccc 
+[    1.127955] ahci-sunxi 1c18000.sata: flags: ncq sntf pm led clo only pio slum part ccc
 [    1.137058] scsi host0: ahci-sunxi
 [    1.140965] ata1: SATA max UDMA/133 mmio [mem 0x01c18000-0x01c18fff] port 0x100 irq 36
 [    1.150799] libphy: Fixed MDIO Bus: probed
@@ -235,7 +235,7 @@ Starting kernel ...
 [    1.527151] sun7i-dwmac 1c50000.ethernet: Linked as a consumer to regulator.14
 [    1.560072] mmc0: host does not support reading read-only switch, assuming write-enable
 [    1.570632] mmc0: new high speed SDHC card at address 0007
-[    1.577456] mmcblk0: mmc0:0007 SD8GB 7.42 GiB 
+[    1.577456] mmcblk0: mmc0:0007 SD8GB 7.42 GiB
 [    1.584229]  mmcblk0: p1 p2
 [    1.645836] sun7i-dwmac 1c50000.ethernet: Version ID not available
 [    1.652033] sun7i-dwmac 1c50000.ethernet:    DWMAC1000
@@ -310,7 +310,7 @@ tmpfs                   502.4M         0    502.4M   0% /dev/shm
 tmpfs                   502.4M     28.0K    502.3M   0% /tmp
 tmpfs                   502.4M     12.0K    502.4M   0% /run
 
-# cat /proc/meminfo 
+# cat /proc/meminfo
 MemTotal:        1028864 kB
 MemFree:         1015080 kB
 MemAvailable:    1002420 kB

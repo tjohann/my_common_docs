@@ -4,7 +4,7 @@ Setup of an minimal buildroot image for a bananapi
 Goals: setup a minimal image with as less as possible GPL or related Software (for example: use MUSL and toybox)
 Additions: see https://git.buildroot.net/buildroot/tree/board/bananapi/bananapi-m1
 
-In folder buildroot_minimal_bananapi you can find the .config`s for the different steps and on sourceforge.net (TODO: create project) you can find the packed image folder.
+In folder buildroot_minimal_bananapi you can find the .config`s for the different steps and on sourceforge.net (https://sourceforge.net/projects/a20-minimum-buildroot/) you can find the packed image folder.
 
 
 Starting point (bananapi_minimal_config_buildroot_v01)
@@ -51,3 +51,7 @@ Results:
 
 	/dev/root increas from 2,7 to 2,8M
 	startup time more or less the same
+
+
+
+NOTE: i moved everthing in a new repository@github -> see https://github.com/tjohann/a20_minimum_buildroot_dev

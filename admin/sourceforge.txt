@@ -69,6 +69,15 @@ put *.tgz
 
 
 #
+# a20-minimum-buildroot
+#
+sftp thjvdb,a20-minimum-buildroot@frs.sourceforge.net
+cd /home/pfs/project/a/a2/a20-minimum-buildroot
+put checksum.sha256
+put *.tgz
+
+
+#
 # a20_sdk
 #
 sftp thjvdb,a20devices@frs.sourceforge.net
