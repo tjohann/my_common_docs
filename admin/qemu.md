@@ -1,7 +1,24 @@
-links around qemu and co
-========================
+links and content around qemu and co
+====================================
+
+convert an virtualbox image to qemu image:
+
+	qemu-img convert -f vdi -O qcow2 virtualbox_image.vdi qemu_image.qcow2
+
+resize image:
+
+	qemu-img resize my_image.qcow2 +50G
+
+
+some common links
+=================
+
+https://www.poftut.com/qemu-tutorial/
+https://wiki.ubuntuusers.de/QEMU/
+https://wiki.archlinux.org/index.php/QEMU
 
 http://cromwell-intl.com/linux/virtualization.html
+
 
 linux realted
 =============
