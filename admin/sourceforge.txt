@@ -78,6 +78,15 @@ put *.tgz
 
 
 #
+# ambient_tracking_with_raspi
+#
+sftp thjvdb,pi-env@frs.sourceforge.net
+cd /home/pfs/project/p/pi/pi-env
+put checksum.sha256
+put *.tgz
+
+
+#
 # a20_sdk
 #
 sftp thjvdb,a20devices@frs.sourceforge.net
