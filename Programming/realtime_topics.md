@@ -20,3 +20,9 @@ https://www.osadl.org/Realtime-Preempt-Kernel.kernel-rt.0.html
 hardware latency tracer (which seeks to flush out latencies caused by the hardware itself)
 --------------------------------------
 http://lwn.net/Articles/703129/
+
+
+Helper script to create latency plots from cyclictest
+-----------------------------------------------------
+
+https://www.osadl.org/Create-a-latency-plot-from-cyclictest-hi.bash-script-for-latency-plot.0.html
