@@ -15,3 +15,10 @@ high power consumption in sleep mode
 https://www.heise.de/ct/hotline/Linux-Hoher-Stromverbrauch-im-Standby-3717127.html
 
 deactivate wake on lan: sudo ethtool -s eth0 wol d
+
+
+
+some really useful description
+------------------------------
+
+https://metebalci.com/blog/a-minimum-complete-tutorial-of-cpu-power-management-c-states-and-p-states/
