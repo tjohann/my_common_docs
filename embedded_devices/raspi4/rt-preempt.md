@@ -12,3 +12,5 @@ https://metebalci.com/blog/latency-of-raspberry-pi-4-on-standard-and-real-time-l
 https://www.osadl.org/Create-a-latency-plot-from-cyclictest-hi.bash-script-for-latency-plot.0.html
 
 https://www.osadl.org/Single-View.111+M51d02f4636a.0.html
+
+https://hackaday.io/project/123415-real-time-kernel-preempt-rt-for-raspberry-pi

@@ -12,6 +12,6 @@ all:
 
 clean:
 	rm -f *~
-	for dir in $(MODULES); do (cd $$dir && $(MAKE) $@); done
+#	for dir in $(MODULES); do (cd $$dir && $(MAKE) $@); done
 
 distclean: clean
