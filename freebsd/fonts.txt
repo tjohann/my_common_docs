@@ -1,0 +1,15 @@
+# Howto
+
+see 'vidcontrol -f <fontname>' test display effect.
+
+and then add
+     allscreens_flags="-f gallant"
+to file  /etc/rc.conf
+
+add follow four lines in  /boot/loader.conf
+  kern.vty=vt
+  hw.vga.textmode=1
+  kern.vt.fb.default_mode="1280x800"
+
+
+Fonts in /usr/share/vt/fonts
