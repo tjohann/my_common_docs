@@ -1,0 +1,21 @@
+
+Gnome requires /proc
+--------------------
+
+/etc/fstab
+
+proc           /proc       procfs  rw  0   0
+
+
+Services in /etc/rc.conf
+------------------------
+
+dbus_enable="YES"
+gdm_enable="YES"
+gnome_enable="YES"
+
+
+.xinitrc config for using startx
+--------------------------------
+
+echo "exec /usr/local/bin/gnome-session" > ~/.xinitrc
