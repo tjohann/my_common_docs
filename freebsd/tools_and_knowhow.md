@@ -18,3 +18,8 @@ TEMP STUFF
 Problems with Radeon GPU RX5700XT:
 
 	sysctl kern.sched.steal_thresh=1
+
+Link to clone FreeBSD repo:
+
+	git clone --branch releng/13.1 https://git.FreeBSD.org/src.git /usr/src
+	git clone --branch stable/13 https://git.FreeBSD.org/src.git /usr/src
