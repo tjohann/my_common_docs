@@ -19,6 +19,11 @@ https://wiki.archlinux.org/index.php/QEMU
 
 http://cromwell-intl.com/linux/virtualization.html
 
+create snapshots via virtsh:
+----------------------------
+
+https://linuxconfig.org/how-to-create-snapshots-of-qemu-kvm-guests#more-15608
+
 
 linux realted
 =============
