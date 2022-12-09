@@ -1,0 +1,51 @@
+# some hw related infos
+
+Modell			EliteMini GK41
+Prozessor		Intel Celeron Processor J4125
+			4 Kerne/4 Threads
+			4M L2-Cache
+			bis zu 2,70 GHz im Burstmode
+			14nm
+			10W TDP
+			BGA auf Board verlötet
+
+GPU 			Intel UHD Graphics 600
+
+Speicher		DDR4 8GB
+
+Externe Speicher	M.2 2280 128GB SATA SSD
+			1T SSD von Samsung (evo870)
+			1 x TF-Kartensteckplatz (bis zu 128 GB)
+
+Wifi 		      	IEEE 802.11ac Dual-Band Wi-Fi
+			BlueTooth
+
+Ethernet		1000Mbps LAN (2x)
+
+Videoausgang		HDMI(4K@60Hz)
+			DP(4K@60Hz)
+
+Audioausgang		HDMI, DP, 3.5mm Audio Jack (sof-firmware installieren)
+
+USB			4 * USB3.0
+
+Spannungsversorung 	DC 12V
+
+Product Dimension 	135.6 x 120.6 x 34.5mm
+Nettogewicht 		0.262/KG
+
+Montagebügel für Anbaue hinter Monitor
+
+
+# some more hw details
+Intel Celeron Processor J4125	Ende 2019 vorgestellter Quad-Core-SoC,
+      	      			Gemini-Lake-Refresh Plattform
+
+DDR4/LPDDR4-Speichercontroller (Dual-Channel, 2.400 MHz)
+
+
+
+
+
+
+
