@@ -1,6 +1,6 @@
-# only for cleaning 
+# only for cleaning
 
-all:: 
+all::
 	@echo Cheers
 
 clean::
