@@ -1,0 +1,19 @@
+/*
+ * see https://www.heise.de/blog/Ein-erster-Ueberblick-Design-Patterns-und-Architekturmuster-mit-C-7147402.html
+ */
+
+digraph "" {
+	 fontname = "Terminus"
+	 node[fontname = "Terminus"]
+	 edge[fontname = "Terminus,bold"]
+
+	 label = "Übersicht von Arten von Pattern"
+
+	 ranksep = 0.7
+	 nodesep = 1.0
+	 compound = true
+
+	 node[shape = ellipse]
+	 Arch[label = "Archtiketur-Pattern"]
+
+ }
