@@ -7,13 +7,26 @@ digraph "" {
 	 node[fontname = "Terminus"]
 	 edge[fontname = "Terminus,bold"]
 
-	 label = "Übersicht von Arten von Pattern"
+	 label = "Relations of Pattern-Types"
 
 	 ranksep = 0.7
 	 nodesep = 1.0
 	 compound = true
 
 	 node[shape = ellipse]
-	 Arch[label = "Archtiketur-Pattern"]
+	 arch_types[label = "Types of Pattern"]
 
+	 node[shape = box]
+	 arch_pattern[label = "Architektur Pattern"]
+	 design_pattern[label = "Design Pattern"]
+	 idioms[label = "Idioms"]
+
+	 { rank = same; arch_pattern; design_pattern; idioms}
+
+	 arch_types -> arch_pattern
+ 	 arch_types -> design_pattern
+ 	 arch_types -> idioms
+
+	 arch_pattern -> design_pattern [style = bold, style = dotted, label = "uses"]
+	 design_pattern -> idioms [style = bold, style = dotted, label = "implement"]
  }
