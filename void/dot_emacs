@@ -48,7 +48,7 @@
 (when (eq window-system nil)
   (xterm-mouse-mode t))
 
-;; Display trailing whitespace at en of lines
+;; Display trailing whitespace at end of lines
 (defun toggle-trailing-whitespace-display ()
   "Toggle the display of trailing whitespace, by changing the
 buffer-local variable `show-trailing-whitespace'."
@@ -127,10 +127,12 @@ buffer-local variable `show-trailing-whitespace'."
 
 ;; Meta
 (global-set-key "\M-r" 'replace-string)
+(global-set-key "\M-a" 'mark-whole-buffer)
 (global-set-key "\M-g" 'goto-line)
 ;; next-multiframe-window -> next frame C-x o
 ;; other-frame -> next frame C-x 5 o
 (global-set-key "\M-n" 'next-multiframe-window)
+(global-set-key "\M-p" 'previous-multiframe-window)
 ;; resize frame
 ;; <C-up> -> ctrl-up
 ;; <M-up> -> ctrl-up
@@ -140,7 +142,7 @@ buffer-local variable `show-trailing-whitespace'."
 (global-set-key (kbd "<M-right>") 'enlarge-window-horizontally)
 
 ;; Function keys
-;;(global-set-key [f1] 'manual-entry)
+(global-set-key [f1] 'manual-entry)
 ;;(global-set-key [f2] 'info)
 ;;(global-set-key [f3] 'repeat-complex-command)
 ;;(global-set-key [f4] 'advertised-undo)
